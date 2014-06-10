@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views>
+   <view id="view0" label="业务视图一览">
+      <pod id="pod02" type="topo" title="业务视图测试" dataSource="data/businessmap1270548512.xml" />
+   </view>
+</views>
+

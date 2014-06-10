@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+   <item name="网络设备">
+      <value>2</value>
+   </item>
+   <item name="服务器">
+      <value>0</value>
+   </item>
+   <item name="数据库">
+      <value>0</value>
+   </item>
+   <item name="应用服务">
+      <value>0</value>
+   </item>
+   <item name="中间件">
+      <value>0</value>
+   </item>
+   <item name="安全设备">
+      <value>0</value>
+   </item>
+</data>
+

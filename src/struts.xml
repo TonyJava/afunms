@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.multipart.maxSize" value="31457280" /> 
+    <constant name="struts.multipart.saveDir" value="/tem" /> 
+    
+    <!-- 包含测试启动流程配置文件 -->
+    <include file="com/bpm/system/struts/process.xml"></include>
+    <!-- 包含系统管理模块配置文件 -->
+    <include file="com/bpm/system/struts/system.xml"></include>
+     <!-- 包含流程编辑文件 -->
+    <include file="com/bpm/system/struts/editor.xml"></include>
+
+	<package name="bpm" namespace="/controller" extends="json-default">
+		<global-results>
+		<result name="error">
+		/error.jsp
+		</result>
+		</global-results>
+		<action name="login" class="com.bpm.system.action.LoginAction">
+			<result>
+				/WEB-INF/system/main.jsp
+            </result>
+            <result name="error">
+               /login.jsp
+            </result>
+		</action>
+	</package>
+
+	
+
+</struts>

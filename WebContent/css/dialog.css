@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+#dlgTipMask {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 99;
+	background: gray;
+	filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+
+#dlgTip {
+	position: absolute;
+	width: 250px;
+	height: 80px;
+	z-index: 999;
+	background: white;
+	border-radius: 5px;
+	display:none;
+}
+
+#title{
+	height:15px;
+	background:#16a085;
+}
+
+#tipContent {
+	height: 25px;
+	margin-top: 10px;
+	padding-left: 30px;
+}
+#tipImgDiv{
+	float:left;
+}
+
+#tipText{
+	float:left;
+	height: 25px;
+	line-height:25px;
+	margin-left:10px;
+}
+#tipOp{
+		display:none;
+}
+#btn {
+	float:right;
+	margin-right: 5px;
+}

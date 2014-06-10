@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<folder>
+   <folder id="" label="业务资源一览">
+      <folder id="bussiness2" label="444" dataSource="data/list1280481791.xml" xml="businessmap1280481791.xml">
+         <folder id="net53" label="H3C-6(交换机)" />
+         <folder id="net52" label="H3C(交换机)" />
+         <folder id="net54" label="服务器(Windows Professional/XP)" />
+      </folder>
+   </folder>
+</folder>
+

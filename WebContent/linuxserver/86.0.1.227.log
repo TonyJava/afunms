@@ -1,0 +1,920 @@
+cmdbegin:collecttime
+2013-07-24 17:55:00
+cmdbegin:version
+5300-06-11-0918
+cmdbegin:vmstat
+
+System configuration: lcpu=16 mem=15232MB
+
+kthr    memory              page              faults        cpu    
+----- ----------- ------------------------ ------------ -----------
+ r  b   avm   fre  re  pi  po  fr   sr  cy  in   sy  cs us sy id wa
+ 1  1 1167022 2634403   0   0   0   0    0   0  23 2360 370  0  0 99  0
+cmdbegin:lsps
+Total Paging Space   Percent Used
+      16384MB               1%
+cmdbegin:swap
+allocated  =    4194304 blocks    used  =   3460 blocks      free  =    4190844 blocks
+cmdbegin:process
+USER        PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+daemon    70356  0.0  0.0 1364 1384      - A      May 18  0:00 rpc.statd
+nms      176930  0.0  0.0  224  236      - A    17:55:01  0:00 egrep
+nms      221812  0.0  0.0  840  868      - A    17:55:01  0:00 ps
+nms      233738                            Z              0:00 <defunct>
+nms      238132  0.0  0.0  692  716      - A    17:55:00  0:00 sh
+nms      246196                            Z              0:00 <defunct>
+nms      262308  0.0  0.0  200  212      - A    17:55:01  0:00 sort
+root          0  0.0  0.0  384  384      - A      May 18  6:09 swapper
+root          1  0.0  0.0  640  656      - A      May 18  5:24 init
+root        288  3.1  0.0  384  384      - A      May 18 47907:10 wait
+root        556  3.1  0.0  384  384      - A      May 18 47977:22 wait
+root        824  3.1  0.0  384  384      - A      May 18 47962:48 wait
+root       4386  0.0  0.0  448  448      - A      May 18  6:29 swapper
+root       4654  0.0  0.0  448  448      - A      May 18 10:07 swapper
+root       4922  0.0  0.0  448  448      - A      May 18  7:07 swapper
+root       8196  3.1  0.0  384  384      - A      May 18 47923:21 wait
+root       8484  0.0  0.0  448  448      - A      May 18  0:07 sched
+root       8752  0.0  0.0  448  448      - A      May 18  0:09 sched
+root       9020  0.0  0.0  448  448      - A      May 18  0:05 sched
+root      12294  0.0  0.0  448  448      - A      May 18  0:06 sched
+root      12582  3.1  0.0  384  384      - A      May 18 47869:02 wait
+root      12850  3.1  0.0  384  384      - A      May 18 47958:35 wait
+root      13118  3.1  0.0  384  384      - A      May 18 47883:19 wait
+root      16392  0.0  0.0  832  832      - A      May 18  0:00 lrud
+root      16680  3.1  0.0  384  384      - A      May 18 47966:01 wait
+root      16948  3.1  0.0  384  384      - A      May 18 48031:41 wait
+root      17216  3.1  0.0  384  384      - A      May 18 48048:51 wait
+root      20490  0.0  0.0  448  448      - A      May 18  0:00 vmptacrt
+root      20778  3.1  0.0  384  384      - A      May 18 47927:21 wait
+root      21046  3.1  0.0  384  384      - A      May 18 48016:06 wait
+root      21314  3.1  0.0  384  384      - A      May 18 48039:01 wait
+root      24588  0.0  0.0  832  832      - A      May 18  0:00 psmd
+root      24900  0.0  0.0  448  448      - A      May 18  4:20 netm
+root      25158  0.0  0.0  960  960      - A      May 18 17:07 gil
+root      25580  0.0  0.0  272  284      - A      May 18  0:00 writesrv
+root      28686  0.0  0.0  512  512      - A      May 18  0:00 xmfreed
+root      29002  0.0  0.0  448  448      - A      May 18  0:00 armtrace_kproc
+root      29256  0.0  0.0  512  512      - A      May 18  0:00 wlmsched
+root      29558  0.0  0.0 2496 2496      - A      May 18  0:00 dog
+root      32784  0.0  0.0  448  448      - A      May 18  0:00 memp_rbd
+root      33360  0.0  0.0  448  448      - A      May 18  0:00 lvmbb
+root      33722  0.0  0.0  476  500   lft0 A      May 18  0:00 getty
+root      36882  0.0  0.0  448  448      - A      May 18  0:00 memgrdd
+root      37318  0.0  0.0 5880 3568      - A      May 18  1:25 dsmscoutd
+root      37512  0.0  0.0  448  448      - A      May 18  0:00 AtapeManager
+root      37660  0.0  0.0  304  312      - A      May 18  0:00 cimssys
+root      40980  0.0  0.0  448  448      - A      May 18  0:00 psgc
+root      41298  0.0  0.0 2312 2312      - A      May 18 18:24 clcomd
+root      41648  0.0  0.0  428  436      - A      May 18  0:00 shlap64
+root      45078  0.0  0.0 1088 1088      - A      May 18  0:21 pilegc
+root      45670  0.0  0.0  448  448      - A      May 18  0:00 hea_kproc
+root      45980  0.0  0.0  580  440      - A      May 18  0:00 dtlogin
+root      49176  0.0  0.0  448  448      - A      May 18 12:55 xmgc
+root      49588  0.0  0.0  872  900      - A      May 18  0:00 errdemon
+root      50104  0.0  0.0 5028 3884      - A      May 18  3:05 X
+root      53274  3.1  0.0  384  384      - A      May 18 47862:20 wait
+root      53734  0.0  0.0  448  448      - A      May 18  0:00 random
+root      53958  0.0  0.0  512  512      - A      May 18  0:00 nfsSM
+root      54232  0.0  0.0  512  520      - A      May 18 204:57 syncd
+root      57372  3.1  0.0  384  384      - A      May 18 47982:21 wait
+root      57772  0.0  0.0  304  320      - A      May 18  0:00 CIM_diagd
+root      57976  0.0  0.0  448  448      - A      May 18  0:00 aioserver
+root      58282  0.0  0.0 4272 2828      - A      May 18  0:25 dsmmonitord
+root      61470  3.1  0.0  384  384      - A      May 18 47938:05 wait
+root      61856  0.0  0.0  860  868      - A      May 18  0:20 slp_srvreg
+root      62090  0.0  0.0 6656 6656      - A      May 18  0:19 j2pg
+root      62310  0.0  1.0 43508 43380      - A      May 18 148:03 clstrmgr
+root      65662  0.0  0.0  448  448      - A      May 18  0:00 usbCfgDev
+root      65954  0.0  0.0  448  448      - A      May 18  0:00 rtcmd
+root      66238  0.0  0.0  416  428      - A      May 18  0:51 nonstop_aix
+root      66462  0.0  0.0  416  276      - A      May 18  0:00 dtlogin
+root      69804  0.0  0.0  448  448      - A      May 18  0:04 n4bg
+root      70102  0.0  0.0 4104 2008      - A      May 18  0:00 dsmrootd
+root      70580  0.0  0.0  512  512      - A      May 18  0:00 kbiod
+root      74166  0.0  0.0  936  952      - A      May 18  0:00 portmap
+root      74418  0.0  0.0  276  288      - A      May 18  0:00 qdaemon
+root      78046  0.0  0.0 4680 4696      - A      May 18  0:07 tier1slp
+root      78118  0.0  0.0 4748 4756      - A      May 18  0:00 cimservera
+root      78548  0.0  0.0  152  156      - A      May 18  0:00 biod
+root      82624  0.0  0.0 4476 1712      - A      May 18  0:00 dsmrecalld
+root      82898  0.0  0.0  460  476      - A      May 18  0:00 inetd
+root      86524  0.0  0.0  512  512      - A      May 18  0:00 kdmd
+root      86718  0.0  0.0  296  304      - A      May 18  0:00 cimssys
+root      87028  0.0  0.0 5236 2472      - A      May 18  0:00 dsmrecalld
+root      90288  0.0  0.0  448  448      - A      May 18  0:02 rdpgc
+root      90620  0.0  0.0 1216 1216      - A      May 18  2:57 rpc.lockd
+root      90810  0.0  0.0  332  348      - A      May 18  0:08 syslogd
+root      91086  0.0  0.0 1176 1232      - A      May 18  6:00 snmpdv3ne
+root      94712  0.0  0.0 6768 6792      - A      May 18  0:24 cimlistener
+root      94952  0.0  0.0 2020 1896      - A      May 18  0:42 sendmail
+root      95226  0.0  1.0 65884 65912      - A      May 18  8:00 cimserver
+root      98520  0.0  0.0 1128 1112      - A      May 18  0:01 hostmibd64
+root      98812  0.0  0.0 2464 1528      - A      May 18  0:00 pnsd
+root      99068  0.0  0.0  660  680      - A      May 18  0:00 muxatmd
+root      99110  0.0  0.0 2084 2156      - A      May 18 27:45 hats_rs232_nim
+root     102570  0.0  0.0  448  448      - A      May 18  0:10 rgsr
+root     102818  0.0  0.0 2128 2244      - A      May 18 10:00 hats_nim
+root     103124  0.0  0.0 6608 6644      - A      May 18  0:12 dirsnmpd
+root     103422  0.0  0.0  552  576      - A      May 18  0:00 diagd
+root     106704  0.0  0.0  852  868      - A      May 18  0:12 srcmstr
+root     107238  0.0  0.0   84   92      - A      May 18  0:00 uprintfd
+root     111382  0.0  0.0 1428 1460      - A      May 18 188:23 dtgreet
+root     114888  0.0  0.0 1532 1548      - A      May 18  0:12 aixmibd64
+root     114990  0.0  0.0 1708 1672      - A      May 18  0:00 IBM.ServiceRMd
+root     118974  0.0  0.0 1304 1208      - A      May 18  0:01 snmpmibd64
+root     119526  0.0  0.0 4404 1648      - A      May 18 16:19 dsmrecalld
+root     119668  0.0  0.0 2128 2244      - A      May 18 11:01 hats_nim
+root     123088  0.0  0.0  972  836      - A      May 18  0:00 sshd
+root     123422  0.0  0.0 2232 2232      - A      May 18  5:02 rmcd
+root     127492  0.0  1.0 72548 72568      - A      May 18 277:50 java
+root     135390  0.0  0.0  448  464      - A      May 18  0:43 cron
+root     139498  0.0  0.0  280  288      - A      May 18  0:00 rpc.lockd
+root     139778  0.0  0.0 1888 1676      - A      May 18  5:16 topasrec
+root     156456  0.0  0.0 2128 2068      - A      May 18  5:42 IBM.HostRMd
+root     164386  0.0  0.0 3984 3696      - A      May 18  0:42 IBM.CSMAgentRMd
+root     172782  0.0  0.0 5492 5612      - A      May 18  0:53 harmad
+root     176710  0.0  0.0 14648 14636      - A      May 18 60:28 clinfo
+root     180258  0.0  0.0  448  448      - A      May 18  0:00 pofCmdProc
+root     180828  0.0  0.0 9448 9608      - A      May 18  7:50 hatsd
+root     185056  0.0  0.0 15948 16668      - A      May 18  3:17 hagsd
+root     193044  0.0  0.0 1672 1704      - A      May 18  0:03 haemd
+root     213624  0.0  0.0  624  624      - A      May 18  0:00 hacmprd_run_rcov
+root     254182  0.0  0.0  480  504      - A      May 30 30:14 getty
+cmdbegin:cpu
+
+AIX PDSSH_A 3 5 00CA0A144C00    07/24/13
+
+System configuration: lcpu=16  mode=Capped 
+
+17:55:01    %usr    %sys    %wio   %idle   physc
+17:55:02       0       0       0     100    7.98
+17:55:03       0       0       0     100    8.00
+17:55:04       0       0       0     100    8.00
+
+Average        0       0       0     100    7.99
+cmdbegin:processor
+proc0  Available 00-00 Processor
+proc2  Available 00-02 Processor
+proc4  Available 00-04 Processor
+proc6  Available 00-06 Processor
+proc8  Available 00-08 Processor
+proc10 Available 00-10 Processor
+proc12 Available 00-12 Processor
+proc14 Available 00-14 Processor
+cmdbegin:cpuconfig
+CPU Type: 64-bit
+Kernel Type: 64-bit
+LPAR Info: 1 PDSSH_A
+Memory Size: 15232 MB
+Processor Clock Speed: 3504 MHz
+cmdbegin:allconfig
+cmdbegin:disk
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4        2048.00   1941.83    6%     6728     2% /
+/dev/hd2        4096.00   1797.20   57%    43500    10% /usr
+/dev/hd9var     2048.00   1373.23   33%     7438     3% /var
+/dev/hd3        4096.00   2301.18   44%      470     1% /tmp
+/dev/hd1        2048.00   2042.62    1%       66     1% /home
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt    2048.00   1670.84   19%     9992     3% /opt
+cmdbegin:diskperf
+
+AIX PDSSH_A 3 5 00CA0A144C00    07/24/13
+
+System configuration: lcpu=16 drives=31  mode=Capped 
+
+17:55:04     device    %busy    avque    r+w/s    Kbs/s   avwait   avserv
+
+17:55:05    hdisk24      0      0.0        0        0      0.0      0.0
+            hdisk29      0      0.0        0        0      0.0      0.0
+            hdisk25      0      0.0        0        0      0.0      0.0
+            hdisk26      0      0.0        0        0      0.0      0.0
+            hdisk27      0      0.0        0        0      0.0      0.0
+            hdisk28      0      0.0        0        0      0.0      0.0
+             hdisk4      0      0.0        0        0      0.0      0.0
+             hdisk7      0      0.0        0        0      0.0      0.0
+             hdisk8      0      0.0        0        0      0.0      0.0
+             hdisk9      0      0.0        0        0      0.0      0.0
+            hdisk10      0      0.0        0        0      0.0      0.0
+             hdisk6      0      0.0        0        0      0.0      0.0
+            hdisk11      0      0.0        0        0      0.0      0.0
+            hdisk13      0      0.0        0        0      0.0      0.0
+            hdisk12      0      0.0        0        0      0.0      0.0
+            hdisk14      0      0.0        0        0      0.0      0.0
+            hdisk15      0      0.0        0        0      0.0      0.0
+            hdisk16      0      0.0        0        0      0.0      0.0
+            hdisk17      0      0.0        0        0      0.0      0.0
+            hdisk18      0      0.0        0        0      0.0      0.0
+            hdisk19      0      0.0        0        0      0.0      0.0
+            hdisk20      0      0.0        0        0      0.0      0.0
+            hdisk21      0      0.0        0        0      0.0      0.0
+            hdisk22      0      0.0        0        0      0.0      0.0
+            hdisk23      0      0.0        0        0      0.0      0.0
+             hdisk5      0      0.0        0        0      0.0      0.0
+             hdisk2      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0        0      0.0      0.0
+             hdisk1      0      0.0        0        0      0.0      0.0
+             hdisk0      0      0.0        0        0      0.0      0.0
+                cd0      0      0.0        0        0      0.0      0.0
+
+
+17:55:06    hdisk24      0      0.0        0        0      0.0      0.0
+            hdisk29      0      0.0        0        0      0.0      0.0
+            hdisk25      0      0.0        0        0      0.0      0.0
+            hdisk26      0      0.0        0        0      0.0      0.0
+            hdisk27      0      0.0        0        0      0.0      0.0
+            hdisk28      0      0.0        0        0      0.0      0.0
+             hdisk4      0      0.0        0        0      0.0      0.0
+             hdisk7      0      0.0        0        0      0.0      0.0
+             hdisk8      0      0.0        0        0      0.0      0.0
+             hdisk9      0      0.0        0        0      0.0      0.0
+            hdisk10      0      0.0        0        0      0.0      0.0
+             hdisk6      0      0.0        0        0      0.0      0.0
+            hdisk11      0      0.0        0        0      0.0      0.0
+            hdisk13      0      0.0        0        0      0.0      0.0
+            hdisk12      0      0.0        0        0      0.0      0.0
+            hdisk14      0      0.0        0        0      0.0      0.0
+            hdisk15      0      0.0        0        0      0.0      0.0
+            hdisk16      0      0.0        0        0      0.0      0.0
+            hdisk17      0      0.0        0        0      0.0      0.0
+            hdisk18      0      0.0        0        0      0.0      0.0
+            hdisk19      0      0.0        0        0      0.0      0.0
+            hdisk20      0      0.0        0        0      0.0      0.0
+            hdisk21      0      0.0        0        0      0.0      0.0
+            hdisk22      0      0.0        0        0      0.0      0.0
+            hdisk23      0      0.0        0        0      0.0      0.0
+             hdisk5      0      0.0        0        0      0.0      0.0
+             hdisk2      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0        0      0.0      0.0
+             hdisk1      0      0.0        0        0      0.0      0.0
+             hdisk0      0      0.0        0        0      0.0      0.0
+                cd0      0      0.0        0        0      0.0      0.0
+
+
+Average     hdisk24      0      0.0        0        0      0.0      0.0
+            hdisk29      0      0.0        0        0      0.0      0.0
+            hdisk25      0      0.0        0        0      0.0      0.0
+            hdisk26      0      0.0        0        0      0.0      0.0
+            hdisk27      0      0.0        0        0      0.0      0.0
+            hdisk28      0      0.0        0        0      0.0      0.0
+             hdisk4      0      0.0        0        0      0.0      0.0
+             hdisk7      0      0.0        0        0      0.0      0.0
+             hdisk8      0      0.0        0        0      0.0      0.0
+             hdisk9      0      0.0        0        0      0.0      0.0
+            hdisk10      0      0.0        0        0      0.0      0.0
+             hdisk6      0      0.0        0        0      0.0      0.0
+            hdisk11      0      0.0        0        0      0.0      0.0
+            hdisk13      0      0.0        0        0      0.0      0.0
+            hdisk12      0      0.0        0        0      0.0      0.0
+            hdisk14      0      0.0        0        0      0.0      0.0
+            hdisk15      0      0.0        0        0      0.0      0.0
+            hdisk16      0      0.0        0        0      0.0      0.0
+            hdisk17      0      0.0        0        0      0.0      0.0
+            hdisk18      0      0.0        0        0      0.0      0.0
+            hdisk19      0      0.0        0        0      0.0      0.0
+            hdisk20      0      0.0        0        0      0.0      0.0
+            hdisk21      0      0.0        0        0      0.0      0.0
+            hdisk22      0      0.0        0        0      0.0      0.0
+            hdisk23      0      0.0        0        0      0.0      0.0
+             hdisk5      0      0.0        0        0      0.0      0.0
+             hdisk2      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0        0      0.0      0.0
+             hdisk1      0      0.0        0        0      0.0      0.0
+             hdisk0      0      0.0        0        0      0.0      0.0
+                cd0      0      0.0        0        0      0.0      0.0
+cmdbegin:diskiostat
+
+System configuration: lcpu=16 drives=31 paths=46 vdisks=0
+
+tty:      tin         tout    avg-cpu: % user % sys % idle % iowait
+          0.0          0.0                0.1   0.2   99.7      0.0
+
+Disks:        % tm_act     Kbps      tps    Kb_read   Kb_wrtn
+hdisk24          0.0       0.0       0.0          0         0
+hdisk29          0.0       0.0       0.0          0         0
+hdisk25          0.0       0.0       0.0          0         0
+hdisk26          0.0       0.0       0.0          0         0
+hdisk27          0.0       0.0       0.0          0         0
+hdisk28          0.0       0.0       0.0          0         0
+hdisk4           0.0       0.0       0.0          0         0
+hdisk7           0.0       0.0       0.0          0         0
+hdisk8           0.0       0.0       0.0          0         0
+hdisk9           0.0       0.0       0.0          0         0
+hdisk10          0.0       0.0       0.0          0         0
+hdisk6           0.0       0.0       0.0          0         0
+hdisk11          0.0       0.0       0.0          0         0
+hdisk13          0.0       0.0       0.0          0         0
+hdisk12          0.0       0.0       0.0          0         0
+hdisk14          0.0       0.0       0.0          0         0
+hdisk15          0.0       0.0       0.0          0         0
+hdisk16          0.0       0.0       0.0          0         0
+hdisk17          0.0       0.0       0.0          0         0
+hdisk18          0.0       0.0       0.0          0         0
+hdisk19          0.0       0.0       0.0          0         0
+hdisk20          0.0       0.0       0.0          0         0
+hdisk21          0.0       0.0       0.0          0         0
+hdisk22          0.0       0.0       0.0          0         0
+hdisk23          0.0       0.0       0.0          0         0
+hdisk5           0.0       0.0       0.0          0         0
+hdisk2           0.0       0.0       0.0          0         0
+hdisk3           0.0       0.0       0.0          0         0
+hdisk1           0.0       0.0       0.0          0         0
+hdisk0           0.0       0.0       0.0          0         0
+cd0              0.0       0.0       0.0          0         0
+cmdbegin:netperf
+Name  Mtu   Network     Address            Ipkts Ierrs    Opkts Oerrs  Coll
+en0   1500  link#2      0.21.5e.60.bf.70         0     0    14929     0     0
+                        01:00:5e:7f:ff:fd
+                        01:00:5e:00:00:01
+en0   1500  170.1.1     170.1.1.1                0     0    14929     0     0
+                        239.255.255.253    
+                        224.0.0.1          
+en4   1500  link#3      0.14.5e.75.d7.c6  18394828     0 12544159     2     0
+                        01:00:5e:7f:ff:fd
+                        01:00:5e:00:00:01
+en4   1500  172.1.1     172.1.1.1         18394828     0 12544159     2     0
+                        239.255.255.253    
+                        224.0.0.1          
+en4   1500  86.0.1      86.0.1.227        18394828     0 12544159     2     0
+                        239.255.255.253    
+                        224.0.0.1          
+en6   1500  link#4      0.14.5e.75.d5.c   17550784     0 11867919     2     0
+                        01:00:5e:7f:ff:fd
+                        01:00:5e:00:00:01
+en6   1500  173.1.1     173.1.1.1         17550784     0 11867919     2     0
+                        239.255.255.253    
+                        224.0.0.1          
+lo0   16896 link#1                        20741538     0 20749155     0     0
+lo0   16896 127         127.0.0.1         20741538     0 20749155     0     0
+                        224.0.0.1          
+lo0   16896 ::1                           20741538     0 20749155     0     0
+                        ff01::1          
+                        ff02::1:ff00:1   
+                        ff02::1          
+cmdbegin:netallperf
+start-en0
+Hardware Address: 00:21:5e:60:bf:70
+Packets: 14929                                Packets: 0
+Bytes: 1671992                                Bytes: 0
+Interrupts: 0                                 Interrupts: 1
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 22        
+Broadcast Packets: 5                          Broadcast Packets: 0
+Multicast Packets: 14924                      Multicast Packets: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+RX Interrupts: 1 / 0
+RX Interrupts Coalesced: 0 / 0
+RX Offlevel Interrupts: 0 / 0
+RX Q1 Low Latency Packets: 0 / 0
+RX Q2 Standard Packets: 0 / 0
+RX Q3 Jumbo Packets: 0 / 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0 / 0
+RX TCP Segment Aggregation Large Packets Created: 0 / 0
+RX TCP Packets Aggregated into Large Packets: 0 / 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0 / 0
+TX F2 Normal Packets: 0 / 0
+TX F3 Low Latency Packets: 14929 / 3732
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 1
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 4
+RX Interrupts: 1
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 14924
+Media Speed Running: Autonegotiate 
+end-en0
+start-en1
+Hardware Address: 00:21:5e:60:bf:71
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 0         
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+RX Interrupts: 0 / 0
+RX Interrupts Coalesced: 0 / 0
+RX Offlevel Interrupts: 0 / 0
+RX Q1 Low Latency Packets: 0 / 0
+RX Q2 Standard Packets: 0 / 0
+RX Q3 Jumbo Packets: 0 / 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0 / 0
+RX TCP Segment Aggregation Large Packets Created: 0 / 0
+RX TCP Packets Aggregated into Large Packets: 0 / 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0 / 0
+TX F2 Normal Packets: 0 / 0
+TX F3 Low Latency Packets: 0 / 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+Media Speed Running: Autonegotiate 
+end-en1
+start-en2
+Hardware Address: 00:21:5e:60:ce:70
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 0         
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+RX Interrupts: 0 / 0
+RX Interrupts Coalesced: 0 / 0
+RX Offlevel Interrupts: 0 / 0
+RX Q1 Low Latency Packets: 0 / 0
+RX Q2 Standard Packets: 0 / 0
+RX Q3 Jumbo Packets: 0 / 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0 / 0
+RX TCP Segment Aggregation Large Packets Created: 0 / 0
+RX TCP Packets Aggregated into Large Packets: 0 / 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0 / 0
+TX F2 Normal Packets: 0 / 0
+TX F3 Low Latency Packets: 0 / 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+Media Speed Running: Autonegotiate 
+end-en2
+start-en3
+Hardware Address: 00:21:5e:60:ce:71
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 0         
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+RX Interrupts: 0 / 0
+RX Interrupts Coalesced: 0 / 0
+RX Offlevel Interrupts: 0 / 0
+RX Q1 Low Latency Packets: 0 / 0
+RX Q2 Standard Packets: 0 / 0
+RX Q3 Jumbo Packets: 0 / 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0 / 0
+RX TCP Segment Aggregation Large Packets Created: 0 / 0
+RX TCP Packets Aggregated into Large Packets: 0 / 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0 / 0
+TX F2 Normal Packets: 0 / 0
+TX F3 Low Latency Packets: 0 / 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+RX Interrupts: 0
+RX Interrupts Coalesced: 0
+RX Offlevel Interrupts: 0
+RX Q1 Low Latency Packets: 0
+RX Q2 Standard Packets: 0
+RX Q3 Jumbo Packets: 0
+RX TCP Segment Aggregation Maximum Packets Aggregated: 0
+RX TCP Segment Aggregation Large Packets Created: 0
+RX TCP Packets Aggregated into Large Packets: 0
+RX TCP Segment Bytes Aggregated into Large Packets: 0
+TX F2 Normal Packets: 0
+TX F3 Low Latency Packets: 0
+Media Speed Running: Autonegotiate 
+end-en3
+start-en4
+Hardware Address: 00:14:5e:75:d7:c6
+Packets: 12544184                             Packets: 18394852
+Bytes: 2380030599                             Bytes: 2274647514
+Interrupts: 0                                 Interrupts: 18099530
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 13        
+Broadcast Packets: 5285                       Broadcast Packets: 5146680
+Multicast Packets: 55495                      Multicast Packets: 200936
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Link Status : Up
+Media Speed Running: 1000 Mbps Full Duplex
+TCP Segmentation Offload Packets Transmitted: 77530
+end-en4
+start-en5
+Hardware Address: 00:14:5e:75:d7:c7
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 1         
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Link Status : UNKNOWN
+Media Speed Running: Unknown
+TCP Segmentation Offload Packets Transmitted: 0
+end-en5
+start-en6
+Hardware Address: 00:14:5e:75:d5:0c
+Packets: 11867929                             Packets: 17550796
+Bytes: 1471221944                             Bytes: 2054038329
+Interrupts: 0                                 Interrupts: 17368531
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 13        
+Broadcast Packets: 2350                       Broadcast Packets: 5149627
+Multicast Packets: 14923                      Multicast Packets: 241507
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Link Status : Up
+Media Speed Running: 1000 Mbps Full Duplex
+TCP Segmentation Offload Packets Transmitted: 1934
+end-en6
+start-en7
+Hardware Address: 00:14:5e:75:d5:0d
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 1         
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Link Status : UNKNOWN
+Media Speed Running: Unknown
+TCP Segmentation Offload Packets Transmitted: 0
+end-en7
+start-en8
+end-en8
+start-en9
+end-en9
+start-en10
+end-en10
+start-en11
+end-en11
+start-en12
+end-en12
+start-en13
+end-en13
+start-en14
+end-en14
+start-en15
+end-en15
+start-en16
+end-en16
+cmdbegin:uname
+AIX PDSSH_A
+cmdbegin:service
+Subsystem         Group            PID          Status 
+ platform_agent                    37660        active
+ cimsys                            86718        active
+ syslogd          ras              90810        active
+ sendmail         mail             94952        active
+ portmap          portmap          74166        active
+ inetd            tcpip            82898        active
+ snmpd            tcpip            91086        active
+ hostmibd         tcpip            98520        active
+ snmpmibd         tcpip            118974       active
+ aixmibd          tcpip            114888       active
+ muxatmd          tcpip            99068        active
+ biod             nfs              78548        active
+ rpc.statd        nfs              70356        active
+ rpc.lockd        nfs              139498       active
+ qdaemon          spooler          74418        active
+ writesrv         spooler          25580        active
+ sshd             ssh              123088       active
+ ctrmc            rsct             123422       active
+ pnsd                              98812        active
+ IBM.CSMAgentRM   rsct_rm          164386       active
+ IBM.ServiceRM    rsct_rm          114990       active
+ clcomdES         clcomdES         41298        active
+ clstrmgrES       cluster          62310        active
+ topsvcs          topsvcs          180828       active
+ grpsvcs          grpsvcs          185056       active
+ emsvcs           emsvcs           193044       active
+ emaixos          emsvcs           172782       active
+ clinfoES         cluster          176710       active
+ IBM.HostRM       rsct_rm          156456       active
+ lpd              spooler                       inoperative
+ rwhod            tcpip                         inoperative
+ xntpd            tcpip                         inoperative
+ dpid2            tcpip                         inoperative
+ dhcpcd           tcpip                         inoperative
+ dhcpcd6          tcpip                         inoperative
+ ndpd-host        tcpip                         inoperative
+ ndpd-router      tcpip                         inoperative
+ tftpd            tcpip                         inoperative
+ gated            tcpip                         inoperative
+ named            tcpip                         inoperative
+ routed           tcpip                         inoperative
+ iptrace          tcpip                         inoperative
+ timed            tcpip                         inoperative
+ dhcpsd           tcpip                         inoperative
+ dhcpsdv6         tcpip                         inoperative
+ dhcprd           tcpip                         inoperative
+ mrouted          tcpip                         inoperative
+ rsvpd            qos                           inoperative
+ policyd          qos                           inoperative
+ pxed             tcpip                         inoperative
+ binld            tcpip                         inoperative
+ dfpd             tcpip                         inoperative
+ keyserv          keyserv                       inoperative
+ ypbind           yp                            inoperative
+ nfsd             nfs                           inoperative
+ rpc.mountd       nfs                           inoperative
+ automountd       autofs                        inoperative
+ nfsrgyd          nfs                           inoperative
+ gssd             nfs                           inoperative
+ llbd             iforncs                       inoperative
+ glbd             iforncs                       inoperative
+ cdromd                                         inoperative
+ LUMlmd           lumls                         inoperative
+ LUMgdb           lumls                         inoperative
+ i4lmd            iforls                        inoperative
+ i4glbcd          iforncs                       inoperative
+ i4gdb            iforls                        inoperative
+ i4llmd           iforls                        inoperative
+ vert_serv        nrd                           inoperative
+ nimsh            nimclient                     inoperative
+ cpsd             ike                           inoperative
+ tmd              ike                           inoperative
+ isakmpd          ike                           inoperative
+ http4websm       websm                         inoperative
+ wsmrefserver                                   inoperative
+ ctcas            rsct                          inoperative
+ IBM.ERRM         rsct_rm                       inoperative
+ IBM.AuditRM      rsct_rm                       inoperative
+ ypserv           yp                            inoperative
+ ypupdated        yp                            inoperative
+ yppasswdd        yp                            inoperative
+ dtsrc                                          inoperative
+ grpglsm          grpsvcs                       inoperative
+cmdbegin:usergroup
+system:!:0:root,esaadmin
+staff:!:1:ipsec,esaadmin,sshd,nms
+bin:!:2:root,bin
+sys:!:3:root,bin,sys
+adm:!:4:bin,adm,nms
+uucp:!:5:uucp,nuucp
+mail:!:6:
+security:!:7:root
+cron:!:8:root
+printq:!:9:lp
+audit:!:10:root
+ecs:!:28:
+nobody:!:4294967294:nobody,lpd
+usr:!:100:guest
+perf:!:20:
+shutdown:!:21:
+lp:!:11:root,lp
+invscout:!:12:invscout
+snapp:!:13:snapp
+ipsec:!:200:
+sybase:!:202:sybase,tuxedo
+tuxedo:!:203:sybase,tuxedo,nms
+sshd:!:201:sshd
+hacmp:!:204:
+haemrm:!:205:
+cmdbegin:user
+root id=0 pgrp=system groups=system,bin,sys,security,cron,audit,lp home=/home/root shell=/usr/bin/ksh
+daemon id=1 pgrp=staff groups=staff home=/etc
+bin id=2 pgrp=bin groups=bin,sys,adm home=/bin
+sys id=3 pgrp=sys groups=sys home=/usr/sys
+adm id=4 pgrp=adm groups=adm home=/var/adm
+uucp id=5 pgrp=uucp groups=uucp home=/usr/lib/uucp
+guest id=100 pgrp=usr groups=usr home=/home/guest
+nobody id=4294967294 pgrp=nobody groups=nobody home=/
+lpd id=9 pgrp=nobody groups=nobody home=/
+lp id=11 pgrp=lp groups=lp,printq home=/var/spool/lp shell=/bin/false
+invscout id=6 pgrp=invscout groups=invscout home=/var/adm/invscout shell=/usr/bin/ksh
+snapp id=200 pgrp=snapp groups=snapp home=/usr/sbin/snapp shell=/usr/sbin/snappd gecos=snapp login user
+nuucp id=7 pgrp=uucp groups=uucp home=/var/spool/uucppublic shell=/usr/sbin/uucp/uucico gecos=uucp login user
+ipsec id=101 pgrp=staff groups=staff home=/etc/ipsec shell=/usr/bin/ksh
+esaadmin id=8 pgrp=system groups=system,staff home=/var/esa shell=/usr/bin/ksh
+sybase id=201 pgrp=sybase groups=sybase,tuxedo home=/home/sybase shell=/usr/bin/ksh
+tuxedo id=211 pgrp=tuxedo groups=tuxedo,sybase home=/home/tuxedo shell=/usr/bin/ksh
+sshd id=202 pgrp=sshd groups=sshd,staff home=/var/empty shell=/usr/bin/ksh
+nms id=203 pgrp=staff groups=staff,adm,tuxedo home=/home/nms shell=/usr/bin/ksh roles=
+cmdbegin:date
+Wed Jul 24 17:55:13 TAIST 2013
+cmdbegin:uptime
+  05:55PM   up 66 days,  19:01,  0 users,  load average: 0.00, 0.02, 0.05
+cmdbegin:errpt
+cmdbegin:volume
+hdisk0          00ca0a14245dcfd3                    rootvg          active
+hdisk1          00ca0a142521a099                    rootvg          active
+hdisk2          00ca0a142521b7d0                    None            
+hdisk3          00ca0a142521c5a2                    None            
+hdisk4          00ca0a14299b1b57                    appvg           
+hdisk5          00ca0a1429c24d15                    bakvg           
+hdisk6          00ca0a1429c24de1                    bakvg           
+hdisk7          00ca0a1429c24ea9                    bakvg           
+hdisk8          00ca0a1429c24f19                    bakvg           
+hdisk9          00ca0a1429c24f8d                    bakvg           
+hdisk10         00ca0a1429c25001                    bakvg           
+hdisk11         00ca0a1429c25076                    bakvg           
+hdisk12         00ca0a1429c250e5                    bakvg           
+hdisk13         00ca0a1429c25155                    bakvg           
+hdisk14         00ca0a1429c251c5                    bakvg           
+hdisk15         00ca0a1429c25235                    bakvg           
+hdisk16         00ca0a1429c252a9                    bakvg           
+hdisk17         00ca0a1429c25319                    bakvg           
+hdisk18         00ca0a1429c25389                    bakvg           
+hdisk19         00ca0a14299e358a                    datavg          
+hdisk20         00ca0a14299e3652                    datavg          
+hdisk21         00ca0a14299e372a                    datavg          
+hdisk22         00ca0a14299e379a                    datavg          
+hdisk23         00ca0a14299e380a                    datavg          
+hdisk24         00ca0a14270192bd                    appvg           
+hdisk25         00ca0a142701ad44                    datavg          
+hdisk26         00ca0a142701ae38                    datavg          
+hdisk27         00ca0a142701aeb8                    datavg          
+hdisk28         00ca0a142701af34                    datavg          
+hdisk29         00ca0a142701afbd                    datavg          
+cmdbegin:route
+Routing tables
+Destination        Gateway           Flags   Refs     Use  If   Exp  Groups
+
+Route Tree for Protocol Family 2 (Internet):
+default            86.0.1.200        UGS       0    456063 en4      -      -   
+86.0.1.0           86.0.1.227        UHSb      0         0 en4      -      -   =>
+86.0.1/24          86.0.1.227        U         2   3867603 en4      -      -   
+86.0.1.227         127.0.0.1         UGHS      0      9894 lo0      -      -   
+86.0.1.255         86.0.1.227        UHSb      0         4 en4      -      -   
+127/8              127.0.0.1         U        25  16835640 lo0      -      -   
+170.1.1.0          170.1.1.1         UHSb      0         0 en0      -      -   =>
+170.1.1/24         170.1.1.1         U         0         1 en0      -      -   
+170.1.1.1          127.0.0.1         UGHS      0      1069 lo0      -      -   
+170.1.1.255        170.1.1.1         UHSb      0         4 en0      -      -   
+172.1.1.0          172.1.1.1         UHSb      0         0 en4      -      -   =>
+172.1.1/24         172.1.1.1         U         2   8199100 en4      -      -   
+172.1.1.1          127.0.0.1         UGHS      2   2440582 lo0      -      -   
+172.1.1.255        172.1.1.1         UHSb      0         4 en4      -      -   
+173.1.1.0          173.1.1.1         UHSb      0         0 en6      -      -   =>
+173.1.1/24         173.1.1.1         U         3  11848299 en6      -      -   
+173.1.1.1          127.0.0.1         UGHS      0   1176625 lo0      -      -   
+173.1.1.255        173.1.1.1         UHSb      0         4 en6      -      -   
+
+Route Tree for Protocol Family 24 (Internet v6):
+::1                ::1               UH        1    192426 lo0      -      -   
+cmdbegin:end

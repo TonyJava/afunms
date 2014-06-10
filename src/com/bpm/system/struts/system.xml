@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="system"  extends="bpm">
+	<global-results>
+		<result name="error">
+		/error.jsp
+		</result>
+		</global-results>
+       <action name="menuqueryall" class="menuQueryAllAction">
+			<result >
+				/WEB-INF/system/main.jsp
+			</result>
+		</action>
+		
+		<action name="menu" class="menuAction">
+		
+	     <result name="success">
+	     /WEB-INF/system/menu.jsp
+	     </result>  
+		</action>
+		
+		
+		<action name="addOneLevelMenu" class="addOneLevelMenuAction">
+		
+	     <result name="success" type="redirect">
+	     /controller/menu.action
+	     </result>  
+		</action>
+		
+		<action name="delmenu" class="delMenuAction">
+	     <result name="success" type="redirect">
+	     /controller/menu.action
+	     </result>  
+		</action>
+		
+		<action name="forwardjsp" class="ForwardJspAction">
+	     <result name="success">
+	     /WEB-INF/${jsp}
+	     </result>  
+		</action>
+		
+		<action name="querySecondMenu" class="querySecondMenuAction">
+	      <result name="success" type="json">
+				<param name="root">list</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		<action name="editMenu" class="editMenuAction">
+	     <result name="success" type="redirect">
+	     /controller/menu.action?result=${result}
+	     </result> 
+		</action>
+		<action name="modifyOneLevelMenu" class="modifyOneLevelMenuAction">
+	     <result name="success" type="redirect">
+	     /controller/menu.action?result=${result}
+	     </result> 
+		</action>
+		
+		<!-- 获取用户组信息 -->
+		<action name="groupQuery" class="groupEntityQueryAction">
+	    <result name="success" type="json">
+				<param name="root">list</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+		<!-- 获取二级数据字典信息 -->
+		<action name="codeDetailQuery" class="codeDetailQueryAction">
+	    <result name="success" type="json">
+				<param name="root">list</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+		<!-- 获取用户组信息 -->
+		<action name="group" class="groupQueryAction">
+	    <result name="success" >
+				 /WEB-INF/system/group.jsp
+			</result>  
+		</action>
+		
+		<!-- 获取用户组页面文件 -->
+		<action name="checkGroupQuery" class="userGroupEntityQueryAction">
+	    <result name="success" type="json">
+				<param name="root">grouphtml</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+		
+		
+		
+		<!-- 增加或修改用户组信息 -->
+		<action name="groupModify" class="groupModifyAction">
+	     <result name="success" type="redirect">
+	    /controller/group.action?result=${result}
+	     </result>  
+		</action>
+		
+		
+		<!-- 删除用户组信息 -->
+		<action name="groupDel" class="groupDelAction">
+	     <result name="success" type="redirect">
+	    /controller/group.action?result=${result}
+	     </result>  
+		</action>
+		
+		
+		<!-- 获取用户信息 -->
+		<action name="userQuery" class="userQueryAction">
+	     <result name="success" >
+	     /WEB-INF/system/user.jsp
+	     </result>  
+		</action>
+		
+		<!-- 校验用户账号是否存在 -->
+		<action name="checkUserId" class="checkUserIdAction">
+	      <result name="success" type="json">
+				<param name="root">result</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+		<!-- 校验用户账号是否存在 -->
+		<action name="checkGroupId" class="checkGroupIdAction">
+	      <result name="success" type="json">
+				<param name="root">result</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+		<!-- 删除用户 -->
+		<action name="userDel" class="userDelAction">
+	       <result name="success" type="redirect">
+	    /controller/userQuery.action?result=${result}
+	     </result>  
+		</action>
+		
+		
+		<!-- 删除用户 -->
+		<action name="userModify" class="userModifyAction">
+	       <result name="success" type="redirect">
+	    /controller/userQuery.action?result=${result}
+	     </result>  
+		</action>
+		
+		
+		
+		<!-- 根据用户ID获取用户组信息 -->
+		<action name="userGroupQuery" class="userGroupQueryAction">
+	      <result name="success" type="json">
+				<param name="root">groups</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+		<!-- 修改模型类型 -->
+		<action name="modifycode" class="modifyCodeTypeAction">
+	      <result name="success" type="json">
+				<param name="root">result</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+	</package>
+
+</struts>

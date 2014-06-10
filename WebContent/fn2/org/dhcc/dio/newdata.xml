@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataResult label="root">
+    <jflocality jfid="4" jfname="计费机房" jfaddress="计费机房" jfarea="1" jfcode="xxxx" jfgrade="xxxx" jfheight="xxxx" jftype="xxxx" jfwidth="xxxx" rowcount="xxxx" colcount="xxxx">
+        <jglocality jfid="4" jgcolno="x" jgcustomer="x" jgid="19" jgname="002" jgno="19" jgrowno="19" jgstatus="3" jgucount="42" jgx="30" jgy="30" jgz="-30" maxA="120" maxV="380" />
+    </jflocality>
+</DataResult>
+

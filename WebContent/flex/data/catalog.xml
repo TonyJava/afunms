@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+   <product productId="31">
+      <name>6509-1</name>
+      <description>设备名称:HX_7506A&lt;br/&gt;设备类型:H3C路由交换机&lt;br/&gt;设备描述:H3C Comware Platform Software, Software Versi&lt;br/&gt;子网掩码:255.255.255.0&lt;br/&gt;系统OID:1.3.6.1.4.1.25506.1.54</description>
+      <price>31</price>
+      <image>../resource/equip/image/topo/switch.png</image>
+      <isManage>已监视</isManage>
+      <series>H3C路由交换机</series>
+      <host />
+      <switchs>true</switchs>
+      <router />
+      <printer />
+      <highlight1>IP 10.10.1.1</highlight1>
+      <highlight2>MAC 00:0f:e2:3e:6b:dd</highlight2>
+      <qty />
+      <ip>10.10.1.1</ip>
+   </product>
+   <product productId="32">
+      <name>6509-2</name>
+      <description>设备名称:HX_7506B_1&lt;br/&gt;设备类型:H3C路由交换机&lt;br/&gt;设备描述:H3C Comware Platform Software, Software Versi&lt;br/&gt;子网掩码:255.255.255.0&lt;br/&gt;系统OID:1.3.6.1.4.1.25506.1.54</description>
+      <price>32</price>
+      <image>../resource/equip/image/topo/switch.png</image>
+      <isManage>已监视</isManage>
+      <series>H3C路由交换机</series>
+      <host />
+      <switchs>true</switchs>
+      <router />
+      <printer />
+      <highlight1>IP 10.10.1.2</highlight1>
+      <highlight2>MAC 00:0f:e2:2e:85:a5</highlight2>
+      <qty />
+      <ip>10.10.1.2</ip>
+   </product>
+   <product productId="33">
+      <name>AIX服务器</name>
+      <description>设备名称:&lt;br/&gt;设备类型:IBM AIX 服务器&lt;br/&gt;设备描述:&lt;br/&gt;子网掩码:255.255.255.0&lt;br/&gt;系统OID:1.3.6.1.4.1.2.3.1.2.1.1</description>
+      <price>33</price>
+      <image>../resource/equip/image/topo/ibm.gif</image>
+      <isManage>已监视</isManage>
+      <series>IBM AIX 服务器</series>
+      <host>true</host>
+      <switchs />
+      <router />
+      <printer />
+      <highlight1>IP 10.204.24.140</highlight1>
+      <highlight2>MAC null</highlight2>
+      <qty />
+      <ip>10.204.24.140</ip>
+   </product>
+   <product productId="35">
+      <name>LINUX测试</name>
+      <description>设备名称:&lt;br/&gt;设备类型:Linux&lt;br/&gt;设备描述:&lt;br/&gt;子网掩码:255.255.255.0&lt;br/&gt;系统OID:1.3.6.1.4.1.2021.250.10</description>
+      <price>35</price>
+      <image>../resource/equip/image/topo/linux.gif</image>
+      <isManage>已监视</isManage>
+      <series>Linux</series>
+      <host>true</host>
+      <switchs />
+      <router />
+      <printer />
+      <highlight1>IP 10.204.24.148</highlight1>
+      <highlight2>MAC null</highlight2>
+      <qty />
+      <ip>10.204.24.148</ip>
+   </product>
+</catalog>
+

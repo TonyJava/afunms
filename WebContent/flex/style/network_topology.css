@@ -1,0 +1,110 @@
+Application
+{
+	padding-bottom: 0px;
+	padding-left: 	0px;
+	padding-right: 	0px;
+	padding-top: 	0px;
+	font-family: 	arial;
+	font-size: 		11px;
+	vertical-gap: 	0px;
+}
+
+Detail
+{
+	color: #333333;
+	padding-top: 10;
+	padding-left: 60;
+	padding-bottom: 15;
+}
+
+.header1
+{
+	font-size: 12px;
+}
+
+ViewControlBar
+{
+	padding-top:	0px;
+	padding-left:	30px;
+	padding-right:	60px;
+	font-weight:	bold;
+	color: 			#666666;
+}
+
+.viewControlBarButton
+{
+	color: 					#666666;
+	horizontal-gap: 		5px;
+	text-roll-over-color: 	#858585;
+	selected-up-skin: 		Embed(source="/images/view_button_selected.png");
+	selected-down-skin: 	Embed(source="/images/view_button_selected.png");
+	selected-over-skin: 	Embed(source="/images/view_button_selected.png");
+	text-selected-color: 	#666666;
+	up-skin: 				Embed(source="/images/view_button_up.png");
+	over-skin: 				Embed(source="/images/view_button_up.png");
+	down-skin: 				Embed(source="/images/view_button_up.png");
+	text-align: 			left;
+}
+
+.viewControlBarButtonSelectedText
+{
+	color: 					#666666;
+	text-roll-over-color: 	#666666;
+}
+
+GridHeaderItem
+{
+	color: 					#333333;
+	text-roll-over-color: 	#666666;
+	font-weight: 			bold;
+}
+
+.gridHeaderDivider
+{
+	stroke-color: #CDCDCD;
+	shadow-color: #FFFFFF;
+}
+
+GridLayoutManager
+{
+	alternating-item-colors: #ffffff, #f3f3f3;
+}
+
+TypeHeaderItem
+{
+	color: 						#3F6B82;
+	font-size: 					12px;
+	font-weight: 				bold;
+	padding-top: 				7px;
+	text-roll-over-color: 		#6598B4;
+	background-gradient-colors:	#BFD1DA, #FFFFFF;
+}
+
+Thumb
+{
+	roll-over-color:	#D9F0FF;
+	selected-color:		#BBE3FF;
+}
+
+TitleView
+{
+	/*background-image:   Embed(source="/images/bg.gif");
+	background-repeat:  repeat;*/
+	background-color:   #000080;
+	color:              #ffffff;
+	padding-top:        10px;
+	padding-bottom:     10px;    
+	padding-right:      10px;    
+	padding-left:       10px;    			     
+}
+
+.detailDivider
+{
+	strokeColor: #CCCCCC;
+}
+
+Icon
+{
+	color:			#666666;
+	font-weight:	bold;
+}

@@ -1,0 +1,505 @@
+cmdbegin:collecttime
+2014-03-05 14:27:44
+cmdbegin:version
+Linux version 3.0.76-0.11-default (geeko@buildhost) (gcc version 4.3.4 [gcc-4_3-branch revision 152973] (SUSE Linux) ) #1 SMP Fri Jun 14 08:21:43 UTC 2013 (ccab990)
+cmdbegin:cpuconfig
+# processors    : 4
+processor 0: version = FF,  identification = 01B5D7,  machine = 2817
+processor 1: version = FF,  identification = 01B5D7,  machine = 2817
+processor 2: version = FF,  identification = 01B5D7,  machine = 2817
+processor 3: version = FF,  identification = 01B5D7,  machine = 2817
+cmdbegin:disk
+Filesystem                                          1K-blocks     Used Available Use% Mounted on
+/dev/mapper/3600507680181076b60000000000000b5_part1 206423736 23902036 172035992  13% /
+udev                                                  8239032      200   8238832   1% /dev
+tmpfs                                                 8239032   203396   8035636   3% /dev/shm
+/dev/mapper/3600507680181076b60000000000000a7_part1     98165    27866     65231  30% /boot
+cmdbegin:diskperf
+Linux 3.0.76-0.11-default (LPS-CSGK) 	03/05/14 	_s390x_
+
+14:27:44          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+14:27:45       dev8-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45      dev8-16      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45      dev8-32      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45      dev8-48      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev253-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev253-1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45      dev8-64      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45      dev8-80      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45      dev8-96      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev8-112      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev8-144      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev8-160      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev8-176      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev8-192      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev8-128      0.99      0.00      7.92      8.00      0.00      0.00      0.00      0.00
+14:27:45     dev253-2      0.99      0.00      7.92      8.00      0.00      0.00      0.00      0.00
+14:27:45     dev253-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev253-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev253-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:45     dev253-6      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+14:27:45          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+14:27:46       dev8-0      1.00      0.00    160.00    160.00      0.00      0.00      0.00      0.00
+14:27:46      dev8-16      2.00      0.00     24.00     12.00      0.00      0.00      0.00      0.00
+14:27:46      dev8-32      1.00      0.00      8.00      8.00      0.00      0.00      0.00      0.00
+14:27:46      dev8-48      1.00      0.00      8.00      8.00      0.00      0.00      0.00      0.00
+14:27:46     dev253-0      5.00      0.00    200.00     40.00      0.00      0.00      0.00      0.00
+14:27:46     dev253-1     25.00      0.00    200.00      8.00      0.00      0.00      0.00      0.00
+14:27:46      dev8-64      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46      dev8-80      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46      dev8-96      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev8-112      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev8-144      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev8-160      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev8-176      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev8-192      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev8-128      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev253-2      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev253-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev253-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev253-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:46     dev253-6      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+14:27:46          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+14:27:47       dev8-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47      dev8-16      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47      dev8-32      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47      dev8-48      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev253-0      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev253-1      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47      dev8-64      1.00     32.00      0.00     32.00      0.00      0.00      0.00      0.00
+14:27:47      dev8-80      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47      dev8-96      2.00     32.00     32.00     32.00      0.00      0.00      0.00      0.00
+14:27:47     dev8-112      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev8-144      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev8-160      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev8-176      2.00     32.00     32.00     32.00      0.00      0.00      0.00      0.00
+14:27:47     dev8-192      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev8-128      1.00     32.00      0.00     32.00      0.00      0.00      0.00      0.00
+14:27:47     dev253-2      6.00    128.00     64.00     32.00      0.00      0.00      0.00      0.00
+14:27:47     dev253-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev253-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev253-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:47     dev253-6      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+
+Average:          DEV       tps  rd_sec/s  wr_sec/s  avgrq-sz  avgqu-sz     await     svctm     %util
+Average:       dev8-0      0.33      0.00     53.16    160.00      0.00      0.00      0.00      0.00
+Average:      dev8-16      0.66      0.00      7.97     12.00      0.00      0.00      0.00      0.00
+Average:      dev8-32      0.33      0.00      2.66      8.00      0.00      0.00      0.00      0.00
+Average:      dev8-48      0.33      0.00      2.66      8.00      0.00      0.00      0.00      0.00
+Average:     dev253-0      1.66      0.00     66.45     40.00      0.00      0.00      0.00      0.00
+Average:     dev253-1      8.31      0.00     66.45      8.00      0.00      0.00      0.00      0.00
+Average:      dev8-64      0.33     10.63      0.00     32.00      0.00      0.00      0.00      0.00
+Average:      dev8-80      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:      dev8-96      0.66     10.63     10.63     32.00      0.00      0.00      0.00      0.00
+Average:     dev8-112      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-144      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-160      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-176      0.66     10.63     10.63     32.00      0.00      0.00      0.00      0.00
+Average:     dev8-192      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev8-128      0.66     10.63      2.66     20.00      0.00      0.00      0.00      0.00
+Average:     dev253-2      2.33     42.52     23.92     28.57      0.00      0.00      0.00      0.00
+Average:     dev253-3      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev253-4      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev253-5      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+Average:     dev253-6      0.00      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+cmdbegin:cpu
+Linux 3.0.76-0.11-default (LPS-CSGK) 	03/05/14 	_s390x_
+
+14:27:47        CPU     %user     %nice   %system   %iowait    %steal     %idle
+14:27:48        all      0.25      0.00      0.50      0.00      0.00     99.25
+14:27:49        all      0.75      0.00      0.75      0.00      0.00     98.50
+14:27:50        all      0.25      0.00      0.75      0.25      0.00     98.75
+Average:        all      0.42      0.00      0.67      0.08      0.00     98.83
+cmdbegin:memory
+             total       used       free     shared    buffers     cached
+Mem:      16478064    7104452    9373612          0     158848    6310028
+-/+ buffers/cache:     635576   15842488
+Swap:     33553404          0   33553404
+cmdbegin:process
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   2492   936 ?        Ss    2013   0:53 init [5]  
+root         2  0.0  0.0      0     0 ?        S     2013   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S     2013   2:48 [ksoftirqd/0]
+root         6  0.0  0.0      0     0 ?        S     2013   0:00 [migration/0]
+root         7  0.0  0.0      0     0 ?        S     2013   0:00 [migration/1]
+root         9  0.0  0.0      0     0 ?        S     2013   3:16 [ksoftirqd/1]
+root        11  0.0  0.0      0     0 ?        S     2013   0:00 [migration/2]
+root        12  0.0  0.0      0     0 ?        S     2013  16:18 [kworker/2:0]
+root        13  0.0  0.0      0     0 ?        S     2013   1:31 [ksoftirqd/2]
+root        14  0.0  0.0      0     0 ?        S     2013   0:00 [migration/3]
+root        15  0.0  0.0      0     0 ?        S     2013   4:47 [kworker/3:0]
+root        16  0.0  0.0      0     0 ?        S     2013   0:05 [ksoftirqd/3]
+root        17  0.0  0.0      0     0 ?        S<    2013   0:00 [cpuset]
+root        18  0.0  0.0      0     0 ?        S<    2013   0:00 [khelper]
+root        19  0.0  0.0      0     0 ?        S<    2013   0:00 [netns]
+root        20  0.0  0.0      0     0 ?        S     2013   0:10 [sync_supers]
+root        21  0.0  0.0      0     0 ?        S     2013   0:00 [bdi-default]
+root        22  0.0  0.0      0     0 ?        S<    2013   0:00 [kintegrityd]
+root        23  0.0  0.0      0     0 ?        S<    2013   0:00 [kblockd]
+root        24  0.0  0.0      0     0 ?        S<    2013   0:00 [md]
+root        25  0.0  0.0      0     0 ?        S<    2013   0:00 [cio]
+root        26  0.0  0.0      0     0 ?        S<    2013   0:00 [cio_chp]
+root        28  0.0  0.0      0     0 ?        S<    2013   0:00 [appldata]
+root        29  0.0  0.0      0     0 ?        S     2013   0:00 [khungtaskd]
+root        30  0.0  0.0      0     0 ?        S     2013   0:00 [kswapd0]
+root        31  0.0  0.0      0     0 ?        S     2013   0:00 [fsnotify_mark]
+root        32  0.0  0.0      0     0 ?        S<    2013   0:00 [crypto]
+root        38  0.0  0.0      0     0 ?        S<    2013   0:00 [kthrotld]
+root        39  0.0  0.0      0     0 ?        S     2013   0:00 [khvcd]
+root        40  0.0  0.0      0     0 ?        S     2013   0:00 [kmcheck]
+root       105  0.0  0.0      0     0 ?        S<    2013   0:00 [kmpath_aluad]
+root       113  0.0  0.0      0     0 ?        S<    2013   0:00 [kmpath_rdacd]
+root       200  0.0  0.0      0     0 ?        S<    2013   0:00 [zfcp_q_0.0.110c]
+root       201  0.0  0.0      0     0 ?        S     2013   0:00 [zfcperp0.0.110c]
+root       202  0.0  0.0      0     0 ?        S     2013   0:00 [scsi_eh_0]
+root       203  0.0  0.0      0     0 ?        S<    2013   0:00 [scsi_wq_0]
+root       204  0.0  0.0      0     0 ?        R     2013  16:28 [kworker/2:1]
+root       205  0.0  0.0      0     0 ?        S     2013  13:03 [kworker/1:1]
+root       206  0.0  0.0      0     0 ?        S     2013   4:39 [kworker/3:1]
+root       209  0.0  0.0      0     0 ?        S<    2013   0:00 [zfcp_q_0.0.130c]
+root       210  0.0  0.0      0     0 ?        S     2013   0:00 [zfcperp0.0.130c]
+root       211  0.0  0.0      0     0 ?        S     2013   0:00 [scsi_eh_1]
+root       212  0.0  0.0      0     0 ?        S<    2013   0:00 [scsi_wq_1]
+root       222  0.0  0.0      0     0 ?        S<    2013   0:00 [zfcp_q_0.0.140c]
+root       223  0.0  0.0      0     0 ?        S     2013   0:00 [zfcperp0.0.140c]
+root       224  0.0  0.0      0     0 ?        S     2013   0:00 [scsi_eh_2]
+root       225  0.0  0.0      0     0 ?        S<    2013   0:00 [scsi_wq_2]
+root       233  0.0  0.0      0     0 ?        S<    2013   0:00 [zfcp_q_0.0.160c]
+root       234  0.0  0.0      0     0 ?        S     2013   0:00 [zfcperp0.0.160c]
+root       235  0.0  0.0      0     0 ?        S     2013   0:00 [scsi_eh_3]
+root       236  0.0  0.0      0     0 ?        S<    2013   0:00 [scsi_wq_3]
+root       293  0.0  0.0      0     0 ?        S<    2013   0:00 [kmpathd]
+root       294  0.0  0.0      0     0 ?        S<    2013   0:00 [kmpath_handlerd]
+root       360  0.0  0.0      0     0 ?        S<    2013   0:00 [kdmflush]
+root       368  0.0  0.0      0     0 ?        S<    2013   0:00 [kdmflush]
+root       433  0.0  0.0      0     0 ?        S     2013   1:23 [flush-253:1]
+root       440  0.0  0.0      0     0 ?        S     2013   1:10 [kjournald]
+root       524  0.0  0.0   2884  1096 ?        S<s   2013   0:05 /sbin/udevd --daemon
+root       615  0.0  0.0      0     0 ?        S     2013   0:00 [kworker/u:5]
+root       648  0.0  0.0      0     0 ?        S<    2013   0:00 [qeth_wq]
+root       816  0.0  0.0      0     0 ?        S     2013   0:00 [cmmthread]
+root       830  0.0  0.0  71040  5176 ?        SLl   2013  22:49 /sbin/multipathd
+root       837  0.0  0.0      0     0 ?        S<    2013   0:00 [kdmflush]
+root       841  0.0  0.0      0     0 ?        S<    2013   0:00 [kdmflush]
+root       848  0.0  0.0      0     0 ?        S<    2013   0:00 [kdmflush]
+root       903  0.0  0.0      0     0 ?        S<    2013   0:00 [kdmflush]
+root       911  0.0  0.0      0     0 ?        S<    2013   0:00 [kdmflush]
+root      1044  0.0  0.0      0     0 ?        S     2013   0:00 [kjournald]
+100       1502  0.0  0.0   3136   940 ?        Ss    2013   0:05 /bin/dbus-daemon --system
+root      1514  0.0  0.0   3128  1276 ?        Ss    2013   0:01 /sbin/syslog-ng
+root      1517  0.0  0.0   2188   632 ?        Ss    2013   0:00 /sbin/klogd -c 7 -x
+101       1546  0.0  0.0   8352  3360 ?        Ss    2013   0:07 /usr/sbin/hald --daemon=yes
+root      1549  0.0  0.0 205612  3388 ?        Ssl   2013   0:01 /usr/sbin/console-kit-daemon
+root      1550  0.0  0.0   3980  1384 ?        S     2013   0:00 hald-runner
+root      2546  0.0  0.0  11512   688 ?        S<sl  2013   0:02 /sbin/auditd -s disable
+root      2548  0.0  0.0  10428   856 ?        S<sl  2013   0:05 /sbin/audispd
+root      2549  0.0  0.0      0     0 ?        S     2013   0:00 [kauditd]
+root      2564  0.0  0.0   6464  4556 ?        Ss    2013   0:13 /sbin/haveged -w 1024 -v 1
+root      2672  0.0  0.0   2700   700 ?        Ss    2013   0:07 /sbin/rpcbind
+root      2720  0.0  0.0   7916  1584 ?        Ss    2013   0:00 /usr/sbin/sshd -o PidFile=/var/run/sshd.init.pid
+root      2728  0.0  0.0   9220  3096 ?        Ss    2013   0:00 /usr/sbin/cupsd
+root      2768  0.0  0.0 115404  1072 ?        Ssl   2013   0:37 /usr/sbin/nscd
+root      2829  0.0  0.0   2640   768 ?        Ss    2013   0:09 /usr/sbin/cron
+root      2833  0.0  0.0   2260   696 ttyS0    Ss+   2013   0:00 /sbin/mingetty --noclear ttyS0 dumb
+root      2834  0.0  0.0   2260   696 ttyS1    Ss+   2013   0:00 /sbin/mingetty --noclear ttyS1 xterm
+root      2835  0.0  0.0   1896   324 ?        Ss    2013   0:00 /sbin/ttyrun 3270/tty1 /sbin/mingetty --noclear %t dumb
+root      2836  0.0  0.0   2052   660 hvc0     Ss+   2013   0:00 /sbin/agetty -L 9600 hvc0 linux
+root      2837  0.0  0.0   2052   664 hvc2     Ss+   2013   0:00 /sbin/agetty -L 9600 hvc2 linux
+root      2838  0.0  0.0   2052   660 hvc3     Ss+   2013   0:00 /sbin/agetty -L 9600 hvc3 linux
+root      2839  0.0  0.0   2052   660 hvc4     Ss+   2013   0:00 /sbin/agetty -L 9600 hvc4 linux
+root      2840  0.0  0.0   2052   660 hvc5     Ss+   2013   0:00 /sbin/agetty -L 9600 hvc5 linux
+root      2841  0.0  0.0   2052   664 hvc6     Ss+   2013   0:00 /sbin/agetty -L 9600 hvc6 linux
+root      2842  0.0  0.0   2052   660 hvc7     Ss+   2013   0:00 /sbin/agetty -L 9600 hvc7 linux
+root      2843  0.0  0.0   3368  1580 ?        Ss    2013   0:00 /bin/sh /etc/init.d/init.ohasd run
+grid      3199  0.0  0.0  58056 13476 ?        Ssl   2013   5:43 /opt/grid/product/11.2.0/crs/bin/tnslsnr LISTENER -inherit
+grid      3209  0.0  0.1 159568 21136 ?        Ssl   2013   3:55 /opt/grid/product/11.2.0/crs/bin/evmd.bin
+grid      3216  0.1  0.1 217652 19344 ?        Sl    2013 176:22 /opt/grid/product/11.2.0/crs/bin/cssdagent
+grid      3241  0.0  0.1 148552 22336 ?        Sl    2013   5:18 /opt/grid/product/11.2.0/crs/bin/ocssd.bin 
+grid      3264  0.0  0.0  60436 11112 ?        S     2013   0:00 /opt/grid/product/11.2.0/crs/bin/evmlogger.bin -o /opt/grid/product/11.2.0/crs/evm/log/evmlogger.info -l /opt/grid/product/11.2.0/crs/evm/log/evmlogger.log
+grid      3350  0.0  0.1 469376 18372 ?        Ss    2013  13:38 asm_pmon_+ASM
+grid      3352  0.0  0.0 467940 15352 ?        Ss    2013  12:40 asm_psp0_+ASM
+grid      3354  0.3  0.0 467940 14888 ?        Ss    2013 466:25 asm_vktm_+ASM
+grid      3358  0.0  0.1 468380 16780 ?        Ss    2013   2:46 asm_gen0_+ASM
+grid      3360  0.0  0.0 467940 14884 ?        Ss    2013   3:38 asm_diag_+ASM
+grid      3362  0.0  0.1 468452 18084 ?        Ss    2013  35:29 asm_dia0_+ASM
+grid      3364  0.0  0.0 467940 15132 ?        Ss    2013   3:00 asm_mman_+ASM
+grid      3366  0.0  0.1 471848 22212 ?        Ss    2013   2:54 asm_dbw0_+ASM
+grid      3368  0.0  0.1 470384 20020 ?        Ss    2013   3:10 asm_lgwr_+ASM
+grid      3370  0.0  0.1 467940 17020 ?        Ss    2013   4:56 asm_ckpt_+ASM
+grid      3372  0.0  0.0 467940 15148 ?        Ss    2013   2:16 asm_smon_+ASM
+grid      3374  0.0  0.1 469640 21612 ?        Ss    2013   8:44 asm_rbal_+ASM
+grid      3376  0.0  0.1 470420 19948 ?        Ss    2013  13:42 asm_gmon_+ASM
+grid      3378  0.0  0.1 467940 16648 ?        Ss    2013  11:18 asm_mmon_+ASM
+grid      3380  0.0  0.1 467940 25200 ?        Ss    2013  10:23 asm_mmnl_+ASM
+oracle    3447  0.0  1.8 8394700 305560 ?      Ss    2013  15:44 ora_pmon_ORCL
+oracle    3449  0.0  0.1 8393288 17232 ?       Ss    2013  13:02 ora_psp0_ORCL
+oracle    3451  0.3  0.1 8393288 16664 ?       Ss    2013 465:12 ora_vktm_ORCL
+oracle    3455  0.0  0.1 8393628 18480 ?       Ss    2013   2:54 ora_gen0_ORCL
+oracle    3457  0.0  0.1 8393288 16700 ?       Ss    2013   3:25 ora_diag_ORCL
+oracle    3459  0.0  0.3 8394924 52492 ?       Ss    2013   3:52 ora_dbrm_ORCL
+oracle    3461  0.0  0.1 8394824 28040 ?       Ss    2013 107:22 ora_dia0_ORCL
+oracle    3463  0.0  0.9 8393288 156852 ?      Ss    2013   3:15 ora_mman_ORCL
+oracle    3465  0.0 23.3 8402472 3848748 ?     Ss    2013   6:01 ora_dbw0_ORCL
+oracle    3467  0.0  0.2 8417012 34396 ?       Ss    2013   4:28 ora_lgwr_ORCL
+oracle    3469  0.0  0.5 8396540 94484 ?       Ss    2013  28:03 ora_ckpt_ORCL
+oracle    3471  0.0  3.2 8398008 538924 ?      Ss    2013   6:06 ora_smon_ORCL
+oracle    3473  0.0  0.2 8394824 45428 ?       Ss    2013   0:54 ora_reco_ORCL
+oracle    3475  0.0  0.1 8393876 19428 ?       Ss    2013   3:27 ora_rbal_ORCL
+oracle    3477  0.0  0.1 8394168 30392 ?       Ss    2013   2:18 ora_asmb_ORCL
+oracle    3479  0.0  1.3 8398736 230280 ?      Ss    2013  26:01 ora_mmon_ORCL
+oracle    3481  0.0  0.2 8394512 44312 ?       Ss    2013  37:46 ora_mmnl_ORCL
+grid      3483  0.0  0.1 468892 19768 ?        Ss    2013   7:18 oracle+ASM_asmb_orcl (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+oracle    3485  0.0  0.1 8394456 16528 ?       Ss    2013   1:29 ora_d000_ORCL
+oracle    3487  0.0  0.0 8393432 15336 ?       Ss    2013   1:22 ora_s000_ORCL
+oracle    3489  0.0  0.1 8401016 24456 ?       Ss    2013   4:13 ora_mark_ORCL
+oracle    3534  0.0  0.3 8442240 54744 ?       Ss    2013   1:11 ora_arc0_ORCL
+oracle    3536  0.0  0.3 8442240 54788 ?       Ss    2013   1:07 ora_arc1_ORCL
+oracle    3538  0.0  0.2 8425848 48952 ?       Ss    2013   2:25 ora_arc2_ORCL
+oracle    3540  0.0  0.3 8442232 54276 ?       Ss    2013   1:08 ora_arc3_ORCL
+oracle    3544  0.0  0.1 8393288 18916 ?       Ss    2013   1:12 ora_qmnc_ORCL
+oracle    3606  0.0  1.0 8404108 174716 ?      Ss    2013  24:45 ora_cjq0_ORCL
+oracle    3676  0.0  0.2 8397920 47960 ?       Ss    2013   1:22 ora_q000_ORCL
+oracle    3678  0.0  0.1 8393284 20064 ?       Ss    2013   0:56 ora_q001_ORCL
+oracle    4170  0.0  0.1 8393288 17464 ?       Ss    2013   4:24 ora_smco_ORCL
+oracle   15334  0.0  0.1 8393644 18960 ?       Ss   Feb26   3:57 ora_o000_ORCL
+grid     15336  0.0  0.1 469216 20892 ?        Ss   Feb26   0:08 oracle+ASM_o000_orcl (DESCRIPTION=(LOCAL=YES)(ADDRESS=(PROTOCOL=beq)))
+root     25013  0.0  0.1  33172 20204 ?        S     2013   0:02 Xvnc :3 -desktop X -httpd /usr/share/vnc/classes -auth /root/.Xauthority -geometry 1024x768 -depth 24 -rfbwait 120000 -rfbauth /root/.vnc/passwd -rfbport 5903 -fp /usr/share/fonts/misc:unscaled,/usr/share/fonts/local,/usr/share/fonts/75dpi:unscaled,/usr/share/fonts/100dpi:unscaled,/usr/share/fonts/Type1,/usr/share/fonts/URW,/usr/share/fonts/Speedo,/usr/share/fonts/truetype,/usr/share/fonts/uni,/usr/share/fonts/CID -noreset
+root     25020  0.0  0.0  12352  8136 ?        S     2013   0:00 xterm -geometry 80x24+10+10 -ls -title X Desktop
+root     25021  0.0  0.0   6112  3172 ?        S     2013   0:00 twm
+root     25025  0.0  0.0   4788  2892 pts/2    Ss    2013   0:00 -bash
+root     25037  0.0  0.0      0     0 ?        S     2013   0:00 [kworker/u:1]
+root     25146  0.0  0.0   3784  1772 pts/2    S+    2013   0:00 /bin/bash /sbin/yast2
+root     25179  0.0  0.1  80448 17836 pts/2    S+    2013   2:44 /usr/lib/YaST2/bin/y2controlcenter-gnome
+root     25183  0.0  0.0   4008   608 pts/2    S+    2013   0:00 dbus-launch --autolaunch 742bdae1c1d419ee50696d5b52847737 --binary-syntax --close-stderr
+root     25184  0.0  0.0   3288   856 ?        Ss    2013   0:00 /bin/dbus-daemon --fork --print-pid 5 --print-address 7 --session
+root     25186  0.0  0.0   7812  5020 ?        S     2013   0:17 /usr/lib/GConf/2/gconfd-2
+root     25199  0.0  0.0  18024  4936 pts/2    S+    2013   0:00 gnomesu -- /sbin/yast2 host
+root     25200  0.0  0.0   4984  1684 pts/2    S+    2013   1:40 /usr/lib/libgnomesu/gnomesu-pam-backend 6 5 root /sbin/yast2 host
+root     25207  0.0  0.0   3784  1772 pts/2    S+    2013   0:00 /bin/bash /sbin/yast2 host
+root     25239  0.0  0.2 150808 44436 pts/2    Sl+   2013   0:00 /usr/lib/YaST2/bin/y2base host qt
+root     26555  0.0  0.0   3168  1424 ?        S<    2013   0:35 /sbin/udevd --daemon
+root     26584  0.0  0.0   2724  1012 ?        S<    2013   0:00 /sbin/udevd --daemon
+root     35869  0.0  0.0      0     0 ?        S    Feb06   3:48 [kworker/1:0]
+root     39843  0.0  0.0      0     0 ?        S    Jan27  15:16 [kworker/0:2]
+root     47476  0.0  0.0      0     0 ?        S    Feb26   3:04 [kworker/0:0]
+root     56730  0.0  0.0  11436  3956 ?        Ss   13:14   0:00 sshd: root@pts/0                                   
+root     56738  0.0  0.0   5572  2552 pts/0    Ss   13:14   0:00 -bash
+oracle   59765  0.0  0.1 8393284 21700 ?       Ss   14:24   0:00 ora_w000_ORCL
+root     59902  0.0  0.0   3652  1620 pts/0    S+   14:27   0:00 sh collection.sh
+oracle   59915  0.5  0.1 8394860 29708 ?       Ss   14:27   0:00 ora_j000_ORCL
+oracle   59917  0.0  0.0 8393284 16228 ?       Ss   14:27   0:00 ora_j001_ORCL
+root     59920  0.0  0.0   2996  1048 pts/0    R+   14:27   0:00 ps -aux
+cmdbegin:mac
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 brd 127.255.255.255 scope host lo
+    inet 127.0.0.2/8 brd 127.255.255.255 scope host secondary lo
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1492 qdisc pfifo_fast state UNKNOWN qlen 1000
+    link/ether 02:00:00:00:00:27 brd ff:ff:ff:ff:ff:ff
+    inet 10.161.241.67/24 brd 10.161.241.255 scope global eth0
+    inet6 fe80::200:0:100:27/64 scope link 
+       valid_lft forever preferred_lft forever
+cmdbegin:interface
+Linux 3.0.76-0.11-default (LPS-CSGK) 	03/05/14 	_s390x_
+
+14:27:50        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+14:27:51           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:51         eth0      2.02      0.00      0.12      0.00      0.00      0.00      1.01
+
+14:27:51        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+14:27:52           lo      4.00      4.00      0.23      0.23      0.00      0.00      0.00
+14:27:52         eth0      2.00      0.00      0.06      0.00      0.00      0.00      2.00
+
+14:27:52        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+14:27:53           lo      0.00      0.00      0.00      0.00      0.00      0.00      0.00
+14:27:53         eth0      1.00      0.00      0.08      0.00      0.00      0.00      1.00
+
+Average:        IFACE   rxpck/s   txpck/s    rxkB/s    txkB/s   rxcmp/s   txcmp/s  rxmcst/s
+Average:           lo      1.34      1.34      0.08      0.08      0.00      0.00      0.00
+Average:         eth0      1.67      0.00      0.08      0.00      0.00      0.00      1.34
+cmdbegin:uname
+Linux LPS-CSGK
+cmdbegin:usergroup
+root:x:0:
+bin:x:1:daemon
+daemon:x:2:
+sys:x:3:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+www:x:8:
+kmem:x:9:
+wheel:x:10:
+mail:x:12:
+news:x:13:
+uucp:x:14:
+shadow:x:15:
+dialout:x:16:grid
+audio:x:17:pulse
+floppy:x:19:
+cdrom:x:20:
+console:x:21:
+utmp:x:22:
+public:x:32:
+video:x:33:grid
+games:x:40:
+xok:x:41:
+trusted:x:42:
+modem:x:43:
+ftp:x:49:
+man:x:62:
+users:x:100:
+nobody:x:65533:
+nogroup:x:65534:nobody
+messagebus:!:101:
+haldaemon:!:102:
+sshd:!:65:
+tape:!:103:
+uuidd:!:104:
+puppet:!:105:
+at:!:25:
+postfix:!:51:
+maildrop:!:59:
+ntadmin:!:71:
+polkituser:!:106:
+ntp:!:107:
+pulse:!:108:
+pulse-access:!:109:
+ts-shell:!:110:
+suse-ncc:!:111:
+winbind:!:112:
+gdm:!:113:
+oinstall:!:1000:
+dba:!:1001:oracle
+cmdbegin:user
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/bin/bash
+daemon:x:2:2:Daemon:/sbin:/bin/bash
+lp:x:4:7:Printing daemon:/var/spool/lpd:/bin/bash
+mail:x:8:12:Mailer daemon:/var/spool/clientmqueue:/bin/false
+games:x:12:100:Games account:/var/games:/bin/bash
+wwwrun:x:30:8:WWW daemon apache:/var/lib/wwwrun:/bin/false
+ftp:x:40:49:FTP account:/srv/ftp:/bin/bash
+nobody:x:65534:65533:nobody:/var/lib/nobody:/bin/bash
+messagebus:*:100:101:User for D-Bus:/var/run/dbus:/bin/false
+haldaemon:*:101:102:User for haldaemon:/var/run/hald:/bin/false
+sshd:*:71:65:SSH daemon:/var/lib/sshd:/bin/false
+man:x:13:62:Manual pages viewer:/var/cache/man:/bin/bash
+news:x:9:13:News system:/etc/news:/bin/bash
+uucp:x:10:14:Unix-to-Unix CoPy system:/etc/uucp:/bin/bash
+uuidd:x:102:104:User for uuidd:/var/run/uuidd:/bin/false
+puppet:x:103:105:Puppet daemon:/var/lib/puppet:/bin/false
+at:x:25:25:Batch jobs daemon:/var/spool/atjobs:/bin/bash
+postfix:x:51:51:Postfix Daemon:/var/spool/postfix:/bin/false
+polkituser:x:104:106:PolicyKit:/var/run/PolicyKit:/bin/false
+ntp:x:74:107:NTP daemon:/var/lib/ntp:/bin/false
+pulse:x:105:108:PulseAudio daemon:/var/lib/pulseaudio:/bin/false
+suse-ncc:x:106:111:Novell Customer Center User:/var/lib/YaST2/suse-ncc-fakehome:/bin/bash
+gdm:x:107:113:Gnome Display Manager daemon:/var/lib/gdm:/bin/false
+grid:x:1000:1000::/home/grid:/bin/bash
+oracle:x:1001:1000::/home/oracle:/bin/bash
+cmdbegin:date
+Wed Mar  5 14:27:53 CST 2014
+cmdbegin:uptime
+ 14:27pm  up 94 days 18:16,  2 users,  load average: 0.00, 0.03, 0.05
+cmdbegin:service
+SuSEfirewall2_init        0:off  1:off  2:off  3:off  4:off  5:off  6:off
+SuSEfirewall2_setup       0:off  1:off  2:off  3:off  4:off  5:off  6:off
+aaeventd                  0:off  1:off  2:off  3:off  4:off  5:off  6:off
+alsasound                 0:off  1:off  2:on   3:on   4:off  5:on   6:off
+appldata                  0:off  1:off  2:off  3:off  4:off  5:off  6:off
+arpd                      0:off  1:off  2:off  3:off  4:off  5:off  6:off
+atd                       0:off  1:off  2:off  3:off  4:off  5:off  6:off
+auditd                    0:off  1:off  2:off  3:on   4:off  5:on   6:off
+autofs                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+autoyast                  0:off  1:off  2:off  3:off  4:off  5:off  6:off
+cpuplugd                  0:off  1:off  2:off  3:off  4:off  5:off  6:off
+cron                      0:off  1:off  2:on   3:on   4:off  5:on   6:off
+cups                      0:off  1:off  2:on   3:on   4:off  5:on   6:off
+dbus                      0:off  1:off  2:on   3:on   4:off  5:on   6:off
+dumpconf                  0:off  1:off  2:off  3:off  4:off  5:off  6:off
+earlysyslog               0:off  1:off  2:on   3:on   4:off  5:on   6:off
+fbset                     0:off  1:off  2:off  3:off  4:off  5:off  6:off
+gpm                       0:off  1:off  2:off  3:off  4:off  5:off  6:off
+haldaemon                 0:off  1:off  2:on   3:on   4:off  5:on   6:off
+haveged                   0:off  1:off  2:on   3:on   4:off  5:on   6:off
+hsnc                      0:off  1:off  2:off  3:off  4:off  5:off  6:off
+init.ohasd                0:off  1:off  2:off  3:off  4:off  5:off  6:off
+inputattach               0:off  1:off  2:off  3:off  4:off  5:off  6:off
+ipmi                      0:off  1:off  2:off  3:off  4:off  5:off  6:off
+ipmievd                   0:off  1:off  2:off  3:off  4:off  5:off  6:off
+irq_balancer              0:off  1:on   2:on   3:on   4:off  5:on   6:off
+ivman                     0:off  1:off  2:off  3:off  4:off  5:off  6:off
+java.binfmt_misc          0:off  1:off  2:off  3:on   4:off  5:on   6:off
+joystick                  0:off  1:off  2:off  3:off  4:off  5:off  6:off
+kexec                     0:off  1:off  2:off  3:off  4:off  5:off  6:off
+lvm_wait_merge_snapshot   0:off  1:on   2:off  3:off  4:off  5:off  6:off  S:on 
+mdadmd                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+mon_statd                 0:off  1:off  2:off  3:off  4:off  5:off  6:off
+multipathd                0:off  1:off  2:off  3:on   4:off  5:on   6:off
+network                   0:off  1:off  2:on   3:on   4:off  5:on   6:off
+network-remotefs          0:off  1:off  2:off  3:off  4:off  5:off  6:off
+nfs                       0:off  1:off  2:off  3:on   4:off  5:on   6:off
+nfsserver                 0:off  1:off  2:off  3:off  4:off  5:off  6:off
+nmb                       0:off  1:off  2:off  3:off  4:off  5:off  6:off
+nscd                      0:off  1:off  2:off  3:on   4:off  5:on   6:off
+ntp                       0:off  1:off  2:off  3:off  4:off  5:off  6:off
+ohasd                     0:off  1:off  2:off  3:on   4:off  5:on   6:off
+openct                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+pcscd                     0:off  1:off  2:off  3:off  4:off  5:off  6:off
+pm-profiler               0:off  1:off  2:off  3:off  4:off  5:off  6:off
+postfix                   0:off  1:off  2:off  3:off  4:off  5:off  6:off
+puppet                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+pure-ftpd                 0:off  1:off  2:off  3:off  4:off  5:off  6:off
+purge-kernels             0:off  1:off  2:off  3:on   4:off  5:on   6:off
+random                    0:off  1:off  2:on   3:on   4:off  5:on   6:off
+raw                       0:off  1:off  2:off  3:off  4:off  5:off  6:off
+rpasswdd                  0:off  1:off  2:off  3:off  4:off  5:off  6:off
+rpcbind                   0:off  1:off  2:off  3:on   4:off  5:on   6:off
+rpmconfigcheck            0:off  1:off  2:off  3:off  4:off  5:off  6:off
+rsyncd                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+saslauthd                 0:off  1:off  2:off  3:off  4:off  5:off  6:off
+skeleton.compat           0:off  1:off  2:off  3:off  4:off  5:off  6:off
+slpd                      0:off  1:off  2:off  3:off  4:off  5:off  6:off
+smartd                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+smb                       0:off  1:off  2:off  3:off  4:off  5:off  6:off
+smbfs                     0:off  1:off  2:off  3:on   4:off  5:on   6:off
+splash                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+splash_early              0:off  1:off  2:off  3:off  4:off  5:off  6:off
+sshd                      0:off  1:off  2:off  3:on   4:off  5:on   6:off
+syslog                    0:off  1:off  2:on   3:on   4:off  5:on   6:off
+uuidd                     0:off  1:off  2:off  3:off  4:off  5:off  6:off
+vmlogrdr                  0:off  1:off  2:off  3:off  4:off  5:off  6:off
+winbind                   0:off  1:off  2:off  3:off  4:off  5:off  6:off
+xdm                       0:off  1:off  2:off  3:off  4:off  5:on   6:off
+xfs                       0:off  1:off  2:off  3:off  4:off  5:off  6:off
+xinetd                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+xpram                     0:off  1:off  2:off  3:off  4:off  5:off  6:off
+ypbind                    0:off  1:off  2:off  3:off  4:off  5:off  6:off
+xinetd based services:
+        chargen:            off
+        chargen-udp:        off
+        cups-lpd:           off
+        cvs:                off
+        daytime:            off
+        daytime-udp:        off
+        discard:            off
+        discard-udp:        off
+        echo:               off
+        echo-udp:           off
+        netstat:            off
+        pure-ftpd:          off
+        rsync:              off
+        servers:            off
+        services:           off
+        swat:               off
+        systat:             off
+        tftp:               off
+        time:               off
+        time-udp:           off
+        vnc:                on
+cmdbegin:end

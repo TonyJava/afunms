@@ -1,0 +1,2105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataResult label="root">
+	<jflocality jfid="001"   jfname="2222222"   jfaddress="xxxx"   jfarea="xxxx"   jfcode="00101"   jfgrade="xxxx"   jfheight="xxxx"   jftype="xxxx"  jfwidth="xxxx"  rowcount="8"  colcount="17" >
+		
+		<!--第一列第一个机架具体位置-90-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="00101" jgname="c1-1" jgno="123" jgrowno="1" jgstatus="3" jgucount="42" jgx="-242" jgy="-22" jgz="210" maxA="120" maxV="380">
+	  		<!--第3个设备-->
+			<sbargument icon="huawei-server" jgid="00101" sbalarm="1" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010103" sbip="192.168.1.3" sbitype="AIX设备" sbname="zhengjie-server" sbno="sb3" sbstartuw="20" sbuw="2" type="3"/>
+	  		<!--第4个设备-->
+			<sbargument icon="defaultHead" jgid="00101" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010104" sbip="192.168.1.4" sbitype="AIX设备" sbname="dell-net" sbno="sb4" sbstartuw="35" sbuw="2" type="4"/>
+		</jglocality>
+		
+		<!--第一列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="00102" jgname="c2-2" jgno="234" jgrowno="1" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="00102"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010201" sbip="192.168.1.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="00103"  jgname="c3-3" jgno="345" jgrowno="1" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="00103" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010301" sbip="192.168.1.6" sbitype="AIX设备" sbname="huawei-server" sbno="sb1" sbstartuw="35" sbuw="2" type="2"/>
+			<!--第2个设备-->
+			<sbargument icon="huawei-server"  jgid="00103" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010302" sbip="192.168.1.7" sbitype="AIX设备" sbname="hp-net" sbno="sb2" sbstartuw="30" sbuw="2" type="2"/>
+			<!--第3个设备-->
+			<sbargument icon="defaultHead"  jgid="00103" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010303" sbip="192.168.1.8" sbitype="AIX设备" sbname="huawei-server" sbno="sb4" sbstartuw="20" sbuw="2" type="1"/>
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="00103" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010304" sbip="192.168.1.9" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="10" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第一列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="00104" jgname="c4-4" jgno="456" jgrowno="1" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="00104" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010401" sbip="192.168.1.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="00105" jgname="c5-5" jgno="567" jgrowno="1" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="00105" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010501" sbip="192.168.1.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="00106" jgname="c6-6" jgno="678" jgrowno="1" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="00106" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010601" sbip="192.168.1.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="00107" jgname="c7-7" jgno="789" jgrowno="1" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="00107" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010701" sbip="192.168.1.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="00108" jgname="c8-8" jgno="890" jgrowno="1" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="00108" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010801" sbip="192.168.1.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="00109" jgname="c9-9" jgno="910" jgrowno="1" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="00109" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010901" sbip="192.168.1.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="001010" jgname="c10-10" jgno="1011" jgrowno="1" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001010" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101001" sbip="192.168.1.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="001011" jgname="c11-11" jgno="1112" jgrowno="1" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001011" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101101" sbip="192.168.1.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="001012" jgname="c12-12" jgno="1213" jgrowno="1" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001012" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101201" sbip="192.168.1.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="001013" jgname="c13-13" jgno="1314" jgrowno="1" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001013" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101301" sbip="192.168.1.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="001014" jgname="c14-14" jgno="1415" jgrowno="1" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001014" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101401" sbip="192.168.1.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="001015" jgname="c15-15" jgno="1516" jgrowno="1" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001015" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101501" sbip="192.168.1.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="001016" jgname="c16-16" jgno="1617" jgrowno="1" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001016" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101601" sbip="192.168.1.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="001017" jgname="c17-17" jgno="1718" jgrowno="1" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001017" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101701" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="001018" jgname="c18-18" jgno="1819" jgrowno="1" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001018" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101801" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="001019" jgname="c19-19" jgno="1920" jgrowno="1" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001019" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00101901" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="001020" jgname="c20-20" jgno="2021" jgrowno="1" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001020" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102001" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="001021" jgname="c21-21" jgno="2122" jgrowno="1" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001021" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102101" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第一列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="001022" jgname="c22-22" jgno="2223" jgrowno="1" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001022" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102201" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="001023" jgname="c23-23" jgno="2324" jgrowno="1" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001023" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102301" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="001024" jgname="c24-24" jgno="2425" jgrowno="1" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001024" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102401" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="001025" jgname="c25-25" jgno="2526" jgrowno="1" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001025" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102501" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="001026" jgname="c26-26" jgno="2627" jgrowno="1" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001026" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102601" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="001027" jgname="c27-27" jgno="2728" jgrowno="1" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001027" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102701" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="001028" jgname="c28-28" jgno="2829" jgrowno="1" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001028" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102801" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="001029" jgname="c29-29" jgno="2930" jgrowno="1" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001029" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00102901" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="001030" jgname="c30-30" jgno="3031" jgrowno="1" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001030" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103001" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第一列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="001031" jgname="c31-31" jgno="3132" jgrowno="1" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="210" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001031" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103101" sbip="192.168.1.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第一个机架具体位置-90-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="001032" jgname="c32-32" jgno="3233" jgrowno="2" jgstatus="3" jgucount="42" jgx="-242" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001032" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103201" sbip="192.168.2.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第二列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="001033" jgname="c33-33" jgno="3334" jgrowno="2" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="001033"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103301" sbip="192.168.2.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第二列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="001034"  jgname="c34-34" jgno="3435" jgrowno="2" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="001034" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103401" sbip="192.168.2.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第二列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="001035" jgname="c35-35" jgno="3536" jgrowno="2" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001035" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103501" sbip="192.168.2.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="001036" jgname="c36-36" jgno="3637" jgrowno="2" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001036" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103601" sbip="192.168.2.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="001037" jgname="c37-37" jgno="3738" jgrowno="2" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001037" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103701" sbip="192.168.2.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="001038" jgname="c38-38" jgno="3839" jgrowno="2" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001038" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103801" sbip="192.168.2.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="001039" jgname="c39-39" jgno="3940" jgrowno="2" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001039" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103901" sbip="192.168.2.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="001040" jgname="c40-40" jgno="4041" jgrowno="2" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001040" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104001" sbip="192.168.2.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="001041" jgname="c41-41" jgno="4142" jgrowno="2" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001041" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104101" sbip="192.168.2.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="001042" jgname="c42-42" jgno="4243" jgrowno="2" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001042" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104201" sbip="192.168.2.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="001043" jgname="c43-43" jgno="4344" jgrowno="2" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001043" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104301" sbip="192.168.2.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="001044" jgname="c44-44" jgno="4445" jgrowno="2" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001044" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104401" sbip="192.168.2.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="001045" jgname="c45-45" jgno="4546" jgrowno="2" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001045" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104501" sbip="192.168.2.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="001046" jgname="c46-46" jgno="4647" jgrowno="2" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001046" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104601" sbip="192.168.2.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="001047" jgname="c47-47" jgno="4748" jgrowno="2" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001047" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104701" sbip="192.168.2.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="001048" jgname="c48-48" jgno="4849" jgrowno="2" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001048" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104801" sbip="192.168.2.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="001049" jgname="c49-49" jgno="4950" jgrowno="2" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001049" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104901" sbip="192.168.2.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="001050" jgname="c50-50" jgno="5051" jgrowno="2" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001050" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105001" sbip="192.168.2.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="001051" jgname="c51-51" jgno="5152" jgrowno="2" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001051" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105101" sbip="192.168.2.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="001052" jgname="c52-52" jgno="5253" jgrowno="2" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001052" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105201" sbip="192.168.2.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第二列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="001053" jgname="c53-53" jgno="5354" jgrowno="2" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001053" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105301" sbip="192.168.2.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="001054" jgname="c54-54" jgno="5455" jgrowno="2" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001054" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105401" sbip="192.168.2.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="001055" jgname="c55-55" jgno="5556" jgrowno="2" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001055" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105501" sbip="192.168.2.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="001056" jgname="c56-56" jgno="5657" jgrowno="2" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001056" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105601" sbip="192.168.2.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="001057" jgname="c57-57" jgno="5758" jgrowno="2" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001057" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105701" sbip="192.168.1.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="001058" jgname="c58-58" jgno="5859" jgrowno="2" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001058" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010275801" sbip="192.168.2.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="001059" jgname="c59-59" jgno="5960" jgrowno="2" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001059" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00105901" sbip="192.168.2.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="001060" jgname="c60-60" jgno="6061" jgrowno="2" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001060" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106001" sbip="192.168.2.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="001061" jgname="c61-61" jgno="6162" jgrowno="2" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001061" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00103001" sbip="192.168.2.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第二列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="001062" jgname="c62-62" jgno="6263" jgrowno="2" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="178" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001062" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106201" sbip="192.168.2.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第一个机架具体位置-90-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="001063" jgname="c63-63" jgno="6364" jgrowno="3" jgstatus="3" jgucount="42" jgx="-242" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001063" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106301" sbip="192.168.3.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第三列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="001064" jgname="c64-64" jgno="6465" jgrowno="3" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="001064"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106401" sbip="192.168.3.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第三列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="001065"  jgname="c65-65" jgno="6566" jgrowno="3" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="001065" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106501" sbip="192.168.2.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第三列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="001066" jgname="c66-66" jgno="6667" jgrowno="3" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001066" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106601" sbip="192.168.3.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="001067" jgname="c67-67" jgno="6768" jgrowno="3" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001067" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106701" sbip="192.168.3.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="001068" jgname="c68-68" jgno="6869" jgrowno="3" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001068" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106801" sbip="192.168.3.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="001069" jgname="c69-69" jgno="6970" jgrowno="3" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001069" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00106901" sbip="192.168.3.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="001070" jgname="c70-70" jgno="7071" jgrowno="3" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001070" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107001" sbip="192.168.3.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="001071" jgname="c71-71" jgno="7172" jgrowno="3" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001071" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107101" sbip="192.168.3.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="001072" jgname="c72-72" jgno="7273" jgrowno="3" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001072" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107201" sbip="192.168.3.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="001073" jgname="c73-73" jgno="7374" jgrowno="3" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001073" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107301" sbip="192.168.3.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="001074" jgname="c74-74" jgno="7475" jgrowno="3" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001074" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107401" sbip="192.168.3.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="001075" jgname="c75-75" jgno="7576" jgrowno="3" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001075" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107501" sbip="192.168.3.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="001076" jgname="c76-76" jgno="7677" jgrowno="3" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001076" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00104501" sbip="192.168.3.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="001077" jgname="c77-77" jgno="7778" jgrowno="3" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001077" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107701" sbip="192.168.3.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="001078" jgname="c78-78" jgno="7879" jgrowno="3" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001078" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107801" sbip="192.168.3.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="001079" jgname="c79-79" jgno="7980" jgrowno="3" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001079" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00107901" sbip="192.168.3.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="001080" jgname="c80-80" jgno="8081" jgrowno="3" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001080" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108001" sbip="192.168.3.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="001081" jgname="c81-81" jgno="8182" jgrowno="3" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001081" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108101" sbip="192.168.3.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="001082" jgname="c82-82" jgno="8283" jgrowno="3" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001082" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108201" sbip="192.168.3.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="001083" jgname="c83-83" jgno="8384" jgrowno="3" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001083" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108301" sbip="192.168.3.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第三列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="001084" jgname="c84-84" jgno="8485" jgrowno="3" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001084" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108401" sbip="192.168.3.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="001085" jgname="c85-85" jgno="8586" jgrowno="3" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001085" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108501" sbip="192.168.3.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="001086" jgname="c86-86" jgno="8687" jgrowno="3" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001086" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108601" sbip="192.168.3.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="001087" jgname="c87-87" jgno="8788" jgrowno="3" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001087" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108701" sbip="192.168.3.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="001088" jgname="c88-88" jgno="8889" jgrowno="3" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001088" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108801" sbip="192.168.3.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="001089" jgname="c89-89" jgno="8990" jgrowno="3" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001089" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108901" sbip="192.168.3.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="001090" jgname="c90-90" jgno="9091" jgrowno="3" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001090" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109001" sbip="192.168.3.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="001091" jgname="c91-91" jgno="9192" jgrowno="3" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001091" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109101" sbip="192.168.3.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="001092" jgname="c92-92" jgno="9293" jgrowno="3" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001092" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109201" sbip="192.168.3.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第三列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="001093" jgname="c93-93" jgno="9394" jgrowno="3" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="146" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001093" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109301" sbip="192.168.3.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第一个机架具体位置-90-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="001094" jgname="c94-94" jgno="9495" jgrowno="4" jgstatus="3" jgucount="42" jgx="-242" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001094" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109401" sbip="192.168.4.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第四列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="001095" jgname="c95-95" jgno="9596" jgrowno="4" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="001095"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109501" sbip="192.168.4.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第四列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="001096"  jgname="c96-96" jgno="9697" jgrowno="4" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="001096" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109601" sbip="192.168.4.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第四列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="001097" jgname="c97-97" jgno="9798" jgrowno="4" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001097" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109701" sbip="192.168.4.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="001098" jgname="c98-98" jgno="9899" jgrowno="4" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001098" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109801" sbip="192.168.4.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="001099" jgname="c99-99" jgno="99100" jgrowno="4" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="001099" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00109901" sbip="192.168.4.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="0010100" jgname="c100-100" jgno="100101" jgrowno="4" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010100" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010001" sbip="192.168.4.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="0010101" jgname="c101-101" jgno="101102" jgrowno="4" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010101" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010101" sbip="192.168.4.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="0010102" jgname="c102-102" jgno="102103" jgrowno="4" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010102" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010201" sbip="192.168.4.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="00101103" jgname="c103-103" jgno="103104" jgrowno="4" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="00101103" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010401" sbip="192.168.4.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="0010104" jgname="c104-104" jgno="104105" jgrowno="4" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010104" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010401" sbip="192.168.4.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="0010105" jgname="c105-105" jgno="105" jgrowno="4" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010105" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010501" sbip="192.168.4.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="0010106" jgname="c106-106" jgno="106" jgrowno="4" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010106" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010601" sbip="192.168.4.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="0010107" jgname="c107-107" jgno="107" jgrowno="4" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010107" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010701" sbip="192.168.4.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="0010108" jgname="c108-108" jgno="108" jgrowno="4" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010108" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010801" sbip="192.168.4.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="0010109" jgname="c109-109" jgno="7879" jgrowno="4" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010109" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001010901" sbip="192.168.4.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="0010110" jgname="c110-110" jgno="110" jgrowno="4" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010110" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011001" sbip="192.168.4.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="0010111" jgname="c111-111" jgno="111" jgrowno="4" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010111" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="00108001" sbip="192.168.4.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="0010112" jgname="c112-112" jgno="112" jgrowno="4" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010112" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011201" sbip="192.168.4.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="0010113" jgname="c113-113" jgno="113" jgrowno="4" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010113" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011301" sbip="192.168.4.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="0010114" jgname="c114-114" jgno="114" jgrowno="4" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010114" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011401" sbip="192.168.4.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第四列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="0010115" jgname="c115-115" jgno="115" jgrowno="4" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010115" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011501" sbip="192.168.4.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="0010116" jgname="c116-116" jgno="116" jgrowno="4" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010116" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011401" sbip="192.168.4.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="0010117" jgname="c117-117" jgno="117" jgrowno="4" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010117" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011701" sbip="192.168.4.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="0010118" jgname="c118-118" jgno="118" jgrowno="4" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010118" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011801" sbip="192.168.4.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="0010119" jgname="c119-119" jgno="119" jgrowno="4" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010119" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001011901" sbip="192.168.4.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="0010120" jgname="c120-120" jgno="120" jgrowno="4" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010120" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012001" sbip="192.168.4.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="0010121" jgname="c121-121" jgno="121" jgrowno="4" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010121" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012101" sbip="192.168.4.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="0010122" jgname="c122-122" jgno="122" jgrowno="4" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010122" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012201" sbip="192.168.4.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="0010123" jgname="c123-123" jgno="123" jgrowno="4" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010123" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012301" sbip="192.168.4.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="30" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第四列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="0010124" jgname="c124-124" jgno="124" jgrowno="4" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="114" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012401" sbip="192.168.4.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="2" sbuw="1" type="1"/>
+			
+			<!--第2个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012402" sbip="192.168.4.32" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="6" sbuw="1" type="1"/>
+			
+			<!--第3个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012403" sbip="192.168.4.33" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="10" sbuw="1" type="1"/>
+			
+			<!--第4个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012404" sbip="192.168.4.34" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="14" sbuw="1" type="1"/>
+			
+			<!--第5个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012405" sbip="192.168.4.35" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="1" type="1"/>
+			
+			<!--第6个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012406" sbip="192.168.4.36" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="22" sbuw="1" type="1"/>
+			
+			<!--第7个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012407" sbip="192.168.4.37" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="26" sbuw="1" type="1"/>
+			
+			<!--第8个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012408" sbip="192.168.4.38" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="30" sbuw="1" type="1"/>
+			
+			<!--第9个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012409" sbip="192.168.4.39" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="34" sbuw="1" type="1"/>
+			
+			<!--第10个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010124010" sbip="192.168.4.40" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="38" sbuw="1" type="1"/>
+			
+			<!--第11个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010124011" sbip="192.168.4.41" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="1" type="1"/>
+			
+			<!--第12个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010124011" sbip="192.168.4.41" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="42" sbuw="1" type="1"/>
+			
+			<!--第13个设备-->
+			<sbargument icon="defaultHead" jgid="0010124" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="0010124011" sbip="192.168.4.41" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="44" sbuw="3" type="1"/>
+			
+		</jglocality> 
+		
+		
+		<!--第五列第一个机架具体位置-90-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="0010125" jgname="c125-125" jgno="125" jgrowno="5" jgstatus="2" jgucount="42" jgx="-242" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010125" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012501" sbip="192.168.5.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第五列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="0010126" jgname="c126-126" jgno="126" jgrowno="5" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="0010126"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012601" sbip="192.168.5.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第五列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="0010127"  jgname="c127-127" jgno="127" jgrowno="5" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="0010127" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012701" sbip="192.168.5.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第五列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="0010128" jgname="c128-128" jgno="128" jgrowno="5" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010128" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012801" sbip="192.168.5.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="0010129" jgname="c129-129" jgno="129" jgrowno="5" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010129" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001012901" sbip="192.168.5.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="0010130" jgname="c130-130" jgno="130" jgrowno="5" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010130" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013001" sbip="192.168.5.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="0010131" jgname="c131-131" jgno="131" jgrowno="5" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010131" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013101" sbip="192.168.5.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="0010132" jgname="c132-132" jgno="132" jgrowno="5" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010132" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013201" sbip="192.168.5.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="0010133" jgname="c133-133" jgno="133" jgrowno="5" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010133" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013201" sbip="192.168.5.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="0010134" jgname="c134-134" jgno="134" jgrowno="5" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010134" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013401" sbip="192.168.5.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="0010135" jgname="c135-135" jgno="135" jgrowno="5" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010135" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013501" sbip="192.168.5.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="0010136" jgname="c136-136" jgno="136" jgrowno="5" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010136" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013601" sbip="192.168.5.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="0010137" jgname="c137-137" jgno="137" jgrowno="5" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010137" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013701" sbip="192.168.5.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="0010138" jgname="c138-138" jgno="138" jgrowno="5" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010138" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013801" sbip="192.168.5.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="0010139" jgname="c139-139" jgno="139" jgrowno="5" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010139" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001013901" sbip="192.168.5.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="0010140" jgname="c140-140" jgno="140" jgrowno="5" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010140" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014001" sbip="192.168.5.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="0010141" jgname="c141-141" jgno="141" jgrowno="5" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010141" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014101" sbip="192.168.5.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="0010142" jgname="c142-142" jgno="142" jgrowno="5" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010142" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014201" sbip="192.168.5.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="0010143" jgname="c143-143" jgno="143" jgrowno="5" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010143" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014301" sbip="192.168.5.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="0010144" jgname="c144-144" jgno="144" jgrowno="5" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010144" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014401" sbip="192.168.5.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="0010145" jgname="c145-145" jgno="145" jgrowno="5" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010145" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014501" sbip="192.168.5.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第五列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="0010146" jgname="c146-146" jgno="146" jgrowno="5" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010146" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014601" sbip="192.168.5.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="0010147" jgname="c147-147" jgno="147" jgrowno="5" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010147" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014701" sbip="192.168.5.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="0010148" jgname="c148-148" jgno="148" jgrowno="5" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010148" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014801" sbip="192.168.5.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="0010149" jgname="c149-149" jgno="149" jgrowno="5" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010149" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001014901" sbip="192.168.5.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="0010150" jgname="c150-150" jgno="150" jgrowno="5" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010150" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015001" sbip="192.168.5.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="0010151" jgname="c151-151" jgno="151" jgrowno="5" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010151" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015101" sbip="192.168.5.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="0010152" jgname="c152-152" jgno="152" jgrowno="5" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010152" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015201" sbip="192.168.5.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="0010153" jgname="c153-153" jgno="153" jgrowno="5" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010153" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015301" sbip="192.168.5.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="0010154" jgname="c154-154" jgno="154" jgrowno="5" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010154" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015401" sbip="192.168.5.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第五列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="0010155" jgname="c155-155" jgno="155" jgrowno="5" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="82" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010155" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015501" sbip="192.168.5.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第一个机架具体位置-90-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="0010156" jgname="c156-156" jgno="156" jgrowno="6" jgstatus="2" jgucount="42" jgx="-242" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010156" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015601" sbip="192.168.6.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第六列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="0010157" jgname="c157-127" jgno="157" jgrowno="6" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="0010157"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015701" sbip="192.168.6.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第六列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="0010158"  jgname="c158-158" jgno="158" jgrowno="6" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="0010158" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015801" sbip="192.168.6.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第六列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="0010159" jgname="c159-159" jgno="159" jgrowno="6" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010159" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001015901" sbip="192.168.6.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="0010160" jgname="c160-160" jgno="160" jgrowno="6" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010160" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016001" sbip="192.168.6.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="0010161" jgname="c161-161" jgno="161" jgrowno="6" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010161" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016101" sbip="192.168.6.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="0010162" jgname="c162-162" jgno="162" jgrowno="6" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010162" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016201" sbip="192.168.6.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="0010162" jgname="c163-163" jgno="163" jgrowno="6" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010163" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016301" sbip="192.168.6.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="0010164" jgname="c164-164" jgno="164" jgrowno="6" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010164" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016401" sbip="192.168.6.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第十个机架具体位置-->
+			
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="0010165" jgname="c165-165" jgno="165" jgrowno="6" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010165" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016501" sbip="192.168.6.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+			
+
+		<!--第六列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="0010166" jgname="c165-166" jgno="166" jgrowno="6" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010166" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016601" sbip="192.168.6.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="0010167" jgname="c167-167" jgno="167" jgrowno="6" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010167" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016701" sbip="192.168.6.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="0010168" jgname="c168-168" jgno="168" jgrowno="6" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010168" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016801" sbip="192.168.6.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="0010169" jgname="c169-169" jgno="169" jgrowno="6" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010169" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001016901" sbip="192.168.6.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="0010170" jgname="c170-170" jgno="170" jgrowno="6" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010170" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017001" sbip="192.168.6.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="0010171" jgname="c171-171" jgno="171" jgrowno="6" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010171" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017101" sbip="192.168.6.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="0010172" jgname="c172-172" jgno="172" jgrowno="6" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010172" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017211" sbip="192.168.5.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="0010173" jgname="c173-173" jgno="173" jgrowno="6" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010173" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017301" sbip="192.168.6.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="0010174" jgname="c174-174" jgno="174" jgrowno="6" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010174" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017401" sbip="192.168.6.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="0010175" jgname="c175-175" jgno="175" jgrowno="6" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010175" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017501" sbip="192.168.6.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="0010176" jgname="c176-176" jgno="176" jgrowno="6" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010176" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017601" sbip="192.168.6.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第六列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="0010177" jgname="c177-177" jgno="177" jgrowno="6" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010177" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017701" sbip="192.168.6.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="0010178" jgname="c178-178" jgno="178" jgrowno="6" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010178" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017801" sbip="192.168.6.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="0010179" jgname="c179-179" jgno="179" jgrowno="6" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010179" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001017901" sbip="192.168.6.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="0010180" jgname="c180-180" jgno="180" jgrowno="6" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010180" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018001" sbip="192.168.6.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="0010181" jgname="c181-181" jgno="181" jgrowno="6" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010181" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018101" sbip="192.168.6.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="0010182" jgname="c182-182" jgno="182" jgrowno="6" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010182" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018201" sbip="192.168.6.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="0010183" jgname="c183-183" jgno="183" jgrowno="6" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010183" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018301" sbip="192.168.6.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="0010184" jgname="c184-184" jgno="184" jgrowno="6" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010184" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018401" sbip="192.168.6.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="0010185" jgname="c185-185" jgno="185" jgrowno="6" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010185" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018501" sbip="192.168.6.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第六列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="0010186" jgname="c186-186" jgno="186" jgrowno="6" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="50" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010186" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018601" sbip="192.168.6.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		
+		
+		<!--第七列第一个机架具体位置-90-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="0010187" jgname="c187-187" jgno="187" jgrowno="7" jgstatus="2" jgucount="42" jgx="-242" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010187" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018701" sbip="192.168.7.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第七列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="0010188" jgname="c188-188" jgno="188" jgrowno="7" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="0010188"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018801" sbip="192.168.7.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第七列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="0010189"  jgname="c189-189" jgno="189" jgrowno="7" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="0010189" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001018901" sbip="192.168.7.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第七列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="0010190" jgname="c190-190" jgno="190" jgrowno="7" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010190" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019001" sbip="192.168.7.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+		
+
+		<!--第七列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="0010191" jgname="c191-191" jgno="191" jgrowno="7" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010191" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019101" sbip="192.168.7.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="0010192" jgname="c192-192" jgno="192" jgrowno="7" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010192" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019201" sbip="192.168.7.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="0010193" jgname="c193-193" jgno="193" jgrowno="7" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010193" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019301" sbip="192.168.7.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="0010194" jgname="c194-194" jgno="194" jgrowno="7" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010194" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019401" sbip="192.168.7.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="0010195" jgname="c195-195" jgno="164" jgrowno="7" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010195" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019501" sbip="192.168.7.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第十个机架具体位置-->
+			
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="0010196" jgname="c196-196" jgno="196" jgrowno="7" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010196" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019601" sbip="192.168.7.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+			
+
+		<!--第七列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="0010198" jgname="c198-198" jgno="198" jgrowno="7" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010198" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019801" sbip="192.168.7.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="0010199" jgname="c199-199" jgno="199" jgrowno="7" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010199" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001019901" sbip="192.168.7.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="0010200" jgname="c200-200" jgno="200" jgrowno="7" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010200" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020001" sbip="192.168.7.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="0010201" jgname="c201-201" jgno="201" jgrowno="7" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010201" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020101" sbip="192.168.7.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="0010202" jgname="c202-202" jgno="202" jgrowno="7" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010202" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020201" sbip="192.168.7.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="0010203" jgname="c203-203" jgno="203" jgrowno="7" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010203" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020301" sbip="192.168.7.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="0010204" jgname="c204-204" jgno="204" jgrowno="7" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010204" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020411" sbip="192.168.7.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="0010205" jgname="c205-205" jgno="205" jgrowno="7" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010205" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020501" sbip="192.168.7.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="0010206" jgname="c206-206" jgno="206" jgrowno="7" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010206" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020601" sbip="192.168.7.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="0010207" jgname="c207-207" jgno="207" jgrowno="7" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010207" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020701" sbip="192.168.7.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="0010208" jgname="c208-208" jgno="208" jgrowno="7" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010208" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020801" sbip="192.168.7.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第七列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="0010209" jgname="c209-209" jgno="209" jgrowno="7" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010209" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001020901" sbip="192.168.7.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="0010210" jgname="c210-210" jgno="210" jgrowno="7" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010210" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021001" sbip="192.168.7.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="0010211" jgname="c211-211" jgno="211" jgrowno="7" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010211" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021101" sbip="192.168.7.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="0010212" jgname="c212-212" jgno="212" jgrowno="7" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010212" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021201" sbip="192.168.7.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="0010213" jgname="c213-213" jgno="213" jgrowno="7" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010213" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021301" sbip="192.168.7.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="0010214" jgname="c214-214" jgno="214" jgrowno="7" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010214" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021401" sbip="192.168.7.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="0010215" jgname="c215-215" jgno="215" jgrowno="7" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010215" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021501" sbip="192.168.7.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="0010216" jgname="c216-216" jgno="216" jgrowno="7" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010216" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021601" sbip="192.168.7.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="0010217" jgname="c217-217" jgno="217" jgrowno="7" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010217" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021701" sbip="192.168.7.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第七列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="0010218" jgname="c218-218" jgno="218" jgrowno="7" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="18" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010218" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021801" sbip="192.168.7.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="0010219" jgname="c219-219" jgno="219" jgrowno="8" jgstatus="2" jgucount="42" jgx="-242" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010219" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001021901" sbip="192.168.8.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第八列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="0010220" jgname="c220-220" jgno="220" jgrowno="8" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="0010220"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022001" sbip="192.168.8.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第八列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="0010221"  jgname="c221-221" jgno="221" jgrowno="8" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="0010221" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022101" sbip="192.168.8.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第八列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="0010222" jgname="c222-222" jgno="222" jgrowno="8" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010222" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022201" sbip="192.168.8.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="0010223" jgname="c223-223" jgno="223" jgrowno="8" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010223" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022301" sbip="192.168.8.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="0010224" jgname="c224-224" jgno="224" jgrowno="8" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010224" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022401" sbip="192.168.8.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="0010225" jgname="c225-225" jgno="225" jgrowno="8" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010225" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022501" sbip="192.168.8.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="0010226" jgname="c226-226" jgno="226" jgrowno="8" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010226" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022601" sbip="192.168.8.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="0010227" jgname="c227-227" jgno="227" jgrowno="8" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010227" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022701" sbip="192.168.8.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="0010228" jgname="c228-228" jgno="228" jgrowno="8" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010228" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022801" sbip="192.168.8.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="0010229" jgname="c229-229" jgno="229" jgrowno="8" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010229" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001022901" sbip="192.168.8.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="0010230" jgname="c230-230" jgno="230" jgrowno="8" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010230" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023001" sbip="192.168.8.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="0010231" jgname="c231-231" jgno="231" jgrowno="8" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010231" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023101" sbip="192.168.8.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="0010232" jgname="c232-232" jgno="232" jgrowno="8" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010232" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023201" sbip="192.168.8.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="0010233" jgname="c233-233" jgno="233" jgrowno="8" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010233" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023301" sbip="192.168.8.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="0010234" jgname="c234-234" jgno="234" jgrowno="8" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010234" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023401" sbip="192.168.8.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="0010235" jgname="c235-235" jgno="235" jgrowno="8" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010235" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023511" sbip="192.168.8.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="0010236" jgname="c236-236" jgno="236" jgrowno="8" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010236" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023601" sbip="192.168.8.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="0010237" jgname="c237-237" jgno="237" jgrowno="8" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010237" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023701" sbip="192.168.8.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="0010238" jgname="c238-238" jgno="238" jgrowno="8" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010238" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023801" sbip="192.168.8.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="0010239" jgname="c239-239" jgno="239" jgrowno="8" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010239" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001023901" sbip="192.168.8.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第八列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="0010240" jgname="c240-240" jgno="240" jgrowno="8" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010240" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024001" sbip="192.168.8.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="0010241" jgname="c241-241" jgno="241" jgrowno="8" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010241" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024101" sbip="192.168.8.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="0010242" jgname="c242-242" jgno="242" jgrowno="8" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010242" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024201" sbip="192.168.8.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="0010243" jgname="c243-243" jgno="243" jgrowno="8" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010243" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024301" sbip="192.168.8.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="0010244" jgname="c244-244" jgno="244" jgrowno="8" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010244" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024401" sbip="192.168.8.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="0010245" jgname="c245-245" jgno="245" jgrowno="8" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010245" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024501" sbip="192.168.8.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="0010246" jgname="c246-246" jgno="246" jgrowno="8" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010246" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024601" sbip="192.168.8.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="0010247" jgname="c247-247" jgno="247" jgrowno="8" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010247" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024701" sbip="192.168.8.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="0010248" jgname="c248-248" jgno="248" jgrowno="8" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010248" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024801" sbip="192.168.8.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第八列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="0010249" jgname="c249-249" jgno="249" jgrowno="8" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="-14" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010249" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001024901" sbip="192.168.8.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="0010250" jgname="c250-250" jgno="250" jgrowno="9" jgstatus="2" jgucount="42" jgx="-242" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010250" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025001" sbip="192.168.9.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第九列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="0010251" jgname="c251-251" jgno="251" jgrowno="9" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="0010251"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025101" sbip="192.168.9.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第九列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3"  jgcustomer="bank of chain"  jgid="0010252"  jgname="c252-252" jgno="252" jgrowno="9" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="0010252" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025201" sbip="192.168.9.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第九列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="0010253" jgname="c253-253" jgno="253" jgrowno="9" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010253" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025301" sbip="192.168.9.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="0010254" jgname="c254-254" jgno="254" jgrowno="9" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010254" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025401" sbip="192.168.9.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="0010255" jgname="c255-255" jgno="255" jgrowno="9" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010255" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025501" sbip="192.168.9.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="0010256" jgname="c256-256" jgno="256" jgrowno="9" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010256" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025601" sbip="192.168.9.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="0010257" jgname="c257-257" jgno="257" jgrowno="9" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010257" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025701" sbip="192.168.9.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="0010258" jgname="c258-258" jgno="258" jgrowno="9" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010258" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025801" sbip="192.168.9.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="0010259" jgname="c259-259" jgno="259" jgrowno="9" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010259" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001025901" sbip="192.168.9.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="0010260" jgname="c260-260" jgno="260" jgrowno="9" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010260" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026001" sbip="192.168.9.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="0010261" jgname="c261-261" jgno="261" jgrowno="9" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010261" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026101" sbip="192.168.9.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="0010262" jgname="c262-262" jgno="262" jgrowno="9" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010262" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026201" sbip="192.168.9.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="0010263" jgname="c263-263" jgno="263" jgrowno="9" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010263" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026301" sbip="192.168.9.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="0010264" jgname="c264-264" jgno="264" jgrowno="9" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010264" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026401" sbip="192.168.9.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="0010265" jgname="c265-265" jgno="265" jgrowno="9" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010265" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026501" sbip="192.168.9.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="0010266" jgname="c266-266" jgno="266" jgrowno="9" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010266" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026611" sbip="192.168.9.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="0010267" jgname="c267-267" jgno="267" jgrowno="9" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010267" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026701" sbip="192.168.9.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="0010268" jgname="c268-268" jgno="268" jgrowno="9" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010268" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026801" sbip="192.168.9.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="0010269" jgname="c269-269" jgno="269" jgrowno="9" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010269" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001026901" sbip="192.168.9.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="0010270" jgname="c270-270" jgno="270" jgrowno="9" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010270" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027001" sbip="192.168.9.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第九列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="0010271" jgname="c271-271" jgno="271" jgrowno="9" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010271" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027101" sbip="192.168.9.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="0010272" jgname="c272-272" jgno="272" jgrowno="9" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010272" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027201" sbip="192.168.9.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="0010273" jgname="c273-273" jgno="273" jgrowno="9" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010273" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027301" sbip="192.168.9.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="0010274" jgname="c274-274" jgno="274" jgrowno="9" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010274" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027401" sbip="192.168.9.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="0010275" jgname="c275-275" jgno="275" jgrowno="9" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010275" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027501" sbip="192.168.9.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="0010276" jgname="c276-276" jgno="276" jgrowno="9" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010276" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027601" sbip="192.168.9.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="0010277" jgname="c277-277" jgno="246" jgrowno="9" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010277" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027701" sbip="192.168.9.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="0010278" jgname="c278-278" jgno="278" jgrowno="9" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010278" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027801" sbip="192.168.9.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="0010279" jgname="c279-279" jgno="279" jgrowno="9" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010279" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001027901" sbip="192.168.9.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第九列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="0010280" jgname="c280-280" jgno="280" jgrowno="9" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="-46" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010280" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028001" sbip="192.168.9.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="0010281" jgname="c281-281" jgno="281" jgrowno="10" jgstatus="2" jgucount="42" jgx="-242" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010281" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028101" sbip="192.168.10.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="50" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第十列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="0010282" jgname="c282-282" jgno="282" jgrowno="10" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="0010282"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028201" sbip="192.168.10.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第十列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3" jgcustomer="bank of chain" jgid="0010283"  jgname="c283-283" jgno="283" jgrowno="10" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="0010283" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028301" sbip="192.168.10.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第十列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="0010284" jgname="c284-284" jgno="284" jgrowno="10" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010284" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028401" sbip="192.168.10.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="0010285" jgname="c285-285" jgno="285" jgrowno="10" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010285" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028501" sbip="192.168.10.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="0010286" jgname="c286-286" jgno="286" jgrowno="10" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010286" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028601" sbip="192.168.10.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="0010287" jgname="c287-287" jgno="287" jgrowno="10" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010287" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028701" sbip="192.168.10.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="0010288" jgname="c288-288" jgno="288" jgrowno="10" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010288" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028801" sbip="192.168.10.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="0010289" jgname="c289-289" jgno="289" jgrowno="10" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010289" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001028901" sbip="192.168.10.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="0010290" jgname="c290-290" jgno="290" jgrowno="10" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010290" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029001" sbip="192.168.10.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="40" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="0010291" jgname="c291-291" jgno="260" jgrowno="10" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010291" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029101" sbip="192.168.10.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="0010292" jgname="c292-292" jgno="292" jgrowno="10" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010292" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029201" sbip="192.168.10.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="0010293" jgname="c293-293" jgno="293" jgrowno="10" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010293" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029301" sbip="192.168.10.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="0010294" jgname="c294-294" jgno="294" jgrowno="10" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010294" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029401" sbip="192.168.10.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="0010295" jgname="c295-295" jgno="295" jgrowno="10" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010295" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029501" sbip="192.168.10.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="0010296" jgname="c296-296" jgno="296" jgrowno="10" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010296" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029601" sbip="192.168.10.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="0010297" jgname="c297-297" jgno="297" jgrowno="10" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010297" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029711" sbip="192.168.10.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="0010298" jgname="c298-298" jgno="298" jgrowno="10" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010298" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029801" sbip="192.168.10.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="0010299" jgname="c299-299" jgno="299" jgrowno="10" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010299" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001029901" sbip="192.168.10.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="0010300" jgname="c300-300" jgno="300" jgrowno="10" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010300" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030001" sbip="192.168.10.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="0010301" jgname="c301-301" jgno="301" jgrowno="10" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010301" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030101" sbip="192.168.10.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="0010302" jgname="c302-302" jgno="302" jgrowno="10" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010302" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030201" sbip="192.168.10.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="0010303" jgname="c303-303" jgno="303" jgrowno="10" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010303" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030301" sbip="192.168.10.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="0010304" jgname="c304-304" jgno="304" jgrowno="10" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010304" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030401" sbip="192.168.10.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="0010305" jgname="c305-305" jgno="305" jgrowno="10" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010305" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030501" sbip="192.168.10.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="0010306" jgname="c306-306" jgno="306" jgrowno="10" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010306" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030601" sbip="192.168.10.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="0010307" jgname="c307-307" jgno="307" jgrowno="10" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010307" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030701" sbip="192.168.10.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="0010308" jgname="c308-308" jgno="308" jgrowno="10" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010308" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030801" sbip="192.168.10.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="0010309" jgname="c309-309" jgno="309" jgrowno="10" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010309" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001030901" sbip="192.168.10.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="0010310" jgname="c310-310" jgno="310" jgrowno="10" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010310" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031001" sbip="192.168.10.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="0010311" jgname="c311-311" jgno="311" jgrowno="10" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="-78" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010311" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031101" sbip="192.168.10.31" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="1" jgcustomer="bank of chain" jgid="0010312" jgname="c312-312" jgno="312" jgrowno="11" jgstatus="2" jgucount="42" jgx="-242" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010312" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031201" sbip="192.168.11.1" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="10" sbuw="3" type="1"/>
+		</jglocality>
+		
+		<!--第十一列第二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="2" jgcustomer="bank of chain"  jgid="0010313" jgname="c313-313" jgno="313" jgrowno="11" jgstatus="2" jgucount="42" jgx="-226" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead"  jgid="0010313"  sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031301" sbip="192.168.11.2" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality> 
+				
+		<!--第十一列第三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="3" jgcustomer="bank of chain" jgid="0010314"  jgname="c314-314" jgno="314" jgrowno="11" jgstatus="2" jgucount="42" jgx="-210" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第4个设备-->
+			<sbargument icon="defaultHead"  jgid="0010314" sbalarm="0"  sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031401" sbip="192.168.11.3" sbitype="AIX设备" sbname="huawei-server2112" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality>
+		
+		<!--第十一列第四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="4" jgcustomer="bank of chain" jgid="0010315" jgname="c315-315" jgno="315" jgrowno="11" jgstatus="2" jgucount="42" jgx="-194" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010315" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031501" sbip="192.168.11.4" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="5" jgcustomer="bank of chain" jgid="0010316" jgname="c316-316" jgno="316" jgrowno="11" jgstatus="2" jgucount="42" jgx="-178" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010316" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031601" sbip="192.168.11.5" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="6" jgcustomer="bank of chain" jgid="0010317" jgname="c317-317" jgno="317" jgrowno="11" jgstatus="2" jgucount="42" jgx="-162" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010317" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031701" sbip="192.168.11.6" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="7" jgcustomer="bank of chain" jgid="0010318" jgname="c318-318" jgno="318" jgrowno="11" jgstatus="2" jgucount="42" jgx="-146" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010318" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031801" sbip="192.168.11.7" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="8" jgcustomer="bank of chain" jgid="0010319" jgname="c319-319" jgno="319" jgrowno="11" jgstatus="2" jgucount="42" jgx="-130" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010319" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001031901" sbip="192.168.11.8" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="9" jgcustomer="bank of chain" jgid="0010320" jgname="c320-320" jgno="320" jgrowno="11" jgstatus="2" jgucount="42" jgx="-114" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010320" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032001" sbip="192.168.11.9" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="10" jgcustomer="bank of chain" jgid="0010321" jgname="c321-321" jgno="321" jgrowno="11" jgstatus="2" jgucount="42" jgx="-98" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010321" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032101" sbip="192.168.11.10" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="20" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="11" jgcustomer="bank of chain" jgid="0010322" jgname="c322-322" jgno="322" jgrowno="11" jgstatus="2" jgucount="42" jgx="-82" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010322" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032201" sbip="192.168.11.11" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="12" jgcustomer="bank of chain" jgid="0010323" jgname="c323-323" jgno="323" jgrowno="11" jgstatus="2" jgucount="42" jgx="-66" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010323" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032301" sbip="192.168.11.12" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="13" jgcustomer="bank of chain" jgid="0010324" jgname="c324-324" jgno="324" jgrowno="11" jgstatus="2" jgucount="42" jgx="-50" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010324" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032401" sbip="192.168.11.13" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="14" jgcustomer="bank of chain" jgid="0010325" jgname="c325-325" jgno="325" jgrowno="11" jgstatus="2" jgucount="42" jgx="-34" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010325" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032501" sbip="192.168.11.14" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="15" jgcustomer="bank of chain" jgid="0010326" jgname="c326-326" jgno="326" jgrowno="11" jgstatus="2" jgucount="42" jgx="-18" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010326" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032601" sbip="192.168.11.15" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="16" jgcustomer="bank of chain" jgid="0010327" jgname="c327-327" jgno="327" jgrowno="11" jgstatus="2" jgucount="42" jgx="-2" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010327" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032701" sbip="192.168.11.16" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="17" jgcustomer="bank of chain" jgid="0010328" jgname="c328-328" jgno="328" jgrowno="11" jgstatus="2" jgucount="42" jgx="14" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010328" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032811" sbip="192.168.11.17" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="18" jgcustomer="bank of chain" jgid="0010329" jgname="c329-329" jgno="329" jgrowno="11" jgstatus="2" jgucount="42" jgx="30" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010329" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001032901" sbip="192.168.11.18" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="19" jgcustomer="bank of chain" jgid="0010330" jgname="c330-330" jgno="330" jgrowno="10" jgstatus="2" jgucount="42" jgx="46" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010330" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033001" sbip="192.168.11.19" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="20" jgcustomer="bank of chain" jgid="0010331" jgname="c331-331" jgno="331" jgrowno="11" jgstatus="2" jgucount="42" jgx="62" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010331" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033101" sbip="192.168.11.20" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="21" jgcustomer="bank of chain" jgid="0010332" jgname="c332-332" jgno="332" jgrowno="11" jgstatus="2" jgucount="42" jgx="78" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010332" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033201" sbip="192.168.11.21" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+
+		<!--第十一列第二十二个机架具体位置-->
+		<jglocality jfid="001" jgcolno="22" jgcustomer="bank of chain" jgid="0010333" jgname="c333-333" jgno="333" jgrowno="11" jgstatus="2" jgucount="42" jgx="94" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010333" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033301" sbip="192.168.11.22" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十三个机架具体位置-->
+		<jglocality jfid="001" jgcolno="23" jgcustomer="bank of chain" jgid="0010334" jgname="c334-334" jgno="334" jgrowno="11" jgstatus="2" jgucount="42" jgx="110" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010334" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033401" sbip="192.168.11.23" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十四个机架具体位置-->
+		<jglocality jfid="001" jgcolno="24" jgcustomer="bank of chain" jgid="0010335" jgname="c335-335" jgno="335" jgrowno="11" jgstatus="2" jgucount="42" jgx="126" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010335" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033501" sbip="192.168.11.24" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十五个机架具体位置-->
+		<jglocality jfid="001" jgcolno="25" jgcustomer="bank of chain" jgid="0010336" jgname="c336-336" jgno="336" jgrowno="11" jgstatus="2" jgucount="42" jgx="142" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010336" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033601" sbip="192.168.11.25" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十六个机架具体位置-->
+		<jglocality jfid="001" jgcolno="26" jgcustomer="bank of chain" jgid="0010337" jgname="c337-337" jgno="337" jgrowno="11" jgstatus="2" jgucount="42" jgx="158" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010337" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033701" sbip="192.168.11.26" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十七个机架具体位置-->
+		<jglocality jfid="001" jgcolno="27" jgcustomer="bank of chain" jgid="0010338" jgname="c338-338" jgno="338" jgrowno="11" jgstatus="2" jgucount="42" jgx="174" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010338" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033801" sbip="192.168.11.27" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十八个机架具体位置-->
+		<jglocality jfid="001" jgcolno="28" jgcustomer="bank of chain" jgid="0010339" jgname="c339-339" jgno="339" jgrowno="11" jgstatus="2" jgucount="42" jgx="190" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010339" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001033901" sbip="192.168.10.28" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第二十九个机架具体位置-->
+		<jglocality jfid="001" jgcolno="29" jgcustomer="bank of chain" jgid="0010340" jgname="c340-340" jgno="340" jgrowno="11" jgstatus="2" jgucount="42" jgx="206" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010340" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001034001" sbip="192.168.11.29" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第三十个机架具体位置-->
+		<jglocality jfid="001" jgcolno="30" jgcustomer="bank of chain" jgid="0010341" jgname="c341-341" jgno="341" jgrowno="11" jgstatus="2" jgucount="42" jgx="222" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个设备-->
+			<sbargument icon="defaultHead" jgid="0010341" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001034101" sbip="192.168.11.30" sbitype="AIX设备" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+		<!--第十一列第三十一个机架具体位置-->
+		<jglocality jfid="001" jgcolno="31" jgcustomer="bank of chain" jgid="0010342" jgname="c342-342" jgno="342" jgrowno="11" jgstatus="2" jgucount="42" jgx="238" jgy="-22" jgz="-110" maxA="120" maxV="380">
+			<!--第1个服务器-->
+			<sbargument icon="defaultHead" jgid="0010342" sbalarm="0" sbapp="ERP业务" sbcategory="java" sbhint="连通率:100%,CPU利用率:80%,内存利用率:30%" sbid="001034201" sbip="192.168.11.31" sbitype="AIX服务器" sbname="hp-net" sbno="sb1" sbstartuw="18" sbuw="2" type="1"/>
+		</jglocality> 
+		
+	</jflocality>
+</DataResult>

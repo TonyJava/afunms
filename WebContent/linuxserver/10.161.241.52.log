@@ -1,0 +1,1489 @@
+cmdbegin:collecttime
+2014-03-05 14:39:49
+cmdbegin:version
+7100-02-02-1316
+cmdbegin:vmstat
+
+System configuration: lcpu=64 mem=131072MB ent=16.00
+
+kthr    memory              page              faults              cpu          
+----- ----------- ------------------------ ------------ -----------------------
+ r  b   avm   fre  re  pi  po  fr   sr  cy  in   sy  cs us sy id wa    pc    ec
+ 4  1 9707490 23219067   0   0   0   0    0   0  68 21154 6171  0  0 99  0  0.27   1.7
+cmdbegin:lsps
+Total Paging Space   Percent Used
+      32768MB               1%
+cmdbegin:swap
+allocated  =    8388608 blocks    used  =   22258 blocks      free  =    8366350 blocks
+cmdbegin:process
+USER          PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+daemon    4260220  0.0  0.0 2944 2964      - A      Jan 11  0:00 rpc.statd
+grid      4129032  0.0  0.0 19992 20012      - A      Jan 11 22:20 gpnpd.bin
+grid      5636554  0.0  0.0 151020 103072      - A      Jan 11 242:54 oraagent.bin
+grid      5832832  0.0  0.0 99928 100820      - A      Jan 11 1001:15 ocssd.bin
+grid      5898642  0.0  0.0 27964 27968      - A      Jan 11 743:36 gipcd.bin
+grid      5963962  0.0  0.0 170868 62148      - A      Jan 11 26:13 oracle
+grid      5964238  0.0  0.0 195276 106844      - A      Feb 28  0:00 oracle
+grid      6226092  0.0  0.0 171376 62656      - A      Jan 11  1:24 oracle
+grid      6357196  0.0  0.0 171060 62340      - A      Jan 11  6:28 oracle
+grid      6357398  0.0  0.0 176116 67396      - A      Jan 11  7:57 oracle
+grid      6422690  0.0  0.0 178400 69680      - A      Jan 11 68:20 oracle
+grid      6422946  0.0  0.0 176192 67472      - A      Jan 11  0:50 oracle
+grid      6488452  0.0  0.0 50928 45376      - A      Jan 11 625:16 evmd.bin
+grid      6553760  0.0  0.0 190596 81876      - A      Jan 11 307:38 oracle
+grid      6553996  0.0  0.0 174492 65772      - A      Jan 11  0:52 oracle
+grid      6619482  0.0  0.0 173308 64588      - A      Jan 11  0:57 oracle
+grid      6684836  0.0  0.0 185956 77236      - A      Jan 11 42:59 oracle
+grid      6685096  0.0  0.0 185896 77176      - A      Jan 11 137:19 oracle
+grid      6750374  0.0  0.0 171600 62880      - A      Jan 11  1:44 oracle
+grid      6750718  0.0  0.0 177152 68432      - A      Jan 11 22:56 oracle
+grid      6815914  0.0  0.0 170860 62140      - A      Jan 11  0:44 oracle
+grid      6816200  0.0  0.0 170872 62152      - A      Jan 11  3:38 oracle
+grid      6881450  0.0  0.0 176396 67676      - A      Jan 11 10:03 oracle
+grid      6881694  0.0  0.0 170944 62224      - A      Jan 11  2:30 oracle
+grid      6947000  0.0  0.0 21192 15732      - A      Jan 11  0:00 evmlogger.bin
+grid      6947242  0.0  0.0 170868 62148      - A      Jan 11  0:49 oracle
+grid      7012526  0.0  0.0 173260 64540      - A      Jan 11  2:47 oracle
+grid      7012764  0.0  0.0 172120 63400      - A      Jan 11  4:06 oracle
+grid      7078320  0.0  0.0 170888 62168      - A      Jan 11  2:52 oracle
+grid      7143858  0.0  0.0 170880 62160      - A      Jan 11 31:59 oracle
+grid      7209400  0.0  0.0 174032 65312      - A      Jan 11  0:00 oracle
+grid      7274708  0.0  0.0 15852 15864      - A      Jan 11  2:15 tnslsnr
+grid      7274934  0.0  0.0 174236 65516      - A      Jan 11  0:00 oracle
+grid      7340240  0.0  0.0 2192 2140      - A      Jan 11 14:36 ons
+grid      7340472  0.0  0.0 171912 63192      - A      Jan 11  2:14 oracle
+grid      7406024  0.0  0.0 146180 98232      - A      Jan 11 114:57 oraagent.bin
+grid      7537106  0.0  0.0 172088 63368      - A      Jan 11  0:02 oracle
+grid      7602636  0.0  0.0 171372 62652      - A      Jan 11  0:02 oracle
+grid      7668200  0.0  0.0  708  656      - A      Jan 11  0:00 ons
+grid      7733720  0.0  0.0 171376 62656      - A      Jan 11  0:02 oracle
+grid      9306274  0.0  0.0 196200 107768      - A    10:42:48  0:00 oracle
+grid      9961870  0.2  0.0 197592 109160      - A    14:37:34  0:19 oracle
+grid     10158114  0.2  0.0 198252 109820      - A    14:37:34  0:19 oracle
+grid     10289364  0.2  0.0 196536 108104      - A    14:37:34  0:19 oracle
+grid     10355176  0.0  0.0 14156 14148      - A      Mar 02  0:02 mdnsd.bin
+grid     10420466  0.0  0.0 195140 106708      - A    13:19:22  0:00 oracle
+grid     10682632  0.0  0.0 194932 106500      - A      Feb 27  0:02 oracle
+grid     10879230  0.0  0.0 193880 105448      - A      Mar 04  0:01 oracle
+grid     11010052  0.0  0.0 193752 105320      - A      Mar 03  0:00 oracle
+oracle    5570784  0.0  0.0  448  448      - A      Jan 12  0:00 aioserver
+oracle    6160746  0.0  0.0  448  448      - A      Jan 11  0:00 aioserver
+oracle    6619360  0.0  0.0  448  448      - A      Jan 11  0:00 aioserver
+oracle    7078102  0.0  0.0 203396 114964      - A      Jan 11 248:20 oracle
+oracle    7143678  0.0  0.0 124076 76128      - A      Jan 11 241:38 oraagent.bin
+oracle    7405780  0.0  0.0 193820 105388      - A      Jan 11  1:22 oracle
+oracle    7471324  0.0  0.0 191592 103160      - A      Jan 11  4:50 oracle
+oracle    7471396  0.0  0.0 191792 103360      - A      Jan 11  6:32 oracle
+oracle    7536642  0.0  0.0 191580 103148      - A      Jan 11 24:54 oracle
+oracle    7602284  0.0  0.0  448  448      - A      Jan 12  0:00 aioserver
+oracle    7667930  0.0  0.0 206860 118428      - A      Jan 11 44:19 oracle
+oracle    7733498  0.0  0.0 198968 110536      - A      Jan 11  3:59 oracle
+oracle    7799020  0.0  0.0 206876 118444      - A      Jan 11 180:54 oracle
+oracle    7799044  0.0  0.0 196920 108488      - A      Jan 11 11:57 oracle
+oracle    7864322  0.0  0.0 201224 112792      - A      Jan 11  1:27 oracle
+oracle    7864804  0.0  0.0 206852 118420      - A      Jan 11 182:20 oracle
+oracle    7929856  0.0  0.0 213612 125180      - A      Jan 11  1:34 oracle
+oracle    7930338  0.0  0.0 197088 108656      - A      Jan 11  0:52 oracle
+oracle    7995404  0.0  0.0 192688 104256      - A      Jan 11  0:41 oracle
+oracle    7995872  0.0  0.0 197888 109456      - A      Jan 11 24:19 oracle
+oracle    8060932  0.0  0.0 201224 112792      - A      Jan 11  1:26 oracle
+oracle    8061418  0.0  0.0 206852 118420      - A      Jan 11 181:58 oracle
+oracle    8126470  0.0  0.0 201224 112792      - A      Jan 11  1:27 oracle
+oracle    8126948  0.0  0.0 191580 103148      - A      Jan 11  0:40 oracle
+oracle    8192014  0.0  0.0 215420 126988      - A      Jan 11  5:10 oracle
+oracle    8192486  0.0  0.0 211320 122888      - A      Jan 11 337:57 oracle
+oracle    8257550  0.0  0.0 203268 114836      - A      Jan 11  1:27 oracle
+oracle    8258030  0.0  0.0 191596 103164      - A      Jan 11  0:41 oracle
+oracle    8323088  0.0  0.0 201224 112792      - A      Jan 11  1:26 oracle
+oracle    8323334  0.0  0.0 191600 103168      - A      Jan 11  0:45 oracle
+oracle    8388628  0.0  0.0 192304 103872      - A      Jan 11  1:01 oracle
+oracle    8389106  0.0  0.0 206860 118428      - A      Jan 11 182:10 oracle
+oracle    8454166  0.0  0.0 192784 104352      - A      Jan 11  0:27 oracle
+oracle    8454644  0.0  0.0 201224 112792      - A      Jan 11  1:26 oracle
+oracle    8519716  0.0  0.0 197656 109224      - A      Jan 11  2:19 oracle
+oracle    8519938  0.0  0.0 171912 63192      - A      Jan 11  2:21 oracle
+oracle    8585242  0.0  0.0 200500 112068      - A      Jan 11 13:02 oracle
+oracle    8585506  0.0  0.0  448  448      - A      Jan 11  0:00 aioserver
+oracle    8650782  0.0  0.0 191592 103160      - A      Jan 11  0:25 oracle
+oracle    8651258  0.0  0.0 192336 103904      - A      Jan 11  2:08 oracle
+oracle    8716320  0.0  0.0 199160 110728      - A      Jan 11  1:21 oracle
+oracle    8716798  0.0  0.0 191600 103168      - A      Jan 11  1:01 oracle
+oracle    8782090  0.0  0.0 193520 105088      - A      Jan 11  0:15 oracle
+oracle    8847624  0.0  0.0 201224 112792      - A      Jan 11  1:26 oracle
+oracle    8912980  0.0  0.0 191596 103164      - A      Jan 11  1:04 oracle
+oracle    8913168  0.0  0.0 207400 118968      - A      Jan 11 22:43 oracle
+oracle    8978472  0.0  0.0 195016 106584      - A      Jan 11 23:02 oracle
+oracle    8978714  0.0  0.0 193688 105256      - A      Jan 11 41:48 oracle
+oracle    9044010  0.0  0.0 201248 112816      - A      Jan 11  0:00 oracle
+oracle    9044284  0.0  0.0  448  448      - A      Jan 14  0:00 aioserver
+oracle    9109552  0.0  0.0 191760 103328      - A      Jan 11  0:14 oracle
+oracle    9109818  0.0  0.0 192596 104164      - A      Jan 11  1:45 oracle
+oracle    9175110  0.0  0.0 192452 104020      - A      Jan 11  1:23 oracle
+oracle    9175352  0.0  0.0 195280 106848      - A      Jan 11  0:00 oracle
+oracle    9241012  0.0  0.0  448  448      - A      Jan 11  0:00 aioserver
+oracle    9306444  0.0  0.0 193576 105144      - A      Jan 11  0:25 oracle
+oracle    9437506  0.0  0.0 203528 115096      - A      Jan 11  9:03 oracle
+oracle    9502850  0.0  0.0  448  448      - A      Jan 12  0:00 aioserver
+oracle    9503202  0.0  0.0  448  448      - A      Jan 14  0:00 aioserver
+oracle    9633824  0.0  0.0  448  448      - A      Jan 14  0:00 aioserver
+oracle    9699554  0.0  0.0  448  448      - A      Jan 14  0:00 aioserver
+oracle    9961580  0.0  0.0 193360 104928      - A    14:05:23  0:00 oracle
+oracle   10223768  0.0  0.0 192328 103896      - A    14:38:24  0:00 oracle
+oracle   10289656  0.0  0.0  448  448      - A      Jan 12  0:00 aioserver
+oracle   10354938  0.0  0.0 192332 103900      - A    14:16:38  0:00 oracle
+oracle   10420532  0.0  0.0  448  448      - A      Jan 14  0:00 aioserver
+oracle   10486098  0.0  0.0  448  448      - A      Mar 03  0:00 aioserver
+oracle   10944870  0.0  0.0  448  448      - A      Jan 14  0:00 aioserver
+oracle   11010496  0.0  0.0  448  448      - A      Jan 14  0:00 aioserver
+oracle   11403458  0.0  0.0 171288 62568      - A    14:37:45  0:00 oracle
+oracle   11469230  0.0  0.0 191652 103220      - A    14:32:12  0:00 oracle
+oracle   11600374  0.0  0.0 192072 103640      - A    14:37:45  0:00 oracle
+pconsole  4588030  0.0  0.0  784  800      - A      Jan 11  0:00 ksh
+pconsole  5111892  0.0  0.0 62668 62720      - A      Jan 11  7:16 java
+root            0  0.0  0.0  384  384      - A      Jan 11 24:34 swapper
+root            1  0.0  0.0  812  828      - A      Jan 11  0:11 init
+root          264  0.0  0.0  448  448      - A      Jan 11 36:28 swapper
+root        65802  0.0  0.0  448  448      - A      Jan 11  0:01 sched
+root       131076  0.0  0.0  448  448      - A      Jan 11 503:25 wait
+root       131370  0.0  0.0  448  448      - A      Jan 11 39:51 wait
+root       196614  0.0  0.0  448  448      - A      Jan 11  0:01 sched
+root       196908  0.0  0.0  448  448      - A      Jan 11 211:23 wait
+root       262156  0.0  0.0 1216 1216      - A      Jan 11  0:00 lrud
+root       262446  0.0  0.0  448  448      - A      Jan 11 211:00 wait
+root       327694  0.0  0.0  448  448      - A      Jan 11  0:00 vmptacrt
+root       327984  0.0  0.0  448  448      - A      Jan 11 211:24 wait
+root       393232  0.0  0.0 1216 1216      - A      Jan 11  0:00 psmd
+root       393530  0.0  0.0  448  448      - A      Jan 11  1:11 wait
+root       458770  0.0  0.0  832  832      - A      Jan 11  0:11 vmmd
+root       459068  0.0  0.0  448  448      - A      Jan 11  8:19 wait
+root       524308  0.0  0.0  448  448      - A      Jan 11  0:00 pvlist
+root       524606  0.0  0.0  448  448      - A      Jan 11  8:17 wait
+root       589846  0.0  0.0  640  640      - A      Jan 11 69:09 reaffin
+root       590144  0.0  0.0  448  448      - A      Jan 11  8:17 wait
+root       655384  0.0  0.0  448  448      - A      Jan 11  0:00 memgrdd
+root       655690  0.0  0.0  448  448      - A      Jan 11  0:42 wait
+root       721228  0.0  0.0  448  448      - A      Jan 11  2:19 wait
+root       786460  0.0  0.0 3392 3392      - A      Jan 11  2:35 vtiol
+root       786766  0.0  0.0  448  448      - A      Jan 11  2:18 wait
+root       851998  0.0  0.0  448  448      - A      Jan 11  0:00 devstatd
+root       852304  0.0  0.0  448  448      - A      Jan 11  2:18 wait
+root       917536  0.0  0.0  640  640      - A      Jan 11  0:25 pilegc
+root       917850  0.0  0.0  448  448      - A      Jan 11  0:38 wait
+root       983074  0.0  0.0  448  448      - A      Jan 11 17:33 xmgc
+root       983388  0.0  0.0  448  448      - A      Jan 11  0:53 wait
+root      1048612  0.0  0.0  448  448      - A      Jan 11 2394:22 wait
+root      1048926  0.0  0.0  448  448      - A      Jan 11  0:52 wait
+root      1114150  0.0  0.0  448  448      - A      Jan 11 2390:44 wait
+root      1114464  0.0  0.0  448  448      - A      Jan 11  0:52 wait
+root      1179688  0.0  0.0  448  448      - A      Jan 11 2394:25 wait
+root      1180010  0.0  0.0  448  448      - A      Jan 11  0:55 wait
+root      1245234  0.0  0.0  448  448      - A      Jan 11  1:15 wait
+root      1245548  0.0  0.0  448  448      - A      Jan 11  1:46 wait
+root      1310772  0.0  0.0  448  448      - A      Jan 11  9:34 wait
+root      1311086  0.0  0.0  448  448      - A      Jan 11  1:43 wait
+root      1376310  0.0  0.0  448  448      - A      Jan 11  9:31 wait
+root      1376624  0.0  0.0  448  448      - A      Jan 11  1:44 wait
+root      1441848  0.0  0.0  448  448      - A      Jan 11  9:31 wait
+root      1442170  0.0  0.0  448  448      - A      Jan 11  0:55 wait
+root      1507394  0.0  0.0  448  448      - A      Jan 11  0:50 wait
+root      1507708  0.0  0.0  448  448      - A      Jan 11  1:44 wait
+root      1572932  0.0  0.0  448  448      - A      Jan 11  2:55 wait
+root      1573246  0.0  0.0  448  448      - A      Jan 11  1:42 wait
+root      1638470  0.0  0.0  448  448      - A      Jan 11  2:53 wait
+root      1638784  0.0  0.0  448  448      - A      Jan 11  1:42 wait
+root      1704008  0.0  0.0  448  448      - A      Jan 11  2:53 wait
+root      1704330  0.0  0.0  448  448      - A      Jan 11  0:40 wait
+root      1769554  0.0  0.0  448  448      - A      Jan 11  0:40 wait
+root      1769868  0.0  0.0  448  448      - A      Jan 11  0:43 wait
+root      1835092  0.0  0.0  448  448      - A      Jan 11  0:56 wait
+root      1835406  0.0  0.0  448  448      - A      Jan 11  0:41 wait
+root      1900630  0.0  0.0  448  448      - A      Jan 11  0:55 wait
+root      1900944  0.0  0.0  448  448      - A      Jan 11  0:41 wait
+root      1966168  0.0  0.0  448  448      - A      Jan 11  0:55 wait
+root      1966490  0.0  0.0  448  448      - A      Jan 11  0:38 wait
+root      2031714  0.0  0.0  448  448      - A      Jan 11  0:39 wait
+root      2032028  0.0  0.0  448  448      - A      Jan 11  0:41 wait
+root      2097252  0.0  0.0  448  448      - A      Jan 11  0:45 wait
+root      2097566  0.0  0.0  448  448      - A      Jan 11  0:39 wait
+root      2162790  0.0  0.0  448  448      - A      Jan 11  0:43 wait
+root      2163104  0.0  0.0  448  448      - A      Jan 11  0:39 wait
+root      2228328  0.0  0.0  448  448      - A      Jan 11  0:43 wait
+root      2228642  0.0  0.0  448  448      - A      Jan 11  0:43 netm
+root      2293874  0.0  0.0  448  448      - A      Jan 11  0:39 wait
+root      2294180  0.0  0.0  960  960      - A      Jan 11 231:13 gil
+root      2359412  0.0  0.0  448  448      - A      Jan 11  0:43 wait
+root      2359718  0.0  0.0  512  512      - A      Jan 11  0:00 wlmsched
+root      2424950  0.0  0.0  448  448      - A      Jan 11  0:41 wait
+root      2425256  0.0  0.0  448  448      - A      Jan 11  0:00 armtrace_kproc
+root      2490488  0.0  0.0  448  448      - A      Jan 11  0:41 wait
+root      2556034  0.0  0.0  448  448      - A      Jan 11  7:14 wait
+root      2556382  0.0  0.0  448  448      - A      Jan 11  0:00 memp_rbd
+root      2621572  0.0  0.0  448  448      - A      Jan 11 34:34 wait
+root      2621904  0.0  0.0  448  448      - A      Jan 11  0:00 ethchanproc
+root      2687110  0.0  0.0  448  448      - A      Jan 11 33:47 wait
+root      2687442  0.0  0.0  448  448      - A      Jan 11  0:00 pofCmdProc
+root      2752648  0.0  0.0  448  448      - A      Jan 11 33:53 wait
+root      2818194  0.0  0.0  448  448      - A      Jan 11  0:39 wait
+root      2818518  0.0  0.0  896  916      - A      Jan 11  0:00 srcmstr
+root      2883732  0.0  0.0  448  448      - A      Jan 11  0:42 wait
+root      2883862  0.0  0.0 125716 89320      - A      Jan 11 788:46 ohasd.bin
+root      2949270  0.0  0.0  448  448      - A      Jan 11  0:41 wait
+root      2949492  0.0  0.0 1024 1024      - A      Jan 11  0:04 nfssync_kproc
+root      3014808  0.0  0.0  448  448      - A      Jan 11  0:41 wait
+root      3014982  0.0  0.0  352  360      - A      Jan 11  0:00 cimssys
+root      3080396  0.0  0.0  512  512      - A      Jan 11  0:00 kbiod
+root      3080476  0.0  0.0 1076 1112      - A      Jan 11  0:00 errdemon
+root      3145934  0.0  0.0  812  832      - A      Jan 11  0:00 dtlogin
+root      3146220  0.0  0.0 25216 25216      - A      Jan 11  0:37 j2pg
+root      3211748  0.0  0.0  428  440      - A      Jan 11  0:00 shlap64
+root      3277026  0.0  0.0  448  448      - A      Jan 11  0:00 rtcmd
+root      3277274  0.0  0.0 8640 8640      - A      Jan 11  0:00 dog
+root      3342380  0.0  0.0  624  632      - A      Jan 11 34:48 syncd
+root      3342602  0.0  0.0  448  448      - A      Jan 11  0:01 aioLpool
+root      3408018  0.0  0.0  448  448      - A      Jan 11  0:00 random
+root      3408156  0.0  0.0  640  640      - A      Jan 11  0:00 ldmp_process
+root      3473434  0.0  0.0  448  448      - A      Jan 11  0:03 n4bg
+root      3473678  0.0  0.0  512  512      - A      Jan 11  0:00 nfsSM
+root      3539008  0.0  0.0 1060 1112      - A      Jan 11  0:00 hrd
+root      3539200  0.0  0.0  448  448      - A      Jan 11  0:02 rdpgc
+root      3604610  0.0  0.0 1216 1216      - A      Jan 11 12:02 rpc.lockd
+root      3604736  0.0  0.0 1216 1216      - A      Jan 11  0:00 kpkcs11
+root      3670104  0.0  0.0  448  448      - A      Jan 11  0:04 rgsr
+root      3670524  0.0  0.0  448  448      - A      Jan 11  0:00 lvmbb
+root      3735718  0.0  0.0  292  300      - A      Jan 11  0:00 qdaemon
+root      3736052  0.0  0.0  448  448      - A      Jan 11  0:00 aioPpool
+root      3801596  0.0  0.0 6968 6988      - A      Jan 11  0:04 tier1slp
+root      3866650  0.0  0.0  320  336      - A      Jan 11  0:00 CIM_diagd
+root      3867118  0.0  0.0  340  348      - A      Jan 11  0:00 cimssys
+root      3932192  0.0  0.0   88   92      - A      Jan 11  0:00 uprintfd
+root      3932416  0.0  0.0 2344 2152      - A      Jan 11  0:42 sendmail
+root      3997862  0.0  0.0 4616 4640      - A      Jan 11  0:21 cron
+root      3997958  0.0  0.0 1452 1392      - A      Jan 11  0:08 hostmibd
+root      4063232  0.0  0.0 1584 1392      - A      Jan 11  0:09 snmpmibd
+root      4063740  0.0  0.0  824  840      - A      Jan 11  0:03 syslogd
+root      4128886  0.0  0.0  628  656      - A      Jan 11  1:47 xntpd
+root      4194330  0.0  0.0 1032 1052      - A      Jan 11  0:00 portmap
+root      4194568  0.0  0.0 1172 1204      - A      Jan 11  0:25 snmpdv3ne
+root      4259854  0.0  0.0 1768 1800      - A      Jan 11  2:07 clcomd
+root      4325408  0.0  0.0  160  168      - A      Jan 11  0:00 biod
+root      4325640  0.0  0.0  472  488      - A      Jan 11  0:07 slp_srvreg
+root      4391376  0.0  0.0 1736 1552      - A      Jan 11  0:32 aixmibd
+root      4456566  0.0  0.0 1300 1404      - A      Jan 11  0:13 sshd
+root      4456760  0.0  0.0  324  328      - A      Jan 11  0:00 rpc.lockd
+root      4522258  0.0  0.0  616  636      - A      Jan 11  0:00 inetd
+root      4653196  0.0  0.0  800  816      - A    14:29:43  0:00 telnetd
+root      4653338  0.0  0.0 1876 1824      - A      Jan 11  0:25 aso
+root      4718918  0.0  0.0  784  800      - A      Jan 11  0:00 ksh
+root      4784186  0.0  0.0 30404 30432      - A      Jan 11  0:04 cimserver
+root      4784416  0.0  0.0  292  300      - A      Jan 11  0:00 writesrv
+root      4849740  0.0  0.0  552  576      - A      Jan 11  0:00 diagd
+root      4850024  0.0  0.0  508  512      - A      Jan 11  0:15 nonstop_aix
+root      4915526  0.0  0.0  768  784      - A      Jan 11  0:00 sh
+root      4981066  0.0  0.0 155584 165168      - A      Jan 11 29:49 cssdagent
+root      5046342  0.0  0.0  652  676      - A      Jan 11 12:02 getty
+root      5112154  0.0  0.0 2060 2060      - A      Jan 11  0:05 IBM.MgmtDomain
+root      5177410  0.0  0.0 2464 2324      - A      Jan 11 11:10 topasrec
+root      5177708  0.0  0.0 87520 87536      - A      Jan 11 23:53 java
+root      5242948  0.0  1.0 216868 217392      - A      Jan 11  1:09 rmcd
+root      5243248  0.0  0.0 1968 1900      - A      Jan 11  0:00 IBM.ServiceRMd
+root      5308482  0.0  0.0  796  812      - A      Jan 11  0:00 ksh
+root      5308790  0.0  0.0  764  780  pts/1 A    14:29:43  0:00 ksh
+root      5374024  0.0  0.0 1548 1528      - A      Jan 11  1:59 pcmsrv
+root      5374306  0.0  0.0 1836 1784      - A      Jan 11  0:00 IBM.HostRMd
+root      5439686  0.0  0.0 136480 87580      - A      Jan 11 254:59 orarootagent.b
+root      5505198  0.0  0.0 12860 12892      - A      Jan 11  0:20 cimprovagt
+root      5505366  0.0  0.0 1784 1808      - A      Jan 11  0:00 IBM.DRMd
+root      5570994  0.0  0.0 155584 165168      - A      Jan 11 27:45 cssdmonitor
+root      5767546  0.0  0.0 9484 9512      - A      Jan 11  0:03 cimlistener
+root      5833162  0.0  0.0  224  236  pts/1 A    14:39:50  0:00 egrep
+root      5898348  0.0  0.0 104664 104696      - A      Jan 11 692:44 osysmond.bin
+root      6095072                            Z              0:00 <defunct>
+root      6095228  0.0  0.0  756  772      - A      Jan 11  0:00 sh
+root      6160506  0.0  0.0 2944 2944      - A      Jan 11  0:00 vmthrpg
+root      6226328  0.0  0.0 120836 79680      - A      Jan 11 737:00 crsd.bin
+root      6291660  0.0  0.0 152736 152768      - A      Jan 11 102:05 ologgerd
+root      6291840  0.0  0.0 16668 16668      - A      Jan 11 607:24 octssd.bin
+root      6488252  0.0  0.0 2368 2368      - A      Jan 11  0:57 OrclOks
+root      7209160  0.0  0.0 103792 54892      - A      Jan 11 624:37 orarootagent.b
+root      9371968  0.0  0.0  204  212  pts/1 A    14:39:50  0:00 sort
+root     10092726  0.0  0.0 1784 1888      - A    14:30:03  0:00 sshd
+root     10486012                            Z              0:00 <defunct>
+root     10617150  0.0  0.0  756  772  pts/2 A    14:30:26  0:00 ksh
+root     11141292  0.0  0.0  756  772  pts/0 A    14:29:17  0:00 ksh
+root     11534412  0.0  0.0 1156 1188  pts/1 A    14:39:50  0:00 ps
+root     11665564  0.0  0.0 1712 1816      - A    14:29:17  0:00 sshd
+root     11665890  0.0  0.0  744  760  pts/1 A    14:39:49  0:00 sh
+cmdbegin:cpu
+
+AIX LPS-SJCKA 1 7 00F8643A4C00    03/05/14
+
+System configuration: lcpu=64 ent=16.00 mode=Capped 
+
+14:39:50    %usr    %sys    %wio   %idle   physc   %entc
+14:39:51       5       3       0      92    2.13    13.3
+14:39:52       2       1       0      96    2.10    13.1
+14:39:53       5       3       0      92    2.02    12.6
+
+Average        4       2       0      94    2.10    13.1
+cmdbegin:processor
+proc0  Available 00-00 Processor
+proc4  Available 00-04 Processor
+proc8  Available 00-08 Processor
+proc12 Available 00-12 Processor
+proc16 Available 00-16 Processor
+proc20 Available 00-20 Processor
+proc24 Available 00-24 Processor
+proc28 Available 00-28 Processor
+proc32 Available 00-32 Processor
+proc36 Available 00-36 Processor
+proc40 Available 00-40 Processor
+proc44 Available 00-44 Processor
+proc48 Available 00-48 Processor
+proc52 Available 00-52 Processor
+proc56 Available 00-56 Processor
+proc60 Available 00-60 Processor
+cmdbegin:cpuconfig
+CPU Type: 64-bit
+Kernel Type: 64-bit
+LPAR Info: 2 P780A_SJCKA
+Memory Size: 131072 MB
+Processor Clock Speed: 3724 MHz
+cmdbegin:allconfig
+cmdbegin:disk
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4       10240.00  10000.21    3%    10290     1% /
+/dev/hd2        8192.00   5534.63   33%    52635     5% /usr
+/dev/hd9var     4096.00   3756.86    9%     6237     1% /var
+/dev/hd3        4096.00   3728.93    9%     1353     1% /tmp
+/dev/hd1        4096.00   4093.39    1%      139     1% /home
+/dev/hd11admin    512.00    511.57    1%        5     1% /admin
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt    8192.00   7966.10    3%     8576     1% /opt
+/dev/livedump    512.00    511.60    1%        4     1% /var/adm/ras/livedump
+/dev/fslv00   204800.00 181730.19   12%   105239     1% /oracle
+cmdbegin:diskperf
+
+AIX LPS-SJCKA 1 7 00F8643A4C00    03/05/14
+
+System configuration: lcpu=64 drives=19 ent=16.00 mode=Capped 
+
+14:39:53     device    %busy    avque    r+w/s    Kbs/s   avwait   avserv
+
+14:39:54     hdisk1      0      0.0        0        0      0.0      0.0
+             hdisk0      0      0.0        0        0      0.0      0.0
+             hdisk7      0      0.0        0        0      0.0      0.0
+             hdisk8      1      0.0      305      261      0.0      0.2
+             hdisk2      0      0.0        0        0      0.0      0.0
+            hdisk11      3      0.0      304      245      0.0      0.2
+             hdisk6      1      0.0      305      261      0.0      0.2
+             hdisk5      0      0.0        0       15      0.0      0.3
+            hdisk12      0      0.0        0        0      0.0      0.2
+            hdisk10      0      0.0        0        0      0.0      0.0
+            hdisk13      0      0.0        0        0      0.0      0.2
+             hdisk9      0      0.0        0        0      0.0      0.0
+            hdisk14      0      0.0        0        0      0.0      0.2
+            hdisk15      0      0.0        0       15      0.0      0.3
+             hdisk4      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0       15      0.0      0.3
+            hdisk18      0      0.0        0        0      0.0      0.0
+            hdisk16      6      0.0      304      245      0.0      0.2
+            hdisk17      0      0.0        0        0      0.0      0.0
+
+
+14:39:55     hdisk1      1      0.0        1        4      0.0      6.2
+             hdisk0      1      0.0        1        4      0.0      8.0
+             hdisk7      0      0.0        0        0      0.0      0.0
+             hdisk8      2      0.0      259      221      0.0      0.2
+             hdisk2      0      0.0        0        0      0.0      0.0
+            hdisk11      2      0.0      258      205      0.0      0.2
+             hdisk6      2      0.0      258      205      0.0      0.2
+             hdisk5      0      0.0        0        0      0.0      0.0
+            hdisk12      0      0.0        1        0      0.0      0.2
+            hdisk10      0      0.0        0        0      0.0      0.0
+            hdisk13      0      0.0        1        0      0.0      0.3
+             hdisk9      0      0.0        0        0      0.0      0.0
+            hdisk14      0      0.0        1        0      0.0      0.2
+            hdisk15      0      0.0        0        0      0.0      0.0
+             hdisk4      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0        0      0.0      0.0
+            hdisk18      0      0.0        0        0      0.0      0.0
+            hdisk16      3      0.0      258      205      0.0      0.3
+            hdisk17      0      0.0        0        0      0.0      0.0
+
+
+Average      hdisk1      0      0.0        0        2      0.0      3.1
+             hdisk0      0      0.0        0        2      0.0      4.0
+             hdisk7      0      0.0        0        0      0.0      0.0
+             hdisk8      1      0.0      282      241      0.0      0.2
+             hdisk2      0      0.0        0        0      0.0      0.0
+            hdisk11      2      0.0      281      225      0.0      0.2
+             hdisk6      1      0.0      281      233      0.0      0.2
+             hdisk5      0      0.0        0        7      0.0      0.1
+            hdisk12      0      0.0        0        0      0.0      0.2
+            hdisk10      0      0.0        0        0      0.0      0.0
+            hdisk13      0      0.0        0        0      0.0      0.3
+             hdisk9      0      0.0        0        0      0.0      0.0
+            hdisk14      0      0.0        0        0      0.0      0.2
+            hdisk15      0      0.0        0        7      0.0      0.2
+             hdisk4      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0        7      0.0      0.2
+            hdisk18      0      0.0        0        0      0.0      0.0
+            hdisk16      4      0.0      281      225      0.0      0.2
+            hdisk17      0      0.0        0        0      0.0      0.0
+cmdbegin:diskiostat
+
+System configuration: lcpu=64 drives=19 ent=16.00 paths=206 vdisks=0
+
+tty:      tin         tout    avg-cpu: % user % sys % idle % iowait physc % entc
+          0.0          0.0                0.5   0.5   99.0      0.0   0.3    1.7
+
+Disks:        % tm_act     Kbps      tps    Kb_read   Kb_wrtn
+hdisk1           2.5      74.2      10.6     530536  339534384
+hdisk0           2.6      74.5      10.6    2212904  339526448
+hdisk7           0.0       3.8       0.3    5289593  12336290
+hdisk8           0.1      29.3       1.9   122172317  12072846
+hdisk2           0.0       2.2       0.2    2079599   7950664
+hdisk11          0.0       6.7       0.6     159133  30731577
+hdisk6           0.0      16.2       1.1   36949965  37501387
+hdisk5           0.0       8.0       0.5    4550009  32235837
+hdisk12          0.0       0.5       1.0     127153   2288323
+hdisk10          0.0       0.0       0.0     144481         0
+hdisk13          0.0       0.5       1.0     156793   2288326
+hdisk9           0.0      10.7       0.7   37234275  11947725
+hdisk14          0.0       0.5       1.0     161961   2288323
+hdisk15          0.0       6.8       0.6     248009  31126576
+hdisk4           0.0       2.0       0.1    1082669   8135659
+hdisk3           0.0       7.3       0.5    1196857  32286570
+hdisk18          0.0       0.0       0.0     138337         0
+hdisk16          0.0       6.8       0.6     151151  30994450
+hdisk17          0.0       0.0       0.0     150625         0
+cmdbegin:netperf
+Name  Mtu   Network     Address            Ipkts Ierrs    Opkts Oerrs  Coll
+en0   1500  link#2      34.40.b5.f4.a2.ed  5338487     0   540042     3     0
+                        01:00:5e:00:00:fb
+                        01:00:5e:7f:ff:fd
+                        01:00:5e:00:00:01
+en0   1500  10.161.240  10.161.240.102    5338487     0   540042     3     0
+                        224.0.0.251        
+                        239.255.255.253    
+                        224.0.0.1          
+en8   1500  link#3      0.90.fa.26.ec.a6 19566521     0  5142920     0     0
+                        01:00:5e:00:00:fb
+                        01:00:5e:7f:ff:fd
+                        01:00:5e:00:00:01
+en8   1500  10.161.241  10.161.241.52    19566521     0  5142920     0     0
+                        224.0.0.251        
+                        239.255.255.253    
+                        224.0.0.1          
+en8   1500  10.161.241  10.161.241.83    19566521     0  5142920     0     0
+                        224.0.0.251        
+                        239.255.255.253    
+                        224.0.0.1          
+en9   1500  link#4      0.90.fa.26.ec.a7 348092889     0 297173732     0     0
+                        01:00:5e:00:01:00
+                        01:00:5e:00:00:fb
+                        01:00:5e:7f:ff:fd
+                        01:00:5e:00:00:01
+en9   1500  10.10.10    10.10.10.1       348092889     0 297173732     0     0
+                        230.0.1.0          
+                        224.0.0.251        
+                        239.255.255.253    
+                        224.0.0.1          
+en9   1500  169.254     169.254.234.163  348092889     0 297173732     0     0
+                        230.0.1.0          
+                        224.0.0.251        
+                        239.255.255.253    
+                        224.0.0.1          
+lo0   16896 link#1                       25664332     0 25664299     0     0
+lo0   16896 127         127.0.0.1        25664332     0 25664299     0     0
+                        224.0.0.1          
+lo0   16896 ::1%1                        25664332     0 25664299     0     0
+                        ff01::1          
+                        ff02::1:ff00:1   
+cmdbegin:netallperf
+start-en0
+-------------------------------------------------------------
+ETHERNET STATISTICS (en0) :
+Device Type: 4-Port 10/100/1000 Base-TX PCI-Express Adapter (14106803)
+Hardware Address: 34:40:b5:f4:a2:ed
+Elapsed Time: 53 days 1 hours 20 minutes 25 seconds
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 540039                               Packets: 5338911
+Bytes: 60242441                               Bytes: 417471746
+Interrupts: 0                                 Interrupts: 4366796
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 1         
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 0
+
+Broadcast Packets: 20377                      Broadcast Packets: 4274674
+Multicast Packets: 16862                      Multicast Packets: 507512
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 0
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 2000
+Driver Flags: Up Broadcast Running 
+	Simplex 64BitSupport ChecksumOffload 
+	LargeSend DataRateSet 
+
+4-Port 10/100/1000 Base-TX PCI-Express Adapter (14106803) Specific Statistics:
+------------------------------------------------------------------------------
+Link Status : Up
+Media Speed Selected: Auto negotiation
+Media Speed Running: 1000 Mbps Full Duplex
+PCI Mode: PCI-Express X4
+    Relaxed Ordering: Enabled
+    TLP Size: 256
+    MRR Size: 4096
+Jumbo Frames: Disabled
+TCP Segmentation Offload: Enabled
+TCP Segmentation Offload Packets Transmitted: 0
+TCP Segmentation Offload Packet Errors: 0
+Transmit and Receive Flow Control Status: Disabled
+Transmit and Receive Flow Control Threshold (High): 40960
+Transmit and Receive Flow Control Threshold (Low): 20480
+Transmit and Receive Storage Allocation (TX/RX): 4/44
+end-en0
+start-en1
+-------------------------------------------------------------
+ETHERNET STATISTICS (en1) :
+Device Type: 4-Port 10/100/1000 Base-TX PCI-Express Adapter (14106803)
+Hardware Address: 34:40:b5:f4:a2:ec
+Elapsed Time: 0 days 0 hours 0 minutes 0 seconds
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 0         
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 1
+
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 1
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 2000
+Driver Flags: Up Broadcast Simplex 
+	Limbo 64BitSupport ChecksumOffload 
+	PrivateSegment LargeSend DataRateSet 
+
+4-Port 10/100/1000 Base-TX PCI-Express Adapter (14106803) Specific Statistics:
+------------------------------------------------------------------------------
+Link Status : UNKNOWN
+Media Speed Selected: Auto negotiation
+Media Speed Running: Unknown
+PCI Mode: PCI-Express X4
+    Relaxed Ordering: Enabled
+    TLP Size: 256
+    MRR Size: 4096
+Jumbo Frames: Disabled
+TCP Segmentation Offload: Enabled
+TCP Segmentation Offload Packets Transmitted: 0
+TCP Segmentation Offload Packet Errors: 0
+Transmit and Receive Flow Control Status: Disabled
+Transmit and Receive Flow Control Threshold (High): 40960
+Transmit and Receive Flow Control Threshold (Low): 20480
+Transmit and Receive Storage Allocation (TX/RX): 4/44
+end-en1
+start-en2
+-------------------------------------------------------------
+ETHERNET STATISTICS (en2) :
+Device Type: 4-Port 10/100/1000 Base-TX PCI-Express Adapter (14106803)
+Hardware Address: 34:40:b5:f4:a2:ef
+Elapsed Time: 0 days 0 hours 0 minutes 0 seconds
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 0         
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 1
+
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 1
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 2000
+Driver Flags: Up Broadcast Simplex 
+	Limbo 64BitSupport ChecksumOffload 
+	PrivateSegment LargeSend DataRateSet 
+
+4-Port 10/100/1000 Base-TX PCI-Express Adapter (14106803) Specific Statistics:
+------------------------------------------------------------------------------
+Link Status : UNKNOWN
+Media Speed Selected: Auto negotiation
+Media Speed Running: Unknown
+PCI Mode: PCI-Express X4
+    Relaxed Ordering: Enabled
+    TLP Size: 256
+    MRR Size: 4096
+Jumbo Frames: Disabled
+TCP Segmentation Offload: Enabled
+TCP Segmentation Offload Packets Transmitted: 0
+TCP Segmentation Offload Packet Errors: 0
+Transmit and Receive Flow Control Status: Disabled
+Transmit and Receive Flow Control Threshold (High): 40960
+Transmit and Receive Flow Control Threshold (Low): 20480
+Transmit and Receive Storage Allocation (TX/RX): 4/44
+end-en2
+start-en3
+-------------------------------------------------------------
+ETHERNET STATISTICS (en3) :
+Device Type: 4-Port 10/100/1000 Base-TX PCI-Express Adapter (14106803)
+Hardware Address: 34:40:b5:f4:a2:ee
+Elapsed Time: 0 days 0 hours 0 minutes 0 seconds
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 0         
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 1
+
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 1
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 2000
+Driver Flags: Up Broadcast Simplex 
+	Limbo 64BitSupport ChecksumOffload 
+	PrivateSegment LargeSend DataRateSet 
+
+4-Port 10/100/1000 Base-TX PCI-Express Adapter (14106803) Specific Statistics:
+------------------------------------------------------------------------------
+Link Status : UNKNOWN
+Media Speed Selected: Auto negotiation
+Media Speed Running: Unknown
+PCI Mode: PCI-Express X4
+    Relaxed Ordering: Enabled
+    TLP Size: 256
+    MRR Size: 4096
+Jumbo Frames: Disabled
+TCP Segmentation Offload: Enabled
+TCP Segmentation Offload Packets Transmitted: 0
+TCP Segmentation Offload Packet Errors: 0
+Transmit and Receive Flow Control Status: Disabled
+Transmit and Receive Flow Control Threshold (High): 40960
+Transmit and Receive Flow Control Threshold (Low): 20480
+Transmit and Receive Storage Allocation (TX/RX): 4/44
+end-en3
+start-en4
+end-en4
+start-en5
+end-en5
+start-en6
+end-en6
+start-en7
+end-en7
+start-en8
+-------------------------------------------------------------
+ETHERNET STATISTICS (en8) :
+Device Type: EtherChannel
+Hardware Address: 00:90:fa:26:ec:a6
+Elapsed Time: 53 days 1 hours 20 minutes 24 seconds
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 5143872                              Packets: 30114548
+Bytes: 864925381                              Bytes: 9203674401
+Interrupts: 0                                 Interrupts: 29057028
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 2
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 30        
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 6
+
+Broadcast Packets: 6029                       Broadcast Packets: 18865469
+Multicast Packets: 57415                      Multicast Packets: 2418689
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 6
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 20000
+Driver Flags: Up Broadcast Running 
+	Simplex 64BitSupport ChecksumOffload 
+	LargeSend DataRateSet 
+
+=============================================================
+=============================================================
+
+Statistics for every adapter in the EtherChannel:
+-------------------------------------------------
+
+Number of adapters: 2
+Active channel: primary channel
+Operating mode: Network interface backup mode
+
+-------------------------------------------------------------
+
+ETHERNET STATISTICS (ent4) :
+Device Type: PCIe2 2-port 10GbE SR Adapter (a21910071410d003) 
+Hardware Address: 00:90:fa:26:ec:a6
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 5143872                              Packets: 19593490
+Bytes: 864925381                              Bytes: 8390579124
+Interrupts: 0                                 Interrupts: 18572891
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 1
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 30        
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 6
+
+Broadcast Packets: 6029                       Broadcast Packets: 9429720
+Multicast Packets: 57415                      Multicast Packets: 1180641
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 6
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 20000
+Driver Flags: Up Broadcast Running 
+	Simplex AlternateAddress 64BitSupport 
+	ChecksumOffload LargeSend DataRateSet 
+
+PCIe2 2-port 10GbE SR Adapter (a21910071410d003) Specific Statistics:
+---------------------------------------------------------------------
+Link Status : Up
+Media Speed Running: 10 Gbps Full Duplex
+PCI Mode: PCI-Express X8
+	Relaxed Ordering: Disabled
+	TLP Size: 512
+	MRR Size: 4096
+	PCIe Link Speed: 5.0 Gbps 
+Firmware Operating Mode: Legacy
+Jumbo Frames: Disabled
+Transmit TCP segmentation offload: Enabled
+Receive TCP segment aggregation: Enabled
+Transmit and receive flow control status: Enabled
+Receive statistics for RXQ number: 0
+	Number of receive interrupts: 5774167
+	Number of receive packets: 5785655
+	Number of receive bytes: 347572148
+	Number of receive packet drops: 1
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+Receive statistics for RXQ number: 1
+	Number of receive interrupts: 9300178
+	Number of receive packets: 9595411
+	Number of receive bytes: 5635380457
+	Number of receive packet drops: 0
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+	TCP segment aggregation large packets created: 2595
+	TCP packets aggregated into large packets: 9172
+	TCP payload bytes aggregated into large packets: 13286392
+	TCP segment aggregation average packets aggregated: 3
+	TCP segment aggregation maximum packets aggregated: 16
+Receive statistics for RXQ number: 2
+	Number of receive interrupts: 3498546
+	Number of receive packets: 4212424
+	Number of receive bytes: 2407626519
+	Number of receive packet drops: 0
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+	TCP segment aggregation large packets created: 8487
+	TCP packets aggregated into large packets: 27813
+	TCP payload bytes aggregated into large packets: 40278455
+	TCP segment aggregation average packets aggregated: 3
+	TCP segment aggregation maximum packets aggregated: 16
+Transmit statistics for TXQ number: 0
+	Number of transmit packets: 1587728
+	Number of transit bytes: 321758218
+	Number of transmit packet drops: 0
+	Number of transmit queue overflows: 0
+	TCP segmentation offload packets transmitted: 18122
+	TCP segmentation offload maximum packet size: 41388
+	Maximum entries used on this transmit queue: 16
+Transmit statistics for TXQ number: 1
+	Number of transmit packets: 3556144
+	Number of transit bytes: 543167163
+	Number of transmit packet drops: 0
+	Number of transmit queue overflows: 0
+	TCP segmentation offload packets transmitted: 24988
+	TCP segmentation offload maximum packet size: 61504
+	Maximum entries used on this transmit queue: 14
+
+-------------------------------------------------------------
+Backup adapter - ent6:
+======================
+
+ETHERNET STATISTICS (ent6) :
+Device Type: PCIe2 2-port 10GbE SR Adapter (a21910071410d003) 
+Hardware Address: 00:90:fa:26:ec:b0
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 0                                    Packets: 10521058
+Bytes: 0                                      Bytes: 813095277
+Interrupts: 0                                 Interrupts: 10484137
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 1
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 0         
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 0
+
+Broadcast Packets: 0                          Broadcast Packets: 9435749
+Multicast Packets: 0                          Multicast Packets: 1238048
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 0
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 20000
+Driver Flags: Up Broadcast Running 
+	Simplex AlternateAddress 64BitSupport 
+	ChecksumOffload LargeSend DataRateSet 
+
+PCIe2 2-port 10GbE SR Adapter (a21910071410d003) Specific Statistics:
+---------------------------------------------------------------------
+Link Status : Up
+Media Speed Running: 10 Gbps Full Duplex
+PCI Mode: PCI-Express X8
+	Relaxed Ordering: Disabled
+	TLP Size: 512
+	MRR Size: 4096
+	PCIe Link Speed: 5.0 Gbps 
+Firmware Operating Mode: Legacy
+Jumbo Frames: Disabled
+Transmit TCP segmentation offload: Enabled
+Receive TCP segment aggregation: Enabled
+Transmit and receive flow control status: Enabled
+Receive statistics for RXQ number: 0
+	Number of receive interrupts: 5768653
+	Number of receive packets: 5780477
+	Number of receive bytes: 347261468
+	Number of receive packet drops: 1
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+Receive statistics for RXQ number: 1
+	Number of receive interrupts: 3719253
+	Number of receive packets: 3740545
+	Number of receive bytes: 355811922
+	Number of receive packet drops: 0
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+	TCP segment aggregation large packets created: 0
+	TCP packets aggregated into large packets: 0
+	TCP payload bytes aggregated into large packets: 0
+	TCP segment aggregation average packets aggregated: 1
+	TCP segment aggregation maximum packets aggregated: 0
+Receive statistics for RXQ number: 2
+	Number of receive interrupts: 996231
+	Number of receive packets: 1000036
+	Number of receive bytes: 110021887
+	Number of receive packet drops: 0
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+	TCP segment aggregation large packets created: 0
+	TCP packets aggregated into large packets: 0
+	TCP payload bytes aggregated into large packets: 0
+	TCP segment aggregation average packets aggregated: 1
+	TCP segment aggregation maximum packets aggregated: 0
+Transmit statistics for TXQ number: 0
+	Number of transmit packets: 0
+	Number of transit bytes: 0
+	Number of transmit packet drops: 0
+	Number of transmit queue overflows: 0
+	TCP segmentation offload packets transmitted: 0
+	TCP segmentation offload maximum packet size: 0
+	Maximum entries used on this transmit queue: 0
+Transmit statistics for TXQ number: 1
+	Number of transmit packets: 0
+	Number of transit bytes: 0
+	Number of transmit packet drops: 0
+	Number of transmit queue overflows: 0
+	TCP segmentation offload packets transmitted: 0
+	TCP segmentation offload maximum packet size: 0
+	Maximum entries used on this transmit queue: 0
+end-en8
+start-en9
+-------------------------------------------------------------
+ETHERNET STATISTICS (en9) :
+Device Type: EtherChannel
+Hardware Address: 00:90:fa:26:ec:a7
+Elapsed Time: 53 days 1 hours 20 minutes 23 seconds
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 297188506                            Packets: 360329862
+Bytes: 297728731814                           Bytes: 363121210240
+Interrupts: 0                                 Interrupts: 143919031
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 2
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 62        
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 8
+
+Broadcast Packets: 3785                       Broadcast Packets: 18867709
+Multicast Packets: 97208                      Multicast Packets: 2858450
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 8
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 20000
+Driver Flags: Up Broadcast Running 
+	Simplex 64BitSupport ChecksumOffload 
+	LargeSend DataRateSet 
+
+=============================================================
+=============================================================
+
+Statistics for every adapter in the EtherChannel:
+-------------------------------------------------
+
+Number of adapters: 2
+Active channel: primary channel
+Operating mode: Network interface backup mode
+
+-------------------------------------------------------------
+
+ETHERNET STATISTICS (ent5) :
+Device Type: PCIe2 2-port 10GbE SR Adapter (a21910071410d003) 
+Hardware Address: 00:90:fa:26:ec:a7
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 297188615                            Packets: 349569239
+Bytes: 297728865072                           Bytes: 362293885604
+Interrupts: 0                                 Interrupts: 133205065
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 1
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 62        
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 4
+
+Broadcast Packets: 3785                       Broadcast Packets: 9431962
+Multicast Packets: 97208                      Multicast Packets: 1380626
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 4
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 20000
+Driver Flags: Up Broadcast Running 
+	Simplex AlternateAddress 64BitSupport 
+	ChecksumOffload LargeSend DataRateSet 
+
+PCIe2 2-port 10GbE SR Adapter (a21910071410d003) Specific Statistics:
+---------------------------------------------------------------------
+Link Status : Up
+Media Speed Running: 10 Gbps Full Duplex
+PCI Mode: PCI-Express X8
+	Relaxed Ordering: Disabled
+	TLP Size: 512
+	MRR Size: 4096
+	PCIe Link Speed: 5.0 Gbps 
+Firmware Operating Mode: Legacy
+Jumbo Frames: Disabled
+Transmit TCP segmentation offload: Enabled
+Receive TCP segment aggregation: Enabled
+Transmit and receive flow control status: Enabled
+Receive statistics for RXQ number: 0
+	Number of receive interrupts: 5768783
+	Number of receive packets: 5780443
+	Number of receive bytes: 347259428
+	Number of receive packet drops: 1
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+Receive statistics for RXQ number: 1
+	Number of receive interrupts: 3956728
+	Number of receive packets: 3977794
+	Number of receive bytes: 372277847
+	Number of receive packet drops: 0
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+	TCP segment aggregation large packets created: 17
+	TCP packets aggregated into large packets: 219
+	TCP payload bytes aggregated into large packets: 312376
+	TCP segment aggregation average packets aggregated: 12
+	TCP segment aggregation maximum packets aggregated: 28
+Receive statistics for RXQ number: 2
+	Number of receive interrupts: 123479576
+	Number of receive packets: 339811094
+	Number of receive bytes: 361574463729
+	Number of receive packet drops: 0
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+	TCP segment aggregation large packets created: 185285
+	TCP packets aggregated into large packets: 1655132
+	TCP payload bytes aggregated into large packets: 2277194177
+	TCP segment aggregation average packets aggregated: 8
+	TCP segment aggregation maximum packets aggregated: 19
+Transmit statistics for TXQ number: 0
+	Number of transmit packets: 147982430
+	Number of transit bytes: 142013419439
+	Number of transmit packet drops: 0
+	Number of transmit queue overflows: 0
+	TCP segmentation offload packets transmitted: 1
+	TCP segmentation offload maximum packet size: 2259
+	Maximum entries used on this transmit queue: 30
+Transmit statistics for TXQ number: 1
+	Number of transmit packets: 149206337
+	Number of transit bytes: 155715635929
+	Number of transmit packet drops: 0
+	Number of transmit queue overflows: 0
+	TCP segmentation offload packets transmitted: 3
+	TCP segmentation offload maximum packet size: 2259
+	Maximum entries used on this transmit queue: 32
+
+-------------------------------------------------------------
+Backup adapter - ent7:
+======================
+
+ETHERNET STATISTICS (ent7) :
+Device Type: PCIe2 2-port 10GbE SR Adapter (a21910071410d003) 
+Hardware Address: 00:90:fa:26:ec:b1
+
+Transmit Statistics:                          Receive Statistics:
+--------------------                          -------------------
+Packets: 0                                    Packets: 10760755
+Bytes: 0                                      Bytes: 827485748
+Interrupts: 0                                 Interrupts: 10713999
+Transmit Errors: 0                            Receive Errors: 0
+Packets Dropped: 0                            Packets Dropped: 1
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 0         
+S/W Transmit Queue Overflow: 0
+Current S/W+H/W Transmit Queue Length: 0
+
+Broadcast Packets: 0                          Broadcast Packets: 9435747
+Multicast Packets: 0                          Multicast Packets: 1477824
+No Carrier Sense: 0                           CRC Errors: 0
+DMA Underrun: 0                               DMA Overrun: 0
+Lost CTS Errors: 0                            Alignment Errors: 0
+Max Collision Errors: 0                       No Resource Errors: 0
+Late Collision Errors: 0                      Receive Collision Errors: 0
+Deferred: 0                                   Packet Too Short Errors: 0
+SQE Test: 0                                   Packet Too Long Errors: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Single Collision Count: 0                     Receiver Start Count: 0
+Multiple Collision Count: 0
+Current HW Transmit Queue Length: 0
+
+General Statistics:
+-------------------
+No mbuf Errors: 0
+Adapter Reset Count: 0
+Adapter Data Rate: 20000
+Driver Flags: Up Broadcast Running 
+	Simplex AlternateAddress 64BitSupport 
+	ChecksumOffload LargeSend DataRateSet 
+
+PCIe2 2-port 10GbE SR Adapter (a21910071410d003) Specific Statistics:
+---------------------------------------------------------------------
+Link Status : Up
+Media Speed Running: 10 Gbps Full Duplex
+PCI Mode: PCI-Express X8
+	Relaxed Ordering: Disabled
+	TLP Size: 512
+	MRR Size: 4096
+	PCIe Link Speed: 5.0 Gbps 
+Firmware Operating Mode: Legacy
+Jumbo Frames: Disabled
+Transmit TCP segmentation offload: Enabled
+Receive TCP segment aggregation: Enabled
+Transmit and receive flow control status: Enabled
+Receive statistics for RXQ number: 0
+	Number of receive interrupts: 5768712
+	Number of receive packets: 5780475
+	Number of receive bytes: 347261348
+	Number of receive packet drops: 1
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+Receive statistics for RXQ number: 1
+	Number of receive interrupts: 3779120
+	Number of receive packets: 3800412
+	Number of receive bytes: 359406151
+	Number of receive packet drops: 0
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+	TCP segment aggregation large packets created: 0
+	TCP packets aggregated into large packets: 0
+	TCP payload bytes aggregated into large packets: 0
+	TCP segment aggregation average packets aggregated: 1
+	TCP segment aggregation maximum packets aggregated: 0
+Receive statistics for RXQ number: 2
+	Number of receive interrupts: 1166167
+	Number of receive packets: 1179868
+	Number of receive bytes: 120818249
+	Number of receive packet drops: 0
+	Number of RX mbufs allocated from system pool: 0
+	Number of system pool RX mbuf allocation failures: 0
+	Number of empty EQ events: 0
+	Number of no fragment errors: 0
+	Number of rx_limit events: 0
+	TCP segment aggregation large packets created: 0
+	TCP packets aggregated into large packets: 0
+	TCP payload bytes aggregated into large packets: 0
+	TCP segment aggregation average packets aggregated: 1
+	TCP segment aggregation maximum packets aggregated: 0
+Transmit statistics for TXQ number: 0
+	Number of transmit packets: 0
+	Number of transit bytes: 0
+	Number of transmit packet drops: 0
+	Number of transmit queue overflows: 0
+	TCP segmentation offload packets transmitted: 0
+	TCP segmentation offload maximum packet size: 0
+	Maximum entries used on this transmit queue: 0
+Transmit statistics for TXQ number: 1
+	Number of transmit packets: 0
+	Number of transit bytes: 0
+	Number of transmit packet drops: 0
+	Number of transmit queue overflows: 0
+	TCP segmentation offload packets transmitted: 0
+	TCP segmentation offload maximum packet size: 0
+	Maximum entries used on this transmit queue: 0
+end-en9
+cmdbegin:uname
+AIX LPS-SJCKA
+cmdbegin:service
+Subsystem         Group            PID          Status 
+ platform_agent                    3014982      active
+ cimsys                            3867118      active
+ snmpd            tcpip            4194568      active
+ syslogd          ras              4063740      active
+ sendmail         mail             3932416      active
+ portmap          portmap          4194330      active
+ inetd            tcpip            4522258      active
+ xntpd            tcpip            4128886      active
+ hostmibd         tcpip            3997958      active
+ snmpmibd         tcpip            4063232      active
+ aixmibd          tcpip            4391376      active
+ hrd              hrd              3539008      active
+ aso                               4653338      active
+ biod             nfs              4325408      active
+ rpc.statd        nfs              4260220      active
+ rpc.lockd        nfs              4456760      active
+ qdaemon          spooler          3735718      active
+ writesrv         spooler          4784416      active
+ clcomd           caa              4259854      active
+ sshd             ssh              4456566      active
+ pconsole         system           4718918      active
+ cas_agent                         5308482      active
+ ctrmc            rsct             5242948      active
+ pcmsrv                            5374024      active
+ IBM.DRM          rsct_rm          5505366      active
+ IBM.ServiceRM    rsct_rm          5243248      active
+ IBM.MgmtDomainRM rsct_rm          5112154      active
+ IBM.HostRM       rsct_rm          5374306      active
+ lpd              spooler                       inoperative
+ keyserv          keyserv                       inoperative
+ ypbind           yp                            inoperative
+ llbd             iforncs                       inoperative
+ glbd             iforncs                       inoperative
+ gsclvmd                                        inoperative
+ cdromd                                         inoperative
+ muxatmd          tcpip                         inoperative
+ rwhod            tcpip                         inoperative
+ dpid2            tcpip                         inoperative
+ dhcpcd           tcpip                         inoperative
+ dhcpcd6          tcpip                         inoperative
+ ndpd-host        tcpip                         inoperative
+ ndpd-router      tcpip                         inoperative
+ tftpd            tcpip                         inoperative
+ netcd            netcd                         inoperative
+ gated            tcpip                         inoperative
+ named            tcpip                         inoperative
+ routed           tcpip                         inoperative
+ iptrace          tcpip                         inoperative
+ timed            tcpip                         inoperative
+ dhcpsd           tcpip                         inoperative
+ dhcpsdv6         tcpip                         inoperative
+ dhcprd           tcpip                         inoperative
+ mrouted          tcpip                         inoperative
+ rsvpd            qos                           inoperative
+ policyd          qos                           inoperative
+ pxed             tcpip                         inoperative
+ binld            tcpip                         inoperative
+ dfpd             tcpip                         inoperative
+ nfsd             nfs                           inoperative
+ rpc.mountd       nfs                           inoperative
+ automountd       autofs                        inoperative
+ nfsrgyd          nfs                           inoperative
+ gssd             nfs                           inoperative
+ cpsd             ike                           inoperative
+ tmd              ike                           inoperative
+ isakmpd                                        inoperative
+ ikev2d                                         inoperative
+ iked             ike                           inoperative
+ clconfd          caa                           inoperative
+ pconsoleProxy    pconsole                      inoperative
+ pconsolePDA      pconsole                      inoperative
+ nimsh            nimclient                     inoperative
+ ctcas            rsct                          inoperative
+ IBM.ERRM         rsct_rm                       inoperative
+ IBM.AuditRM      rsct_rm                       inoperative
+ ypserv           yp                            inoperative
+ ypupdated        yp                            inoperative
+ yppasswdd        yp                            inoperative
+ dtsrc                                          inoperative
+cmdbegin:usergroup
+system:!:0:root,pconsole,esaadmin
+staff:!:1:ipsec,esaadmin,sshd
+bin:!:2:root,bin
+sys:!:3:root,bin,sys
+adm:!:4:bin,adm
+uucp:!:5:uucp,nuucp
+mail:!:6:
+security:!:7:root
+cron:!:8:root
+printq:!:9:lp
+audit:!:10:root
+ecs:!:28:
+nobody:!:4294967294:nobody,lpd
+usr:!:100:guest
+perf:!:20:
+shutdown:!:21:
+lp:!:11:root,lp
+invscout:!:12:invscout
+snapp:!:13:snapp
+ipsec:!:200:
+pconsole:!:14:pconsole
+sshd:!:201:sshd
+asmadmin:!:1001:grid,oracle
+dba:!:1002:oracle
+asmoper:!:1003:grid
+oinstall:!:1000:grid,oracle
+cmdbegin:user
+root id=0 pgrp=system groups=system,bin,sys,security,cron,audit,lp home=/ shell=/usr/bin/ksh auditclasses=general login=true su=true rlogin=true daemon=true admin=true sugroups=ALL admgroups=oinstall,asmoper,dba,asmadmin tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 time_last_login=1394001038 time_last_unsuccessful_login=1394001014 tty_last_login=/dev/pts/1 tty_last_unsuccessful_login=ssh host_last_login=10.161.202.253 host_last_unsuccessful_login=10.161.203.25 unsuccessful_login_count=0 roles=
+daemon id=1 pgrp=staff groups=staff home=/etc login=true su=true rlogin=true daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0101000070 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+bin id=2 pgrp=bin groups=bin,sys,adm home=/bin login=true su=true rlogin=true daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0101000070 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+sys id=3 pgrp=sys groups=sys home=/usr/sys login=true su=true rlogin=true daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0101000070 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+adm id=4 pgrp=adm groups=adm home=/var/adm login=true su=true rlogin=true daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+uucp id=5 pgrp=uucp groups=uucp home=/usr/lib/uucp login=false su=true rlogin=false daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+guest id=100 pgrp=usr groups=usr home=/home/guest login=true su=true rlogin=true daemon=true admin=false sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+nobody id=4294967294 pgrp=nobody groups=nobody home=/ login=true su=true rlogin=true daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0101000070 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+lpd id=9 pgrp=nobody groups=nobody home=/ login=true su=true rlogin=true daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0101000070 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+lp id=11 pgrp=lp groups=lp,printq home=/var/spool/lp shell=/bin/false login=true su=true rlogin=true daemon=true admin=false sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+invscout id=6 pgrp=invscout groups=invscout home=/var/adm/invscout shell=/usr/bin/ksh login=true su=true rlogin=true daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+snapp id=200 pgrp=snapp groups=snapp home=/usr/sbin/snapp shell=/usr/sbin/snappd gecos=snapp login user login=true su=false rlogin=false daemon=true admin=false sugroups=ALL admgroups= tpath=nosak ttys=/dev/tty0 expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=NONE logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= dce_export=false default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+ipsec id=201 pgrp=staff groups=staff home=/etc/ipsec shell=/usr/bin/ksh login=true su=true rlogin=true daemon=true admin=false sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+nuucp id=7 pgrp=uucp groups=uucp home=/var/spool/uucppublic shell=/usr/sbin/uucp/uucico gecos=uucp login user login=true su=true rlogin=true daemon=true admin=false sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+pconsole id=8 pgrp=system groups=system,pconsole home=/var/adm/pconsole shell=/usr/bin/ksh login=false su=false rlogin=true daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= rcmds=deny default_roles= fsize=-1 cpu=-1 data=1280000 stack=-1 core=2097151 rss=-1 nofiles=-1 data_hard=1280000 stack_hard=131072 roles=
+esaadmin id=10 pgrp=system groups=system,staff home=/var/esa shell=/usr/bin/ksh login=false su=true rlogin=false daemon=true admin=true sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles=SysConfig fsize=-1 cpu=-1 data=-1 stack=393216 core=2097151 rss=-1 nofiles=-1 stack_hard=393216 roles=SysConfig
+sshd id=202 pgrp=sshd groups=sshd,staff home=/var/empty shell=/usr/bin/ksh login=false su=true rlogin=false daemon=true admin=false sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=true minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 roles=
+grid id=1100 pgrp=oinstall groups=oinstall,asmadmin,asmoper home=/home/grid shell=/usr/bin/ksh login=true su=true rlogin=true daemon=true admin=false sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= capabilities=CAP_NUMA_ATTACH,CAP_BYPASS_RAC_VMM,CAP_PROPAGATE default_roles=oracle_devmgmt fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 time_last_login=1393997067 time_last_unsuccessful_login=1375574788 tty_last_login=ssh tty_last_unsuccessful_login=ssh host_last_login=lps-sjckb host_last_unsuccessful_login=lps-sjckb unsuccessful_login_count=0 roles=oracle_devmgmt
+oracle id=1101 pgrp=oinstall groups=oinstall,asmadmin,dba home=/home/oracle shell=/usr/bin/ksh login=true su=true rlogin=true daemon=true admin=false sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minloweralpha=0 minupperalpha=0 minother=0 mindigit=0 minspecialchar=0 mindiff=0 maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= capabilities=CAP_NUMA_ATTACH,CAP_BYPASS_RAC_VMM,CAP_PROPAGATE default_roles= fsize=-1 cpu=-1 data=-1 stack=-1 core=2097151 rss=-1 nofiles=-1 time_last_login=1387204539 time_last_unsuccessful_login=1387204537 tty_last_login=/dev/pts/0 tty_last_unsuccessful_login=ssh host_last_login=10.161.203.253 host_last_unsuccessful_login=10.161.203.253 unsuccessful_login_count=0 roles=
+cmdbegin:date
+Wed Mar  5 14:39:56 CST 2014
+cmdbegin:uptime
+  02:39PM   up 53 days,   1:20,  3 users,  load average: 5.75, 4.23, 4.18
+cmdbegin:errpt
+cmdbegin:volume
+hdisk0          00f8643a134ec1e8                    rootvg          active      
+hdisk1          00f8643abda6718b                    rootvg          active      
+hdisk2          00f8643a45dc3ab2                    None                        
+hdisk3          00f8643a45dc4a71                    None                        
+hdisk4          00f8643a45dd4a95                    None                        
+hdisk5          00f8643a45dd4b26                    None                        
+hdisk6          00f8643a389aa9a5                    None                        
+hdisk7          00f8643a389aa314                    None                        
+hdisk8          00f8643a389aa287                    None                        
+hdisk9          00f8643a389aa200                    None                        
+hdisk10         00f8643a389aa178                    None                        
+hdisk11         00f8643a45dd4f4c                    None                        
+hdisk12         00f8643a45dd70e7                    None                        
+hdisk13         00f8643a45dd7174                    None                        
+hdisk14         00f8643a45dd7206                    None                        
+hdisk15         00f8643a45dd729f                    None                        
+hdisk16         00f8643a45dd75b5                    None                        
+hdisk17         00f8643a389a9d88                    None                        
+hdisk18         00f8643a3898de04                    None                        
+cmdbegin:route
+Routing tables
+Destination        Gateway           Flags   Refs     Use  If   Exp  Groups
+
+Route Tree for Protocol Family 2 (Internet):
+default            10.161.241.254    UG       17   4105473 en8      -      -   
+10.10.10.0         10.10.10.1        UHSb      0         0 en9      -      -   =>
+10.10.10/24        10.10.10.1        U         6  26942793 en9      -      -   
+10.10.10.1         127.0.0.1         UGHS      2   3083966 lo0      -      -   
+10.10.10.255       10.10.10.1        UHSb      2        24 en9      -      -   
+10.161.240.0       10.161.240.102    UHSb      0         0 en0      -      -   =>
+10.161.240/24      10.161.240.102    U         1    381978 en0      -      -   
+10.161.240.102     127.0.0.1         UGHS      0     15698 lo0      -      -   
+10.161.240.255     10.161.240.102    UHSb      2     20377 en0      -      -   
+10.161.241.0       10.161.241.52     UHSb      0         0 en8      -      -   =>
+10.161.241/24      10.161.241.52     U         6    995229 en8      -      -   
+10.161.241.52      127.0.0.1         UGHS      3     22177 lo0      -      -   
+10.161.241.83      127.0.0.1         UGHS      2     75851 lo0      -      -   
+10.161.241.255     10.161.241.52     UHSb      0         1 en8      -      -   
+127/8              127.0.0.1         U        64  11915370 lo0      -      -   
+169.254/16         169.254.234.163   U        55  98595982 en9      -      -   
+169.254.234.163    127.0.0.1         UGHS     37   4503768 lo0      -      -   
+169.254.255.255    169.254.234.163   UHSb      0         0 en9      -      -   
+
+Route Tree for Protocol Family 24 (Internet v6):
+::1%1              ::1%1             UH       49   6071003 lo0      -      -   
+cmdbegin:end

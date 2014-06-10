@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices title="测试业务">
+   <device>
+      <id>net152</id>
+      <name>H3C-5</name>
+      <type>icon</type>
+      <iconUrl />
+      <x>238</x>
+      <y>127</y>
+   </device>
+</devices>
+

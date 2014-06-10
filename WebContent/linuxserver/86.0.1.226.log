@@ -1,0 +1,473 @@
+cmdbegin:collecttime
+2013-07-24 18:35:00
+cmdbegin:version
+5300-07-01-0748
+cmdbegin:vmstat
+
+System configuration: lcpu=8 mem=15936MB
+
+kthr    memory              page              faults        cpu    
+----- ----------- ------------------------ ------------ -----------
+ r  b   avm   fre  re  pi  po  fr   sr  cy  in   sy  cs us sy id wa
+ 1  1 1594665  4230   0   0   0   3    5   0  15 9682 548  0  1 99  0
+cmdbegin:lsps
+Total Paging Space   Percent Used
+      8192MB               2%
+cmdbegin:swap
+allocated  =    2097152 blocks    used  =   38833 blocks      free  =    2058319 blocks
+cmdbegin:process
+USER         PID %CPU %MEM   SZ  RSS    TTY STAT    STIME  TIME COMMAND
+daemon    286882  0.0  0.0 1352  700      - A      Jul 28  0:00 rpc.statd
+nms       659672                            Z              0:00 <defunct>
+nms       667844  0.0  0.0  228  244      - A    18:35:01  0:00 egrep
+nms       684248                            Z              0:00 <defunct>
+nms       696468                            Z              0:00 <defunct>
+nms      1282156  0.0  0.0 1112 1136      - A    18:35:01  0:00 ps
+nms      1429680                            Z              0:00 <defunct>
+nms      1450034  0.0  0.0  700  740      - A    18:35:00  0:00 sh
+nms      1462480  0.0  0.0  204  216      - A    18:35:01  0:00 sort
+root           0  0.0  0.0  384  384      - A      Jul 28 207:50 swapper
+root           1  0.0  0.0  644  492      - A      Jul 28  9:56 init
+root        8196  6.5  0.0  384  384      - A      Jul 28 818629:32 wait
+root       12294  0.0  0.0  448  448      - A      Jul 28  1:20 sched
+root       16392  0.0  0.0  512  512      - A      Jul 28 31:45 lrud
+root       20490  0.0  0.0  448  448      - A      Jul 28  0:00 vmptacrt
+root       24588  0.0  0.0  512  512      - A      Jul 28  7:39 psmd
+root       28686  0.0  0.0  512  512      - A      Jul 28  0:00 xmfreed
+root       32784  0.0  0.0  448  448      - A      Jul 28  0:00 memp_rbd
+root       36882  0.0  0.0  448  448      - A      Jul 28  0:00 memgrdd
+root       40980  0.0  0.0  448  448      - A      Jul 28  0:00 psgc
+root       45078  0.0  0.0 1280 1280      - A      Jul 28  2:13 pilegc
+root       49176  0.0  0.0  448  448      - A      Jul 28 75:40 xmgc
+root       53274  5.9  0.0  384  384      - A      Jul 28 736813:02 wait
+root       57372  6.5  0.0  384  384      - A      Jul 28 820639:09 wait
+root       61470  5.9  0.0  384  384      - A      Jul 28 741038:16 wait
+root       65568  6.5  0.0  384  384      - A      Jul 28 813162:43 wait
+root       69666  5.9  0.0  384  384      - A      Jul 28 747527:14 wait
+root       73764  6.7  0.0  384  384      - A      Jul 28 848589:58 wait
+root       77862  5.7  0.0  384  384      - A      Jul 28 714372:36 wait
+root       81960  0.0  0.0  448  448      - A      Jul 28  5:22 netm
+root       86058  0.0  0.0  960  960      - A      Jul 28 258:01 gil
+root       90156  0.0  0.0  512  512      - A      Jul 28  0:00 wlmsched
+root       94254  0.0  0.0  448  448      - A      Jul 28  0:00 armtrace_kproc
+root      102476  0.0  0.0  448  448      - A      Jul 28  0:00 lvmbb
+root      118976  0.0  0.0  408  412      - A      Jul 28  6:05 cron
+root      122996  0.0  0.0  464  468      - A      Jul 28  0:00 inetd
+root      131164  0.0  0.0 1472 1472      - A      Jul 28  0:00 dog
+root      135416  0.0  0.0 2028  380      - A      Jul 28  5:46 rmcd
+root      139346  0.0  0.0 3584 3584      - A      Jul 28  0:23 j2pg
+root      143450  0.0  0.0  448  448      - A      Jul 28  0:00 usbCfgDev
+root      147590  0.0  0.0  448  448      - A      Jul 28  9:30 aioserver
+root      151690  0.0  0.0  832  616      - A      Jul 28  0:00 errdemon
+root      155748  0.0  0.0  932  924      - A      Jul 28  0:00 portmap
+root      163950  0.0  0.0 5052 1464      - A      Jul 28 57:36 X
+root      168048  0.0  0.0 1524 1156      - A      Jul 28  3:13 aixmibd64
+root      172160  0.0  0.0  448  448      - A      Jul 28  8:49 aioserver
+root      176256  0.0  0.0  552  180      - A      Jul 28  0:00 dtlogin
+root      180324  0.0  0.0  504  452      - A      Jul 28 636:24 syncd
+root      184490  0.0  0.0  520   80      - A      Jul 28  0:00 dtlogin
+root      188586  0.0  0.0 1112  980      - A      Jul 28  0:24 hostmibd64
+root      192622  0.0  0.0  448  448      - A      Jul 28  0:00 random
+root      196716  0.0  0.0 1420  924      - A      Jul 28 3132:54 dtgreet
+root      200804  0.0  0.0  428  428      - A      Jul 28  0:00 shlap64
+root      204914  0.0  0.0  448  448      - A      Jul 28  0:00 rtcmd
+root      209046  0.0  0.0 1172  904      - A      Jul 28  0:12 snmpdv3ne
+root      213108  0.0  0.0  448  448      - A      Jul 28  3:39 rgsr
+root      217196  0.0  0.0  336  308      - A      Jul 28  0:49 syslogd
+root      225400  0.0  0.0  512  512      - A      Jul 28  0:14 nfsSM
+root      229494  0.0  0.0  512  512      - A      Jul 28  0:00 kbiod
+root      233694  0.0  0.0 1988 1792      - A      Jul 28 15:38 sendmail
+root      237686  0.0  0.0  448  448      - A      Jul 28  0:33 rdpgc
+root      241828  0.0  0.0  660  320      - A      Jul 28  0:00 muxatmd
+root      245978  0.0  0.0  448  448      - A      Jul 28  9:57 aioserver
+root      249988  0.0  0.0  448  448      - A      Jul 28  1:04 n4bg
+root      254118  0.0  0.0 1216 1216      - A      Jul 28 45:11 rpc.lockd
+root      258204  0.0  0.0   88   60      - A      Jul 28  0:00 uprintfd
+root      270522  0.0  0.0  768  584      - A      Jul 28  0:53 srcmstr
+root      274566  0.0  0.0 1280 1124      - A      Jul 28  0:24 snmpmibd64
+root      278680  0.0  0.0  448  448      - A      Jul 28 10:26 aioserver
+root      282818  0.0  0.0  448  448      - A      Jul 28 11:52 aioserver
+root      299190  0.0  0.0 1544  172      - A      Jul 28  0:00 IBM.ServiceRMd
+root      303294  0.0  0.0  268  260      - A      Jul 28  0:50 qdaemon
+root      307366  0.0  0.0  152   64      - A      Jul 28  0:00 biod
+root      311462  0.0  0.0  448  448      - A      Jul 28  9:39 aioserver
+root      319662  0.0  0.0  292  172      - A      Jul 28  0:00 rpc.lockd
+root      323762  0.0  0.0  448  448      - A      Jul 28  9:08 aioserver
+root      327878  0.0  0.0  448  448      - A      Jul 28  9:00 aioserver
+root      331988  0.0  0.0  476  264   lft0 A      Jul 28  0:00 getty
+root      340172  0.0  0.0 2784 1396      - A      Jul 28 21:24 IBM.CSMAgentRMd
+root      348354  0.0  0.0  448  448      - A      Jul 28 10:24 aioserver
+root      352442  0.0  0.0  276  260      - A      Jul 28  0:00 writesrv
+root      360624  0.0  0.0  448  448      - A      Jul 28 10:00 aioserver
+root      364722  0.0  0.0  448  448      - A      Jul 28  9:28 aioserver
+root      368820  0.0  0.0  448  448      - A      Jul 28  8:51 aioserver
+root      372918  0.0  0.0  448  448      - A      Jul 28 10:02 aioserver
+root      377016  0.0  0.0  448  448      - A      Jul 28 10:26 aioserver
+root      381114  0.0  0.0  448  448      - A      Jul 28  9:51 aioserver
+root      385212  0.0  0.0  448  448      - A      Jul 28  9:07 aioserver
+root      389310  0.0  0.0  448  448      - A      Jul 28  9:35 aioserver
+root      393408  0.0  0.0  448  448      - A      Jul 28  9:16 aioserver
+root      397506  0.0  0.0  448  448      - A      Jul 28  9:23 aioserver
+root      401604  0.0  0.0  448  448      - A      Jul 28  8:49 aioserver
+root      405702  0.0  0.0  448  448      - A      Jul 28  9:11 aioserver
+root      409800  0.0  0.0  448  448      - A      Jul 28  9:57 aioserver
+root      413898  0.0  0.0  448  448      - A      Jul 28  9:23 aioserver
+root      417996  0.0  0.0  448  448      - A      Jul 28  8:27 aioserver
+root      422094  0.0  0.0  448  448      - A      Jul 28  8:48 aioserver
+root      426192  0.0  0.0  448  448      - A      Jul 28 10:06 aioserver
+root      430290  0.0  0.0  448  448      - A      Jul 28 10:16 aioserver
+root      434388  0.0  0.0  448  448      - A      Jul 28  9:20 aioserver
+root      438486  0.0  0.0  448  448      - A      Jul 28  8:41 aioserver
+root      442584  0.0  0.0  448  448      - A      Jul 28  9:30 aioserver
+root      446682  0.0  0.0  448  448      - A      Jul 28  9:36 aioserver
+root      450780  0.0  0.0  448  448      - A      Jul 28  9:22 aioserver
+root      454878  0.0  0.0  448  448      - A      Jul 28  9:12 aioserver
+root      458976  0.0  0.0  448  448      - A      Jul 28  8:43 aioserver
+root      463074  0.0  0.0  448  448      - A      Jul 28 10:28 aioserver
+root      467172  0.0  0.0  448  448      - A      Jul 28 10:55 aioserver
+root      471270  0.0  0.0  448  448      - A      Jul 28  9:13 aioserver
+root      475368  0.0  0.0  448  448      - A      Jul 28  8:57 aioserver
+root      479466  0.0  0.0  448  448      - A      Jul 28  9:46 aioserver
+root      483564  0.0  0.0  448  448      - A      Jul 28  8:28 aioserver
+root      487662  0.0  0.0  448  448      - A      Jul 28  9:38 aioserver
+root      491760  0.0  0.0  448  448      - A      Jul 28  8:31 aioserver
+root      495858  0.0  0.0  448  448      - A      Jul 28  9:25 aioserver
+root      499956  0.0  0.0  448  448      - A      Jul 28  9:26 aioserver
+root      504054  0.0  0.0  448  448      - A      Jul 28  9:03 aioserver
+root      508152  0.0  0.0  448  448      - A      Jul 28 10:23 aioserver
+root      512250  0.0  0.0  448  448      - A      Jul 28 10:38 aioserver
+root      516348  0.0  0.0  448  448      - A      Jul 28  9:46 aioserver
+root      520446  0.0  0.0  448  448      - A      Jul 28  9:58 aioserver
+root      524288  0.0  0.0  448  448      - A      Jul 28  9:59 aioserver
+root      528386  0.0  0.0  448  448      - A      Jul 28  9:16 aioserver
+root      532484  0.0  0.0  448  448      - A      Jul 28  9:48 aioserver
+root      536582  0.0  0.0  448  448      - A      Jul 28  9:44 aioserver
+root      540680  0.0  0.0  448  448      - A      Jul 28  9:15 aioserver
+root      544778  0.0  0.0  448  448      - A      Jul 28  9:35 aioserver
+root      548876  0.0  0.0  448  448      - A      Jul 28 10:17 aioserver
+root      552974  0.0  0.0  448  448      - A      Jul 28  9:09 aioserver
+root      557072  0.0  0.0  448  448      - A      Jul 28 10:44 aioserver
+root      561170  0.0  0.0  448  448      - A      Jul 28  9:35 aioserver
+root      565268  0.0  0.0  448  448      - A      Jul 28  9:01 aioserver
+root      569366  0.0  0.0  448  448      - A      Jul 28  8:50 aioserver
+root      573464  0.0  0.0  448  448      - A      Jul 28  8:58 aioserver
+root      577562  0.0  0.0  448  448      - A      Jul 28 10:43 aioserver
+root      581660  0.0  0.0  448  448      - A      Jul 28  9:58 aioserver
+root      585758  0.0  0.0  448  448      - A      Jul 28  9:29 aioserver
+root      589856  0.0  0.0  448  448      - A      Jul 28  7:47 aioserver
+root      593954  0.0  0.0  448  448      - A      Jul 28  8:34 aioserver
+root      598052  0.0  0.0  448  448      - A      Jul 28  9:11 aioserver
+root      602150  0.0  0.0  448  448      - A      Jul 28 10:27 aioserver
+root      606248  0.0  0.0  448  448      - A      Jul 28  9:20 aioserver
+root      610346  0.0  0.0  448  448      - A      Jul 28  8:44 aioserver
+root      614444  0.0  0.0  448  448      - A      Jul 28  9:22 aioserver
+root      618542  0.0  0.0  448  448      - A      Jul 28  9:32 aioserver
+root      622640  0.0  0.0  448  448      - A      Jul 28  8:46 aioserver
+root      626738  0.0  0.0  448  448      - A      Jul 28  9:19 aioserver
+root      630836  0.0  0.0  448  448      - A      Jul 28  9:42 aioserver
+root      634934  0.0  0.0  448  448      - A      Jul 28  8:44 aioserver
+root      639032  0.0  0.0  448  448      - A      Jul 28 10:22 aioserver
+root      643130  0.0  0.0  448  448      - A      Jul 28  9:18 aioserver
+root      647228  0.0  0.0  448  448      - A      Jul 28  9:52 aioserver
+sybase    106656  0.0  0.0  692  728      - A      Jun 20  0:00 sh
+sybase    159864  0.0  0.0 1488  900      - A      Jul 28  2:19 SYBASE
+sybase    290994  0.0  0.0 1332  816      - A      Jul 28  1:53 lmgrd
+sybase    671814  0.1  0.0 26060 20296      - A      Jun 20 233:58 dataserver
+sybase    692392  0.2  0.0 26636 20576      - A      Jun 20 686:49 dataserver
+sybase    766082  0.0  0.0  692  708      - A      Jun 20  0:00 sh
+sybase   1302660  0.0  0.0 7784 8184      - A      Jun 20  0:24 backupserver
+sybase   1413126  0.1  0.0 26012 20232      - A      Jun 20 259:03 dataserver
+cmdbegin:cpu
+
+AIX CWserver 3 5 000BE75AD700    07/24/13
+
+System configuration: lcpu=8  mode=Capped 
+
+18:35:01    %usr    %sys    %wio   %idle   physc
+18:35:02       0       0       0     100    3.98
+18:35:03       0       0       0      99    4.00
+18:35:04       0       0       0     100    4.00
+
+Average        0       0       0     100    3.99
+cmdbegin:processor
+proc0 Available 00-00 Processor
+proc2 Available 00-02 Processor
+proc4 Available 00-04 Processor
+proc6 Available 00-06 Processor
+cmdbegin:cpuconfig
+CPU Type: 64-bit
+Kernel Type: 64-bit
+LPAR Info: 1 06-D9ABG
+Memory Size: 15936 MB
+Processor Clock Speed: 1648 MHz
+cmdbegin:allconfig
+cmdbegin:disk
+Filesystem    MB blocks      Free %Used    Iused %Iused Mounted on
+/dev/hd4         512.00    487.12    5%     1915     2% /
+/dev/hd2        1536.00    267.96   83%    33766    36% /usr
+/dev/hd9var      512.00    222.03   57%      492     1% /var
+/dev/hd3         512.00    509.84    1%       32     1% /tmp
+/dev/fwdump      512.00    504.43    2%        6     1% /var/adm/ras/platform
+/dev/hd1        1536.00    790.26   49%     3681     3% /home
+/proc                 -         -    -         -     -  /proc
+/dev/hd10opt     512.00    429.70   17%     1617     2% /opt
+/dev/baklv     29952.00    971.66   97%       36     1% /home/bak
+cmdbegin:diskperf
+
+AIX CWserver 3 5 000BE75AD700    07/24/13
+
+System configuration: lcpu=8 drives=5  mode=Capped 
+
+18:35:04     device    %busy    avque    r+w/s    Kbs/s   avwait   avserv
+
+18:35:05     hdisk0      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0        0      0.0      0.0
+             hdisk2      0      0.0        0        0      0.0      0.0
+                cd0      0      0.0        0        0      0.0      0.0
+             hdisk4      0      0.0        0        0      0.0      0.0
+
+
+18:35:06     hdisk0      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0        0      0.0      0.0
+             hdisk2      0      0.0        0        0      0.0      0.0
+                cd0      0      0.0        0        0      0.0      0.0
+             hdisk4      0      0.0        0        0      0.0      0.0
+
+
+Average      hdisk0      0      0.0        0        0      0.0      0.0
+             hdisk3      0      0.0        0        0      0.0      0.0
+             hdisk2      0      0.0        0        0      0.0      0.0
+                cd0      0      0.0        0        0      0.0      0.0
+             hdisk4      0      0.0        0        0      0.0      0.0
+cmdbegin:diskiostat
+
+System configuration: lcpu=8 drives=5 paths=3 vdisks=0
+
+tty:      tin         tout    avg-cpu: % user % sys % idle % iowait
+          0.0          0.0                0.2   0.5   99.1      0.2
+		" Disk history since boot not available. "
+
+cmdbegin:netperf
+Name  Mtu   Network     Address            Ipkts Ierrs    Opkts Oerrs  Coll
+en0   1500  link#2      0.1a.64.1c.e0.26  359777313     0 59679516     3     0
+                        01:00:5e:00:00:01
+en0   1500  86.0.1      86.0.1.226        359777313     0 59679516     3     0
+                        224.0.0.1          
+en1   1500  link#3      0.1a.64.1c.e0.27         0     0        7     7     0
+                        01:00:5e:00:00:01
+en1   1500  10.10.31    10.10.31.100             0     0        7     7     0
+                        224.0.0.1          
+en2   1500  link#4      0.14.5e.b8.6c.9d         0     0        7     7     0
+                        01:00:5e:00:00:01
+en2   1500  100.100.100 100.100.100.1            0     0        7     7     0
+                        224.0.0.1          
+lo0   16896 link#1                         1075188     0  1086249     0     0
+lo0   16896 127         127.0.0.1          1075188     0  1086249     0     0
+                        224.0.0.1          
+lo0   16896 ::1                            1075188     0  1086249     0     0
+                        ff01::1          
+                        ff02::1:ff00:1   
+                        ff02::1          
+cmdbegin:netallperf
+start-en0
+Hardware Address: 00:1a:64:1c:e0:26
+Packets: 59679593                             Packets: 366803399
+Bytes: 47545869320                            Bytes: 40140165191
+Interrupts: 0                                 Interrupts: 320964286
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 28        
+Broadcast Packets: 11065                      Broadcast Packets: 296776533
+Multicast Packets: 0                          Multicast Packets: 1400
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Link Status : Up
+Media Speed Running: 1000 Mbps Full Duplex
+TCP Segmentation Offload Packets Transmitted: 1004008
+end-en0
+start-en1
+Hardware Address: 00:1a:64:1c:e0:27
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 1         
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Link Status : UNKNOWN
+Media Speed Running: Unknown
+TCP Segmentation Offload Packets Transmitted: 0
+end-en1
+start-en2
+Hardware Address: 00:14:5e:b8:6c:9d
+Packets: 0                                    Packets: 0
+Bytes: 0                                      Bytes: 0
+Interrupts: 0                                 Interrupts: 0
+Packets Dropped: 0                            Packets Dropped: 0
+                                              Bad Packets: 0
+Max Packets on S/W Transmit Queue: 1         
+Broadcast Packets: 0                          Broadcast Packets: 0
+Multicast Packets: 0                          Multicast Packets: 0
+Timeout Errors: 0                             Packets Discarded by Adapter: 0
+Link Status : UNKNOWN
+Media Speed Running: Unknown
+TCP Segmentation Offload Packets Transmitted: 0
+end-en2
+start-en3
+end-en3
+start-en4
+end-en4
+start-en5
+end-en5
+start-en6
+end-en6
+start-en7
+end-en7
+start-en8
+end-en8
+start-en9
+end-en9
+cmdbegin:uname
+AIX CWserver
+cmdbegin:service
+Subsystem         Group            PID          Status 
+ syslogd          ras              217196       active
+ portmap          portmap          155748       active
+ sendmail         mail             233694       active
+ inetd            tcpip            122996       active
+ snmpd            tcpip            209046       active
+ aixmibd          tcpip            168048       active
+ hostmibd         tcpip            188586       active
+ snmpmibd         tcpip            274566       active
+ muxatmd          tcpip            241828       active
+ biod             nfs              307366       active
+ rpc.statd        nfs              286882       active
+ rpc.lockd        nfs              319662       active
+ qdaemon          spooler          303294       active
+ writesrv         spooler          352442       active
+ ctrmc            rsct             135416       active
+ IBM.ServiceRM    rsct_rm          299190       active
+ IBM.CSMAgentRM   rsct_rm          340172       active
+ lpd              spooler                       inoperative
+ LUMlmd           lumls                         inoperative
+ LUMgdb           lumls                         inoperative
+ rwhod            tcpip                         inoperative
+ xntpd            tcpip                         inoperative
+ dpid2            tcpip                         inoperative
+ dhcpcd           tcpip                         inoperative
+ dhcpcd6          tcpip                         inoperative
+ ndpd-host        tcpip                         inoperative
+ ndpd-router      tcpip                         inoperative
+ tftpd            tcpip                         inoperative
+ gated            tcpip                         inoperative
+ named            tcpip                         inoperative
+ routed           tcpip                         inoperative
+ iptrace          tcpip                         inoperative
+ timed            tcpip                         inoperative
+ dhcpsd           tcpip                         inoperative
+ dhcpsdv6         tcpip                         inoperative
+ dhcprd           tcpip                         inoperative
+ mrouted          tcpip                         inoperative
+ rsvpd            qos                           inoperative
+ policyd          qos                           inoperative
+ pxed             tcpip                         inoperative
+ binld            tcpip                         inoperative
+ dfpd             tcpip                         inoperative
+ keyserv          keyserv                       inoperative
+ ypbind           yp                            inoperative
+ nfsd             nfs                           inoperative
+ rpc.mountd       nfs                           inoperative
+ automountd       autofs                        inoperative
+ nfsrgyd          nfs                           inoperative
+ gssd             nfs                           inoperative
+ llbd             iforncs                       inoperative
+ glbd             iforncs                       inoperative
+ cpsd             ike                           inoperative
+ tmd              ike                           inoperative
+ isakmpd          ike                           inoperative
+ cdromd                                         inoperative
+ i4lmd            iforls                        inoperative
+ i4glbcd          iforncs                       inoperative
+ i4gdb            iforls                        inoperative
+ i4llmd           iforls                        inoperative
+ nimsh            nimclient                     inoperative
+ ctcas            rsct                          inoperative
+ vert_serv        nrd                           inoperative
+ dtsrc                                          inoperative
+ wsmrefserver                                   inoperative
+ IBM.ERRM         rsct_rm                       inoperative
+ IBM.AuditRM      rsct_rm                       inoperative
+cmdbegin:usergroup
+system:!:0:root,esaadmin
+staff:!:1:ipsec
+bin:!:2:root,bin
+sys:!:3:root,bin,sys
+adm:!:4:bin,adm,nms
+uucp:!:5:uucp,nuucp
+mail:!:6:
+security:!:7:root
+cron:!:8:root
+printq:!:9:lp
+audit:!:10:root
+ecs:!:28:
+nobody:!:4294967294:nobody,lpd
+usr:!:100:guest
+perf:!:20:
+shutdown:!:21:
+lp:!:11:root,lp,printq
+invscout:!:12:invscout
+snapp:!:13:snapp
+ipsec:!:200:
+sybase:!:201:sybase
+cmdbegin:user
+root id=0 pgrp=system groups=system,bin,sys,security,cron,audit,lp home=/ shell=/usr/bin/ksh
+daemon id=1 pgrp=staff groups=staff home=/etc
+bin id=2 pgrp=bin groups=bin,sys,adm home=/bin
+sys id=3 pgrp=sys groups=sys home=/usr/sys
+adm id=4 pgrp=adm groups=adm home=/var/adm
+uucp id=5 pgrp=uucp groups=uucp home=/usr/lib/uucp
+guest id=100 pgrp=usr groups=usr home=/home/guest
+nobody id=4294967294 pgrp=nobody groups=nobody home=/
+lpd id=9 pgrp=nobody groups=nobody home=/
+lp id=11 pgrp=lp groups=lp,printq home=/var/spool/lp shell=/bin/false
+invscout id=6 pgrp=invscout groups=invscout home=/var/adm/invscout shell=/usr/bin/ksh
+snapp id=200 pgrp=snapp groups=snapp home=/usr/sbin/snapp shell=/usr/sbin/snappd gecos=snapp login user
+ipsec id=201 pgrp=staff groups=staff home=/etc/ipsec shell=/usr/bin/ksh
+nuucp id=7 pgrp=uucp groups=uucp home=/var/spool/uucppublic shell=/usr/sbin/uucp/uucico gecos=uucp login user
+esaadmin id=811 pgrp=system groups=system home=/home/esaadmin shell=/usr/bin/ksh
+sybase id=202 pgrp=sybase groups=sybase home=/home/sybase shell=/usr/bin/ksh
+nms id=203 pgrp=staff groups=staff,adm home=/home/nms shell=/usr/bin/ksh roles=
+cmdbegin:date
+Wed Jul 24 18:35:06 CDT 2013
+cmdbegin:uptime
+  06:35PM   up 1091 days,  19:05,  0 users,  load average: 0.00, 0.01, 0.02
+cmdbegin:errpt
+cmdbegin:volume
+hdisk0          000be75a44b17084                    rootvg          active
+hdisk2          000be75ada05d25a                    datavg          active
+hdisk3          000be75ae8059986                    datavg          active
+hdisk4          000be75a264be8c1                    datavg          active
+cmdbegin:route
+Routing tables
+Destination        Gateway           Flags   Refs     Use  If   Exp  Groups
+
+Route Tree for Protocol Family 2 (Internet):
+default            86.0.1.200        UG        1  14739805 en0      -      -   
+10.10.31.0         10.10.31.100      UHSb      0         0 en1      -      -   =>
+10.10.31/24        10.10.31.100      U         0         1 en1      -      -   
+10.10.31.100       127.0.0.1         UGHS      0         1 lo0      -      -   
+10.10.31.255       10.10.31.100      UHSb      0         4 en1      -      -   
+86.0.1.0           86.0.1.226        UHSb      0         0 en0      -      -   =>
+86.0.1/24          86.0.1.226        U        10  44717940 en0      -      -   
+86.0.1.226         127.0.0.1         UGHS      5    779844 lo0      -      -   
+86.0.1.255         86.0.1.226        UHSb      0         4 en0      -      -   
+100.100.100.0      100.100.100.1     UHSb      0         0 en2      -      -   =>
+100.100.100/24     100.100.100.1     U         0         1 en2      -      -   
+100.100.100.1      127.0.0.1         UGHS      0         1 lo0      -      -   
+100.100.100.255    100.100.100.1     UHSb      0         4 en2      -      -   
+127/8              127.0.0.1         U         8    295341 lo0      -      -   
+
+Route Tree for Protocol Family 24 (Internet v6):
+::1                ::1               UH        0         0 lo0      -      -   
+cmdbegin:end

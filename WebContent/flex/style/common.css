@@ -1,0 +1,63 @@
+/* CSS file */
+		/*页面容器的样式*/
+		Application{
+			backgroundGradientAlphas:0.0, 0.0;
+			backgroundColor			:#FFFFFF;
+			fontFamily	   			:"宋体";
+			fontSize				:"12";
+		}
+		/*Box,Canvas的默认样式*/
+		Box {
+			horizontalGap           :"0";
+			verticalGap             :"0";
+		}
+		/*label,text的默认样式*/
+		Label,Text{
+			fontSize    			:"12";
+			textAlign				:"left";
+			fontWeight				:"normal";
+			paddingTop				:"3";
+		}
+		/*Button的默认样式*/
+		Button{
+			fontSize    			:"12";
+			textAlign				:"center";
+			fontWeight				:"normal";
+		}
+		/*LinkButton的默认样式*/
+		LinkButton{
+			fontSize    			:"12";
+			textAlign				:"left";
+			fontWeight				:"normal";
+		}
+		/*TextInput的默认样式*/
+		TextInput{
+			fontSize    			:"12";
+			textAlign				:"left";
+			fontWeight				:"normal";
+		}
+		/*Legend字体设置*/
+		.ChineseFont{ 
+			fontFamily               :"宋体";
+			fontSize                 :"12";
+			fontWeight				 :"normal";
+		}
+        @font-face { 
+            src                      :local("Arial");
+            font-family              :"Arial";
+        }
+
+        ColumnChart {
+            font-family              :"Arial";
+        }
+        
+        LineChart {
+            font-family              :"Arial";
+        }        
+
+         ToolTip 
+        {
+			fontSize                 :12;
+			color                    :#FFFFFF;
+			backgroundColor          :#6B8E23;
+        }

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+<dwr>
+	<allow>
+		<create creator="new" javascript="DWRUtil">
+			<param name="class" value="com.afunms.toolService.DWRUtil" />
+		</create>
+		<create creator="new" javascript="AvailabilityCheckUtil">
+			<param name="class" value="com.afunms.servlet.AvailabilityCheckUtil" />
+			<include method="dbCheck"/>
+			<include method="snmpCheck"/>
+			<include method="tomcatCheck"/>
+			<include method="weblogicCheck"/>
+		</create>
+		
+		<create creator="new" javascript="AlarmSummarize">
+			<param name="class" value="com.afunms.event.service.AlarmSummarize"/> 
+			<include method="getLastestEventList1"/>
+		</create>
+		<create creator="new" javascript="TopoRemoteService">
+			<param name="class" value="com.afunms.topology.manage.SubMapManager"/> 
+			<include method="removeEquipFromSubMap"/>
+			<include method="addEquipToMap"/>
+			<include method="addHintMeta"/>
+			<include method="getShowMessage"/>
+			<include method="getShowMenu"/>
+			<include method="refreshImage"/>
+			<include method="addLink"/>
+			<include method="confirmAlarm"/>
+			<include method="confirmSoundAlarm"/>
+			<include method="playSoundAlarm"/>
+		</create> 
+		<create creator="new" javascript="LinkRemoteService">
+			<param name="class" value="com.afunms.topology.manage.LinkManager"/> 
+			<include method="addLink"/>
+			<include method="batchEditLink"/>
+			<include method="addDemoLink"/>
+			<include method="getShowMessage"/>
+			<include method="refreshLink"/>
+			<include method="confirmAlarm"/>
+		</create> 
+		<!-- 端口流速 --> 
+		<create creator="new" javascript="PortControler">
+			<param name="class" value="com.afunms.realtime.PortControler"/>
+		</create>
+		<!-- 带宽 --> 
+		<create creator="new" javascript="BandwidthControler">
+			<param name="class" value="com.afunms.realtime.BandwidthControler"/>
+		</create>
+		<!-- 广播 --> 
+		<create creator="new" javascript="DataPacketControler">
+			<param name="class" value="com.afunms.realtime.DataPacketControler"/>
+		</create>
+		<!-- 多播 --> 
+		<create creator="new" javascript="MulticastPacketControler">
+			<param name="class" value="com.afunms.realtime.MulticastPacketControler"/>
+		</create>  
+		<convert converter="bean" match="com.afunms.topology.model.HostNode"/>
+		<convert converter="bean" match="com.afunms.event.model.EventList"/>
+		<convert converter="bean" match="com.afunms.event.model.CheckEvent"/>
+		<convert converter="bean" match="com.afunms.temp.model.Objbean"/>
+	</allow>
+</dwr>
