@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="editor"  extends="bpm">
+	<global-results>
+		<result name="error">
+		/error.jsp
+		</result>
+		</global-results>
+		<!-- 新建流程设计模版 -->
+		<action name="createModel" class="createModelAction">
+	      <result name="success" type="json">
+				<param name="root">url</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+		
+		<!-- 获取流程模版 -->
+		<action name="queryDesign" class="queryDesignAction">
+	      <result name="success">
+				/WEB-INF/system/designlist.jsp
+			</result>  
+		</action>
+		
+		
+		<!-- 删除流程模版 -->
+		<action name="delModel" class="delModelAction">
+	      <result name="success" type="redirect">
+				/controller/queryDesign.action
+			</result>  
+		</action>
+		
+	
+		
+	</package>
+
+</struts>

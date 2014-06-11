@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="test"  extends="bpm">
+	<global-results>
+		<result name="error">
+		/error.jsp
+		</result>
+		</global-results>
+		<!-- 流程部署页面 -->
+		<action name="processDep" class="processDepAction">
+			<result name="success" >/WEB-INF/system/process_deploy.jsp</result>
+		</action>
+		<!-- 部署流程 -->
+		<action name="processDeploy" class="processDeployAction" method="deployProcess">
+			<result name="success"  type="redirect"> /controller/processDefineList.action</result>
+			<result name="error"> /error.jsp</result>
+		</action>
+		<!-- 流程定义列表 -->
+		<action name="processDefineList" class="processDefineListAction">
+			<result name="success" >/WEB-INF/system/processdefine_list.jsp</result>
+		</action>
+		<!-- 单个流程XML文件 -->
+		<action name="processXML" class="processXMLAction">
+			<result name="success" >
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		<!-- 单个流程图片-->
+		<action name="processPicture" class="processPictureAction">
+			<result name="success" >
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		<!-- 删除定义流程 -->
+		<action name="processDefineDel" class="processDefineDelAction">
+			<result name="success" type="redirect"> /controller/processDefineList.action</result>
+			<result name="error"> /error.jsp</result>
+		</action>
+		<!-- 启动流程 -->
+
+		<action name="processDefineStart" class="processDefineStartAction">
+			<result name="success" type="redirect"> /controller/processDefineList.action?result=${result}</result>
+		</action>
+
+		<!-- 流程实例列表 -->
+		<action name="processInstanceList" class="processInstanceListAction">
+			<result name="success"> /WEB-INF/process/processinstance_list.jsp</result>
+		</action>
+		<!-- 待签收任务列表 -->
+		<action name="taskList" class="taskListAction">
+			<result name="success" >/WEB-INF/process/task_list.jsp</result>
+		</action>
+		<!-- 签收一个任务 -->
+		<action name="taskClaim" class="taskClaimAction">
+			<result name="success" type="redirect"> /controller/taskClaimList.action</result>
+			<result name="error"> /error.jsp</result>
+		</action>
+		<!-- 已签收，待办理任务列表 -->
+		<action name="taskClaimList" class="taskClaimListAction">
+			<result name="success" >/WEB-INF/process/taskclaim_list.jsp</result>
+		</action>
+		<!-- 查看任务-->
+		<action name="taskView" class="taskViewAction">
+			<result name="success" >/WEB-INF/process/task_view.jsp</result>
+		</action>
+		<!-- 流程任务图片-->
+		<action name="processImg" class="processImgAction">
+			<result name="success">
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		<!-- 任务请求表单 ，流程中直接填写表单-->
+		<action name="taskForm" class="taskFormAction">
+			<result name="success" >/WEB-INF/process/task_form.jsp</result>
+		</action>
+		<!-- 任务请求处理 -->
+		<action name="taskSubmit" class="taskSubmitAction">
+			<result name="success" type="redirect"> /controller/taskList.action</result>
+		</action>
+		<!-- 已完成流程列表 -->
+		<action name="historicList" class="historicListAction">
+			<result name="success" >/WEB-INF/process/historicinstance_list.jsp</result>
+		</action>
+		
+		
+		<!-- 任务请求表单，用formKey方式 ，外部调用-->
+		<action name="taskFormKey" class="taskFormKeyAction">
+			<result name="success" >/template/${jspname}</result>
+		</action>
+		<!-- 外部表单，任务请求处理 -->
+		<action name="taskFormKeySubmit" class="taskFormKeySubmitAction">
+			<result name="success" type="redirect"> /controller/taskList.action</result>
+		</action>
+		
+		<!-- 测试连接池 -->
+		<action name="testDbb" class="testDbAction">
+			<result name="success" >/WEB-INF/system/process_deploy.jsp</result>
+		</action>
+		
+		<!-- 上传表单页面 -->
+		<action name="formDep" class="formDepAction">
+			<result name="success" >/WEB-INF/system/form_deploy.jsp</result>
+		</action>
+		<!-- 上传表单 -->
+		<action name="formDeploy" class="formDeployAction">
+			<result name="success"  type="redirect"> /controller/formList.action</result>
+			<result name="error"> /error.jsp</result>
+		</action>
+		<!-- 表单列表 -->
+		<action name="formList" class="formListAction">
+			<result name="success" >/WEB-INF/system/form_list.jsp</result>
+		</action>
+		<!-- form图片-->
+		<action name="formImg" class="formImgAction">
+			<result name="success">
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		<!-- 删除表单 -->
+		<action name="formDelete" class="formDeleteAction">
+			<result name="success"  type="redirect"> /controller/formList.action</result>
+			<result name="error"> /error.jsp</result>
+		</action>
+		<!-- 部署自定义流程 -->
+		<action name="designProcessDeploy" class="designProcessDeployAction">
+			<result name="success"  type="redirect"> /controller/processDefineList.action</result>
+			<result name="error"> /error.jsp</result>
+		</action>
+		
+		<!-- 获取已办订单 -->
+		<action name="processUserFinished" class="processUserFinishedAction">
+			<result name="success">/WEB-INF/process/process_userfinished_list.jsp</result>
+		</action>
+		<!-- 获取流程定义列表 -->
+		<action name="pdjson" class="processDefinitionJsonAction">
+	      <result name="success" type="json">
+				<param name="root">pdList</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+		
+		<!-- 根据告警信息启动流程 -->
+		<action name="startProcessAuto" class="startProcessAutoAction">
+	      <result name="success" type="json">
+				<param name="root">message</param>
+				<param name="noCache">true</param>
+				<param name="ignoreHierarchy">false</param>
+			</result>  
+		</action>
+		
+			<!-- 流程查询 -->
+		<action name="hpi" class="historicProcessInstanceQueryAction">
+	      <result name="success" >
+				/WEB-INF/process/historicinstancequery_list.jsp
+			</result>  
+		</action>
+		
+		<!-- 知识库查询 -->
+		<action name="knowledgelist" class="knowledgeListAction">
+	      <result name="success" >
+				/WEB-INF/process/knowledgelist.jsp
+			</result>  
+		</action>
+		
+		<!-- 流程统计 -->
+		<action name="processStatisticalsList" class="processStatisticalsListAction">
+	      <result name="success" >
+				/WEB-INF/process/process_statisticals_list.jsp
+			</result>  
+		</action>
+		
+		<!-- 导出Excel -->
+		<action name="exportExcel" class="exportExcelAction" method="downloadExcelFile">
+			<result name="success" type="stream">
+				<param name="bufferSize">4096</param>
+				<param name="contentDisposition">attachment;filename="${fileName}"</param>
+			</result>
+		</action>
+		
+		<!-- 报表详情 -->
+		<action name="processStatisticalsDetail" class="processStatisticalsDetailAction">
+			 <result name="success" >
+				/WEB-INF/process/process_statisticals_detail.jsp
+			</result>  
+		</action>
+		
+		<!-- 统计柱状图图片-->
+		<action name="processStatisticalsBarImg" class="processStatisticalsBarImgAction">
+			<result name="success">
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		
+		<!-- 统计饼图图片-->
+		<action name="processStatisticalsPieImg" class="processStatisticalsPieImgAction">
+			<result name="success">
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+		
+		<action name="selectUserList" class="selectUserListAction">
+	      <result name="success" >
+				/WEB-INF/process/selectuser_list.jsp
+			</result>  
+		</action>
+		 
+		<!-- 历史解决方案 -->
+		<action name="orderSolutionList" class="orderSolutionListAction">
+	      <result name="success" >
+				/WEB-INF/process/ordersolution_list.jsp
+			</result>  
+		</action>
+		
+		<!-- 统计 -->
+		<action name="proInsStatisticals" class="proInsStatisticalsAction">
+			 <result name="success" >
+				/WEB-INF/process/pro_ins_statisticals.jsp
+			</result>  
+		</action>
+		
+		<!-- 统计详情 -->
+		<action name="proInsStatisticalsDetail" class="proInsStatisticalsDetailAction">
+			 <result name="success" >
+				/WEB-INF/process/pro_ins_statisticals_detail.jsp
+			</result>  
+		</action>
+	</package>
+
+</struts>
