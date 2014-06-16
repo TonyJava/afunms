@@ -80,6 +80,7 @@ function loadXML(url)
 {
 	/*
 	 * 异步请求xml格式的字符串
+	 * 每次都创建一个新的xhr对象
 	 * 
 	 *
 	 * */
@@ -2651,4 +2652,4 @@ function moveMainLayer(coor)
 	
 	showAnchor();
 }
-/** ** 搜索面板 -- 结束 *** */
+/* 搜索面板 -- 结束 */

@@ -24,7 +24,8 @@
 	display: block;
 	line-height:15px;
 	width: 150px;
-	height: 32px;
+	/* 注释掉height属性，使其为auto，大小和内部内容大小一致，背景扩展 */
+	/*height: 32px;*/  
 	background:#ececec;
 	border:1px solid gray;
 	-moz-border-radius:5px 0px 0px 5px;

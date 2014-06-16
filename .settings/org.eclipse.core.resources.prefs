@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//WebContent/common/js/alarmtipswindown.js=gb2312
 encoding//WebContent/css/Gray/css/dialog.css=UTF-8
 encoding//WebContent/js/MKDateTime.js=UTF-8
 encoding//WebContent/js/login.js=UTF-8
@@ -253,5 +254,7 @@ encoding//WebContent/jsp/tool/js/snmpCheck.js=UTF-8
 encoding//WebContent/jsp/tool/js/tomcatCheck.js=UTF-8
 encoding//WebContent/jsp/tool/js/webTelnet.js=UTF-8
 encoding//WebContent/jsp/tool/js/weblogicCheck.js=UTF-8
-encoding//WebContent/topology/submap/js/topology.js=gb2312
+encoding//WebContent/topology/network/js/topology.js=gb2312
+encoding//WebContent/topology/network/js/verticaltoolbar.js=gb2312
+encoding//WebContent/topology/submap/js/topology-onlyvml.js=gb2312
 encoding//src/com/afunms/filter/SetUserFilter.java=UTF-8
