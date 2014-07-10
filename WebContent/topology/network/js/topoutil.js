@@ -1,14 +1,39 @@
-//ç”¨pså±æ€§é›†è®¾ç½®imgå›¾ç‰‡
+/**
+ * ÅĞ¶ÏÁ½¸öÉè±¸Ö®¼äÊÇ·ñÓĞÁ´Â·
+ */
+function isExistLineBetween(objEntityAry,lineArr){
+	//Á´Â·¼¯ºÏÖĞÃ»ÓĞÈÎºÎÁ´Â·£¬ÔòÕâÁ½¸ö½ÚµãÖ®¼äÒ²¿Ï¶¨Ã»ÓĞÁ´Â·
+	if(lineArr ==null || lineArr.length==0){
+		return false;
+	}
+	var start_id = objEntityAry[0].id.replace("node_","");
+	var end_id = objEntityAry[1].id.replace("node_","");
+	var line_id1 = 'line_'+start_id+'_'+end_id+'#demoline',line_id2 = 'line_'+end_id+'_'+start_id+'#demoline';
+	//Á´Â·¼¯ºÏÖĞÓĞÁ´Â·
+	if(objEntityAry != null &&objEntityAry.length ==2){
+		for(var i=0; i < lineArr.length;i++){
+			var line_id = lineArr[i].id;
+			if(line_id1 === line_id || line_id2 === line_id){
+				return true;
+			}
+		}
+	}else{
+		alert("ÇëÑ¡ÔñÁ½¸ö½ÚµãÉè±¸£¡");
+	}
+	return false;
+}
+
+//ÓÃpsÊôĞÔ¼¯ÉèÖÃimgÍ¼Æ¬
 var XHR = new function(){
 	this.getInstance = function(){
 		var http;
 		try{
-			http = new ActiveXObject("Microsoft.XMLHTTP")
+			http = new ActiveXObject("Microsoft.XMLHTTP");
 		}catch(e){
 			try{
 				http = new XMLHttpRequest();
 			}catch(e){
-				alert("Error!æ— æ³•åˆ›å»ºXHRå¯¹è±¡ï¼");
+				alert("Error!ÎŞ·¨´´½¨XHR¶ÔÏó£¡");
 			}
 		}
 		return http;
@@ -16,12 +41,12 @@ var XHR = new function(){
 	this.getInstanceBy = function(method,url,isAsyn){
 		var http;
 		try{
-			http = new ActiveXObject("Microsoft.XMLHTTP")
+			http = new ActiveXObject("Microsoft.XMLHTTP");
 		}catch(e){
 			try{
 				http = new XMLHttpRequest();
 			}catch(e){
-				alert("Error!æ— æ³•åˆ›å»ºXHRå¯¹è±¡ï¼");
+				alert("Error!ÎŞ·¨´´½¨XHR¶ÔÏó£¡");
 			}
 		}
 		http.open(method,url,isAsyn);
@@ -29,7 +54,7 @@ var XHR = new function(){
 	}
 };
 /**
- * æ˜¾ç¤ºæ¨¡æ€çª—å£ å¹¶å¤„ç†è¿”å›å€¼
+ * ÏÔÊ¾Ä£Ì¬´°¿Ú ²¢´¦Àí·µ»ØÖµ
  * @param url
  * @param arguments
  * @param features
@@ -107,7 +132,7 @@ function getImagePropertiesBy(img, ps){
 	}
 	return ps;
 }
-//è®¾ç½®è¿çº¿çš„ä½ç½®ã€é¢œè‰²ã€ç²—ç»†
+//ÉèÖÃÁ¬ÏßµÄÎ»ÖÃ¡¢ÑÕÉ«¡¢´ÖÏ¸
 function setLine(line,p){
 	if(isFF){
 		if(p.x1){
@@ -145,7 +170,7 @@ function setLine(line,p){
 		}
 	}
 }
-//æ ¹æ®æµè§ˆå™¨å’Œlabelåˆ›å»ºå¯¹è±¡
+//¸ù¾İä¯ÀÀÆ÷ºÍlabel´´½¨¶ÔÏó
 function createElementByUserAgentAnd(label){
 	var o;
 	if(isFF){
@@ -155,7 +180,7 @@ function createElementByUserAgentAnd(label){
 	}
 	return o;
 }
-//æ ¹æ®æµè§ˆå™¨ï¼Œå°†èŠ‚ç‚¹æ ‡ç­¾æ·»åŠ åˆ°ç”»å¸ƒ
+//¸ù¾İä¯ÀÀÆ÷£¬½«½Úµã±êÇ©Ìí¼Óµ½»­²¼
 function appendChild(divText){
 	if(isFF){
 		document.body.appendChild(divText);
@@ -171,7 +196,7 @@ function removeChild(divText){
 	}
 }
 
-//ç”±a,bèŠ‚ç‚¹å¾—åˆ°çº¿ä¸¤ç«¯ç‚¹çš„åæ ‡
+//ÓÉa,b½ÚµãµÃµ½ÏßÁ½¶ËµãµÄ×ø±ê
 function getCoorObjectFrom(a,b){
 	var x1,y1,x2,y2;
 	if(isFF){
@@ -209,9 +234,9 @@ function cancelPropagationAndDefaultOfEvent(event){
 	return false; 
 }
 
-//IE10çš„oncontextmenuäº‹ä»¶ 
+//IE10µÄoncontextmenuÊÂ¼ş 
 function addContextmenuEventListener(o,fn){
-	if(isFF){//æ”¯æŒw3cæ ‡å‡†
+	if(isFF){//Ö§³Öw3c±ê×¼
 		o.addEventListener('contextmenu',fn,false);
 	}else{
 		o.attachEvent('oncontextmenu',fn);
