@@ -389,6 +389,7 @@ var nodeid="";
 var nodeip="";
 var nodecategory="";
 function showMenu(id,ip){
+	console.log('showmenu');
     nodeid = id.split(";")[0];
     nodecategory = id.split(";")[1];
     nodeip = ip;
@@ -396,13 +397,13 @@ function showMenu(id,ip){
     if(document.getElementById("div_RightMenu") == null)
     {    
         CreateMenu();
-        document.oncontextmenu = ShowMenu
-        document.body.onclick  = HideMenu    
+        document.oncontextmenu = ShowMenu;
+        document.body.onclick  = HideMenu; 
     }
     else
     {
-        document.oncontextmenu = ShowMenu
-        document.body.onclick  = HideMenu    
+        document.oncontextmenu = ShowMenu;
+        document.body.onclick  = HideMenu;    
     } 
 
 }
@@ -414,13 +415,14 @@ function add(){
 	{
          window.parent.mainFrame.mainFrame.addEquip(nodeId,nodecategory);
 	}
-	else if (typeof coor == "string")
+	else// if (typeof coor == "string")   array  的typeof 是object
 	{
-		window.alert(coor);
+		//window.alert(coor);
+		window.parent.mainFrame.mainFrame.moveMainLayer(coor);
+	    window.alert("该设备已经在拓扑图中存在！");
 		return;
 	}
-    window.parent.mainFrame.mainFrame.moveMainLayer(coor);
-    window.alert("该设备已经在拓扑图中存在！");
+    
 }
 function detail(){
     showalert(nodeid);
@@ -440,18 +442,18 @@ function evtOnMouseOut()
 }
 function CreateMenu()
 {    
-        var div_Menu          = document.createElement("Div");
+        var div_Menu          = document.createElement("div");
         div_Menu.id           = "div_RightMenu";
         div_Menu.className    = "div_RightMenu";
         
-        var div_Menu1         = document.createElement("Div");
+        var div_Menu1         = document.createElement("div");
         div_Menu1.id          = "div_Menu1";
         div_Menu1.className   = "divMenuItem";
         div_Menu1.onclick     = add;
         div_Menu1.onmousemove = evtMenuOnmouseMove;
         div_Menu1.onmouseout  = evtOnMouseOut;
         div_Menu1.innerHTML   = "添加到拓扑图";
-        var div_Menu2         = document.createElement("Div");
+        var div_Menu2         = document.createElement("div");
         div_Menu2.id          = "div_Menu2";
         div_Menu2.className   = "divMenuItem";
         div_Menu2.onclick     = detail;
@@ -475,12 +477,24 @@ function IsIE()
         return false;
     }
 }
-
+//停止事件的传播（向内或向外传播） 和默认行为
+function cancelPropagationAndDefaultOfEvent(event){
+	 if(event.stopPropagation){
+	    event.stopPropagation();
+	}else{
+		event.cancelBubble = true;
+	}
+	event.preventDefault?event.preventDefault():(event.returnValue=false);
+	
+	return false; 
+}
 function ShowMenu()
 {
     
-    if (IsIE())
-    {
+		var event = window.event || event;
+		cancelPropagationAndDefaultOfEvent(event);
+  //  if (IsIE())
+   // {
         document.body.onclick  = HideMenu;
         var redge=document.body.clientWidth-event.clientX;
         var bedge=document.body.clientHeight-event.clientY;
@@ -504,12 +518,13 @@ function ShowMenu()
             menu.style.top = document.body.scrollTop + event.clientY
             menu.style.display = "block";
         }
-    }
-    return false;
+    //}
+   // return false;
 }
 function HideMenu()
 {
-    if (IsIE())  document.getElementById("div_RightMenu").style.display="none";    
+    //if (IsIE())
+    	document.getElementById("div_RightMenu").style.display="none";    
 }
 </script>
 </div>

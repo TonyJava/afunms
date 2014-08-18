@@ -786,7 +786,7 @@ function getConfine(x, y)
 }
 
 // 通过键盘的“上下左右”方向键控制视图位置
-function document.onkeydown()
+document.onkeydown =function()
 {
 //-----先不用--------改3-------
 /*	try
@@ -801,10 +801,10 @@ function document.onkeydown()
 //----------------------
 	var left = divLayer.style.left;
 	var top = divLayer.style.top;
-	
 	//left = left.substring(0, left.length - 2);
 	//top = top.substring(0, top.length - 2);
 
+	
 	left = parseInt(left);
 	top = parseInt(top);
 	//alert(event.keyCode); return;

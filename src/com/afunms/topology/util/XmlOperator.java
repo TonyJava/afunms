@@ -544,7 +544,10 @@ public class XmlOperator {
 					doc = builder.build(fis);
 					root = doc.getRootElement();
 					nodes = root.getChild("nodes");
+					System.out.println("nodes="+nodes+"===text="+nodes.getChildren().size());
+					
 					lines = root.getChild("lines");
+					System.out.println("lines="+lines+"===text="+lines.getChildren().size());
 					assistantLines = root.getChild("assistant_lines");
 					demoLines = root.getChild("demoLines");
 				}

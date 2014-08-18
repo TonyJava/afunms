@@ -88,6 +88,7 @@ public class ManageXmlOperator extends XmlOperator {
 		eleNode.addContent(eleMenu);
 		eleNode.addContent(relationMap);
 		nodes.addContent(eleNode);
+		String kk ="ll"+9;
 	}
 
 	// 创建示意链路

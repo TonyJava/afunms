@@ -3794,6 +3794,7 @@ public class NodeUtil {
 	public List<BaseVo> getHostNode(String condition) {
 		HostNodeDao hostNodeDao = new HostNodeDao();
 		List<BaseVo> list = null;
+		System.out.println("=condition="+condition);
 		try {
 			list = hostNodeDao.findByCondition(condition);
 		} catch (Exception e) {

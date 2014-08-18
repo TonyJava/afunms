@@ -114,7 +114,7 @@ function initXML(url)
 	 * 
 	 *
 	 * */
-	var http = XHR.getInstance("POST", url, false);  //同步
+	var http = XHR.getInstanceBy("POST", url, false);  //同步
 	http.send();
 	try{
 		var parser = new DOMParser();
@@ -150,7 +150,7 @@ function addNode(nodeid,url){
 	for (var i = nodes.length-1; i >= 0; i--){
 	    var node = nodes[i];
 		var id = node.getElementsByTagName("id")[0].childNodes[0].nodeValue;
-		alert(id+"="+nodeid);
+		//alert(id+"="+nodeid);
 		if(id==nodeid){
 			//alert(id);
 		    var nodeType = node.getElementsByTagName("id")[0].getAttribute("category");
@@ -160,7 +160,7 @@ function addNode(nodeid,url){
 			var ip = node.getElementsByTagName("ip")[0].childNodes[0].nodeValue;
 			var alias = node.getElementsByTagName("alias")[0].childNodes[0].nodeValue;
 			var info = node.getElementsByTagName("info")[0].childNodes[0].nodeValue;
-			var menu = node.getElementsByTagName("menu")[0].childNodes[0].nodeValue;
+			var menu = node.getElementsByTagName("menu")[0].childNodes[0]?node.getElementsByTagName("menu")[0].childNodes[0].nodeValue:"";
 			var relationMap = node.getElementsByTagName("relationMap")[0].childNodes[0]?node.getElementsByTagName("relationMap")[0].childNodes[0].nodeValue:"";
 			// 这是搜索用的数组，在这里初始化---------改2---
 			nodeCoorAry.push(ip + "," + x + "," + y);
@@ -582,6 +582,7 @@ function addLine(lineid,url){
     // 分析lines节点
 	xmldoc = initXML(url);
 	var lines = xmldoc.getElementsByTagName("demoLine");
+	//alert(lines+"="+lines.length);
 	for (var j = lines.length-1; j >= 0; j--)
 	{
 		var lineObj = lines[j];
@@ -715,11 +716,12 @@ function parseData()
 		var ip = node.getElementsByTagName("ip")[0].childNodes[0].nodeValue;
 		var alias = node.getElementsByTagName("alias")[0].childNodes[0].nodeValue;
 		var info = node.getElementsByTagName("info")[0].childNodes[0].nodeValue;
-		var menu = node.getElementsByTagName("menu")[0].childNodes[0].nodeValue;
+		var menu = node.getElementsByTagName("menu")[0].childNodes[0]?node.getElementsByTagName("menu")[0].childNodes[0].nodeValue:"";
 		var relationMap = node.getElementsByTagName("relationMap")[0].childNodes[0]?node.getElementsByTagName("relationMap")[0].childNodes[0].nodeValue:"";
 		// 这是搜索用的数组，在这里初始化---------改2---
 		nodeCoorAry.push(ip + "," + x + "," + y);
-		nodeIdAry.push(id + "," + x + "," + y)
+		
+		nodeIdAry.push(id + "," + x + "," + y);
 		// ---------------------------------------
 		
 		getConfine(x, y);		// 获取最大边界，给 maxWidth，maxHeight 赋值
@@ -1172,6 +1174,7 @@ function parseData()
 		
 	// 分析lines节点
 	var lines = xmldoc.getElementsByTagName("demoLine");
+	
 	for (var j = 0; j < lines.length; j += 1)
 	{
 		var lineObj = lines[j];
@@ -1582,7 +1585,7 @@ function move(event)
 				var infoStyle = document.getElementById(obj.id.replace("node", "info")).style;
 				var menuStyle = document.getElementById(obj.id.replace("node", "menu")).style;
 				
-				setImage(obj,{'x':tempX,'y':tempY});
+				setImage(obj,{'x':tempX+'px','y':tempY+'px'});
 				textStyle.left = tempX - 24;
 				textStyle.top = tempY + 28;
 				infoStyle.left = tempX + 32;
@@ -1831,7 +1834,7 @@ function up()
 	console.log("ctrlStatus="+ctrlStatus);
 	if (ctrlStatus) // 处理Ctrl+鼠标键释放事件yangjun
 	{
-		console.log("ctrl press objEntityAry.length="+objEntityAry.length);
+		//console.log("ctrl press objEntityAry.length="+objEntityAry.length);
 		if (objEntityAry.length > 0)
 		{
      		var ctrlImgDiv = document.createElement("div");
@@ -2087,13 +2090,13 @@ function getConfine(x, y)
 }
 
 // 通过键盘的“上下左右”方向键控制视图位置
-document.onkeydown = function ()
+/*document.onkeydown = function ()
 {
 // -----先不用--------改3-------
-/*
+
  * try { if (document.all.blind.style.visibility == "visible") return; } catch
  * (exception) { }
- */
+ 
 // ----------------------
 	var left = divLayer.style.left;
 	var top = divLayer.style.top;
@@ -2103,15 +2106,16 @@ document.onkeydown = function ()
 
 	left = parseInt(left);
 	top = parseInt(top);
+	console.log('event.keyCode='+event.keyCode);
 	switch (event.keyCode)
 	{
-		/*
+		
 		 * case 81: // Q 键，切换视图 if (g_viewFlag == 0) { g_viewFlag = 1; var
 		 * target = "showMap.jsp?filename=" + filename + "&viewflag=1";
 		 * parent.mainFrame.location = target; } else if (g_viewFlag == 1) {
 		 * g_viewFlag = 0; var target = "showMap.jsp?filename=" + filename +
 		 * "&viewflag=0"; parent.mainFrame.location = target; } break;
-		 */
+		 
 		case 35:		// End
 		case 82:		// R
 			moveAction();
@@ -2152,7 +2156,7 @@ document.onkeydown = function ()
 	}
 
 }
-
+*/
 
 /** ** 控制移动方向的四个按钮事件和缩放按钮事件 -- 开始 *** */
 
@@ -2568,7 +2572,7 @@ function getNodeCoor(ip)
 //yangjun add 按照id查找设备节点
 function getNodeId(id)
 {
-	alert("id="+id+"nodeIdAry="+nodeIdAry);
+	//alert("id="+id+"nodeIdAry="+nodeIdAry);
 	for (var i = 0; i < nodeIdAry.length; ++i)
 	{
 		var tmp = nodeIdAry[i].split(",");
@@ -2577,12 +2581,12 @@ function getNodeId(id)
 			var coor = new Array();
 			coor[0] = tmp[1];
 			coor[1] = tmp[2];
-			alert("coor="+coor);
+			//alert("coor="+coor);
 
 			return coor;
 		}
 	}
-	alert("coor="+coor);
+	//alert("coor="+coor);
 
 	return null;
 }
@@ -2652,4 +2656,6 @@ function moveMainLayer(coor)
 	
 	showAnchor();
 }
+
+
 /* 搜索面板 -- 结束 */

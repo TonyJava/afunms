@@ -109,7 +109,7 @@ function save()
 			<tr>						
 			<TD  nowrap align="right" height="24" width="20%">链路名称&nbsp;</TD>				
 			<TD nowrap width="80%">
-			   &nbsp; <input type="text" name="line_name" size="30" class="formStyle">
+			   &nbsp; <input type="text" name="line_name" id="line_name" size="30" class="formStyle">
 			</TD>
 			</tr>
 			<tr>						
@@ -127,7 +127,7 @@ function save()
             </tr>	
             <tr >						
 			<TD  nowrap align="right" height="24" width="20%">节点坐标&nbsp;</TD>				
-			<TD nowrap width="80%">&nbsp; <input type="text" name="start_x_y" size="20" class="formStyle" value="<%=start_x_y%>"></TD>	
+			<TD nowrap width="80%">&nbsp; <input type="text" name="start_x_y"  id="start_x_y" size="20" class="formStyle" value="<%=start_x_y%>"></TD>	
             </tr>
             <tr>						
 			<TD  nowrap align="right" height="24" width="20%">描述&nbsp;</TD>				
@@ -150,7 +150,7 @@ function save()
             </tr>
             <tr >						
 			<TD  nowrap align="right" height="24" width="20%">节点坐标&nbsp;</TD>				
-			<TD nowrap width="80%">&nbsp; <input type="text" name="end_x_y" size="20" class="formStyle" value="<%=end_x_y%>"></TD>	
+			<TD nowrap width="80%">&nbsp; <input type="text" name="end_x_y" id="end_x_y" size="20" class="formStyle" value="<%=end_x_y%>"></TD>	
             </tr>
             <tr>
             <TD  nowrap align="right" height="24" width="20%">描述&nbsp;</TD>				
@@ -161,7 +161,7 @@ function save()
 			<tr>						
 			<TD  nowrap align="right" height="24" width="20%">链路宽度&nbsp;</TD>				
 			<TD nowrap width="80%">&nbsp;
-			   <select size=1 name='link_width' style='width:50px;' onchange="">
+			   <select size=1 id="link_width" name='link_width' style='width:50px;' onchange="">
 			       <option value="1" selected>1</option>
 				   <option value="2">2</option>
 				   <option value="3">3</option>

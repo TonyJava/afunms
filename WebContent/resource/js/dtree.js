@@ -1,7 +1,7 @@
 /*--------------------------------------------------|
 | dTree 2.05 | www.destroydrop.com/javascript/tree/ |
 |---------------------------------------------------|
-| Copyright (c) 2002-2003 Geir Landr�               |
+| Copyright (c) 2002-2003 Geir Land           |
 |                                                   |
 | This script can be used freely as long as all     |
 | copyright messages are intact.                    |
@@ -731,4 +731,4 @@ dTree.prototype.isAllChildrenChecked = function(node){
 		checkedIds.value =  eval(treeName).getCheckedIds();
 		
 		// document.write($(myTree_treeScript).innerHTML);
-	}
+}

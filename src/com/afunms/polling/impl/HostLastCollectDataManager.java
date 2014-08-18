@@ -702,7 +702,9 @@ public class HostLastCollectDataManager implements I_HostLastCollectData {
 				loader.loadOne(node);
 				host = (Host) PollingEngine.getInstance().getNodeByIP(ip);
 			}
+			Hashtable t = ShareData.getAllNetworkData();
 			Hashtable ipAllData = (Hashtable) ShareData.getAllNetworkData().get(ip);
+			System.out.println(ip+"data="+ipAllData);
 			// 从数据库查出所有相关的接口数据
 			Vector interfacevector = (Vector) ipAllData.get("interfacevector");
 			Vector utilhdxVector = (Vector) ipAllData.get("utilhdx");

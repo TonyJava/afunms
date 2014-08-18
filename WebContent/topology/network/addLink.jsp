@@ -124,6 +124,7 @@ function portChange2(obj)
 
 function save()
 {
+	alert('save');
     var args = window.dialogArguments;   
     var direction1 = document.getElementById("direction1").value;
     var linkName = document.getElementById("link_name").value;
@@ -178,7 +179,7 @@ function save()
 			<tr>						
 			<TD  nowrap align="right" height="24" width="20%">链路名称&nbsp;</TD>				
 			<TD nowrap width="80%">
-			   &nbsp; <input type="text" name="link_name" size="30" class="formStyle" value="<%=link_name%>">
+			   &nbsp; <input type="text" id="link_name" name="link_name" size="30" class="formStyle" value="<%=link_name%>">
 			</TD>
 			</tr>
 			<!-- 
@@ -192,13 +193,13 @@ function save()
 			<tr>						
 			<TD  nowrap align="right" height="24" width="20%">链路流量阀值&nbsp;</TD>				
 			<TD nowrap width="80%">
-			   &nbsp; <input type="text" name="max_speed" maxlength="50%" size="20" class="formStyle" value="200000">(KB/秒)
+			   &nbsp; <input type="text" id="max_speed" name="max_speed" maxlength="50%" size="20" class="formStyle" value="200000">(KB/秒)
 			</TD>
 			</tr>
 			<tr>						
 			<TD  nowrap align="right" height="24" width="20%">带宽利用率阀值&nbsp;</TD>				
 			<TD nowrap width="80%">
-			   &nbsp; <input type="text" name="max_per" maxlength="50%" size="20" class="formStyle" value="10">(%)
+			   &nbsp; <input type="text" name="max_per" id="max_per" maxlength="50%" size="20" class="formStyle" value="10">(%)
 			</TD>   
 			</tr>
 			<tr>						
@@ -229,6 +230,7 @@ function save()
 			       <option value="1" selected>上行设备</option>
 				   <option value="2">下行设备</option>
 			   </select>
+			   
 			</TD>
 			</tr>
 			<tr >						
@@ -244,7 +246,7 @@ function save()
             <tr>				
 			<TD  nowrap align="right" height="24" width="20%">设备端口索引&nbsp;</TD>				
 			<TD nowrap width="80%">&nbsp;
-            <select size=1 name='start_index' style='width:250px;' onchange="portChange1(this)">
+            <select size=1 name='start_index' id='start_index' style='width:250px;' onchange="portChange1(this)">
 <%
 	for(IfEntity ifObj:startHostIfentityList){
 %> 			
@@ -274,7 +276,7 @@ function save()
             <tr>					
 			<TD nowrap align="right" height="24" width="20%">设备端口索引&nbsp;</TD>				
 			<TD nowrap width="80%">&nbsp;
-            <select size=1 name='end_index' style='width:250px;' onchange="portChange2(this)">
+            <select size=1 name='end_index' id='end_index' style='width:250px;' onchange="portChange2(this)">
 <%
   for(IfEntity ifObj:endHostIfentityList){
 %> 			

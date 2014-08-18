@@ -39,6 +39,7 @@ import com.afunms.common.util.CreateTableManager;
 import com.afunms.common.util.SessionConstant;
 import com.afunms.common.util.ShareData;
 import com.afunms.common.util.Speak;
+import com.afunms.common.util.SysLogger;
 import com.afunms.common.util.SysUtil;
 import com.afunms.config.dao.IpAliasDao;
 import com.afunms.config.dao.IpaddressPanelDao;
@@ -364,6 +365,7 @@ public class SubMapManager extends BaseManager implements ManagerInterface {
 			hintNode.setAlias(equipName);
 			if (hintNodeDao.save(hintNode) && returnValue[1] != null && !"".equals(returnValue[1])) {
 				mXmlOpr.addDemoNode("hin" + String.valueOf(nodeId), str, returnValue[1].substring(17), equipName, String.valueOf(1 * 30), "15");
+				SysLogger.info("returnValue1="+returnValue[1]);
 				result = "hin" + String.valueOf(nodeId);
 				if(ShareData.getAllhintlinks()!=null){
 			    	ShareData.getAllhintlinks().put(hintNode.getNodeId() + ":" + hintNode.getXmlfile(), hintNode);
