@@ -308,19 +308,15 @@ function showController(flag) {
 		freshTimer = window.setInterval("refreshFile()",60000);
 	}
 
-// 交换图片
-function swapImage(imageID, imageSrc) {
-	document.all(imageID).src = imageSrc;
-}
 
 //选择视图
 function changeView()
 {
-	if(document.all.submapview.value == "")return;
-	if(document.all.submapview.value == "network.jsp"){
+	if(document.getElementById('submapview').value == "")return;
+	if(document.getElementById('submapview').value == "network.jsp"){
 	    window.parent.parent.location = "../network/index.jsp";
 	}else{
-	    window.parent.parent.location = "../submap/index.jsp?submapXml=" + document.all.submapview.value;
+	    window.parent.parent.location = "../submap/index.jsp?submapXml=" + document.getElementById('submapview').value;
 	}
 	
 	//
@@ -350,11 +346,11 @@ function createDemoObj(){
 }
 function showToolBar(){
     //alert(document.all.checkbox.checked);
-    var list = window.parent.mainFrame.rp_alarm_table;
-    if(document.all.checkbox.checked){
-        list.style.marginLeft="90px";
+    var list = window.parent.mainFrame.rp_list;
+    if(document.getElementsByName('checkbox')[0].checked){
+        list.style.marginLeft="-100px";
     } else {
-        list.style.marginLeft="50px";
+        list.style.marginLeft="-190px";
     }
     //alert(list.style);
 }
@@ -395,7 +391,7 @@ function showToolBar(){
 		<td width="200"><strong><%=xmlvo.getTopoName()%></strong></td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 		<td width="100">
-			<select name="submapview" onchange="changeView()">
+			<select name="submapview"  id="submapview" onchange="changeView()">
 			<option value="">--选择视图--</option>
 <%
 	dao = new ManageXmlDao();

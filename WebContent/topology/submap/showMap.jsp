@@ -422,21 +422,28 @@ img.src = "<%=rootPath%>/resource/image/bg/<%=bg%>";
 var imgWidth = img.width;
 var imgHeight = img.height;
 <!--
-document.write('<form name="frmMap" method="post" action="<%=rootPath%>/submap.do?action=save">');
+document.write('<form name="frmMap" method="post" action="<%=rootPath %>/submap.do?action=save">');
 document.write('<body class="main_body" onLoad="hideMenuBar();doInit();" onmousewheel="window.parent.parent.document.body.scrollTop -= event.wheelDelta/2;" onmousedown="bodyDown()" onselectstart="return false" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">');	
 loadMoveController();		// 加载移动控制器
 loadSizeController();		// 加载大小控制器
 //<div id="divTitle" align="center" style="font:oblique small-caps 900 29pt 黑体;"><%=Title%></div>
-document.write('<table width="100%" style="height:100%;"><tr><td width="100%" align="left" height="100%">');
-document.write('<div id="divDrag" style="background-color: #FFFFFF;width:100%;height:100%; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
-document.write('<div id="divLayer" style="width:100%;height:' + imgHeight + '; background:url(<%=rootPath%>/resource/image/bg/<%=bg%>) left top no-repeat; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
+//document.write('<table width="100%" style="height:100%;"><tr><td width="100%" align="left" height="100%">');
+//document.write('<div id="divDrag" style="background-color: #FFFFFF;width:100%;height:100%; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
+//document.write('<div id="divLayer" style="width:100%;height:' + imgHeight + '; background:url(<%=rootPath%>/resource/image/bg/<%=bg%>) left top no-repeat; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
 //document.write('<div id="divLayer" style="width:100%;height:100%; background:url(<//%=rootPath%>/resource/image/bg/<//%=bg%>) left top no-repeat; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
 //}
 //document.write('<div id="divLayer" style="width:100%;height:' + height1 + '; background:url(<%=rootPath%>/resource/image/bg/<%=bg%>) left top no-repeat; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
 //document.write('<div id="divLayer" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;background-image:url(<%=rootPath%>/resource/image/bg/<%=bg%>);width:<%=width%>;height:<%=height%>;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#F0F8FF; 1px solid;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');//#000066
-document.write('</td><td height="100%" width="3px" align="right"><img src="<%=rootPath%>/common/images/arrow_close.jpg" onclick="hideMenu();"></td><td align="right" height="100%">');
-document.write('<div id="container-menu-bar" style="height:100%;width:200px;"></div>');
-document.write('</td></tr></table>');
+
+//document.write('</td><td height="100%" width="3px" align="right"><img src="<%=rootPath%>/common/images/arrow_close.jpg" onclick="hideMenu();"></td><td align="right" height="100%">');
+//document.write('<div id="container-menu-bar" style="height:100%;width:200px;"></div>');
+//document.write('</td></tr></table>');
+if(window.addEventListener){
+	document.write('<svg xmlns="http://www.w3.org/2000/svg"  id="divLayer" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;background-image:url(<%=rootPath%>/resource/image/bg/<%=bg%>);width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(evt)" onclick="javascript:closeLineFrame();"></svg>');//#000066
+
+}else{
+	document.write('<div id="divLayer" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;background-image:url(<%=rootPath%>/resource/image/bg/<%=bg%>);width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(event)" onclick="javascript:closeLineFrame();"></div>');//#000066
+}
 document.write('<input type="hidden" name="hidXml"/>');
 document.write('</body></form>');
 createGallery();
@@ -502,7 +509,7 @@ function resizeTopDiv() {
 		zoomProcDlg("out");
 }
 	
-	setTimeout("resizeTopDiv()", 1000);	
+	//setTimeout("resizeTopDiv()", 1000);	
 	showControllerTool(false);
 	function showDevice(action) {
 		parent.location = action;
