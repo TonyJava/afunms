@@ -646,21 +646,17 @@ function autoRefresh()
 	freshTimer = window.setInterval("refreshFile()",60000);
 }
 
-//交换图片
-function swapImage(imageID, imageSrc) {
-document.all(imageID).src = imageSrc;
-}
-//选择视图
+//选择视图,由顶部  框架获得
 function changeView()
 {
-if(document.all.submapview.value == "")return;
-//parent.location = "../submap/submap.jsp?submapXml=" + document.all.submapview.value;
-window.parent.parent.location = "../submap/index.jsp?submapXml=" + document.all.submapview.value;
+		if(parent.topFrame.document.getElementById('submapview').value == "")	return;
+		//parent.location = "../submap/submap.jsp?submapXml=" + document.all.submapview.value;
+		window.parent.parent.location = "../submap/index.jsp?submapXml=" + parent.topFrame.document.getElementById('submapview').value;
 }
 //拓扑图属性
 function editMap(){
-var url="<%=rootPath%>/submap.do?action=readyEditMap";
-showModalDialog(url,window,'dialogwidth:500px; dialogheight:400px; status:no; help:no;resizable:0');
+	var url="<%=rootPath%>/submap.do?action=readyEditMap";
+	showModalDialog(url,window,'dialogwidth:500px; dialogheight:400px; status:no; help:no;resizable:0');
 }
 function cwin()
 {

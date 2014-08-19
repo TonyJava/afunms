@@ -108,7 +108,7 @@ function showToolBar(){
 		<td width="200"><strong><%=xmlvo.getTopoName()%></strong></td>
 		<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 		<td width="100">
-			<select width="320" name="submapview" onchange="changeView()">
+			<select width="320" id="submapview" name="submapview" onchange="parent.mainFrame.changeView()">
 			
 			<option value="">--—°‘Ò ”Õº--</option>
 <%
