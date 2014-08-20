@@ -398,7 +398,7 @@ function showMenu(id,ip){
 
 }
 function add(){
-    var nodeId = nodeid;//要保证nodeid的长度大于3
+   /*  var nodeId = nodeid;//要保证nodeid的长度大于3
     var coor = window.parent.mainFrame.mainFrame.getNodeId(nodeId);
     if (coor == null)
 	{
@@ -410,7 +410,23 @@ function add(){
 		return;
 	}
     window.parent.mainFrame.mainFrame.moveMainLayer(coor);
-    window.alert("该设备已经在拓扑图中存在！");
+    window.alert("该设备已经在拓扑图中存在！"); */
+    
+    var nodeId = nodeid;//要保证nodeid的长度大于3
+    
+    var coor = window.parent.mainFrame.mainFrame.getNodeId(nodeId);
+    if (coor == null)
+	{
+         window.parent.mainFrame.mainFrame.addEquip(nodeId,nodecategory);
+	}
+	else// if (typeof coor == "string")   array  的typeof 是object
+	{
+		//window.alert(coor);
+		window.parent.mainFrame.mainFrame.moveMainLayer(coor);
+	    window.alert("该设备已经在拓扑图中存在！");
+		return;
+	}
+    
 }
 function detail(){
     showalert(nodeid);

@@ -12,7 +12,6 @@
 <%
 	String rootPath = request.getContextPath();
 	String fileName = (String)request.getParameter("fileName");//(
-	System.out.println("fileName1======22222222222=="+fileName);
 	if(fileName!=null){
 	    session.setAttribute(SessionConstant.CURRENT_SUBMAP_VIEW,fileName); 
 	}
@@ -81,7 +80,7 @@
 <script type="text/javascript" src="js/map.js"></script>
 <script type="text/javascript" src="js/window.js"></script>
 <script type="text/javascript" src="js/edit.js"></script>
-<script type="text/javascript" src="js/toolbar.js"></script>
+<script type="text/javascript" src="<%=rootPath %>/topology/network/js/toolbar.js"></script>
 <script type="text/javascript" src="<%=rootPath%>/js/engine.js"></script> 
 <script type="text/javascript" src="<%=rootPath%>/js/util.js"></script> 
 <script type="text/javascript" src="<%=rootPath%>/dwr/interface/TopoRemoteService.js"></script>
@@ -114,23 +113,51 @@
 	else 
 		out.print("<script type=\"text/javascript\">g_viewFlag = " + viewflag + ";</script>");	
 %>
-
-<script type="text/javascript" src="js/topology.js"></script>
+<!-- 都引用主拓扑所使用的js  -->
+<script type="text/javascript" src="<%=rootPath %>/topology/network/js/topoutil.js"></script>
+<script type="text/javascript" src="<%=rootPath %>/topology/network/js/topology.js"></script>
 <script type="text/javascript">
+var curTarget = "showMap.jsp?filename=<%=fileName %>&fullscreen=<%=fullscreen%>";
+var display = false;	    // 是否显示快捷列表
+var controller = false;		// 是否显示控制器
+//转换目标(jsp)文件
+function updateState(target) {
+	curTarget = target;
+
+}
+	
 	window.onerror = new Function('return true;');		// 容错
 	openProcDlg();  //显示闪屏
 	var fatherXML = "<%=fileName%>";//yangjun add 关联拓扑图时获得父页xml
-	function saveFile() {
-	    //alert(1);
+	/* function saveFile() {
 		if (!admin) {
 			window.alert("您没有保存视图的权限！");
 			return;
 		}
-		//parent.mainFrame.saveFile();
-		//alert(2);
 		resetProcDlg();
 		save();  //topoloty.js中的函数,用于保存图数据--->String串
+	} */
+	//检测用户是否具有保存拓扑图的权限
+	 function savefile() {
+		console.log('savefile');
+	
+		if (!admin) {
+			window.alert("您没有保存视图的权限！");
+			return;
+		}
+		parent.mainFrame.saveFile();
 	}
+	//保存拓扑图
+		function saveFile() {
+			console.log('saveFile');
+			//resetProcDlg();
+			//var target = "showMap.jsp?filename=<%=fileName%>&fullscreen=" + fullscreen;
+			var target = "showMap.jsp?filename=<%=fileName%>&fullscreen=1";
+			updateState(target);
+			save();  //topoloty.js中的函数,用于保存图数据--->String串
+		}
+
+
 	function doInit()
 	{
 		loadXML("<%=rootPath%>/resource/xml/<%=fileName%>");
@@ -346,13 +373,13 @@
 	function popTipsAlarm(){
 		showAlarmTipsWindown("告警信息", 'simTestContentAlarm', 250, 55);
 	}
-	$(document).ready(function(){
+	/* $(document).ready(function(){
 		popTips();
 		popTipsAlarm();
 		var timer1;
 		timer1=window.setInterval("getAlarmData();",200*60);	//2分钟更新一次DIV
 	});
-	
+	 */
 	function getAlarmData(){
 	    //popTips();
 		AlarmSummarize.getLastestEventList1('<%=current_user.getBusinessids()%>','<%=fileName%>', {
@@ -444,7 +471,7 @@ if(window.addEventListener){
 }else{
 	document.write('<div id="divLayer" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;background-image:url(<%=rootPath%>/resource/image/bg/<%=bg%>);width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(event)" onclick="javascript:closeLineFrame();"></div>');//#000066
 }
-document.write('<input type="hidden" name="hidXml"/>');
+document.write('<input id="hidXml" type="hidden" name="hidXml"/>');
 document.write('</body></form>');
 createGallery();
 //-->
@@ -467,7 +494,9 @@ createGallery();
 	}
 	
 	function hideMenuBar(){
-		var element = document.getElementById("container-menu-bar").parentElement;
+		var element = document.getElementById("container-menu-bar");
+		if(element)  element = element.parentNode;
+		else return;
 		element.style.display = "none";
 	}
 	AlarmSummarize.getLastestEventList1('<%=current_user.getBusinessids()%>' , {
