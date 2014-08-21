@@ -68,8 +68,36 @@ function showToolBar(){
     } else {
         list.style.marginLeft="-190px";
     }
-    //alert(list.style);
 }
+//工具栏   输入框 输入IP搜索设备
+function searchIPNODE()
+{	
+	var ip = document.getElementsByName("searchIPTxt")[0].value;
+	//alert(ip);
+	if (ip == null)
+		return true;
+	else if (ip == "在此输入设备IP地址")
+		return;
+	
+	if (!checkIPAddress(ip)) return;//IP不合法
+	
+	var coor = window.parent.mainFrame.getNodeCoor(ip);
+	if (coor == null)
+	{
+		var msg = "没有在图中搜索到IP地址为 "+ ip +" 的设备。";
+		window.alert(msg);
+		return;
+	}
+	else if (typeof coor == "string")
+	{
+		window.alert(coor);
+		return;
+	}
+	
+	// 移动设备到中心标记处
+	window.parent.mainFrame.moveMainLayer(coor);
+}
+
 </script>
 </head>
 <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#CEDFF6">

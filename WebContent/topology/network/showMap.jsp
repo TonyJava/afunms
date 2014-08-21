@@ -70,6 +70,8 @@
 <script type="text/javascript" src="<%=rootPath%>/dwr/interface/LinkRemoteService.js"></script>
 <script type="text/javascript" src="js/topoutil.js"></script>
 <script type="text/javascript" src="js/topology.js"></script>
+<script type="text/javascript" src="js/toolbar.js"></script>
+<script type="text/javascript" src="js/edit.js"></script>
 <!-- DIV弹出层的js -->
 <link rel="stylesheet" type="text/css" href="<%=rootPath%>/common/css/styleDIV.css" />
 <script type="text/javascript" src="<%=rootPath%>/common/js/jquery-1.4.1.min.js"></script>
@@ -311,84 +313,46 @@ function updateState(target) {
 	curTarget = target;
 
 }
-function searchIPNODE()
-{	
-var ip = document.getElementsByName("searchIPTxt")[0].value;
-//alert(ip);
-if (ip == null)
-	return true;
-else if (ip == "在此输入设备IP地址")
-	return;
 
-if (!checkIPAddress(ip))
-	searchNode();
+	function searchNode() {
 
-var coor = window.parent.mainFrame.getNodeCoor(ip);
-if (coor == null)
-{
-	var msg = "没有在图中搜索到IP地址为 "+ ip +" 的设备。";
-	window.alert(msg);
-	return;
-}
-else if (typeof coor == "string")
-{
-	window.alert(coor);
-	return;
-}
+		var ip = window.prompt("请输入需要搜索的设备IP地址", "在此输入设备IP地址");
+		if (ip == null)
+			return true;
+		else if (ip == "在此输入设备IP地址")
+			return;
 
-// 移动设备到中心标记处
-window.parent.mainFrame.moveMainLayer(coor);
-}
-function searchNode()
-{	
+		if (!checkIPAddress(ip))
+			searchNode();
 
-	var ip = window.prompt("请输入需要搜索的设备IP地址", "在此输入设备IP地址");
-if (ip == null)
-	return true;
-else if (ip == "在此输入设备IP地址")
-	return;
+		var coor = window.parent.mainFrame.getNodeCoor(ip);
+		if (coor == null) {
+			var msg = "没有在图中搜索到IP地址为 " + ip + " 的设备。";
+			window.alert(msg);
+			return;
+		} else if (typeof coor == "string") {
+			window.alert(coor);
+			return;
+		}
 
-if (!checkIPAddress(ip))
-	searchNode();
+		// 移动设备到中心标记处
+		window.parent.mainFrame.moveMainLayer(coor);
+	}
 
-var coor = window.parent.mainFrame.getNodeCoor(ip);
-if (coor == null)
-{
-	var msg = "没有在图中搜索到IP地址为 "+ ip +" 的设备。";
-	window.alert(msg);
-	return;
-}
-else if (typeof coor == "string")
-{
-	window.alert(coor);
-	return;
-}
+	//检测用户是否具有保存拓扑图的权限
+	function savefile() {
+		console.log('savefile');
 
-// 移动设备到中心标记处
-window.parent.mainFrame.moveMainLayer(coor);
-}
-
-//保存拓扑图
-/* function saveFile() {
-if (!admin) {
-	window.alert("您没有保存视图的权限！");
-	return;
-}
-parent.mainFrame.saveFile();
-} */
-//检测用户是否具有保存拓扑图的权限
- function savefile() {
-console.log('savefile');
-
-if (!admin) {
-	window.alert("您没有保存视图的权限！");
-	return;
-}
-parent.mainFrame.saveFile();
-}
-//保存拓扑图
+		if (!admin) {
+			window.alert("您没有保存视图的权限！");
+			return;
+		}
+		parent.mainFrame.saveFile();
+	}
+	//保存拓扑图
 	function saveFile() {
-		console.log('saveFile');
+		//不选中   显示工具栏  复选框
+		parent.topFrame.document.getElementsByName('checkbox')[0].checked = false;
 		//resetProcDlg();
 		//var target = "showMap.jsp?filename=<%=viewFile%>&fullscreen=" + fullscreen;
 		var target = "showMap.jsp?filename=<%=viewFile%>&fullscreen=1";
@@ -400,11 +364,12 @@ parent.mainFrame.saveFile();
 //刷新拓扑图
 function refreshFile() 
 {
-if (window.confirm("“刷新”前是否需要保存当前拓扑图？")) {
-	saveFile();
-	return;
-}
-window.location.reload();
+	parent.topFrame.document.getElementsByName('checkbox')[0].checked = false;
+	if (window.confirm("“刷新”前是否需要保存当前拓扑图？")) {
+		saveFile();
+		return;
+	}
+	window.location.reload();
 }
 
 //全屏观看
