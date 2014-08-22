@@ -69,12 +69,12 @@
         for (i = 1; i < 5; i++) {
             if ("tab" + i == ProTag) {
                 document.getElementById(ProTag).getElementsByTagName("a")[0].className = "on";
-            } else {
-                document.getElementById("tab" + i).getElementsByTagName("a")[0].className = "";
+            } else if(document.getElementById("tab" + i)) {
+            	document.getElementById("tab" + i).getElementsByTagName("a")[0].className = "";
             }
             if ("con" + i == ProBox) {
                 document.getElementById(ProBox).style.display = "";
-            } else {
+            } else if(document.getElementById("con" + i)) {//有这个id的控制面板则隐藏
                 document.getElementById("con" + i).style.display = "none";
             }
         }

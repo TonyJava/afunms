@@ -625,19 +625,19 @@ function editMap(){
 }
 function cwin()
 {
- if(parent.parent.search.cols!='230,*')
- {
-    parent.parent.search.cols='230,*';
-    document.all.pic.src ="<%=rootPath%>/resource/image/hide_menu.gif";
-    document.all.pic.title="隐藏树形";
- }
- 
- else
- {
-    parent.parent.search.cols='0,*';
-    document.all.pic.src ="<%=rootPath%>/resource/image/show_menu.gif";
-    document.all.pic.title="显示树形";
- }
+	 if(parent.parent.search.cols!='230,*')
+	 {
+	    parent.parent.search.cols='230,*';
+	    document.all.pic.src ="<%=rootPath%>/resource/image/hide_menu.gif";
+	    document.all.pic.title="隐藏树形";
+	 }
+	 
+	 else
+	 {
+	    parent.parent.search.cols='0,*';
+	    document.all.pic.src ="<%=rootPath%>/resource/image/show_menu.gif";
+	    document.all.pic.title="显示树形";
+	 }
 }
 
 </script>

@@ -16,7 +16,7 @@
 <LINK href="<%=rootPath%>/resource/css/style.css" type="text/css" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 </head>     
-<frameset name=search cols="0,*" frameborder="NO" border="0" framespacing="0" rows="*">
+<frameset id="search" name=search cols="0,*" frameborder="NO" border="0" framespacing="0" rows="*">
     <frame name="leftFrame" src="../network/tree.jsp?treeflag=0&fileName=<%=fileName%>">
     <frame name="mainFrame" src="submap.jsp?fileName=<%=fileName%>">
   </frameset>

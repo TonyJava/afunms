@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <folder>
-   <folder id="" label="业务资源一览" />
+   <folder id="" label="业务资源一览">
+      <folder id="bussiness3" label="金奶奶" dataSource="data/list1408606902.xml" xml="businessmap1408606902.xml">
+         <folder id="net208" label="local(Windows Professional/XP)" />
+         <folder id="bus3" label="金奶奶(业务)" />
+      </folder>
+   </folder>
 </folder>
 

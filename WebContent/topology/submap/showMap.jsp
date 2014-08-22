@@ -27,23 +27,7 @@
 	    bg = vo.getTopoBg();
 	    Title = vo.getTopoTitle();
 	}
-	/**if(bg != null&&"null".equalsIgnoreCase(bg)&& !"".equals(bg)&& !"0".equals(bg)){
-	    String curDir = System.getProperty("user.dir");
-		File file = new File(curDir.replace("bin","")+"webapps/afunms/resource/image/bg/"+bg);
-		//System.out.println(curDir);
-		try {
-		    Iterator readers = ImageIO.getImageReadersByFormatName("jpg");
-		    ImageReader reader = (ImageReader)readers.next();
-		    ImageInputStream iis = ImageIO.createImageInputStream(file);
-		    reader.setInput(iis, true);
-		    //System.out.println("width:"+reader.getWidth(0));
-		    width = ""+reader.getWidth(0);
-		    //System.out.println("height:"+reader.getHeight(0));
-		    height = ""+reader.getHeight(0);
-	   } catch (IOException e) {
-	        e.printStackTrace();
-	   }
-	}*/
+	
 	out.println("<script type=\"text/javascript\">");
     // 取得用户权限---用来限制保存、刷新、编辑等操作
 	boolean admin = false;
@@ -149,7 +133,7 @@ function updateState(target) {
 	}
 	//保存拓扑图
 		function saveFile() {
-			console.log('saveFile');
+			parent.topFrame.document.getElementsByName('checkbox')[0].checked = false;
 			//resetProcDlg();
 			//var target = "showMap.jsp?filename=<%=fileName%>&fullscreen=" + fullscreen;
 			var target = "showMap.jsp?filename=<%=fileName%>&fullscreen=1";
@@ -543,13 +527,15 @@ function resizeTopDiv() {
 	function showDevice(action) {
 		parent.location = action;
 	}
-	// 刷新拓扑图
+	//刷新拓扑图
 	function refreshFile() 
 	{
+		parent.topFrame.document.getElementsByName('checkbox')[0].checked = false;
 		if (window.confirm("“刷新”前是否需要保存当前拓扑图？")) {
-			parent.topFrame.saveFile();
+			saveFile();
+			return;
 		}
-		parent.mainFrame.location.reload();
+		window.location.reload();
 	}
 	
 	// 全屏观看
@@ -741,7 +727,9 @@ function checkEntityLink(){
 	//重建拓扑图
 	function rebuild(){
 	    if (window.confirm("该操作会重新构建当前拓扑图链路，还继续吗？")) {
-			window.location = "<%=rootPath%>/submap.do?action=reBuildSubMap&xml=<%=fileName%>";
+	    	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=reBuildSubMap&xml=<%=fileName%>",'false');
+			http.send();
+	    	//window.location = "<%=rootPath%>/submap.do?action=reBuildSubMap&xml=<%=fileName%>";
 			alert("操作成功!");
 	        parent.location.reload();
 		}

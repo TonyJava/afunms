@@ -224,6 +224,7 @@ body,td,th {color: #666666;line-height:20px}
 											        NodeDepend nodevo = (NodeDepend) nodelist.get(j);
 											        if(nodevo.getNodeId().substring(0, 3).equalsIgnoreCase(currTreeNode.getNodeTag())){
 											            fnode = PollingEngine.getInstance().getNodeByCategory(currTreeNode.getName(),Integer.parseInt(nodevo.getNodeId().substring(3)));
+											            System.out.println("fnode="+fnode);
 											            String category = currTreeNode.getCategory();
 											            int i=0;
 											            if(category != null && !"".equals(category.trim())) {
@@ -253,21 +254,6 @@ body,td,th {color: #666666;line-height:20px}
 								   		if(nodeDTOList == null){
 								   			nodeDTOList = new ArrayList();
 								   		}
-								   		//System.out.println(currTreeNode.getNodeTag()+"==========nodeDTOList.size()=========="+nodeDTOList.size());
-								   		//List tempNodeDTOList = new ArrayList();		// ¡Ÿ ±¥Ê¥¢node
-								   		//tempNodeDTOList = nodeDTOList;
-								   		//for(Object nodeDTOObject : nodeDTOList){
-									   	//	try{
-									   	//		NodeDTO nodeDTO = (NodeDTO)nodeDTOObject;
-									   	//		if(nodeDTO.getBusinessId().contains("," + currbid + ",")){
-									   	//			tempNodeDTOList.add(nodeDTO);
-									   	//		}
-									   	//		}catch(Exception e){
-									   	//	        e.printStackTrace();
-									   	//	}
-								   		//}
-								   		//System.out.println(currTreeNode.getNodeTag()+"=========tempNodeDTOList.size()==========="+tempNodeDTOList.size());
-								   		//nodeDTOList = tempNodeDTOList;
 								   		currTreeNode.setDeceiveNum(nodeDTOList.size()+"");
 									 	isShowTreeNodeFlag = true;
 									 	if("0".equals(currTreeNode.getDeceiveNum())){

@@ -14,7 +14,7 @@ var mapPath = "afunms/resource/xml";
 /**
  *IMG(控制器的图标)的路径
  */
-var imgPath = "../../resource/"
+var imgPath = "../../resource/";
 
 /**
  * 视图宽度

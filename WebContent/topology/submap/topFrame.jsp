@@ -312,14 +312,12 @@ function showController(flag) {
 //—°‘Ò ”Õº
 function changeView()
 {
-	if(document.getElementById('submapview').value == "")return;
+	if(document.getElementById('submapview').value == "")	return;
 	if(document.getElementById('submapview').value == "network.jsp"){
 	    window.parent.parent.location = "../network/index.jsp";
 	}else{
 	    window.parent.parent.location = "../submap/index.jsp?submapXml=" + document.getElementById('submapview').value;
 	}
-	
-	//
 }
 function cwin()
   {

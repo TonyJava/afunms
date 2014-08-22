@@ -13,7 +13,7 @@
 			<alias>111</alias>
 			<info>示意设备</info>
 			<menu>&lt;a class="deleteline_menu_out" onmouseover="deleteMenuOver();" onmouseout="deleteMenuOut();" onclick="deleteHintMeta('hin1')"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;删除设备&lt;/a&gt;&lt;br/&gt;&lt;a class="relationmap_menu_out" onmouseover="relationMapMenuOver();" onmouseout="relationMapMenuOut();" onclick="javascript:window.showModalDialog('/afunms/submap.do?action=relationList&amp;nodeId=hin1', window, 'dialogwidth:500px; dialogheight:300px; status:no; help:no;resizable:0');"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;关联拓扑图 &lt;/a&gt;&lt;br/&gt;</menu>
-			<relationMap />
+			<relationMap/>
 		</node>
 		<node>
 			<id category="交换机">hin2</id>
@@ -26,20 +26,20 @@
 			<alias>77</alias>
 			<info>示意设备</info>
 			<menu>&lt;a class="deleteline_menu_out" onmouseover="deleteMenuOver();" onmouseout="deleteMenuOut();" onclick="deleteHintMeta('hin2')"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;删除设备&lt;/a&gt;&lt;br/&gt;&lt;a class="relationmap_menu_out" onmouseover="relationMapMenuOver();" onmouseout="relationMapMenuOut();" onclick="javascript:window.showModalDialog('/afunms/submap.do?action=relationList&amp;nodeId=hin2', window, 'dialogwidth:500px; dialogheight:300px; status:no; help:no;resizable:0');"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;关联拓扑图 &lt;/a&gt;&lt;br/&gt;</menu>
-			<relationMap />
+			<relationMap/>
 		</node>
 		<node>
 			<id category="net_server">net208</id>
 			<img>image/topo/win_xp.gif</img>
-			<x>260px</x>
-			<y>398px</y>
+			<x>586px</x>
+			<y>369px</y>
 			<width>65</width>
 			<height>26</height>
 			<ip>127.0.0.1</ip>
 			<alias>local</alias>
 			<info>设备标签:local&lt;br&gt;IP地址:127.0.0.1</info>
-			<menu />
-			<relationMap />
+			<menu/>
+			<relationMap/>
 		</node>
 		<node>
 			<id category="net_server">net209</id>
@@ -51,8 +51,8 @@
 			<ip>192.168.1.113</ip>
 			<alias>localhost</alias>
 			<info>设备标签:localhost&lt;br&gt;IP地址:192.168.1.113</info>
-			<menu />
-			<relationMap />
+			<menu/>
+			<relationMap/>
 		</node>
 	</nodes>
 	<lines>
@@ -95,4 +95,3 @@
 		</demoLine>
 	</demoLines>
 </root>
-
