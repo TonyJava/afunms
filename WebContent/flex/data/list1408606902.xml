@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+   <item name="local" typeName="Windows Professional/XP" ping="-1%" image="images/status_ok.gif" type="images/server_icon.png" />
+   <item name="金奶奶" typeName="业务" ping=" " image="images/status_ok.gif" type="images/bus.gif" />
+</items>
+

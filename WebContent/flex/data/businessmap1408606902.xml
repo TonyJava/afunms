@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices title="金奶奶">
+   <device>
+      <id>net208</id>
+      <name>local</name>
+      <ip>127.0.0.1</ip>
+      <type>net_server</type>
+      <typeName>Windows Professional/XP</typeName>
+      <cpu>3</cpu>
+      <memory>58</memory>
+      <incoming>-1</incoming>
+      <outgoing>-1</outgoing>
+      <alarmCpu>60</alarmCpu>
+      <ping>-1</ping>
+      <alarmMemory>60</alarmMemory>
+      <alarmIncoming>-1</alarmIncoming>
+      <alarmOutgoing>-1</alarmOutgoing>
+      <alarmFlag>false</alarmFlag>
+      <x>177</x>
+      <y>67</y>
+   </device>
+   <device>
+      <id>bus3</id>
+      <name>金奶奶</name>
+      <ip>无IP</ip>
+      <type>bussiness</type>
+      <typeName>业务</typeName>
+      <cpu>-1</cpu>
+      <memory>-1</memory>
+      <incoming>-1</incoming>
+      <outgoing>-1</outgoing>
+      <alarmCpu>-1</alarmCpu>
+      <ping>-1</ping>
+      <alarmMemory>-1</alarmMemory>
+      <alarmIncoming>-1</alarmIncoming>
+      <alarmOutgoing>-1</alarmOutgoing>
+      <alarmFlag>false</alarmFlag>
+      <x>10</x>
+      <y>10</y>
+   </device>
+</devices>
+
