@@ -500,11 +500,13 @@ var returnValue = showModalDialog(url,window,'dialogwidth:500px; dialogheight:30
 }
 //重建拓扑图
 function rebuild(){
-if (window.confirm("注意该操作会重新构建拓扑图数据，原拓扑图数据会丢失，还继续吗？")) {
-	window.location = "<%=rootPath%>/submap.do?action=reBuild&xml=<%=viewFile%>";
-	alert("操作成功!");
-    parent.location.reload();
-}
+	if (window.confirm("注意该操作会重新构建拓扑图数据，原拓扑图数据会丢失，还继续吗？")) 
+	{
+		var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=reBuild&xml=<%=viewFile%>",'false');
+		http.send();
+		alert("操作成功!");
+	    parent.location.reload();
+	}
 }
 
 //备份拓扑图
@@ -517,37 +519,39 @@ function resume(){
 var url="<%=rootPath%>/submap.do?action=readyresume&xml=<%=viewFile%>";
 showModalDialog(url,window,'dialogwidth:500px; dialogheight:300px; status:no; help:no;resizable:0');
 }
+
+
 function checkEntityLink(){
-var objLinkAry = new Array();
-var xml = "<%=viewFile%>";
-if(window.parent.frames['mainFrame'].objMoveAry!=null&&window.parent.frames['mainFrame'].objMoveAry.length>0){//框选
-    objLinkAry = window.parent.frames['mainFrame'].objMoveAry;
-}
-if(window.parent.frames['mainFrame'].objEntityAry!=null&&window.parent.frames['mainFrame'].objEntityAry.length>0){//ctrl选
-    objLinkAry = window.parent.frames['mainFrame'].objEntityAry;
-}
-if(objLinkAry==null||objLinkAry.length!=2){
-    alert("请选择两个设备！");
-    return;
-}
-if(objLinkAry[0].name.substring(objLinkAry[0].name.lastIndexOf(",")+1)=="1"){
-    alert("请选择非示意设备!");
-    return;
-}
-var start_id = objLinkAry[0].id.replace("node_","");
-
-if(objLinkAry[1].name.substring(objLinkAry[1].name.lastIndexOf(",")+1)=="1"){
-    alert("请选择非示意设备!");
-    return;
-}
-var end_id = objLinkAry[1].id.replace("node_","");     
-
-if(start_id.indexOf("net")==-1||end_id.indexOf("net")==-1){
-    alert("请选择网络设备!");
-    return;
-}
-var url="<%=rootPath%>/topology/network/linkAnalytics.jsp?start_id="+start_id+"&end_id="+end_id;
-showModalDialog(url,window,'dialogwidth:670px; dialogheight:370px; status:no; help:no;resizable:0');
+		var objLinkAry = new Array();
+		var xml = "<%=viewFile%>";
+		if(window.parent.frames['mainFrame'].objMoveAry!=null&&window.parent.frames['mainFrame'].objMoveAry.length>0){//框选
+		    objLinkAry = window.parent.frames['mainFrame'].objMoveAry;
+		}
+		if(window.parent.frames['mainFrame'].objEntityAry!=null&&window.parent.frames['mainFrame'].objEntityAry.length>0){//ctrl选
+		    objLinkAry = window.parent.frames['mainFrame'].objEntityAry;
+		}
+		if(objLinkAry==null||objLinkAry.length!=2){
+		    alert("请选择两个设备！");
+		    return;
+		}
+		if(objLinkAry[0].name.substring(objLinkAry[0].name.lastIndexOf(",")+1)=="1"){
+		    alert("请选择非示意设备!");
+		    return;
+		}
+		var start_id = objLinkAry[0].id.replace("node_","");
+		
+		if(objLinkAry[1].name.substring(objLinkAry[1].name.lastIndexOf(",")+1)=="1"){
+		    alert("请选择非示意设备!");
+		    return;
+		}
+		var end_id = objLinkAry[1].id.replace("node_","");     
+		
+		if(start_id.indexOf("net")==-1||end_id.indexOf("net")==-1){
+		    alert("请选择网络设备!");
+		    return;
+		}
+		var url="<%=rootPath%>/topology/network/linkAnalytics.jsp?start_id="+start_id+"&end_id="+end_id;
+		showModalDialog(url,window,'dialogwidth:670px; dialogheight:370px; status:no; help:no;resizable:0');
 }
 //切换视图
 function changeName() 
