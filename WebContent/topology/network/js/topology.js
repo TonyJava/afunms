@@ -2600,21 +2600,21 @@ function showAnchor()
 {
 	clearInterval(flashTimer);
 	clearTimeout(closeAncTimer);
-	document.all.postLayer.style.visibility = "visible";
+	document.getElementById('postLayer').style.visibility = "visible";
 	flashTimer = setInterval("flashAnchor()", 500);
 	closeAncTimer = setTimeout("closeAnchor()", 30*1000);
 }
 
 function flashAnchor()
 {
-	var visi = document.all.postLayer.style.visibility;
+	var visi = document.getElementById('postLayer').style.visibility;
 	if (visi == "visible")
 	{
-		document.all.postLayer.style.visibility = "hidden";
+		document.getElementById('postLayer').style.visibility = "hidden";
 	}
 	else
 	{
-		document.all.postLayer.style.visibility = "visible";
+		document.getElementById('postLayer').style.visibility = "visible";
 	}
 }
 
@@ -2622,7 +2622,7 @@ function closeAnchor()
 {
 	clearInterval(flashTimer);
 	clearTimeout(closeAncTimer);
-	document.all.postLayer.style.visibility = "hidden";
+	document.getElementById('postLayer').style.visibility = "hidden";
 }
 
 // 根据节点的坐标移动主层
