@@ -588,13 +588,13 @@ function addLine(lineid,url){
 		var lineObj = lines[j];
 		var line_id = lineObj.getAttribute("id");
 		if(line_id==lineid){
-		    var a = lineObj.getElementsByTagName("a")[0].childNodes[0].nodeValue;
-			var b = lineObj.getElementsByTagName("b")[0].childNodes[0].nodeValue;
-			var color = lineObj.getElementsByTagName("color")[0].childNodes[0].nodeValue;
-			var dash = lineObj.getElementsByTagName("dash")[0].childNodes[0].nodeValue;
-			var lineWidth = lineObj.getElementsByTagName("lineWidth")[0].childNodes[0].nodeValue;
-			var lineInfo = lineObj.getElementsByTagName("lineInfo")[0].childNodes[0].nodeValue;
-			var lineMenu = lineObj.getElementsByTagName("lineMenu")[0].childNodes[0].nodeValue;
+		    var a = lineObj.getElementsByTagName("a")[0].childNodes[0]?lineObj.getElementsByTagName("a")[0].childNodes[0].nodeValue:"";
+			var b = lineObj.getElementsByTagName("b")[0].childNodes[0]?lineObj.getElementsByTagName("b")[0].childNodes[0].nodeValue:"";
+			var color = lineObj.getElementsByTagName("color")[0].childNodes[0]?lineObj.getElementsByTagName("color")[0].childNodes[0].nodeValue:"";
+			var dash = lineObj.getElementsByTagName("dash")[0].childNodes[0]?lineObj.getElementsByTagName("dash")[0].childNodes[0].nodeValue:"";
+			var lineWidth = lineObj.getElementsByTagName("lineWidth")[0].childNodes[0]?lineObj.getElementsByTagName("lineWidth")[0].childNodes[0].nodeValue:"";
+			var lineInfo = lineObj.getElementsByTagName("lineInfo")[0].childNodes[0]?lineObj.getElementsByTagName("lineInfo")[0].childNodes[0].nodeValue:"";
+			var lineMenu = lineObj.getElementsByTagName("lineMenu")[0].childNodes[0]?lineObj.getElementsByTagName("lineMenu")[0].childNodes[0].nodeValue:"";
 	
 			var line = createElementByUserAgentAnd("line");
 			line.lineid = lineObj.getAttribute("id");
@@ -713,7 +713,7 @@ function parseData()
 		var imgValue = "../../resource/"+node.getElementsByTagName("img")[0].childNodes[0].nodeValue;
 		var x = node.getElementsByTagName("x")[0].childNodes[0].nodeValue;
 		var y = node.getElementsByTagName("y")[0].childNodes[0].nodeValue;
-		var ip = node.getElementsByTagName("ip")[0].childNodes[0].nodeValue;
+		var ip = node.getElementsByTagName("ip")[0].childNodes[0]?node.getElementsByTagName("ip")[0].childNodes[0].nodeValue:"";
 		var alias = node.getElementsByTagName("alias")[0].childNodes[0].nodeValue;
 		var info = node.getElementsByTagName("info")[0].childNodes[0].nodeValue;
 		var menu = node.getElementsByTagName("menu")[0].childNodes[0]?node.getElementsByTagName("menu")[0].childNodes[0].nodeValue:"";
