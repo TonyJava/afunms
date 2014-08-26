@@ -170,8 +170,7 @@ public class DiscoverDataHelper {
 		try {
 			db = new DBManager();
 			// 查询出每个链路
-			rs = db
-					.executeQuery("select n.ip_address ip,l.end_ip from topo_host_node n,topo_network_link l where n.ip_address=l.start_ip and l.end_ip in(select n1.ip_address from  topo_host_node n1 where  n1.layer=n.layer+1) and l.linktype != -1  union select n.ip_address,l.start_ip from topo_host_node n,topo_network_link l where n.ip_address=l.end_ip and l.start_ip in(select n1.ip_address from  topo_host_node n1 where  n1.layer=n.layer+1) and l.linktype != -1");
+			rs = db.executeQuery("select n.ip_address ip,l.end_ip from topo_host_node n,topo_network_link l where n.ip_address=l.start_ip and l.end_ip in(select n1.ip_address from  topo_host_node n1 where  n1.layer=n.layer+1) and l.linktype != -1  union select n.ip_address,l.start_ip from topo_host_node n,topo_network_link l where n.ip_address=l.end_ip and l.start_ip in(select n1.ip_address from  topo_host_node n1 where  n1.layer=n.layer+1) and l.linktype != -1");
 			HashMap<String, List<String>> t = new HashMap<String, List<String>>();
 			List<String> ipList = new ArrayList<String>();
 			int j = 0;
