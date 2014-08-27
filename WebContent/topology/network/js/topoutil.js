@@ -223,6 +223,33 @@ function getCoorObjectFrom(a,b){
 	return {'x1':x1,'y1':y1,'x2':x2,'y2':y2};
 }
 
+//由a,b节点  得到辅助链路线  两端点的坐标
+function getAssLineCoorObjectFrom(a,b){
+	var x1,y1,x2,y2;
+	if(isFF){
+		if(a){
+			x1 =(parseInt(a.getAttribute('x')) + parseInt(a.getAttribute('width'))/2 + 3),y1=(parseInt(a.getAttribute('y')) + parseInt(a.getAttribute('height'))/2 + 3);
+				
+		}
+		if(b){
+			x2 = (parseInt(b.getAttribute('x')) + parseInt(b.getAttribute('width'))/2 + 3),y2=(parseInt(b.getAttribute('y')) + parseInt(b.getAttribute('height'))/2 + 3);
+				
+		}
+		
+	}else{
+		if(a){
+			x1 =(parseInt(a.style.left) + parseInt(a.style.width)/2 + 3),y1=(parseInt(a.style.top) + parseInt(a.style.height)/2 + 3);
+				
+		}
+		if(b){
+			x2 = (parseInt(b.style.left) + parseInt(b.style.width)/2 + 3),y2=(parseInt(b.style.top) + parseInt(b.style.height)/2 + 3);
+				
+		}
+		
+	}
+	return {'x1':x1,'y1':y1,'x2':x2,'y2':y2};
+}
+
 function cancelPropagationAndDefaultOfEvent(event){
 	 if(event.stopPropagation){
 	    event.stopPropagation();
