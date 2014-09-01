@@ -172,11 +172,21 @@ function setLine(line,p){
 }
 //根据浏览器和label创建对象
 function createElementByUserAgentAnd(label){
+	var vmlTags = {
+			'image':'v:image',
+			'line':'v:line',
+			'text':'div'
+	};
+	var svgTags = {
+			'image':'image',
+				'line':'line',
+				'text':'text'
+	};
 	var o;
 	if(isFF){
-		o = document.createElementNS("http://www.w3.org/2000/svg",label);
+		o = document.createElementNS("http://www.w3.org/2000/svg",svgTags[label]);
 	}else{
-		o = document.createElement("v:"+label);
+		o = document.createElement(vmlTags[label]);
 	}
 	return o;
 }
