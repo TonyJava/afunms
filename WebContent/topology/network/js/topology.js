@@ -951,7 +951,11 @@ function parseData()
 			objStyle = that;
 			selectImg(objStyle);
 			document.getElementById(that.id.replace("node", "info")).style.visibility = "hidden";
-			document.getElementById(that.id.replace("node", "menu")).style.visibility = "visible"; 
+			//节点右键菜单跟随节点显示
+			var menuPanel = document.getElementById(that.id.replace("node", "menu"));
+			menuPanel.style.left = event.clientX+'px';
+			menuPanel.style.top = event.clientY+'px';
+			menuPanel.style.visibility = "visible"; 
 			
 			return cancelPropagationAndDefaultOfEvent(event);
 	   });
