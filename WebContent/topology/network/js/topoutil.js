@@ -65,36 +65,48 @@ function showModalDialogAndDo(url,arguments,features){
 		window.location.reload();
 	}
 }
-function setImage(img,ps){
+/**
+ * 依据平台设置元素在画布中的位置和它的长宽
+ */
+function setElementXYWH(ele,ps){
 	if(isFF){
 		if(ps.x){
-			img.setAttribute('x',ps.x);
+			ele.setAttribute('x',ps.x);
 		}
 		if(ps.y){
-			img.setAttribute('y',ps.y);
+			ele.setAttribute('y',ps.y);
 		}
 		if(ps.w){
-			img.setAttribute('width',ps.w);
+			ele.setAttribute('width',ps.w);
 		}
 		if(ps.h){
-			img.setAttribute('height',ps.h);
+			ele.setAttribute('height',ps.h);
 		}
+		
+	}else{
+		if(ps.x){
+			ele.style.left = ps.x;
+		}
+		if(ps.y){
+			ele.style.top = ps.y;	
+		}
+		if(ps.w){
+			ele.style.width = ps.w;
+		}
+		if(ps.h){
+			ele.style.height = ps.h;
+		}
+		
+	}
+}
+function setImage(img,ps){
+	if(isFF){
+		setElementXYWH(img,ps);
 		if(ps.src){
 			img.setAttributeNS('http://www.w3.org/1999/xlink','xlink:href',ps.src);
 		}
 	}else{
-		if(ps.x){
-			img.style.left = ps.x;
-		}
-		if(ps.y){
-			img.style.top = ps.y;	
-		}
-		if(ps.w){
-			img.style.width = ps.w;
-		}
-		if(ps.h){
-			img.style.height = ps.h;
-		}
+		setElementXYWH(img,ps);
 		if(ps.src){
 			img.src = ps.src;
 		}
