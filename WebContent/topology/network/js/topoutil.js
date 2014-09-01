@@ -100,34 +100,34 @@ function setImage(img,ps){
 		}
 	}
 }
-function getImagePropertiesBy(img, ps){
+function getImagePropertiesBy(img){
+	var ps ={};
 	if(isFF){
-		if(ps.x){
+		
 			ps.x = img.getAttribute('x');
-		}
-		if(ps.y){
+		
+		
 			ps.y = img.getAttribute('y');
-		}
-		if(ps.w){
+		
+		
 			ps.w = img.getAttribute('width');
-		}
-		if(ps.h){
+		
+		
 			ps.h = img.getAttribute('height');
-		}
+		
 		
 	}else{
-		if(ps.x){
+		
 			ps.x = img.offsetLeft;
-		}
-		if(ps.y){
+		
+		
 			ps.y = img.offsetTop;	
-		}
-		if(ps.w){
+	
+		
 			ps.w = img.offsetWidth;
-		}
-		if(ps.h){
+		
+		
 			 ps.h = img.offsetHeight;
-		}
 		
 	}
 	return ps;
