@@ -869,8 +869,16 @@ function parseData()
 		//document.getElementById("divLayer").appendChild(divInfo);
 		appendChild(divInfo);
 		// 增加"设备信息显示"事件
-		document.getElementById("node_" + id).onmouseover = function() { 
-			document.getElementById(this.id.replace("node", "info")).style.visibility = "visible"; 
+		document.getElementById("node_" + id).onmouseover = function(event) { 
+			var infoPanel = document.getElementById(this.id.replace("node", "info"));
+			if(infoPanel.style.visibility === 'visible') return;//当鼠标在节点上移动时，不重新定位节点标签
+			
+			event = event||window.event;
+			//var ps = getImagePropertiesBy(this);
+			infoPanel.style.left = event.clientX+'px';
+			infoPanel.style.top = event.clientY+'px';
+			
+			infoPanel.style.visibility = "visible"; 
 		};
 		document.getElementById("node_" + id).onmouseout = function() { document.getElementById(this.id.replace("node", "info")).style.visibility = "hidden"; };
 		
@@ -1482,7 +1490,7 @@ function down(event)
 				removeChild(document.getElementById("ctrlImgDiv"));
 				// rmvCtrlImg();
 			}
-			var p = getImagePropertiesBy(this,{'x':1,'y':1});
+			var p = getImagePropertiesBy(this);
 			//alert(p.x+"="+p.y+"this.offsetTop="+this.offsetTop);
 			xx = event.clientX - parseInt(p.x,10);
 			yy = event.clientY - parseInt(p.y,10);
@@ -1514,7 +1522,7 @@ function down(event)
 				rmvContainedImg();
 			}
 			
-			var p = getImagePropertiesBy(this,{'x':1,'y':1});
+			var p = getImagePropertiesBy(this);
 			
 			//console.log(event.clientX+"===="+parseInt(p.x,10));
 			 
@@ -1607,7 +1615,7 @@ function move(event)
 		   		//#############HONG ADD END##########
 				menuStyle.left = tempX + 28;
 				menuStyle.top = tempY;
-				var p = getImagePropertiesBy(obj,{'x':1,'y':1});
+				var p = getImagePropertiesBy(obj);
 				var iLeft = parseInt( p.x ) + 15;
 				var iTop = parseInt( p.y ) + 8;
 				for (var i = 1; i < line_ids.length; i += 1)
@@ -2049,7 +2057,7 @@ function save()
 
 			if (tempArray[i].id == id)
 			{
-				var p = getImagePropertiesBy(tempArray[i],{'x':1,'y':1});
+				var p = getImagePropertiesBy(tempArray[i]);
 				node.getElementsByTagName("x")[0].childNodes[0].nodeValue = p.x;
 				node.getElementsByTagName("y")[0].childNodes[0].nodeValue = p.y;
 			}
@@ -2662,6 +2670,5 @@ function moveMainLayer(coor)
 	
 	showAnchor();
 }
-
 
 /* 搜索面板 -- 结束 */
