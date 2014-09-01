@@ -68,33 +68,33 @@ function showModalDialogAndDo(url,arguments,features){
 /**
  * 依据平台设置元素在画布中的位置和它的长宽
  */
-function setElementXYWH(ele,ps){
+function setElementXYWH(elem,ps){
 	if(isFF){
 		if(ps.x){
-			ele.setAttribute('x',ps.x);
+			elem.setAttribute('x',parseInt(ps.x,10));
 		}
 		if(ps.y){
-			ele.setAttribute('y',ps.y);
+			elem.setAttribute('y',parseInt(ps.y,10));
 		}
 		if(ps.w){
-			ele.setAttribute('width',ps.w);
+			elem.setAttribute('width',parseInt(ps.w,10));
 		}
 		if(ps.h){
-			ele.setAttribute('height',ps.h);
+			elem.setAttribute('height',parseInt(ps.h,10));
 		}
 		
 	}else{
 		if(ps.x){
-			ele.style.left = ps.x;
+			elem.style.left = parseInt(ps.x,10)+'px';
 		}
 		if(ps.y){
-			ele.style.top = ps.y;	
+			elem.style.top = parseInt(ps.y,10)+'px';	
 		}
 		if(ps.w){
-			ele.style.width = ps.w;
+			elem.style.width = parseInt(ps.w,10)+'px';
 		}
 		if(ps.h){
-			ele.style.height = ps.h;
+			elem.style.height = parseInt(ps.h,10)+'px';
 		}
 		
 	}
@@ -107,6 +107,7 @@ function setImage(img,ps){
 		}
 	}else{
 		setElementXYWH(img,ps);
+		
 		if(ps.src){
 			img.src = ps.src;
 		}
