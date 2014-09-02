@@ -73,14 +73,17 @@ function setElementXYWH(elem,ps){
 		if(ps.x){
 			elem.setAttribute('x',parseInt(ps.x,10));
 		}
-		if(ps.y){
+		if(ps.y&&ps.fs){ //text文本元素x,y为左下角，Y轴需要加上text的高度
+			elem.setAttribute('y',parseInt(ps.y,10)+parseInt(ps.fs,10));
+		}else if(ps.y){
 			elem.setAttribute('y',parseInt(ps.y,10));
 		}
+		
 		if(ps.w){
-			elem.setAttribute('width',parseInt(ps.w,10));
+			elem.setAttribute('width',parseInt(ps.w,10)+'px');
 		}
 		if(ps.h){
-			elem.setAttribute('height',parseInt(ps.h,10));
+			elem.setAttribute('height',parseInt(ps.h,10)+'px');
 		}
 		
 	}else{
