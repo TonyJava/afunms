@@ -730,9 +730,6 @@ function parseData()
 	
 		// end
 		var img = createElementByUserAgentAnd("image");
-		
-		//var img = document.createElementNS("http://www.w3.org/2000/svg","image");
-		// img.id = "image_" + id;//yangjun 修改
 		img.id = "node_" + id;
 		if(info=="示意设备") {// yangjun add 区分示意设备
 			img.name = relationMap+",1";// 节点关联的子图文件名和示意设备判断标记
@@ -745,82 +742,93 @@ function parseData()
 		img.style.cursor = "hand";
 		/*img.style.left = x;
 		img.style.top = y;*/
-		setImage(img,{'x':x,'y':y,'w':imgWidth,'h':imgHeight});
+		setImage(img,{'x':x,'y':y});
 		if(nodeType == "net_server")
 		{
 			setImage(img,{'w':65,'h':26});
 			
+			imgWidth = 65;
 			aliasHSpace = 10;
 			aliasVSpace = 26;			
 		} else if(nodeType == "机柜")
 		{
 			
 			setImage(img,{'w':95,'h':371});
+			imgWidth = 95;
 			aliasHSpace = 10;
 			aliasVSpace = 371;
 		} else if(nodeType == "标题")
 		{
 			setImage(img,{'w':10,'h':10});
+			imgWidth = 10;
 			aliasHSpace = 5;
 			aliasVSpace = 5
 		} else if(nodeType == "服务器")
 		{
 			setImage(img,{'w':65,'h':26});
+			imgWidth = 65;
 			aliasHSpace = 5;
 			aliasVSpace = 20
 		} else if(nodeType == "ups")
 		{
 			setImage(img,{'w':68,'h':76});
+			imgWidth = 68;
 			aliasHSpace = 10;
 			aliasVSpace = 70
 		} 
 		else if(nodeType == "weblogic")
 		{
 			setImage(img,{'w':32,'h':21});
-			
+			imgWidth = 32;
 			aliasHSpace = 20;
 			aliasVSpace = 22
 		}
 		else if(nodeType == "ftp")
 		{
 			setImage(img,{'w':32,'h':32});
-			
+			imgWidth = 32;
 			aliasHSpace = 20;
 			aliasVSpace = 33
 		}
 		else if(nodeType == "web")
 		{
 			setImage(img,{'w':32,'h':32});
+			imgWidth = 32;
 			aliasHSpace = 20;
 			aliasVSpace = 34
 		}
 		else if(nodeType == "iis")
 		{
 			setImage(img,{'w':30,'h':14});
+			imgWidth = 30;
 			aliasHSpace = 30;
 			aliasVSpace = 16
 		}
 		else if(nodeType == "mail")
 		{
 			setImage(img,{'w':30,'h':20});
+			imgWidth = 30;
 			aliasHSpace = 15;
 			aliasVSpace = 21
 		}
 		else if(nodeType == "机柜")
 		{
 			setImage(img,{'w':95,'h':371});
+			imgWidth = 95;
 			aliasHSpace = 10;
 			aliasVSpace = 371;
 		}
 		else if(nodeType == "标题")
 		{
 			setImage(img,{'w':10,'h':10});
+			imgWidth = 10;
 			aliasHSpace = 5;
 			aliasVSpace = 5
 		}
 		else
 		{
 			setImage(img,{'w':30,'h':30});
+			imgWidth = 30;
 			aliasHSpace = 24;
 			aliasVSpace = 28;
 		}
@@ -831,22 +839,32 @@ function parseData()
 		document.getElementById('divLayer').appendChild(img);
 
 		// 显示设备文本
-		var divText = document.createElement("div");
+		var divText = createElementByUserAgentAnd("text");
 		divText.id = "text_" + id;
 		divText.style.position = "absolute";
-		divText.style.width = "80";
+		
+		/*divText.style.width = "80";
 		divText.style.height = "20";
 		divText.style.left = parseInt(x, 10) - aliasHSpace;
-		divText.style.top = parseInt(y, 10) + aliasVSpace;
+		divText.style.top = parseInt(y, 10) + aliasVSpace;*/
 		divText.style.fontSize = "12px";
-		divText.align = "center";
+		divText.style.textAlign = "center";
 		if (g_viewFlag == 0)
-			divText.innerHTML = alias;// 显示设备别名
+			divText.appendChild(document.createTextNode(alias));// 显示设备别名
 		else
-			divText.innerHTML = ip;// 显示设备IP
-		//document.getElementById('divLayer').appendChild(divText);
-		//document.body.appendChild(divText);
-		appendChild(divText);
+			divText.appendChild(document.createTextNode(ip));// 显示设备IP
+		
+		
+		document.getElementById('divLayer').appendChild(divText);
+		setElementXYWH(divText,calculateXYWHByUserAgentAnd({'divText':divText,
+			'img':img,
+			'x':parseInt(x, 10),
+			'aliasHSpace': aliasHSpace,
+			'aliasVSpace':  aliasVSpace,
+			'y':parseInt(y, 10),
+			//svg使用
+			'fs':"12"
+		}));
 		// 鼠标移上显示设备信息
 		var divInfo = document.createElement("div");
 		divInfo.id = "info_" + id;
@@ -1449,7 +1467,6 @@ function divLayerDown(event)
 function down(event)
 {
 	event = event || window.event;
-	console.log(event);
 	 /***
 	 * 测试的时候是基于鼠标为左手的测试
 	 * 点击鼠标右键 event.button = 0或者1
@@ -1599,13 +1616,34 @@ function move(event)
 			}
 			else
 			{
-				var textStyle = document.getElementById(obj.id.replace("node", "text")).style;
+				var textTag = document.getElementById(obj.id.replace("node", "text"));
 				var infoStyle = document.getElementById(obj.id.replace("node", "info")).style;
 				var menuStyle = document.getElementById(obj.id.replace("node", "menu")).style;
 				
-				setImage(obj,{'x':tempX+'px','y':tempY+'px'});
-				textStyle.left = tempX - 24;
-				textStyle.top = tempY + 28;
+				setImage(obj,{'x':tempX,'y':tempY});
+				/*setElementXYWH(divText,calculateXYWHByUserAgentAnd({'divText':divText,
+					'imgWidth':imgWidth,
+					'x':parseInt(x, 10),
+					'aliasHSpace': aliasHSpace,
+					'aliasVSpace':  aliasVSpace,
+					'y':parseInt(y, 10),
+					//vml使用
+					'w':'80',
+					'h':'20',
+					//svg使用
+					'fs':"12"
+				}));*/
+				var objPos = getImagePropertiesBy(obj);
+				//设置设备标签的位置
+				setElementXYWH(textTag,calculateXYWHByUserAgentAnd({
+					'divText':textTag,
+					'imgWidth':objPos.w,
+					'aliasVSpace':  objPos.h,
+					'x':tempX,
+					'y':tempY,
+					'fs':12
+					}));
+				
 				infoStyle.left = tempX + 32;
 				infoStyle.top = tempY;
 				//#########增加拖拽设备时“设备信息显示”的越界处理，即超过边界的情况自动显示到可视范围之内   HONGLI ADD #########
