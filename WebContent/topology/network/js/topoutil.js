@@ -66,15 +66,65 @@ function showModalDialogAndDo(url,arguments,features){
 	}
 }
 /**
+ * 计算text的宽度
+ */
+function calculateXYWHByUserAgentAnd(ps){
+	var t = {};
+	if(isFF){
+		if(ps.x){
+			
+			var divTextWidth = ps.divText?ps.divText.getBBox().width:30;
+			var imgXYWH = getImagePropertiesBy(ps.img);
+			console.log('ele wid='+ ps.divText.getBBox().width+'img='+imgXYWH.w+'cha='+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10)));
+			
+			t.x = parseInt(ps.x,10)+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10))/2;
+		}
+		if(ps.y&&ps.fs){ //text文本元素x,y为左下角，Y轴需要加上text的高度
+			t.y = parseInt(ps.y,10)+parseInt(imgXYWH.h)+parseInt(ps.fs,10);
+		}else if(ps.y){
+			t.y = parseInt(ps.y,10)+parseInt(imgXYWH.h);
+		}
+		
+		if(ps.w){
+			t.w = parseInt(ps.w,10);
+		}
+		if(ps.h){
+			t.h = parseInt(ps.h,10);
+		}
+		
+	}else{
+		var imgXYWH = getImagePropertiesBy(ps.img);
+		console.log(ps.divText.offsetWidth);
+		var divTextWidth = ps.divText?ps.divText.offsetWidth:30;
+		if(ps.x){
+			t.x = parseInt(ps.x,10)+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10))/2;
+			//t.x = parseInt(ps.x,10)-parseInt(imgXYWH.w);
+		}
+		if(ps.y){
+			t.y = parseInt(ps.y,10)+parseInt(imgXYWH.h,10);	
+		}
+		if(ps.w){
+			t.w = parseInt(ps.w,10);
+		}
+		if(ps.h){
+			t.h = parseInt(ps.h,10);
+		}
+		
+	}
+	return t;
+}
+/**
  * 依据平台设置元素在画布中的位置和它的长宽
  */
 function setElementXYWH(elem,ps){
 	if(isFF){
 		if(ps.x){
+			
+			
 			elem.setAttribute('x',parseInt(ps.x,10));
 		}
-		if(ps.y&&ps.fs){ //text文本元素x,y为左下角，Y轴需要加上text的高度
-			elem.setAttribute('y',parseInt(ps.y,10)+parseInt(ps.fs,10));
+		if(ps.y){ //text文本元素x,y为左下角，Y轴需要加上text的高度
+			elem.setAttribute('y',parseInt(ps.y,10));
 		}else if(ps.y){
 			elem.setAttribute('y',parseInt(ps.y,10));
 		}
