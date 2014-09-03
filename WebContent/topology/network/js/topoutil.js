@@ -75,9 +75,7 @@ function calculateXYWHByUserAgentAnd(ps){
 			
 			var divTextWidth = ps.divText?ps.divText.getBBox().width:30;
 			var imgXYWH = getImagePropertiesBy(ps.img);
-			console.log('ele wid='+ ps.divText.getBBox().width+'img='+imgXYWH.w+'cha='+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10)));
-			
-			t.x = parseInt(ps.x,10)+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10))/2;
+			t.x = parseInt(ps.x,10)+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10))/2;//水平居中
 		}
 		if(ps.y&&ps.fs){ //text文本元素x,y为左下角，Y轴需要加上text的高度
 			t.y = parseInt(ps.y,10)+parseInt(imgXYWH.h)+parseInt(ps.fs,10);
@@ -97,8 +95,7 @@ function calculateXYWHByUserAgentAnd(ps){
 		console.log(ps.divText.offsetWidth);
 		var divTextWidth = ps.divText?ps.divText.offsetWidth:30;
 		if(ps.x){
-			t.x = parseInt(ps.x,10)+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10))/2;
-			//t.x = parseInt(ps.x,10)-parseInt(imgXYWH.w);
+			t.x = parseInt(ps.x,10)+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10))/2;//水平居中
 		}
 		if(ps.y){
 			t.y = parseInt(ps.y,10)+parseInt(imgXYWH.h,10);	

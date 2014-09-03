@@ -1621,24 +1621,13 @@ function move(event)
 				var menuStyle = document.getElementById(obj.id.replace("node", "menu")).style;
 				
 				setImage(obj,{'x':tempX,'y':tempY});
-				/*setElementXYWH(divText,calculateXYWHByUserAgentAnd({'divText':divText,
-					'imgWidth':imgWidth,
-					'x':parseInt(x, 10),
-					'aliasHSpace': aliasHSpace,
-					'aliasVSpace':  aliasVSpace,
-					'y':parseInt(y, 10),
-					//vml使用
-					'w':'80',
-					'h':'20',
-					//svg使用
-					'fs':"12"
-				}));*/
+				
 				var objPos = getImagePropertiesBy(obj);
 				//设置设备标签的位置
 				setElementXYWH(textTag,calculateXYWHByUserAgentAnd({
 					'divText':textTag,
-					'imgWidth':objPos.w,
-					'aliasVSpace':  objPos.h,
+					'img':obj,
+					
 					'x':tempX,
 					'y':tempY,
 					'fs':12
