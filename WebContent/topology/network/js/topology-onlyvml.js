@@ -2981,7 +2981,7 @@ function getConfine(x, y)
 }
 
 // 通过键盘的“上下左右”方向键控制视图位置
-function document.onkeydown()
+ document.onkeydown = function()
 {
 // -----先不用--------改3-------
 /*
@@ -3024,9 +3024,7 @@ function document.onkeydown()
 			break;
 		case 40:
 		case 83:		// S
-			moveAction('down');
-			break;
-			
+			moveAction('down');break;
 		case 90:		// Z
 			zoomAll('out');
 			break;

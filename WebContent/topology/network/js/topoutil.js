@@ -358,3 +358,86 @@ function discardSelectedLast(){
 		objStyle = null;
 	}
 }
+
+function zoomInit(){
+	if(isFF){
+		var viewBox = divLayer.getAttribute('viewBox');
+		if(viewBox == null){
+			divLayer.setAttribute('viewBox','0 0 100% 100%');
+		}
+	}
+	else{
+		if (divLayer.style.zoom == "") 
+		{
+			divLayer.style.zoom = 1.0;
+		}
+		
+	}
+}
+function zoomIn(){
+	
+	if(isFF){
+		var viewBox = divLayer.getAttribute('viewBox');
+		
+	}
+	else{
+		// 放大
+		if (divLayer.style.zoom != "") 
+		{
+			zoom = parseFloat(zoom) + scale;
+			if (zoom > 2.0) 
+			{
+				zoom = 2.0;
+				return;
+			}
+			else if (zoom == 0.2) 
+			{
+				zoom = 1.1;
+			}
+			divLayer.style.zoom = parseFloat(zoom);
+		}
+	}
+	
+}
+
+function zoomOut(){
+	
+	if(isFF){
+		var viewBox = divLayer.getAttribute('viewBox');
+		
+	}
+	else{
+		// 缩小
+		if (divLayer.style.zoom != "") 
+		{
+			zoom = parseFloat(zoom) - scale;
+			if (zoom <= 0) 
+			{
+				zoom = 0.9;
+			}
+			else if (zoom > 0 && zoom < 0.5) 
+			{
+				zoom = 0.5;
+				return;
+			}
+			divLayer.style.zoom = parseFloat(zoom);
+		}
+	}
+	
+}
+
+function zoomRecovery(){
+	if(isFF){
+		var viewBox = divLayer.getAttribute('viewBox');
+		
+	}
+	else{
+		// 复原
+		if (divLayer.style.zoom != "") 
+		{
+			divLayer.style.zoom = 1.0;
+			zoom = 1.0;
+		}
+	}
+	
+}

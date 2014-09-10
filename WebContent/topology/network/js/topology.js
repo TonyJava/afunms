@@ -2324,54 +2324,17 @@ function updatePosition()
 function zoomAll(state) 
 {
 	closeAnchor();// ---------改后添加这个-
-	if (divLayer.style.zoom == "") 
-	{
-		divLayer.style.zoom = 1.0;
-	}
-	
+	zoomInit();
 	if (state == "out") 
 	{
-		// 缩小
-		if (divLayer.style.zoom != "") 
-		{
-			zoom = parseFloat(zoom) - scale;
-			if (zoom <= 0) 
-			{
-				zoom = 0.9;
-			}
-			else if (zoom > 0 && zoom < 0.5) 
-			{
-				zoom = 0.5;
-				return;
-			}
-			divLayer.style.zoom = parseFloat(zoom);
-		}
+		zoomOut();
 	}
 	else if (state == "in") 
 	{
-		// 放大
-		if (divLayer.style.zoom != "") 
-		{
-			zoom = parseFloat(zoom) + scale;
-			if (zoom > 2.0) 
-			{
-				zoom = 2.0;
-				return;
-			}
-			else if (zoom == 0.2) 
-			{
-				zoom = 1.1;
-			}
-			divLayer.style.zoom = parseFloat(zoom);
-		}
+		zoomIn();
 	}
 	else {
-		// 复原
-		if (divLayer.style.zoom != "") 
-		{
-			divLayer.style.zoom = 1.0;
-			zoom = 1.0;
-		}
+		zoomRecovery();
 	}
 }
 
