@@ -389,9 +389,8 @@ function zoomPlus(){
 function zoomIn(){
 	
 	if(isFF){
-			zoomPlus();
-			
-			divLayer.setAttribute('transform','scale('+parseFloat(zoom)+')');
+		zoomPlus();
+		zoomOnFF();
 		
 	}
 	else{
@@ -401,6 +400,21 @@ function zoomIn(){
 			zoomPlus();
 			divLayer.style.zoom = parseFloat(zoom);
 		}
+	}
+	
+}
+function zoomOnFF(){
+	var transform = divLayer.getAttribute('transform');
+	//第一次放大，并且之前没有经过任何平移和缩放操作
+	
+	var  scale = 'scale('+parseFloat(zoom)+')';
+	if( transform == null || transform === ""){
+		divLayer.setAttribute('transform','scale('+parseFloat(zoom)+')');
+	}else{
+		var posReg = /scale\(.+\)/;  //提取平移的坐标  x,y
+		
+		var transform = posReg.test(transform)?transform.replace(posReg,scale):transform+' '+scale;
+		divLayer.setAttribute('transform',transform);
 	}
 	
 }
@@ -420,8 +434,7 @@ function zoomOut(){
 	
 	if(isFF){
 			zoomMinus();
-			divLayer.setAttribute('transform','scale('+parseFloat(zoom)+')');
-		
+			zoomOnFF();
 	}
 	else{
 		// 缩小
@@ -436,9 +449,9 @@ function zoomOut(){
 
 function zoomRecovery(){
 	if(isFF){
-			divLayer.setAttribute('transform','scale(1.0)');
+			
 			zoom = 1.0;
-		
+			zoomOnFF();
 	}
 	else{
 		// 复原
@@ -455,7 +468,7 @@ function currentPosition(){
 	var p = {};
 	if(isFF){
 		var transform = divLayer.getAttribute('transform');
-		//第一次移动时当前的位置
+		//第一次移动并没有缩放操作时当前的位置
 		if( transform == null || transform === ""){
 			p.left = 0;
 			p.top = 0;
@@ -465,6 +478,10 @@ function currentPosition(){
 			if(pos != null){
 				p.left = parseInt(pos[1],10);
 				p.top = parseInt(pos[2],10);
+			}else{
+				//移动之前，经行了放大操作
+				p.left = 0;
+				p.top = 0;
 			}
 		}
 	}else{
@@ -477,15 +494,8 @@ function currentPosition(){
 
 function moveRightByPlat(){
 	if(isFF){
-		var transform = divLayer.getAttribute('transform');
-		//第一次移动时当前的位置
-		if( transform == null || transform === ""){
-			divLayer.setAttribute('transform','translate('+(leftPos-speed)+','+topPos+')');
-		}else{
-			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
-			var transform = transform.replace(posReg,'translate('+(leftPos-speed)+','+topPos+')');
-			divLayer.setAttribute('transform',transform);
-		}
+		var translate = 'translate('+(leftPos-speed)+','+topPos+')';
+		moveOnFF(translate);
 	}else{
 		divLayer.style.left = (leftPos - speed)+'px';
 	}
@@ -493,15 +503,8 @@ function moveRightByPlat(){
 
 function moveLeftByPlat(){
 	if(isFF){
-		var transform = divLayer.getAttribute('transform');
-		//第一次移动时当前的位置
-		if( transform == null || transform === ""){
-			divLayer.setAttribute('transform','translate('+(leftPos + speed)+','+topPos+')');
-		}else{
-			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
-			var transform = transform.replace(posReg,'translate('+(leftPos + speed)+','+topPos+')');
-			divLayer.setAttribute('transform',transform);
-		}
+		var translate = 'translate('+(leftPos + speed)+','+topPos+')';
+		moveOnFF(translate);
 	}else{
 		divLayer.style.left = (leftPos + speed)+'px';
 	}
@@ -509,31 +512,29 @@ function moveLeftByPlat(){
 
 function moveUpByPlat(){
 	if(isFF){
-		var transform = divLayer.getAttribute('transform');
-		//第一次移动时当前的位置
-		if( transform == null || transform === ""){
-			divLayer.setAttribute('transform','translate('+leftPos+','+(topPos + speed)+')');
-		}else{
-			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
-			var transform = transform.replace(posReg,'translate('+leftPos+','+(topPos + speed)+')');
-			divLayer.setAttribute('transform',transform);
-		}
+		
+		var translate = 'translate('+leftPos+','+(topPos + speed)+')';
+		moveOnFF(translate);
 	}else{
 		divLayer.style.top = (topPos + speed)+'px';
 	}
 }
-
+function  moveOnFF(translate){
+	var transform = divLayer.getAttribute('transform');
+	//第一次移动时当前的位置
+	if(transform == null || transform === ""){
+		divLayer.setAttribute('transform',translate);
+	}else{
+		var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
+		
+		var transform = posReg.test(transform)?transform.replace(posReg,translate):transform+' '+translate;
+		divLayer.setAttribute('transform',transform);
+	}
+}
 function moveDownByPlat(){
 	if(isFF){
-		var transform = divLayer.getAttribute('transform');
-		//第一次移动时当前的位置
-		if( transform == null || transform === ""){
-			divLayer.setAttribute('transform','translate('+leftPos+','+(topPos - speed)+')');
-		}else{
-			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
-			var transform = transform.replace(posReg,'translate('+leftPos+','+(topPos - speed)+')');
-			divLayer.setAttribute('transform',transform);
-		}
+		var translate = 'translate('+leftPos+','+(topPos - speed)+')';
+		moveOnFF(translate);
 	}else{
 		divLayer.style.top = (topPos - speed)+'px';
 	}
@@ -541,15 +542,8 @@ function moveDownByPlat(){
 
 function moveOriginByPlat(){
 	if(isFF){
-		var transform = divLayer.getAttribute('transform');
-		//第一次移动时当前的位置
-		if( transform == null || transform === ""){
-			divLayer.setAttribute('transform','translate(0,0)');
-		}else{
-			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
-			var transform = transform.replace(posReg,'translate(0,0)');
-			divLayer.setAttribute('transform',transform);
-		}
+		var translate = 'translate(0,0)';
+		moveOnFF(translate);
 	}else{
 		divLayer.style.left = '0px';// parseInt(mainX);--这是改后的，用于恢复原来的位置-----改5--
 		divLayer.style.top = '0px';// parseInt(mainY);
