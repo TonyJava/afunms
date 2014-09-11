@@ -361,9 +361,9 @@ function discardSelectedLast(){
 
 function zoomInit(){
 	if(isFF){
-		var viewBox = divLayer.getAttribute('viewBox');
-		if(viewBox == null){
-			divLayer.setAttribute('viewBox','0 0 100% 100%');
+		var transform = divLayer.getAttribute('transform');
+		if( transform == null){
+			divLayer.setAttribute('transform','scale(1.0)');
 		}
 	}
 	else{
@@ -374,52 +374,60 @@ function zoomInit(){
 		
 	}
 }
+function zoomPlus(){
+	zoom = parseFloat(zoom) + scale;
+	if (zoom > 2.0) 
+	{
+		zoom = 2.0;
+		return;
+	}
+	else if (zoom == 0.2) 
+	{
+		zoom = 1.1;
+	}
+}
 function zoomIn(){
 	
 	if(isFF){
-		var viewBox = divLayer.getAttribute('viewBox');
+			zoomPlus();
+			
+			divLayer.setAttribute('transform','scale('+parseFloat(zoom)+')');
 		
 	}
 	else{
 		// 放大
 		if (divLayer.style.zoom != "") 
 		{
-			zoom = parseFloat(zoom) + scale;
-			if (zoom > 2.0) 
-			{
-				zoom = 2.0;
-				return;
-			}
-			else if (zoom == 0.2) 
-			{
-				zoom = 1.1;
-			}
+			zoomPlus();
 			divLayer.style.zoom = parseFloat(zoom);
 		}
 	}
 	
 }
-
+function zoomMinus(){
+	zoom = parseFloat(zoom) - scale;
+	if (zoom <= 0) 
+	{
+		zoom = 0.9;
+	}
+	else if (zoom > 0 && zoom < 0.5) 
+	{
+		zoom = 0.5;
+		return;
+	}
+}
 function zoomOut(){
 	
 	if(isFF){
-		var viewBox = divLayer.getAttribute('viewBox');
+			zoomMinus();
+			divLayer.setAttribute('transform','scale('+parseFloat(zoom)+')');
 		
 	}
 	else{
 		// 缩小
 		if (divLayer.style.zoom != "") 
 		{
-			zoom = parseFloat(zoom) - scale;
-			if (zoom <= 0) 
-			{
-				zoom = 0.9;
-			}
-			else if (zoom > 0 && zoom < 0.5) 
-			{
-				zoom = 0.5;
-				return;
-			}
+			zoomMinus();
 			divLayer.style.zoom = parseFloat(zoom);
 		}
 	}
@@ -428,7 +436,8 @@ function zoomOut(){
 
 function zoomRecovery(){
 	if(isFF){
-		var viewBox = divLayer.getAttribute('viewBox');
+			divLayer.setAttribute('transform','scale(1.0)');
+			zoom = 1.0;
 		
 	}
 	else{
@@ -440,4 +449,109 @@ function zoomRecovery(){
 		}
 	}
 	
+}
+
+function currentPosition(){
+	var p = {};
+	if(isFF){
+		var transform = divLayer.getAttribute('transform');
+		//第一次移动时当前的位置
+		if( transform == null || transform === ""){
+			p.left = 0;
+			p.top = 0;
+		}else{
+			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
+			var pos = transform.match(posReg);
+			if(pos != null){
+				p.left = parseInt(pos[1],10);
+				p.top = parseInt(pos[2],10);
+			}
+		}
+	}else{
+		p.left  = parseInt(divLayer.style.left);
+		p.top = parseInt(divLayer.style.top);
+		
+	}
+	return p;
+}
+
+function moveRightByPlat(){
+	if(isFF){
+		var transform = divLayer.getAttribute('transform');
+		//第一次移动时当前的位置
+		if( transform == null || transform === ""){
+			divLayer.setAttribute('transform','translate('+(leftPos-speed)+','+topPos+')');
+		}else{
+			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
+			var transform = transform.replace(posReg,'translate('+(leftPos-speed)+','+topPos+')');
+			divLayer.setAttribute('transform',transform);
+		}
+	}else{
+		divLayer.style.left = (leftPos - speed)+'px';
+	}
+}
+
+function moveLeftByPlat(){
+	if(isFF){
+		var transform = divLayer.getAttribute('transform');
+		//第一次移动时当前的位置
+		if( transform == null || transform === ""){
+			divLayer.setAttribute('transform','translate('+(leftPos + speed)+','+topPos+')');
+		}else{
+			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
+			var transform = transform.replace(posReg,'translate('+(leftPos + speed)+','+topPos+')');
+			divLayer.setAttribute('transform',transform);
+		}
+	}else{
+		divLayer.style.left = (leftPos + speed)+'px';
+	}
+}
+
+function moveUpByPlat(){
+	if(isFF){
+		var transform = divLayer.getAttribute('transform');
+		//第一次移动时当前的位置
+		if( transform == null || transform === ""){
+			divLayer.setAttribute('transform','translate('+leftPos+','+(topPos + speed)+')');
+		}else{
+			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
+			var transform = transform.replace(posReg,'translate('+leftPos+','+(topPos + speed)+')');
+			divLayer.setAttribute('transform',transform);
+		}
+	}else{
+		divLayer.style.top = (topPos + speed)+'px';
+	}
+}
+
+function moveDownByPlat(){
+	if(isFF){
+		var transform = divLayer.getAttribute('transform');
+		//第一次移动时当前的位置
+		if( transform == null || transform === ""){
+			divLayer.setAttribute('transform','translate('+leftPos+','+(topPos - speed)+')');
+		}else{
+			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
+			var transform = transform.replace(posReg,'translate('+leftPos+','+(topPos - speed)+')');
+			divLayer.setAttribute('transform',transform);
+		}
+	}else{
+		divLayer.style.top = (topPos - speed)+'px';
+	}
+}
+
+function moveOriginByPlat(){
+	if(isFF){
+		var transform = divLayer.getAttribute('transform');
+		//第一次移动时当前的位置
+		if( transform == null || transform === ""){
+			divLayer.setAttribute('transform','translate(0,0)');
+		}else{
+			var posReg = /translate\(([-]?\d+),([-]?\d+)\)/;  //提取平移的坐标  x,y
+			var transform = transform.replace(posReg,'translate(0,0)');
+			divLayer.setAttribute('transform',transform);
+		}
+	}else{
+		divLayer.style.left = '0px';// parseInt(mainX);--这是改后的，用于恢复原来的位置-----改5--
+		divLayer.style.top = '0px';// parseInt(mainY);
+	}
 }

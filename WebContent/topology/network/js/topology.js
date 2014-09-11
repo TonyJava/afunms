@@ -2208,8 +2208,8 @@ function getConfine(x, y)
 var distance = 80;
 var speed = 12;
 var position;
-var left;
-var top;
+var leftPos;
+var topPos;
 var timer;
 
 var zoom = 1.0;
@@ -2230,22 +2230,22 @@ function moveAction(dir)
 	
 	if (dir == "left")
 	{
-		position = left + distance;
+		position = leftPos + distance;
 		timer = setInterval("moveLeft()", speed);
 	}
 	else if (dir == "up") 
 	{
-		position = top + distance;
+		position = topPos + distance;
 		timer = setInterval("moveUp()", speed);
 	}
 	else if (dir == "right") 
 	{
-		position = left - distance;
+		position = leftPos - distance;
 		timer = setInterval("moveRight()", speed);
 	}
 	else if (dir == "down") 
 	{
-		position = top - distance;
+		position = topPos - distance;
 		timer = setInterval("moveDown()", speed);
 	}
 	else
@@ -2262,63 +2262,57 @@ function clearTimer()
 function moveLeft() 
 {
 	updatePosition();
-	if (left >= position) 
+	if (leftPos >= position) 
 	{
 		clearTimer();
 		return;
 	}
-	divLayer.style.left = (left + speed)+'px';
+	moveLeftByPlat();
 }
 
 function moveUp() 
 {
 	updatePosition();
-	if (top >= position)
+	if (topPos >= position)
 	{
 		clearTimer();
 		return;
 	}
-	divLayer.style.top = (top + speed)+'px';
+	moveUpByPlat();
 }
 
 function moveRight()
 {
 	updatePosition();
-	if (left <= position) 
+	if (leftPos <= position) 
 	{
 		clearTimer();
 		return;
 	}
-	divLayer.style.left = (left - speed)+'px';
+	moveRightByPlat();
 }
 
 function moveDown() 
 {
 	updatePosition();
-	if (top <= position) 
+	if (topPos <= position) 
 	{
 		clearTimer();
 		return;
 	}
-	divLayer.style.top = (top - speed)+'px';
+	moveDownByPlat();
 }
 
 function moveOrigin() 
 {
-	divLayer.style.left = 0;// parseInt(mainX);--这是改后的，用于恢复原来的位置-----改5--
-	divLayer.style.top = 0;// parseInt(mainY);
+	moveOriginByPlat();
 }
 
 function updatePosition() 
 {
-	var divLeft = parseInt(divLayer.style.left);
-	var divTop = parseInt(divLayer.style.top);
-	
-	// divLeft = divLeft.substring(0, divLeft.length - 2);
-	// divTop = divTop.substring(0, divTop.length - 2);
-
-	left = parseInt(divLeft);
-	top = parseInt(divTop);
+	var p = currentPosition();
+	leftPos = p.left;
+	topPos = p.top ;
 }
 
 function zoomAll(state) 
