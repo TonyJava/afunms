@@ -677,7 +677,7 @@ document.write('visibility:hidden;z-index:999;"><br/>正在处理数据，请稍候 ...</d
 //loadLinkLineTip();			// 加载链路提示信息
 //document.write('<div id="divTitle" align="center" style="font:oblique small-caps 900 29pt 黑体;"><%=Title%></div>');
 if(window.addEventListener){
-	document.write('<svg xmlns="http://www.w3.org/2000/svg"  id="divLayer" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;background-image:url(<%=rootPath%>/resource/image/bg/<%=bg%>);width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(evt)" onclick="javascript:closeLineFrame();"></svg>');//#000066
+	document.write('<svg xmlns="http://www.w3.org/2000/svg" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(evt)" onclick="javascript:closeLineFrame();"><g  id="divLayer"><image x="0" y="0" width="100%" height="100%" xlink:href="<%=rootPath%>/resource/image/bg/<%=bg%>"></image></g></svg>');//#000066
 
 }else{
 	document.write('<div id="divLayer" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;background-image:url(<%=rootPath%>/resource/image/bg/<%=bg%>);width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(event)" onclick="javascript:closeLineFrame();"></div>');//#000066
