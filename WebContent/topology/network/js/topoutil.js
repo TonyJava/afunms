@@ -92,7 +92,6 @@ function calculateXYWHByUserAgentAnd(ps){
 		
 	}else{
 		var imgXYWH = getImagePropertiesBy(ps.img);
-		console.log(ps.divText.offsetWidth);
 		var divTextWidth = ps.divText?ps.divText.offsetWidth:30;
 		if(ps.x){
 			t.x = parseInt(ps.x,10)+(parseInt(imgXYWH.w,10) - parseInt(divTextWidth,10))/2;//Ë®Æ½¾ÓÖÐ

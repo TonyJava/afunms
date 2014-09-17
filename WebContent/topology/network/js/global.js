@@ -28,13 +28,13 @@ else
 var toolbarHeight = window.screen.height - window.screen.availHeight;
 var toolbarWidth = window.screen.width - window.screen.availWidth;
 
-document.write('<div id="processing" style="position:absolute;filter = alpha(opacity=60);border:gray 1px solid;font-size:14px;font-weight:bold;text-align:center;background-color:#ECECEC;color:#000000;');
-document.write('height:' + procDlgHeight + 'px;top:' + (screenHeight/2 - toolbarHeight - procDlgHeight - 80) + 'px;');
-document.write('width:' + procDlgWidth + 'px;left:'+ (screenWidth - procDlgWidth)/2 +'px;');
-document.write('visibility:hidden;z-index:999;" align="center"><br/><br/><br/><font color=#000000>正在处理数据，请稍候 ...</font></div>');
+//document.write('<div id="processing" style="position:absolute;filter = alpha(opacity=60);border:gray 1px solid;font-size:14px;font-weight:bold;text-align:center;background-color:#ECECEC;color:#000000;');
+//document.write('height:' + procDlgHeight + 'px;top:' + (screenHeight/2 - toolbarHeight - procDlgHeight - 80) + 'px;');
+//document.write('width:' + procDlgWidth + 'px;left:'+ (screenWidth - procDlgWidth)/2 +'px;');
+//document.write('visibility:hidden;z-index:999;" align="center"><br/><br/><br/><font color=#000000>正在处理数据，请稍候 ...</font></div>');
 
 function openProcDlg() {
-	document.all.processing.style.visibility = "visible";
+	document.getElementById('processing').style.visibility = "visible";
 }
 
 function closeProcDlg() {
