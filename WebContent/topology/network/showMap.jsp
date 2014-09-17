@@ -253,13 +253,9 @@
 	function showAlarmTipsWindown(title,id,width,height){
 		alarmtipsWindown(title,"id:"+id,width,height,"true","","false",id);
 	}
-	//弹出层调用
-	function popTipsAlarm(){
-		showAlarmTipsWindown("告警信息", 'simTestContentAlarm', 250, 55);
-	}
 	
 	 $(document).ready(function(){
-		popTipsAlarm();
+		 showAlarmTipsWindown("告警信息", 'simTestContentAlarm', 250, 55);
 		var timer1;
 		timer1=window.setInterval("getAlarmData();",200*60);	//2分钟更新一次DIV
 	});
