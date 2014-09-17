@@ -80,6 +80,7 @@
 <script type="text/javascript" src="<%=rootPath%>/dwr/interface/TopoRemoteService.js"></script>
 <script type="text/javascript" src="<%=rootPath%>/dwr/interface/LinkRemoteService.js"></script>
 <script type="text/javascript" src="<%=rootPath%>/dwr/interface/AlarmSummarize.js"></script>
+<script type="text/javascript" src="js/topoutil.js"></script>
 <script type="text/javascript" src="js/topology.js"></script>
 <!-- DIV弹出层的js -->
 <script type="text/javascript" src="<%=rootPath%>/common/js/jquery-1.4.1.min.js"></script>
@@ -100,7 +101,7 @@
 <script type="text/javascript">
 	window.onerror = new Function('return true;');		// 容错
 	var fatherXML = "<%=viewFile%>";//yangjun add 关联拓扑图时获得父页xml
-	openProcDlg();  //显示闪屏
+	//openProcDlg();  //显示闪屏
 	function savefile() {
 		if (!admin) {
 			window.alert("您没有保存视图的权限！");
@@ -341,7 +342,7 @@
 	}
 	
 	$(document).ready(function(){
-		popTipsAlarm();
+		//popTipsAlarm();
 		var timer1;
 		timer1=window.setInterval("getAlarmData();",200*60);	//2分钟更新一次DIV
 	});
@@ -408,7 +409,14 @@ loadLinkLineInfo();			// 加载链路信息
 
 document.write('<table height="100%"><tr><td width="100%" align="left" height="100%">');
 document.write('<div id="divDrag" style="background-color: #FFFFFF;width:100%;height:100%; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
-document.write('<div id="divLayer" style="width:100%;height:100%; background:url(<%=rootPath%>/resource/image/bg/<%=bg%>) left top no-repeat; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
+if(window.addEventListener){
+	document.write('<svg xmlns="http://www.w3.org/2000/svg" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(evt)" onclick="javascript:closeLineFrame();"><g  id="divLayer" transform="scale(0.5)"><image x="0" y="0" width="1350" height="629" xlink:href="<%=rootPath%>/resource/image/bg/<%=bg%>"></image></g></svg>');//#000066
+
+}else{
+	document.write('<div id="divLayer" style="width:659px;height:100%; background:url(<%=rootPath%>/resource/image/bg/<%=bg%>) left top no-repeat; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown(event)" onclick="javascript:closeLineFrame();"></div>');
+	//document.write('<div id="divLayer" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;background-image:url(<%=rootPath%>/resource/image/bg/<%=bg%>);width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(event)" onclick="javascript:closeLineFrame();"></div>');//#000066
+}
+	
 document.write('</td><td align="right" height="100%">');
 document.write('<div id="container-menu-bar" style="height:100%;width:200px;"></div>');
 document.write('</td></tr></table>');
@@ -740,108 +748,5 @@ table.menu {
 }
 </style>
 
-<div id="rp_list" class="rp_list" align="right" style="background: #ECECEC">
-	<ul>
-		<li>
-			<div id="rp_alarm_table">
-				<table width="100%" height="100%" id="alarm-bar">
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:cwin();">&nbsp;&nbsp;&nbsp;显示树形</a></td>
-						<td align="right"><input id="pic" type="button" name="showtree" class="button_showtree_out" onmouseover="javascript:buttonShowTreeOver();" onmouseout="javascript:buttonShowTreeOut();"
-							onclick="javascript:cwin();" title="显示树形" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#">&nbsp;&nbsp;&nbsp;搜索</a></td>
-						<td align="right"><input type="button" name="search" class="button_search_out" onmouseover="javascript:buttonSearchOver();" onmouseout="javascript:buttonSearchOut();"
-							onclick="javascript:searchNode();" title="搜索" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:setSelect();">&nbsp;&nbsp;&nbsp;选择设备</a></td>
-						<td align="right"><input type="button" name="select" class="button_select_out" onmouseover="javascript:buttonSelectOver();" onmouseout="javascript:buttonSelectOut();"
-							onclick="javascript:setSelect();" title="选择设备" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:savefile();">&nbsp;&nbsp;&nbsp;保存拓扑图</a></td>
-						<td align="right"><input type="button" name="save" class="button_save_out" onmouseover="javascript:buttonSaveOver();" onmouseout="javascript:buttonSaveOut();"
-							onclick="javascript:savefile();" title="保存当前拓扑图数据" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:refreshFile();">&nbsp;&nbsp;&nbsp;刷新拓扑图</a></td>
-						<td align="right"><input type="button" name="refresh" class="button_refresh_out" onmouseover="javascript:buttonRefreshOver();" onmouseout="javascript:buttonRefreshOut();"
-							onclick="javascript:refreshFile();" title="刷新当前拓扑图数据" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:changeName();">&nbsp;&nbsp;&nbsp;改变设备名</a></td>
-						<td align="right"><input type="button" name="view" class="button_view_out" onmouseover="javascript:buttonViewOver();" onmouseout="javascript:buttonViewOut();"
-							onclick="javascript:changeName();" title="改变设备名显示信息" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:editMap();">&nbsp;&nbsp;&nbsp;拓扑图属性</a></td>
-						<td align="right"><input type="button" name="editmap" class="button_editmap_out" onmouseover="javascript:buttonEditMapOver();" onmouseout="javascript:buttonEditMapOut();"
-							onclick="javascript:editMap();" title="拓扑图属性" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:createEntityLink();">&nbsp;&nbsp;&nbsp;创建实体链路</a></td>
-						<td align="right"><input type="button" name="create1" class="button_create1_out" onmouseover="javascript:buttonCreate1Over();" onmouseout="javascript:buttonCreate1Out();"
-							onclick="javascript:createEntityLink();" title="创建实体链路" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:createDemoLink();">&nbsp;&nbsp;&nbsp;创建示意链路</a></td>
-						<td align="right"><input type="button" name="create2" class="button_create2_out" onmouseover="javascript:buttonCreate2Over();" onmouseout="javascript:buttonCreate2Out();"
-							onclick="javascript:createDemoLink();" title="创建示意链路" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:createDemoObj();">&nbsp;&nbsp;&nbsp;创建示意图元</a></td>
-						<td align="right"><input type="button" name="create3" class="button_create3_out" onmouseover="javascript:buttonCreate3Over();" onmouseout="javascript:buttonCreate3Out();"
-							onclick="javascript:createDemoObj();" title="创建示意图元" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:createSubMap();">&nbsp;&nbsp;&nbsp;创建子图</a></td>
-						<td align="right"><input type="button" name="create4" class="button_create4_out" onmouseover="javascript:buttonCreate4Over();" onmouseout="javascript:buttonCreate4Out();"
-							onclick="javascript:createSubMap();" title="创建子图" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:rebuild();">&nbsp;&nbsp;&nbsp;重建拓扑图</a></td>
-						<td align="right"><input type="button" name="create5" class="button_create5_out" onmouseover="javascript:buttonCreate5Over();" onmouseout="javascript:buttonCreate5Out();"
-							onclick="javascript:rebuild();" title="重建拓扑图" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:backup();">&nbsp;&nbsp;&nbsp;备份拓扑图</a></td>
-						<td align="right"><input type="button" name="create6" class="button_create6_out" onmouseover="javascript:buttonCreate6Over();" onmouseout="javascript:buttonCreate6Out();"
-							onclick="javascript:backup();" title="备份拓扑图" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:resume();">&nbsp;&nbsp;&nbsp;恢复拓扑图</a></td>
-						<td align="right"><input type="button" name="create7" class="button_create7_out" onmouseover="javascript:buttonCreate7Over();" onmouseout="javascript:buttonCreate7Out();"
-							onclick="javascript:resume();" title="恢复拓扑图" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:checkEntityLink();">&nbsp;&nbsp;&nbsp;链路同步</a></td>
-						<td align="right"><input type="button" name="create8" class="button_create1_out" onmouseover="javascript:buttonCreate1Over();" onmouseout="javascript:buttonCreate1Out();"
-							onclick="javascript:checkEntityLink();" title="链路同步" /></td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#">&nbsp;&nbsp;&nbsp;全屏观看</a></td>
-						<td align="right">
-							<%
-								if (fullscreen == null || fullscreen.equals("0")) {
-							%> <input type="button" name="fullscreen" class="button_fullscreen_out" onmouseover="javascript:buttonFullscreenOver();"
-							onmouseout="javascript:buttonFullscreenOut();" onclick="javascript:gotoFullScreen();" title="全屏观看视图" /> <%
- 	} else {
- %> <input type="button" name="fullscreen" class="button_fullscreen_out"
-							onmouseover="javascript:buttonFullscreenOver();" onmouseout="javascript:buttonFullscreenOut();" onclick="javascript:window.parent.close();" value="关闭" title="关闭当前窗口" /> <%
- 	}
- %>
-						</td>
-					</tr>
-					<tr>
-						<td align="left"><a href="#" onClick="javascript:showControllerTool();">&nbsp;&nbsp;&nbsp;关闭视图控制器</a></td>
-						<td align="right"><input type="button" name="controller" class="button_controller_out" onmouseover="javascript:buttonControllerOver();" onmouseout="javascript:buttonControllerOut();"
-							onclick="javascript:showControllerTool();" title="关闭显示框内的视图控制器" /></td>
-					</tr>
-				</table>
-			</div>
-		</li>
-	</ul>
-</div>
+
 </html>
