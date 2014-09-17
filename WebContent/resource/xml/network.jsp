@@ -18,8 +18,8 @@
 		<node>
 			<id category="net_server">net208</id>
 			<img>image/topo/win_xp.gif</img>
-			<x>298</x>
-			<y>243</y>
+			<x>401</x>
+			<y>81</y>
 			<width>65</width>
 			<height>26</height>
 			<ip>127.0.0.1</ip>
