@@ -24,7 +24,7 @@ function alarmtipsWindown(title,content,width,height,drag,time,showbg,cssName,ba
 	var height = height>= 527?this.height=527:this.height=height;  //设置最大窗口高度
 	if(showWindown == true) {
 		var simpleWindown_html = new String;
-			simpleWindown_html = "<div id=\"windownbg-alarm\" style=\"height:"+$(document).height()+"px;filter:alpha(opacity=70);opacity:70;z-index: 999901\"></div>";
+			simpleWindown_html = "<div id=\"windownbg-alarm\" style=\"height:"+$(document).height()+"px;filter:alpha(opacity=70);opacity:0.7;z-index: 999901;\"></div>";
 			simpleWindown_html += "<div id=\"windown-box-alarm\">";
 			simpleWindown_html += "<div id=\"windown-title-alarm\"><h2></h2><span id=\"windown-close-alarm\">关闭</span></div>";
 			simpleWindown_html += "<div id=\"windown-content-border-alarm\"><div id=\"windown-content-alarm\"></div></div>"; 
@@ -97,7 +97,8 @@ function alarmtipsWindown(title,content,width,height,drag,time,showbg,cssName,ba
 		$("#windown-title-alarm").css({width:(parseInt(width)+10)+"px"});
 		$("#windown-content-alarm").css({width:width+"px",height:height+"px"});
 	}
-	var	cw = document.documentElement.clientWidth,ch = document.documentElement.clientHeight,est = document.documentElement.scrollTop; 
+	var	cw = document.documentElement.clientWidth,ch = document.documentElement.clientHeight,est = document.documentElement.scrollTop||document.body.scrollTop; 
+	
 	var _version = $.browser.version;
 	if ( _version == 6.0 ) {
 		//$("#windown-box").css({left:"50%",top:"50%",marginTop: -((parseInt(height)+53)/2)+"px",marginLeft:-((parseInt(width)+32)/2)+"px",zIndex: "999999"});
@@ -133,6 +134,8 @@ function alarmtipsWindown(title,content,width,height,drag,time,showbg,cssName,ba
 						Drag_ID.style.left = x + "px";
 						Drag_ID.style.top = parseInt(y+moveTop) + "px";
 						Drag_ID.style.margin = "auto";
+						Drag_ID.style.bottom = "auto";
+						
 						//}
 					}
 				}
