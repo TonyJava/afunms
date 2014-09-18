@@ -5,8 +5,8 @@
 		<node>
 			<id category="bussiness">bus3</id>
 			<img>image/topo/bussiness.gif</img>
-			<x>660</x>
-			<y>201</y>
+			<x>288</x>
+			<y>88</y>
 			<width>32</width>
 			<height>32</height>
 			<ip/>

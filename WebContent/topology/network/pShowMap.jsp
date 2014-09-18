@@ -410,7 +410,7 @@ loadLinkLineInfo();			// 加载链路信息
 //document.write('<table height="100%"><tr><td width="100%" align="left" height="100%">');
 document.write('<div id="divDrag" style="background-color: #FFFFFF;width:100%;height:100%; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
 if(window.addEventListener){
-	document.write('<svg xmlns="http://www.w3.org/2000/svg" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(evt)" onclick="javascript:closeLineFrame();"><g  id="divLayer" transform="scale(0.5)"><image x="0" y="0" width="1350" height="629" xlink:href="<%=rootPath%>/resource/image/bg/<%=bg%>"></image></g></svg>');//#000066
+	document.write('<svg xmlns="http://www.w3.org/2000/svg" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;width:1350px;height:629px;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(evt)" onclick="javascript:closeLineFrame();"><g  id="divLayer" transform="scale(0.5)"><image x="0" y="0" width="100%" height="100%" xlink:href="<%=rootPath%>/resource/image/bg/<%=bg%>"></image></g></svg>');//#000066
 
 }else{
 	document.write('<div id="divLayer" style="width:659px;height:100%; background:url(<%=rootPath%>/resource/image/bg/<%=bg%>) left top no-repeat; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown(event)" onclick="javascript:closeLineFrame();"></div>');
