@@ -401,13 +401,13 @@ body{
 <img src="<%=rootPath%>/resource/image/topo/line_right.gif" id="imgRight" class="tmpImg" style="width: 10; height: 10" />
 <script type="text/javascript">
 
+document.write('<body class="main_body"  onLoad="doInit();window.parent.changeFlags();" onmousewheel="window.parent.parent.document.body.scrollTop -= event.wheelDelta/2;" onmousedown="bodyDown()" onselectstart="return false" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">');	
 document.write('<form name="frmMap" method="post" action="<%=rootPath%>/network.do?action=save">');
-document.write('<body class="main_body"  onLoad="hideMenuBar();doInit();window.parent.changeFlags();" onmousewheel="window.parent.parent.document.body.scrollTop -= event.wheelDelta/2;" onmousedown="bodyDown()" onselectstart="return false" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">');	
 
 loadLinkLineInfo();			// 加载链路信息
 
 
-document.write('<table height="100%"><tr><td width="100%" align="left" height="100%">');
+//document.write('<table height="100%"><tr><td width="100%" align="left" height="100%">');
 document.write('<div id="divDrag" style="background-color: #FFFFFF;width:100%;height:100%; top:0px;left:0px; position:absolute;" onmousedown="divLayerDown()" onclick="javascript:closeLineFrame();"></div>');
 if(window.addEventListener){
 	document.write('<svg xmlns="http://www.w3.org/2000/svg" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(evt)" onclick="javascript:closeLineFrame();"><g  id="divLayer" transform="scale(0.5)"><image x="0" y="0" width="1350" height="629" xlink:href="<%=rootPath%>/resource/image/bg/<%=bg%>"></image></g></svg>');//#000066
@@ -417,14 +417,14 @@ if(window.addEventListener){
 	//document.write('<div id="divLayer" style="background-position: center;background-attachment:fixed;background-repeat: no-repeat;background-image:url(<%=rootPath%>/resource/image/bg/<%=bg%>);width:100%;height:100%;color:black;position:absolute;top:0px;left:0px;background-color:#FFFFFF;border:#FfFfFF; 1px solid;" onmousedown="divLayerDown(event)" onclick="javascript:closeLineFrame();"></div>');//#000066
 }
 	
-document.write('</td><td align="right" height="100%">');
-document.write('<div id="container-menu-bar" style="height:100%;width:200px;"></div>');
-document.write('</td></tr></table>');
+//document.write('</td><td align="right" height="100%">');
+//document.write('<div id="container-menu-bar" style="height:100%;width:200px;"></div>');
+//document.write('</td></tr></table>');
 document.write('<input type="hidden" name="hidXml"/>');
 document.write('<input type="hidden" name="vlan"/>');
 document.write('<input type="hidden" name="urlpath" value="' + urlpath + '"/>');
 document.write('<input type="hidden" name="filename" value="' + filename + '"/>');
-document.write('</body></form>');
+document.write('</form></body>');
 </script>
 
 <script type="text/javascript">
