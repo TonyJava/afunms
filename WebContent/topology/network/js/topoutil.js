@@ -257,6 +257,7 @@ function appendChild(divText){
 	if(isFF){
 		document.body.appendChild(divText);
 	}else{
+		
 		document.getElementById('divLayer').appendChild(divText);
 	}
 }

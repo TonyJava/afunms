@@ -1050,8 +1050,8 @@ function parseData()
 		                      document.getElementById(this.id.replace("line","info")).style.visibility = "hidden";
 		                  };
 		// ///////////////end
-
-		document.getElementById('divLayer').appendChild(line);
+		var divLayer = document.getElementById('divLayer');
+		divLayer.insertBefore(line,divLayer.childNodes[1]);
 		document.getElementById("node_" + a).lines += '&' + line.id;
 		document.getElementById("node_" + b).lines += '&' + line.id;
 		// 链路菜单
@@ -1164,8 +1164,12 @@ function parseData()
 		                  };
 		// ///////////////end
 		// line.onclick = function() { showLineInfo() };
-
-		document.getElementById('divLayer').appendChild(line);
+	/**
+	 * divLayer.insertBefore   在画布第一个节点之前插入链路，svg中防止链路遮挡节点，vml中亦可兼容
+	 * vml中childNodes[1]指的是第二个设备，svg中指的是第一个设备
+	 */
+		                  var divLayer = document.getElementById('divLayer');
+		  divLayer.insertBefore(line,divLayer.childNodes[1]);
 		document.getElementById("node_" + a).lines += '&' + line.id;
 		document.getElementById("node_" + b).lines += '&' + line.id;
 		// 链路菜单
