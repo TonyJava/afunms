@@ -7,11 +7,13 @@ function pingMenuOver() {
 }
 function showmenu(elmnt)
 {
-document.getElementById(elmnt).style.visibility="visible"
+	var secondMenu = document.getElementById(elmnt);
+	secondMenu.style.display="table";
+	secondMenu.style.left =  secondMenu.previousSibling.offsetWidth+'px';
 }
 function hidemenu(elmnt)
 {
-document.getElementById(elmnt).style.visibility="hidden"
+	document.getElementById(elmnt).style.display="none";
 }
 function toolMenuOut() {
 	window.event.srcElement.className="tool_menu_out";
