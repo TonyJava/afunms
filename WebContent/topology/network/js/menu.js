@@ -8,8 +8,17 @@ function pingMenuOver() {
 function showmenu(elmnt)
 {
 	var secondMenu = document.getElementById(elmnt);
-	secondMenu.style.display="table";
-	secondMenu.style.left =  secondMenu.previousSibling.offsetWidth+'px';
+	secondMenu.style.display="block";
+	secondMenu.style.left =  get_previoussibling(secondMenu).offsetWidth+'px';
+}
+function get_previoussibling(n)
+{
+	var x=n.previousSibling;
+	while (x.nodeType!=1)
+	  {
+	  x=x.previousSibling;
+	  }
+	return x;
 }
 function hidemenu(elmnt)
 {
