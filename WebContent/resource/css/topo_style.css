@@ -1904,3 +1904,19 @@ select {
 
     
 }
+/**
+*  鼠标移到一级菜单项上，二级菜单的位置置于此菜单项之后
+*/
+table table.menu {
+	display:none;
+	position:absolute;
+	z-index:10;
+	top:0px;
+	background:#ECECEC;
+	border:1px solid black;
+}
+
+td.secondMenuRef {
+	position:relative;
+	
+}
