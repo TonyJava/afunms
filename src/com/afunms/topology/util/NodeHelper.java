@@ -289,7 +289,7 @@ public class NodeHelper {
 
 		String menuItem = "";
 		if (host != null && host.getCategory() == 4) {
-			menuItem = "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials3"
+			menuItem = "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials3"
 					+ nodeId
 					+ "')\" onmouseout=\"hidemenu('tutorials3"
 					+ nodeId
@@ -339,7 +339,7 @@ public class NodeHelper {
 
 					+ "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials4"
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials4"
 					+ nodeId
 					+ "')\" onmouseout=\"hidemenu('tutorials4"
 					+ nodeId
@@ -445,7 +445,7 @@ public class NodeHelper {
 					+ ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;快捷指标 </a><br/>" + "</td></tr>"
 
 					+ "</table></td><tr></table>" 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials1" + nodeId
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials1" + nodeId
 					+ "')\" onmouseout=\"hidemenu('tutorials1" + nodeId + "')\">"
 					+ "<a class=\"manage_mainmenu_out\" onmouseover=\"manageMainMenuOver();\" onmouseout=\"manageMainMenuOut();\""
 					+ " onclick=\"#\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设备管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a>"
@@ -471,7 +471,7 @@ public class NodeHelper {
 
 					+ "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials2" + nodeId + "')\" onmouseout=\"hidemenu('tutorials2" + nodeId + "')\">"
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials2" + nodeId + "')\" onmouseout=\"hidemenu('tutorials2" + nodeId + "')\">"
 					+ "<a class=\"tool_menu_out\" onmouseover=\"toolMenuOver();\" onmouseout=\"toolMenuOut();\""
 					+ " onclick=\"#\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a>"
 
@@ -492,7 +492,7 @@ public class NodeHelper {
 
 					+ "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials5" + nodeId + "')\" onmouseout=\"hidemenu('tutorials5" + nodeId + "')\">"
+					+ "<table width=\"135\" border=\"0\"><tr><td class=\"secondMenuRef\"  onmouseover=\"showmenu('tutorials5" + nodeId + "')\" onmouseout=\"hidemenu('tutorials5" + nodeId + "')\">"
 					+ "<a class=\"alarm_menu_out\" onmouseover=\"alarmMenuOver();\" onmouseout=\"alarmMenuOut();\""
 					+ " onclick=\"#\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;告警信息 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a>"
 
@@ -506,7 +506,7 @@ public class NodeHelper {
 					+ "','window', " + "'toolbar=no,height=600,width=900,scrollbars=yes,center=yes,screenY=0')\"" + ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;告警列表</a><br/>"
 					+ "</td></tr>" + "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials6" + nodeId + "')\" onmouseout=\"hidemenu('tutorials6" + nodeId + "')\">"
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials6" + nodeId + "')\" onmouseout=\"hidemenu('tutorials6" + nodeId + "')\">"
 					+ "<a class=\"report_mainmenu_out\" onmouseover=\"reportMainMenuOver();\" onmouseout=\"reportMainMenuOut();\""
 					+ " onclick=\"#\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报表信息 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a>"
 
@@ -521,7 +521,7 @@ public class NodeHelper {
 					+ "','window', " + "'toolbar=no,height=600,width=900,scrollbars=yes,center=yes,screenY=0')\"" + ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报表定制</a><br/>"
 					+ "</td></tr>" + "</table></td><tr></table>";
 		} else {
-			menuItem = "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials3"
+			menuItem = "<table width=\"135\" border=\"0\"><tr><td class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials3"
 					+ nodeId
 					+ "')\" onmouseout=\"hidemenu('tutorials3"
 					+ nodeId
@@ -571,7 +571,7 @@ public class NodeHelper {
 
 					+ "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials4"
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials4"
 					+ nodeId
 					+ "')\" onmouseout=\"hidemenu('tutorials4"
 					+ nodeId
@@ -617,7 +617,7 @@ public class NodeHelper {
 
 					+ "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials1" + nodeId + "')\" onmouseout=\"hidemenu('tutorials1" + nodeId + "')\">"
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials1" + nodeId + "')\" onmouseout=\"hidemenu('tutorials1" + nodeId + "')\">"
 					+ "<a class=\"manage_mainmenu_out\" onmouseover=\"manageMainMenuOver();\" onmouseout=\"manageMainMenuOut();\""
 					+ " onclick=\"#\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设备管理&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a>"
 
@@ -642,7 +642,7 @@ public class NodeHelper {
 
 					+ "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials2" + nodeId + "')\" onmouseout=\"hidemenu('tutorials2" + nodeId + "')\">"
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials2" + nodeId + "')\" onmouseout=\"hidemenu('tutorials2" + nodeId + "')\">"
 					+ "<a class=\"tool_menu_out\" onmouseover=\"toolMenuOver();\" onmouseout=\"toolMenuOut();\""
 					+ " onclick=\"#\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;工&nbsp;&nbsp;&nbsp;&nbsp;具&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a>"
 
@@ -663,7 +663,7 @@ public class NodeHelper {
 
 					+ "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials5" + nodeId + "')\" onmouseout=\"hidemenu('tutorials5" + nodeId + "')\">"
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials5" + nodeId + "')\" onmouseout=\"hidemenu('tutorials5" + nodeId + "')\">"
 					+ "<a class=\"alarm_menu_out\" onmouseover=\"alarmMenuOver();\" onmouseout=\"alarmMenuOut();\""
 					+ " onclick=\"#\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;告警信息 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a>"
 
@@ -677,7 +677,7 @@ public class NodeHelper {
 					+ "','window', " + "'toolbar=no,height=600,width=900,scrollbars=yes,center=yes,screenY=0')\"" + ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;告警列表</a><br/>"
 					+ "</td></tr>" + "</table></td><tr></table>"
 
-					+ "<table width=\"135\" border=\"0\"><tr><td onmouseover=\"showmenu('tutorials6" + nodeId + "')\" onmouseout=\"hidemenu('tutorials6" + nodeId + "')\">"
+					+ "<table width=\"135\" border=\"0\"><tr><td  class=\"secondMenuRef\" onmouseover=\"showmenu('tutorials6" + nodeId + "')\" onmouseout=\"hidemenu('tutorials6" + nodeId + "')\">"
 					+ "<a class=\"report_mainmenu_out\" onmouseover=\"reportMainMenuOver();\" onmouseout=\"reportMainMenuOut();\""
 					+ " onclick=\"#\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报表信息 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>></a>"
 
