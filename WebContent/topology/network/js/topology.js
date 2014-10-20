@@ -243,7 +243,34 @@ function addNode(nodeid,url){
 			// divBackGround.appendChild(img);
 			document.getElementById('divLayer').appendChild(img);
 			// 显示设备文本
-			var divText = document.createElement("div");
+			// 显示设备文本
+			var divText = createElementByUserAgentAnd("text");
+			divText.id = "text_" + id;
+			divText.style.position = "absolute";
+			
+			/*divText.style.width = "80";
+			divText.style.height = "20";
+			divText.style.left = parseInt(x, 10) - aliasHSpace;
+			divText.style.top = parseInt(y, 10) + aliasVSpace;*/
+			divText.style.fontSize = "12px";
+			divText.style.textAlign = "center";
+			if (g_viewFlag == 0)
+				divText.appendChild(document.createTextNode(alias));// 显示设备别名
+			else
+				divText.appendChild(document.createTextNode(ip));// 显示设备IP
+			
+			
+			document.getElementById('divLayer').appendChild(divText);
+			setElementXYWH(divText,calculateXYWHByUserAgentAnd({'divText':divText,
+				'img':img,
+				'x':parseInt(x, 10),
+				'aliasHSpace': aliasHSpace,
+				'aliasVSpace':  aliasVSpace,
+				'y':parseInt(y, 10),
+				//svg使用
+				'fs':"12"
+			}));
+			/*var divText = document.createElement("div");
 			divText.id = "text_" + id;
 			divText.style.position = "absolute";
 			divText.style.width = "80";
@@ -256,7 +283,7 @@ function addNode(nodeid,url){
 				divText.innerHTML = alias;// 显示设备别名
 			else
 				divText.innerHTML = ip;// 显示设备IP
-			appendChild(divText);
+			document.getElementById('divLayer').appendChild(divText);*/
 			// 鼠标移上显示设备信息
 			var divInfo = document.createElement("div");
 			divInfo.id = "info_" + id;
