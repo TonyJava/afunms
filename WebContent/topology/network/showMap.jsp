@@ -38,7 +38,8 @@
 		disable = "disabled=\"disabled\"";
 	}
 	
-%> 
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=gb2312" />
@@ -139,6 +140,7 @@
     function addEquip(nodeid,nodeCategory){
         var xml = "<%=viewFile%>";
         var url = "<%=rootPath%>/resource/xml/<%=viewFile%>";
+        DWREngine.setAsync(false);  //DWR同步，防止已经添加节点但拓扑上由于网络造成不同步的情况
         TopoRemoteService.addEquipToMap(xml, nodeid, nodeCategory,{
 				callback:function(data){
 					if(data){
@@ -146,6 +148,7 @@
 					}
 				}
 			});
+        DWREngine.setAsync(true);
     }
     //删除实体设备
     function deleteEquip(nodeid,category){
@@ -353,7 +356,7 @@ function updateState(target) {
 		//var target = "showMap.jsp?filename=<%=viewFile%>&fullscreen=" + fullscreen;
 		var target = "showMap.jsp?filename=<%=viewFile%>&fullscreen=1";
 		updateState(target);
-		save();  //topoloty.js中的函数,用于保存图数据--->String串
+		save("<%=rootPath%>/resource/xml/<%=viewFile%>");  //topoloty.js中的函数,用于保存图数据--->String串
 	}
 
 
