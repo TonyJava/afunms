@@ -644,7 +644,7 @@ public class XmlOperator {
 		eleIp.setText(ip);
 		eleAlias.setText(alias);
 		eleInfo.setText("设备标签:" + alias + "<br>IP地址:" + ip);
-		eleMenu.setText("");
+		eleMenu.setText(NodeHelper.getMenu(nodeId, ip, NodeHelper.getNodeEnCategory(categroy)));//   add at 2014-10-16 by HP  生成设备才菜单面板
 		relationMap.setText("");
 		eleNode.addContent(eleId);
 		eleNode.addContent(eleImg);
