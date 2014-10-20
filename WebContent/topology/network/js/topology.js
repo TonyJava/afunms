@@ -247,11 +247,6 @@ function addNode(nodeid,url){
 			var divText = createElementByUserAgentAnd("text");
 			divText.id = "text_" + id;
 			divText.style.position = "absolute";
-			
-			/*divText.style.width = "80";
-			divText.style.height = "20";
-			divText.style.left = parseInt(x, 10) - aliasHSpace;
-			divText.style.top = parseInt(y, 10) + aliasVSpace;*/
 			divText.style.fontSize = "12px";
 			divText.style.textAlign = "center";
 			if (g_viewFlag == 0)
@@ -270,20 +265,6 @@ function addNode(nodeid,url){
 				//svg使用
 				'fs':"12"
 			}));
-			/*var divText = document.createElement("div");
-			divText.id = "text_" + id;
-			divText.style.position = "absolute";
-			divText.style.width = "80";
-			divText.style.height = "20";
-			divText.style.left = parseInt(x, 10) - aliasHSpace;
-			divText.style.top = parseInt(y, 10) + aliasVSpace;
-			divText.style.fontSize = "12px";
-			divText.align = "center";
-			if (g_viewFlag == 0)
-				divText.innerHTML = alias;// 显示设备别名
-			else
-				divText.innerHTML = ip;// 显示设备IP
-			document.getElementById('divLayer').appendChild(divText);*/
 			// 鼠标移上显示设备信息
 			var divInfo = document.createElement("div");
 			divInfo.id = "info_" + id;
@@ -2103,15 +2084,25 @@ function unSelectImg(objSty)
 }
 
 // 保存
-function save()
+function save(url)
 {
 	if(document.getElementById("containImgDiv"))
 	{
 		rmvContainedImg();
 	}
 	var nodes = xmldoc.getElementsByTagName("node");
+	/**
+	 * 分两种情况
+	 * 1.拖动了节点，对于新添加的节点，		需要重新读取xmldoc
+	 * 2.拖动了节点，对于旧节点，    不需要重新读取xmldoc
+	 * 3.没有拖动节点，	不需要重新读取xmldoc
+	 */
+	//假设所有节点都能找到
+	var allFindable = true; 
 	for (var i = 0; i < tempArray.length; i += 1)
 	{
+		//假设拖动了的节点当前xmldoc中找不到
+		var noFindable = true; 
 		for (var j = 0; j < nodes.length; j += 1)
 		{
 			var node = nodes[j];
@@ -2122,7 +2113,36 @@ function save()
 				var p = getImagePropertiesBy(tempArray[i]);
 				node.getElementsByTagName("x")[0].childNodes[0].nodeValue = p.x;
 				node.getElementsByTagName("y")[0].childNodes[0].nodeValue = p.y;
+				noFindable = false;//在当前xmldoc中找到了拖动的节点
+				break;
 			}
+		}
+		//noFindable=true  拖动了新添加的节点
+		if(noFindable){
+			allFindable = false;
+		}
+	}
+	
+	//拖动了新添加的节点,重新读取xmldoc
+	if(!allFindable){
+		xmldoc = initXML(url);
+		for (var i = 0; i < tempArray.length; i += 1)
+		{
+			
+			for (var j = 0; j < nodes.length; j += 1)
+			{
+				var node = nodes[j];
+				var id = "node_" + node.getElementsByTagName("id")[0].childNodes[0].nodeValue;
+
+				if (tempArray[i].id == id)
+				{
+					var p = getImagePropertiesBy(tempArray[i]);
+					node.getElementsByTagName("x")[0].childNodes[0].nodeValue = p.x;
+					node.getElementsByTagName("y")[0].childNodes[0].nodeValue = p.y;
+					break;
+				}
+			}
+			
 		}
 	}
 	document.getElementById("hidXml").value = serializeXmldocToString();
