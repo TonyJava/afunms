@@ -157,7 +157,7 @@ function addNode(nodeid,url){
 			var imgValue = "../../resource/"+node.getElementsByTagName("img")[0].childNodes[0].nodeValue;
 			var x = node.getElementsByTagName("x")[0].childNodes[0].nodeValue;
 			var y = node.getElementsByTagName("y")[0].childNodes[0].nodeValue;
-			var ip = node.getElementsByTagName("ip")[0].childNodes[0].nodeValue;
+			var ip = node.getElementsByTagName("ip")[0].childNodes[0]?node.getElementsByTagName("ip")[0].childNodes[0].nodeValue:"";
 			var alias = node.getElementsByTagName("alias")[0].childNodes[0].nodeValue;
 			var info = node.getElementsByTagName("info")[0].childNodes[0].nodeValue;
 			var menu = node.getElementsByTagName("menu")[0].childNodes[0]?node.getElementsByTagName("menu")[0].childNodes[0].nodeValue:"";
