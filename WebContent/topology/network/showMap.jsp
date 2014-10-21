@@ -69,6 +69,7 @@
 <script type="text/javascript" src="<%=rootPath%>/js/util.js"></script> 
 <script type="text/javascript" src="<%=rootPath%>/dwr/interface/TopoRemoteService.js"></script>
 <script type="text/javascript" src="<%=rootPath%>/dwr/interface/LinkRemoteService.js"></script>
+<script type="text/javascript" src="<%=rootPath%>/dwr/interface/AlarmSummarize.js"></script>
 <script type="text/javascript" src="js/topoutil.js"></script>
 <script type="text/javascript" src="js/topology.js"></script>
 <script type="text/javascript" src="js/toolbar.js"></script>
@@ -108,7 +109,7 @@
 		<%
 			}
 		%>
-		//var autoR = setInterval(autoRefresh,1000*60*3);
+		var autoR = setInterval(autoRefresh,1000*60*3);
 	}
 	
 	
@@ -330,7 +331,6 @@ function updateState(target) {
 
 	//检测用户是否具有保存拓扑图的权限
 	function savefile() {
-		console.log('savefile');
 
 		if (!admin) {
 			window.alert("您没有保存视图的权限！");
@@ -598,11 +598,7 @@ else {
 	controller = true;
 }
 }
-/* function autoRefresh() 
-{
-	window.clearInterval(freshTimer);
-	freshTimer = window.setInterval("refreshFile()",60000);
-} */
+
 
 //选择视图,由顶部  框架获得
 function changeView()
