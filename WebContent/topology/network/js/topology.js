@@ -2452,11 +2452,7 @@ var frameHeight = 180;
 // 右键连接线菜单yangjun修改
 function showLineInfo(lineid)
 {
-	//document.all.linkedline.style.top = (defaultY + parentScrollTop + frameHeight) + "px";
-	//document.all.linkedline.style.visibility = "visible";
-	//showFlag = true;
-	// lastLine = window.event.srcElement.lineid;
-	//window.lineInfoFrame.location = "linkedline.jsp?line=" + lineid;
+	
 	window.open('linkedline.jsp?line='+ lineid,'window', 'toolbar=no,height=800,width=850,scrollbars=yes,center=yes,screenY=0');
 	clearTimer();
 	timer = setInterval("displayInfoFrame()", speed);
