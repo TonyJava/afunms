@@ -124,8 +124,6 @@
     //删除示意链路
     function deleteLine(id){
         window.location = "<%=rootPath%>/link.do?action=deleteDemoLink&id="+id+"&xml=<%=viewFile%>";
-        //alert("删除成功！");
-        //autoRefresh();
     }
     //删除示意设备
     function deleteHintMeta(id) {
@@ -153,7 +151,8 @@
     //删除实体设备
     function deleteEquip(nodeid,category){
         if (window.confirm("此操作会将该设备从系统彻底删除,确定删除该设备吗？")) {
-            window.location="<%=rootPath%>/submap.do?action=deleteEquipFromSubMap&xml=<%=viewFile%>&node="+nodeid+"&category="+category;
+        	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=deleteEquipFromSubMap&xml=<%=viewFile%>&node="+nodeid+"&category="+category,'false');
+			http.send();
             alert("删除成功！");
             autoRefresh();
         }
@@ -166,21 +165,12 @@
     function removeEquip(nodeid){
         if (window.confirm("此操作会将该设备从当前拓扑图删除,确定删除该设备吗？")) {
         	//window.location = "../../submap.do?action=removeEquipFromSubMap&xml="+jsp.replace(/(\.jsp)*\b/ig,'')+"&node="+nodeid;
-           window.location = "<%=rootPath%>/submap.do?action=removeEquipFromSubMap&xml=<%=viewFile%>&node="+nodeid;
+           var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=removeEquipFromSubMap&xml=<%=viewFile%>&node="+nodeid,'false');
+			http.send();
+
            alert("删除成功！");
-           /* 
-           //TODO 删除节点后  转入topo页 需停顿一段短暂时间 ，目的是为了等待xml文件更新
-           由于网络情况补丁，会产生问题。
-           *测试下载和脚本执行的异步性
-           
-           function timer(){
-        	   console.log(timer.count++);
-        	   setTimeout(timer,1000)
-           }
-           timer.count = 0;
-           setTimeout(timer,1000); */
           
-           //autoRefresh();
+           autoRefresh();
         }
     }
     //服务器设备相关应用添加
@@ -258,7 +248,7 @@
 	}
 	
 	 $(document).ready(function(){
-		 showAlarmTipsWindown("告警信息", 'simTestContentAlarm', 250, 55);
+		showAlarmTipsWindown("告警信息", 'simTestContentAlarm', 250, 55);
 		var timer1;
 		timer1=window.setInterval("getAlarmData();",200*60);	//2分钟更新一次DIV
 	});
@@ -608,11 +598,11 @@ else {
 	controller = true;
 }
 }
-function autoRefresh() 
+/* function autoRefresh() 
 {
 	window.clearInterval(freshTimer);
 	freshTimer = window.setInterval("refreshFile()",60000);
-}
+} */
 
 //选择视图,由顶部  框架获得
 function changeView()
