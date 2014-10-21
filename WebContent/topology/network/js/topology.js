@@ -2080,7 +2080,6 @@ function unSelectImg(objSty)
 		obj.style.color = "#000000";
 		obj.style.filter="";
 	}
-	console.log(obj);
 }
 
 // ±£´æ
@@ -2645,8 +2644,15 @@ function getNodeId(id)
 }
 function setMainLayerPos(x, y)
 {
-	document.getElementById('divLayer').style.left = x;
-	document.getElementById('divLayer').style.top = y;
+	if(isFF){
+		
+		var translate = 'translate('+x+','+y+')';
+		moveOnFF(translate);
+	}else{
+		document.getElementById('divLayer').style.left = x;
+		document.getElementById('divLayer').style.top = y;
+	
+	}
 }
 
 function showAnchor()
@@ -2685,6 +2691,8 @@ function moveMainLayer(coor)
 	var x = y = 0;
 	coor[0] = parseInt(coor[0]);
 	coor[1] = parseInt(coor[1]);
+	//x = coor[0];
+	//y = coor[1];
 	if (coor[0] > 0)
 	{
 		x = coor[0] - anchorPos[0];
