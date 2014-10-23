@@ -60,7 +60,7 @@
 <script type="text/javascript" src="js/profile.js"></script>
 <script type="text/javascript" src="js/global.js"></script>
 <script type="text/javascript" src="js/disable.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="<%=rootPath %>/topology/network/js/menu.js"></script>
 <script type="text/javascript" src="js/map.js"></script>
 <script type="text/javascript" src="js/window.js"></script>
 <script type="text/javascript" src="js/edit.js"></script>
@@ -206,6 +206,7 @@ function updateState(target) {
         //window.location="<%=rootPath%>/submap.do?action=addEquipToSubMap&xml=<%=fileName%>&node="+nodeid+"&category="+nodeCategory;
         var xml = "<%=fileName%>";
         var url = "<%=rootPath%>/resource/xml/<%=fileName%>";
+        DWREngine.setAsync(false);  //DWR同步，防止已经添加节点但拓扑上由于网络造成不同步的情况
         TopoRemoteService.addEquipToMap(xml, nodeid, nodeCategory,{
 				callback:function(data){
 					if(data){
@@ -213,6 +214,7 @@ function updateState(target) {
 					}
 				}
 			});
+        DWREngine.setAsync(true);
     }
     //删除实体设备
     function deleteEquip(nodeid,category){
@@ -787,14 +789,7 @@ function checkEntityLink(){
 </script>
 <style>
 a{text-decoration:none;}
-table.menu
-{
-font-size:100%;
-position:absolute;
-visibility:hidden;
-background:#ECECEC;
-align:right;
-}
+
 </style>
 <div id="rp_list" class="rp_list" align="right" >
 	<ul>
