@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+.businessTree{
+	/*font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;*/
+	height: 400px;
+}
+
+.nodeDiv{
+	clear:both;
+}
+
+.nodeDataDiv{
+	clear:both;
+}
+
+.nodeChildDiv{
+	clear:both;
+}
+
+.floatLeft{
+	float:left;
+}
+
+.noSelected{
+	cursor: pointer;
+}
+
+.selected{
+	background-color: skyblue;
+}
+
+.contextMenuItem{
+	border: 1px solid #CECECE;
+	vertical-align: middle;
+}
+
+.menuItem{
+	font-family:verdana; 
+	height:30px;
+	width:80px;
+	background:#F0F1F4;
+	border-top: 1px solid #FAFAFA;
+	border-bottom: 1px solid #CECECE; 
+	padding:4px; 
+	cursor:hand 
+}
+
+.menuItemOnMouse{
+	
+}
+

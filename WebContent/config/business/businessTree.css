@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+.businessTree{
+	/*font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;*/
+	font-size: 12px;
+	color: #666;
+	float: left;
+}
+
+.businessTree img{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.nodeChildDiv{
+	position:relative;
+	left: 20px;
+}
+
+

@@ -1,0 +1,157 @@
+<%@page language="java" contentType="text/html;charset=GB2312"%>
+<%@page import="com.afunms.topology.model.HostNode"%>
+<%@page import="com.afunms.common.base.JspPage"%>
+<%@page import="java.util.*"%>
+<%@page import="java.text.*"%>
+<%@page import="com.afunms.common.util.SysUtil"%>
+<%@ include file="/include/globe.inc"%>
+<%@page import="com.afunms.polling.om.IpMac"%>
+<%@ page import="com.afunms.system.model.Department"%>
+<%@ page import="com.afunms.system.dao.DepartmentDao"%>
+<%@ page import="com.afunms.config.model.Employee"%>
+<%@ page import="com.afunms.polling.om.IpMacChange"%>
+<%@ page import="com.afunms.config.dao.EmployeeDao"%>
+<%@ page import="com.afunms.topology.dao.IpMacBaseDao"%>
+<%
+  String rootPath = request.getContextPath();
+  //List list = (List)request.getAttribute("list");
+  
+  //int rc = list.size();
+
+  //JspPage jp = (JspPage)request.getAttribute("page");
+  SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+%>
+<%String menuTable = (String)request.getAttribute("menuTable");%>
+<html>
+<head>
+<script language="JavaScript" type="text/javascript" src="<%=rootPath%>/include/navbar.js"></script>
+<link href="<%=rootPath%>/include/navbar.css" rel="stylesheet" type="text/css" />
+<LINK href="<%=rootPath%>/resource/css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script> 
+<meta http-equiv="Page-Enter" content="revealTrans(duration=x, transition=y)">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<LINK href="<%=rootPath%>/resource/css/itsm_style.css" type="text/css" rel="stylesheet">
+<link href="<%=rootPath%>/resource/css/detail.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css" type="text/css">
+<link href="<%=rootPath%>/include/mainstyle.css" rel="stylesheet" type="text/css">
+<script language="javascript">	
+  
+  function doQuery()
+  {  
+     if(mainForm.key.value=="")
+     {
+     	alert("请输入查询条件");
+     	return false;
+     }
+     mainForm.action = "<%=rootPath%>/ipmacchange.do?action=find";
+     mainForm.submit();
+  }
+  
+  function doChange()
+  {
+     if(mainForm.view_type.value==1)
+        window.location = "<%=rootPath%>/topology/network/index.jsp";
+     else
+        window.location = "<%=rootPath%>/topology/network/port.jsp";
+  }
+
+  function toAdd()
+  {
+      mainForm.action = "<%=rootPath%>/network.do?action=ready_add";
+      mainForm.submit();
+  }
+  
+  function toDeleteAll()
+  {
+      mainForm.action = "<%=rootPath%>/ipmacchange.do?action=deleteall";
+      mainForm.submit();
+  }
+
+</script>
+<script language="JavaScript" type="text/JavaScript">
+var show = true;
+var hide = false;
+//修改菜单的上下箭头符号
+function my_on(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="on";
+}
+function my_off(head,body)
+{
+	var tag_a;
+	for(var i=0;i<head.childNodes.length;i++)
+	{
+		if (head.childNodes[i].nodeName=="A")
+		{
+			tag_a=head.childNodes[i];
+			break;
+		}
+	}
+	tag_a.className="off";
+}
+//添加菜单	
+function initmenu()
+{
+	var idpattern=new RegExp("^menu");
+	var menupattern=new RegExp("child$");
+	var tds = document.getElementsByTagName("div");
+	for(var i=0,j=tds.length;i<j;i++){
+		var td = tds[i];
+		if(idpattern.test(td.id)&&!menupattern.test(td.id)){					
+			menu =new Menu(td.id,td.id+"child",'dtu','100',show,my_on,my_off);
+			menu.init();		
+		}
+	}
+
+}
+
+</script>
+</head>
+<BODY leftmargin="0" topmargin="0" bgcolor="#cedefa"  onload="initmenu();">
+<form method="post" name="mainForm">
+<table border="0" id="table1" cellpadding="0" cellspacing="0" width=100%>
+	<tr>
+		<td width="200" valign=top align=center>
+	
+	<%=menuTable%>
+            				
+	</td>
+		<td bgcolor="#cedefa" align="center" valign="top">
+			<table width="98%" style="BORDER-COLLAPSE: collapse" borderColor=#397DBD cellPadding=0 rules=none align=center border=1 algin="center">
+				<tr>
+					<td height="28" align="left" bordercolor="#397DBD" bgcolor="#397DBD" class="txtGlobalBold" colspan=3>&nbsp;&nbsp;<font color=#ffffff>资源管理 >> IP/MAC资源 >> MAC地址定位</font></td>
+				</tr>
+				<tr>
+		
+					<td height=300 bgcolor="#FFFFFF" valign="top" align=center>
+					<br>
+						<table cellSpacing="1" cellPadding="0" width="100%" border="0">
+        																		
+
+        						
+							<tr>
+								<td colspan="2">
+								<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;Mac地址：<input type=text name="mac" value="" size=50>
+									&nbsp;&nbsp;<INPUT type="button" class="formStyle" value="查询" onclick=" return doQuery()">
+								</td>
+							</tr>	
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</form>
+</BODY>
+</HTML>
