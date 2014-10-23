@@ -181,16 +181,17 @@ function updateState(target) {
      
     //删除示意链路
     function deleteLine(id){
-        window.location = "<%=rootPath%>/submap.do?action=deleteLines&id="+id+"&xml=<%=fileName%>";
-        //window.location = "<%=rootPath%>/submap.do?action=deleteDemoLink&id="+id+"&xml=<%=fileName%>";
-        //alert("删除成功！");
-       // autoRefresh();
+    	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=deleteLines&id="+id+"&xml=<%=fileName%>",'false');
+		http.send();alert("删除成功！");
+       autoRefresh();
     }
     //删除实体链路
     function deleteLink(id) {
-        //var xml = "<%=fileName%>";
+        
         if (window.confirm("确定删除该链路吗？")) {
-            window.location = "<%=rootPath%>/submap.do?action=deleteLink&lineId="+id;
+        	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=deleteLink&lineId="+id+"&xml=<%=fileName%>",'false');
+			http.send();
+       
             alert("删除成功！");
 	        autoRefresh();
 	    }
@@ -203,8 +204,7 @@ function updateState(target) {
     
     //添加实体设备
     function addEquip(nodeid,nodeCategory){
-        //window.location="<%=rootPath%>/submap.do?action=addEquipToSubMap&xml=<%=fileName%>&node="+nodeid+"&category="+nodeCategory;
-        var xml = "<%=fileName%>";
+       var xml = "<%=fileName%>";
         var url = "<%=rootPath%>/resource/xml/<%=fileName%>";
         DWREngine.setAsync(false);  //DWR同步，防止已经添加节点但拓扑上由于网络造成不同步的情况
         TopoRemoteService.addEquipToMap(xml, nodeid, nodeCategory,{
@@ -219,7 +219,9 @@ function updateState(target) {
     //删除实体设备
     function deleteEquip(nodeid,category){
         if (window.confirm("此操作会将该设备彻底删除,确定删除该设备吗？")) {
-            window.location="<%=rootPath%>/submap.do?action=deleteEquipFromSubMap&node="+nodeid+"&xml=<%=fileName%>&category="+category;
+        	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=deleteEquipFromSubMap&node="+nodeid+"&xml=<%=fileName%>&category="+category,'false');
+			http.send();
+       
             alert("删除成功！");
             autoRefresh();
         }
@@ -234,7 +236,9 @@ function updateState(target) {
     function deleteHintMeta(id) {
         var xml = "<%=fileName%>";
         if (window.confirm("确定删除该设备吗？")) {
-            window.location = "<%=rootPath%>/submap.do?action=deleteHintMeta&nodeId="+id+"&xml="+xml;
+        	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=deleteHintMeta&nodeId="+id+"&xml="+xml,'false');
+			http.send();
+     
             alert("删除成功！");
 	        autoRefresh();
 	    }
@@ -242,7 +246,8 @@ function updateState(target) {
     //只从拓扑图移除实体设备
     function removeEquip(nodeid){
         if (window.confirm("此操作会将该设备从当前拓扑图删除,确定删除该设备吗？")) {
-            window.location="<%=rootPath%>/submap.do?action=removeEquipFromSubMap&xml=<%=fileName%>&node="+nodeid;
+        	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=removeEquipFromSubMap&xml=<%=fileName%>&node="+nodeid,'false');
+			http.send();
             alert("删除成功！");
             autoRefresh();
         }
@@ -279,8 +284,9 @@ function updateState(target) {
     }
     //服务器设备相关应用添加
     function addApplication(nodeid,ip){
-        //alert(nodeid+"_"+ip);
-        window.location="<%=rootPath%>/submap.do?action=addApplications&xml=<%=fileName%>&node="+nodeid+"&ip="+ip;
+    	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=addApplications&xml=<%=fileName%>&node="+nodeid+"&ip="+ip,'false');
+		http.send();
+        
         alert("获取该服务器相关应用成功！");
         autoRefresh();
     }

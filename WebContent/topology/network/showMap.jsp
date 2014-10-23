@@ -130,7 +130,9 @@
     function deleteHintMeta(id) {
         var xml = "<%=viewFile%>";
         if (window.confirm("确定删除该设备吗？")) {
-            window.location = "<%=rootPath%>/submap.do?action=deleteHintMeta&nodeId="+id+"&xml="+xml;
+        	var http = XHR.getInstanceBy('GET',"<%=rootPath%>/submap.do?action=deleteHintMeta&nodeId="+id+"&xml="+xml,'false');
+    		http.send();
+           
             alert("删除成功！");
 	        autoRefresh();
 	    }
