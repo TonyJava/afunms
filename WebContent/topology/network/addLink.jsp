@@ -50,6 +50,7 @@
 		<script type="text/javascript" src="<%=rootPath%>/js/ext/lib/ext-all.js" charset="gb2312"></script>
 		<script type="text/javascript" 	src="<%=rootPath%>/application/resource/js/addTimeConfig.js" charset="gb2312"></script>
 		<script type="text/javascript" 	src="<%=rootPath%>/application/resource/js/jquery-1.4.2.js" charset="gb2312"></script>
+	
 <script language="javascript">
 var linkName='<%=link_name%>';
 window.onload=function()
@@ -124,8 +125,7 @@ function portChange2(obj)
 
 function save()
 {
-	alert('save');
-    var args = window.dialogArguments;   
+    var args = window;   
     var direction1 = document.getElementById("direction1").value;
     var linkName = document.getElementById("link_name").value;
     var maxSpeed = document.getElementById("max_speed").value;
@@ -137,8 +137,9 @@ function save()
     var end_index = document.getElementById("end_index").value;
     var linetext = document.getElementById("linetext").value;
     var interf = document.getElementById("interf").value;
-    args.parent.mainFrame.addLink(direction1,linkName, maxSpeed, maxPer, xml, start_id, start_index, end_id, end_index,linetext,interf);
-    window.close();    
+    parent.AlphaLayerTool.hideOverlay();
+    args.parent.addLink(direction1,linkName, maxSpeed, maxPer, xml, start_id, start_index, end_id, end_index,linetext,interf);
+     
 }
 
 </script>
@@ -295,7 +296,7 @@ function save()
 				<TD nowrap colspan="4" align=center>
 					<br>
 					<input type="button" value="±£´æ" style="width:50"  onclick="save()">
-					<input type="button" value="¹Ø±Õ" style="width:50"  onclick="window.close();">
+					<input type="button" value="¹Ø±Õ" style="width:50"  onclick="parent.AlphaLayerTool.hideOverlay();">
 				</TD>	
 			</tr>
 			</TBODY>
