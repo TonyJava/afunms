@@ -178,7 +178,7 @@ function addNode(nodeid,url){
 			    img.name = relationMap+",0";;// 节点关联的子图文件名和示意设备判断标记
 			}
 			img.style.position = "absolute";
-			img.style.cursor = "hand";
+			img.style.cursor = "pointer";
 			setImage(img,{'x':x,'y':y,'w':imgWidth,'h':imgHeight});
 	
 			if(nodeType == "net_server")
@@ -368,7 +368,7 @@ function addlink(lineid,url){
 		    var a = lineObj.getElementsByTagName("a")[0].childNodes[0].nodeValue;
 			var b = lineObj.getElementsByTagName("b")[0].childNodes[0].nodeValue;
 			var color = lineObj.getElementsByTagName("color")[0].childNodes[0].nodeValue;
-			var dash = lineObj.getElementsByTagName("dash")[0].text;
+			var dash = lineObj.getElementsByTagName("dash")[0].childNodes[0].nodeValue;
 			var lineWidth = lineObj.getElementsByTagName("lineWidth")[0].childNodes[0].nodeValue;
 			var lineInfo = lineObj.getElementsByTagName("lineInfo")[0].childNodes[0].nodeValue;
 			var lineMenu = lineObj.getElementsByTagName("lineMenu")[0].childNodes[0].nodeValue;
@@ -410,10 +410,10 @@ function addlink(lineid,url){
 	             return {'x':x,'y':y}; 
 	        }
 			line.onmousemove = function(e) { 
-				                   var pos=getCoordInDocument();
+				                   var pos=getCoordInDocument(e);
 			                       // window.event.srcElement.strokeweight =
 									// parseInt(lineWidth)+1;
-			                       window.event.srcElement.style.cursor = "hand";
+			                       window.event.srcElement.style.cursor = "pointer";
 			                       // window.event.srcElement.style.filter="Alpha(Opacity=60);";
 			                       document.all(this.id.replace("line","info")).style.left = parseInt(pos['x']);
 			                       document.all(this.id.replace("line","info")).style.top = parseInt(pos['y']);
@@ -425,7 +425,9 @@ function addlink(lineid,url){
 			                  };
 			// ///////////////end
 		
-			document.getElementById('divLayer').appendChild(line);
+			var divLayer = document.getElementById('divLayer');
+			divLayer.insertBefore(line,divLayer.childNodes[1]);
+			
 			document.getElementById("node_" + a).lines += '&' + line.id;
 			document.getElementById("node_" + b).lines += '&' + line.id;
 			// 链路菜单
@@ -447,7 +449,7 @@ function addlink(lineid,url){
 			addContextmenuEventListener(document.getElementById("line_" + a + "_"+ b),function(event){
 				event = event || window.event;
 				var that = event.target || event.srcElement;
-				var pos=getCoordInDocument();
+				var pos=getCoordInDocument(event);
 				document.getElementById(that.id.replace("line","menu")).style.left = parseInt(pos['x']);
 			    document.getElementById(that.id.replace("line","menu")).style.top = parseInt(pos['y']);
 				if(clickLineObj != null)
@@ -474,6 +476,14 @@ function addlink(lineid,url){
 }
 //
 function addAssLink(lineid,url){
+	//添加辅助链路的时，使得辅助链路和主链路有一定的距离，以免遮挡
+	var doAssLinePos = function(p){
+		p.x1 = p.x1+5;
+		p.y1 = p.y1+5;
+		p.x2 = p.x2+5;
+		p.y2 = p.y2+5;
+		return p;
+	};
 	xmldoc = initXML(url);
     var lines = xmldoc.getElementsByTagName("assistant_line");
 	for (var j = lines.length-1; j >= 0; j--)
@@ -481,24 +491,23 @@ function addAssLink(lineid,url){
 		var lineObj = lines[j];
 		var line_id = lineObj.getAttribute("id");
 		if(line_id==lineid){
-		    var a = lineObj.getElementsByTagName("a")[0].text;
-			var b = lineObj.getElementsByTagName("b")[0].text;
-			var color = lineObj.getElementsByTagName("color")[0].text;
-			var dash = lineObj.getElementsByTagName("dash")[0].text;
-			var lineWidth = lineObj.getElementsByTagName("lineWidth")[0].text;
-			var lineInfo = lineObj.getElementsByTagName("lineInfo")[0].text;
-			var lineMenu = lineObj.getElementsByTagName("lineMenu")[0].text;
+		    var a = lineObj.getElementsByTagName("a")[0].childNodes[0].nodeValue;
+			var b = lineObj.getElementsByTagName("b")[0].childNodes[0].nodeValue;
+			var color = lineObj.getElementsByTagName("color")[0].childNodes[0].nodeValue;
+			var dash = lineObj.getElementsByTagName("dash")[0].childNodes[0].nodeValue;
+			var lineWidth = lineObj.getElementsByTagName("lineWidth")[0].childNodes[0].nodeValue;
+			var lineInfo = lineObj.getElementsByTagName("lineInfo")[0].childNodes[0].nodeValue;
+			var lineMenu = lineObj.getElementsByTagName("lineMenu")[0].childNodes[0].nodeValue;
 	
-			var line = document.createElement("v:line");
+			var line = createElementByUserAgentAnd("line");
 			line.lineid = lineObj.getAttribute("id");
 			line.id = "line_" + a + "_"+ b + "#assistant";
 			line.style.position = "absolute";
 			line.style.zIndex = -1;
-			line.from = (parseInt(document.all("node_" + a).style.left) + parseInt(document.all("node_" + a).style.width)/2 + 3) + "," + (parseInt(document.all("node_" + a).style.top) + parseInt(document.all("node_" + a).style.height)/2 + 3);
-			line.to = (parseInt(document.all("node_" + b).style.left) + parseInt(document.all("node_" + b).style.width)/2 + 3) + "," + (parseInt(document.all("node_" + b).style.top) + parseInt(document.all("node_" + b).style.height)/2 + 3);
-			line.strokecolor = color;
-			line.strokeweight = lineWidth;
-	
+			
+			setLine(line,doAssLinePos(getCoorObjectFrom(document.getElementById("node_" + a),document.getElementById("node_" + b))));
+			setLine(line,{'stroke':color,'strokeWidth':lineWidth});
+			
 			// ///////////////yangjun add begin
 			// 显示链路信息
 			var divLineInfo = document.createElement("div");
@@ -516,34 +525,37 @@ function addAssLink(lineid,url){
 			divLineInfo.style.visibility = "hidden";
 			divLineInfo.style.fontSize = "12px";
 			divLineInfo.innerHTML = lineInfo;
-			document.all.divLayer.appendChild(divLineInfo);
+			document.getElementById('divLayer').appendChild(divLineInfo);
 			var getCoordInDocument = function(e) {// 获取鼠标当前位置
 	             e = e || window.event; 
 	             var x = e.pageX || (e.clientX + (document.documentElement.scrollLeft|| document.body.scrollLeft)); 
 	             var y= e.pageY || (e.clientY + (document.documentElement.scrollTop || document.body.scrollTop));   
 	             return {'x':x,'y':y}; 
-	        }
+	        };
 			line.onmousemove = function(e) { 
-				                   var pos=getCoordInDocument();
+				                   var pos=getCoordInDocument(e);
 			                       // window.event.srcElement.strokeweight =
 									// parseInt(lineWidth)+1;
-			                       window.event.srcElement.style.cursor = "hand";
-			                       document.all(this.id.replace("line","info")).style.left = parseInt(pos['x']);
-			                       document.all(this.id.replace("line","info")).style.top = parseInt(pos['y']);
-			                       document.all(this.id.replace("line","info")).style.visibility = "visible";
+			                       window.event.srcElement.style.cursor = "pointer";
+			                       document.getElementById(this.id.replace("line","info")).style.left = parseInt(pos['x']);
+			                       document.getElementById(this.id.replace("line","info")).style.top = parseInt(pos['y']);
+			                       document.getElementById(this.id.replace("line","info")).style.visibility = "visible";
 			                   };
-			line.onmouseout = function() { 
+			line.onmouseout = function(e) { 
 			                      // window.event.srcElement.strokeweight =
 									// lineWidth;
-			                      window.event.srcElement.style.cursor = "default"; 
-			                      document.all(this.id.replace("line","info")).style.visibility = "hidden";
+								  e = e||window.event;
+								  var srcElement = e.srcElement ||e.target;
+			                      srcElement.style.cursor = "default"; 
+			                      document.getElementById(this.id.replace("line","info")).style.visibility = "hidden";
 			                  };
 			// ///////////////end
 			// line.onclick = function() { showLineInfo() };
 	
-			document.all.divLayer.appendChild(line);
-			document.all("node_" + a).lines += '&' + line.id;
-			document.all("node_" + b).lines += '&' + line.id;
+			                  var divLayer = document.getElementById('divLayer');
+			      			divLayer.insertBefore(line,divLayer.childNodes[1]);
+			document.getElementById("node_" + a).lines += '&' + line.id;
+			document.getElementById("node_" + b).lines += '&' + line.id;
 			// 链路菜单
 			var divMenu = document.createElement("div");
 			divMenu.id = "menu_" + a + "_"+ b + "#assistant";
@@ -558,29 +570,29 @@ function addAssLink(lineid,url){
 			divMenu.style.lineHeight = "100%";
 			divMenu.style.fontSize = "12px";
 			divMenu.innerHTML = lineMenu;
-			document.all.divLayer.appendChild(divMenu);
+			document.getElementById('divLayer').appendChild(divMenu);
 			// 增加链路菜单的触发事件
-			document.all("line_" + a + "_"+ b + "#assistant").oncontextmenu = function()
+			document.getElementById("line_" + a + "_"+ b + "#assistant").oncontextmenu = function(e)
 			{ 
-				var pos=getCoordInDocument();
-				document.all(this.id.replace("line","menu")).style.left = parseInt(pos['x']);
-			    document.all(this.id.replace("line","menu")).style.top = parseInt(pos['y']);
+				var pos=getCoordInDocument(e);
+				document.getElementById(this.id.replace("line","menu")).style.left = parseInt(pos['x']);
+			    document.getElementById(this.id.replace("line","menu")).style.top = parseInt(pos['y']);
 				if(clickLineObj != null)
 				{
-					document.all(clickLineObj.id.replace("line", "menu")).style.visibility = "hidden";
+					document.getElementById(clickLineObj.id.replace("line", "menu")).style.visibility = "hidden";
 					clickLineObj = null;
 				}
 				clickLineObj = this;
-				document.all(this.id.replace("line", "info")).style.visibility = "hidden";
-				document.all(this.id.replace("line", "menu")).style.visibility = "visible"; 			
+				document.getElementById(this.id.replace("line", "info")).style.visibility = "hidden";
+				document.getElementById(this.id.replace("line", "menu")).style.visibility = "visible"; 			
 		    };
-			document.all("menu_" + a + "_"+ b + "#assistant").onclick = function() { this.style.visibility = "hidden"; };
+			document.getElementById("menu_" + a + "_"+ b + "#assistant").onclick = function() { this.style.visibility = "hidden"; };
 			
 			// 加入 stroke 标签
 			// window.event.srcElement.stroke.dashstyle = "Solid";
-			var stroke = document.createElement("v:stroke");
+			/*var stroke = document.createElement("v:stroke");
 			stroke.dashstyle = dash;
-			document.all(line.id).appendChild(stroke);
+			document.getElementById(line.id).appendChild(stroke);*/
 			return;
 		}
 	}
@@ -611,12 +623,6 @@ function addLine(lineid,url){
 			line.style.zIndex = -1;
 			setLine(line,getCoorObjectFrom(document.getElementById("node_" + a),document.getElementById("node_" + b)));
 			setLine(line,{'stroke':color,'strokeWidth':lineWidth});
-			
-			/*line.from = (parseInt(document.all("node_" + a).style.left) + parseInt(document.all("node_" + a).style.width)/2 - 3) + "," + (parseInt(document.all("node_" + a).style.top) + parseInt(document.all("node_" + a).style.height)/2 - 3);
-			line.to = (parseInt(document.all("node_" + b).style.left) + parseInt(document.all("node_" + b).style.width)/2 - 3) + "," + (parseInt(document.all("node_" + b).style.top) + parseInt(document.all("node_" + b).style.height)/2 - 3);
-			line.strokecolor = color;
-			line.strokeweight = lineWidth;
-			*/
 			// ///////////////yangjun add begin
 			// 显示链路信息
 			var divLineInfo = document.createElement("div");
@@ -642,24 +648,25 @@ function addLine(lineid,url){
 	             return {'x':x,'y':y}; 
 	        }
 			line.onmousemove = function(e) { 
-				                   var pos=getCoordInDocument();
+				                   var pos=getCoordInDocument(e);
 			                       // window.event.srcElement.strokeweight =
 									// parseInt(lineWidth)+1;
-			                       window.event.srcElement.style.cursor = "hand";
-			                       document.all(this.id.replace("line","info")).style.left = parseInt(pos['x']);
-			                       document.all(this.id.replace("line","info")).style.top = parseInt(pos['y']);
-			                       document.all(this.id.replace("line","info")).style.visibility = "visible";
+			                       window.event.srcElement.style.cursor = "pointer";
+			                       document.getElementById(this.id.replace("line","info")).style.left = parseInt(pos['x']);
+			                       document.getElementById(this.id.replace("line","info")).style.top = parseInt(pos['y']);
+			                       document.getElementById(this.id.replace("line","info")).style.visibility = "visible";
 			                   };
 			line.onmouseout = function() { 
 			                      // window.event.srcElement.strokeweight =
 									// lineWidth;
 			                      window.event.srcElement.style.cursor = "default"; 
-			                      document.all(this.id.replace("line","info")).style.visibility = "hidden";
+			                      document.getElementById(this.id.replace("line","info")).style.visibility = "hidden";
 			                  };
 			// ///////////////end
 			// line.onclick = function() { showLineInfo() };
 	
-			document.getElementById('divLayer').appendChild(line);
+			                  var divLayer = document.getElementById('divLayer');
+			          		divLayer.insertBefore(line,divLayer.childNodes[1]);
 			document.getElementById("node_" + a).lines += '&' + line.id;
 			document.getElementById("node_" + b).lines += '&' + line.id;
 			// 链路菜单
@@ -678,8 +685,8 @@ function addLine(lineid,url){
 			divMenu.innerHTML = lineMenu;
 			appendChild(divMenu);
 			// 增加链路菜单的触发事件
-			addContextmenuEventListener(document.getElementById("line_" + a + "_"+ b + "#demoline"),function(){ 
-				var pos=getCoordInDocument();
+			addContextmenuEventListener(document.getElementById("line_" + a + "_"+ b + "#demoline"),function(e){ 
+				var pos=getCoordInDocument(e);
 				document.getElementById(this.id.replace("line","menu")).style.left = parseInt(pos['x']);
 			    document.getElementById(this.id.replace("line","menu")).style.top = parseInt(pos['y']);
 				if(clickLineObj != null)
@@ -691,7 +698,7 @@ function addLine(lineid,url){
 				document.getElementById(this.id.replace("line", "info")).style.visibility = "hidden";
 				document.getElementById(this.id.replace("line", "menu")).style.visibility = "visible"; 			
 		    });
-			document.all("menu_" + a + "_"+ b + "#demoline").onclick = function() { this.style.visibility = "hidden"; };
+			document.getElementById("menu_" + a + "_"+ b + "#demoline").onclick = function() { this.style.visibility = "hidden"; };
 			
 			// 加入 stroke 标签
 			// window.event.srcElement.stroke.dashstyle = "Solid";
@@ -747,7 +754,7 @@ function parseData()
 		/*img.style.width = imgWidth;
 		img.style.height = imgHeight;
 		*/img.style.position = "absolute";
-		img.style.cursor = "hand";
+		img.style.cursor = "pointer";
 		/*img.style.left = x;
 		img.style.top = y;*/
 		setImage(img,{'x':x,'y':y});
@@ -1013,11 +1020,6 @@ function parseData()
 		line.style.zIndex = -1;
 		setLine(line,getCoorObjectFrom(document.getElementById("node_" + a),document.getElementById("node_" + b)));
 		setLine(line,{'stroke':color,'strokeWidth':lineWidth});
-		/*line.from = (parseInt(document.all("node_" + a).style.left) + parseInt(document.all("node_" + a).style.width)/2) + "," + (parseInt(document.all("node_" + a).style.top) + parseInt(document.all("node_" + a).style.height)/2);
-		line.to = (parseInt(document.all("node_" + b).style.left) + parseInt(document.all("node_" + b).style.width)/2) + "," + (parseInt(document.all("node_" + b).style.top) + parseInt(document.all("node_" + b).style.height)/2);
-		line.strokecolor = color;
-		line.strokeweight = lineWidth;*/// 1;
-        // ///////////////yangjun add begin
 		// 显示链路信息
 		var divLineInfo = document.createElement("div");
 		divLineInfo.id = "info_" + a + "_"+ b;
@@ -1042,10 +1044,10 @@ function parseData()
              return {'x':x,'y':y}; 
         }
 		line.onmousemove = function(e) { 
-			                   var pos=getCoordInDocument();
+			                   var pos=getCoordInDocument(e);
 		                       // window.event.srcElement.strokeweight =
 								// parseInt(lineWidth)+1;
-		                       this.style.cursor = "hand";
+		                       this.style.cursor = "pointer";
 		                       // window.event.srcElement.style.filter="Alpha(Opacity=60);";
 		                       //TODO chrome 信息框由于坐标问题 闪烁 暂时x,y位置+1
 		                       document.getElementById(this.id.replace("line","info")).style.left = parseInt(pos['x'])+1;
@@ -1081,7 +1083,7 @@ function parseData()
 		addContextmenuEventListener(document.getElementById("line_" + a + "_"+ b),function(event){
 			event = event || window.event;
 			var that = event.target || event.srcElement;
-			var pos=getCoordInDocument();
+			var pos=getCoordInDocument(event);
 			document.getElementById(that.id.replace("line","menu")).style.left = parseInt(pos['x']);
 		    document.getElementById(that.id.replace("line","menu")).style.top = parseInt(pos['y']);
 			if(clickLineObj != null)
@@ -1121,11 +1123,6 @@ function parseData()
 		line.style.zIndex = -1;
 		
 
-		/*line.from = (parseInt(document.all("node_" + a).style.left) + parseInt(document.all("node_" + a).style.width)/2 + 3) + "," + (parseInt(document.all("node_" + a).style.top) + parseInt(document.all("node_" + a).style.height)/2 + 3);
-		line.to = (parseInt(document.all("node_" + b).style.left) + parseInt(document.all("node_" + b).style.width)/2 + 3) + "," + (parseInt(document.all("node_" + b).style.top) + parseInt(document.all("node_" + b).style.height)/2 + 3);
-		line.strokecolor = color;
-		line.strokeweight = lineWidth;
-		*/
 		//设置连线的位置
 		setLine(line,getAssLineCoorObjectFrom(document.getElementById("node_" + a),document.getElementById("node_" + b)));
 		//设置线粗细和颜色
@@ -1156,19 +1153,19 @@ function parseData()
              return {'x':x,'y':y}; 
         }
 		line.onmousemove = function(e) { 
-			                   var pos=getCoordInDocument();
+			                   var pos=getCoordInDocument(e);
 		                       // window.event.srcElement.strokeweight =
 								// parseInt(lineWidth)+1;
-		                       window.event.srcElement.style.cursor = "hand";
-		                       document.all(this.id.replace("line","info")).style.left = parseInt(pos['x']);
-		                       document.all(this.id.replace("line","info")).style.top = parseInt(pos['y']);
-		                       document.all(this.id.replace("line","info")).style.visibility = "visible";
+		                       this.style.cursor = "pointer";
+		                       document.getElementById(this.id.replace("line","info")).style.left = parseInt(pos['x']);
+		                       document.getElementById(this.id.replace("line","info")).style.top = parseInt(pos['y']);
+		                       document.getElementById(this.id.replace("line","info")).style.visibility = "visible";
 		                   };
 		line.onmouseout = function() { 
 		                      // window.event.srcElement.strokeweight =
 								// lineWidth;
-		                      window.event.srcElement.style.cursor = "default"; 
-		                      document.all(this.id.replace("line","info")).style.visibility = "hidden";
+		                      this.style.cursor = "default"; 
+		                      document.getElementById(this.id.replace("line","info")).style.visibility = "hidden";
 		                  };
 		// ///////////////end
 		// line.onclick = function() { showLineInfo() };
@@ -1199,7 +1196,7 @@ function parseData()
 		addContextmenuEventListener(document.getElementById("line_" + a + "_"+ b + "#assistant"),function(event){ 
 			event = event || window.event;
 			var that = event.target || event.srcElement;
-			var pos=getCoordInDocument();
+			var pos=getCoordInDocument(event);
 			document.getElementById(that.id.replace("line","menu")).style.left = parseInt(pos['x']);
 		    document.getElementById(that.id.replace("line","menu")).style.top = parseInt(pos['y']);
 			if(clickLineObj != null)
@@ -1267,12 +1264,13 @@ function parseData()
              var x = e.pageX || (e.clientX + (document.documentElement.scrollLeft|| document.body.scrollLeft)); 
              var y= e.pageY || (e.clientY + (document.documentElement.scrollTop || document.body.scrollTop));   
              return {'x':x,'y':y}; 
-        }
+        };
 		
 		// ///////////////end
 		// line.onclick = function() { showLineInfo() };
 
-		document.getElementById('divLayer').appendChild(line);
+		var divLayer = document.getElementById('divLayer');
+		divLayer.insertBefore(line,divLayer.childNodes[1]);
 	
 		document.getElementById("node_" + a).lines += '&' + line.id;
 		document.getElementById("node_" + b).lines += '&' + line.id;
@@ -1307,7 +1305,7 @@ function parseData()
 					clickLineObj = null;
 				}
 				clickLineObj = that;
-				console.log('d2');
+				
 				document.getElementById(that.id.replace("line", "info")).style.visibility = "hidden";
 				document.getElementById(that.id.replace("line", "menu")).style.visibility = "visible"; 
 			
@@ -1605,15 +1603,15 @@ function move(event)
 					{
 						for(var j = 0; j < line_ids[i].length-1; j++)
 						{
-							var iElem = document.all(line_ids[i][j]);
+							var iElem = document.getElementById(line_ids[i][j]);
 							if (iElem == null)
 							{
 								continue;
 							}
 							var lth = line_ids[i].length-1;
-							var tmpStr = document.all(line_ids[i][lth]).id.replace(/[^_]*/, '') + '_';
-							var iLeft = parseInt(document.all(line_ids[i][lth]).style.left) + parseInt(document.all("containImgDiv").style.left) + 15;
-							var iTop = parseInt(document.all(line_ids[i][lth]).style.top) + parseInt(document.all("containImgDiv").style.top) + 8;
+							var tmpStr = document.getElementById(line_ids[i][lth]).id.replace(/[^_]*/, '') + '_';
+							var iLeft = parseInt(document.getElementById(line_ids[i][lth]).style.left) + parseInt(document.ElementById("containImgDiv").style.left) + 15;
+							var iTop = parseInt(document.all(line_ids[i][lth]).style.top) + parseInt(document.getElementById("containImgDiv").style.top) + 8;
 							if (line_ids[i][j].search(tmpStr) != -1)
 							{
 								iElem.from = iLeft + "," + iTop;
@@ -2386,14 +2384,14 @@ function showController(show)
 {
 	if (show) 
 	{
-		document.all.moveController.style.visibility = "visible";
-		document.all.sizeController.style.visibility = "visible";
+		document.getElementById('moveController').style.visibility = "visible";
+		document.getElementById('sizeController').style.visibility = "visible";
 		controllerState = true;
 	}
 	else 
 	{
-		document.all.moveController.style.visibility = "visible";
-		document.all.sizeController.style.visibility = "visible";
+		document.getElementById('moveController').style.visibility = "visible";
+		document.getElementById('sizeController').style.visibility = "visible";
 		// controllerState = false;
 		controllerState = true;
 	}
@@ -2404,7 +2402,7 @@ function showController(show)
 
 function swapImage(imageID, imageSrc) 
 {
-	document.all(imageID).src = imgPath+imageSrc;
+	document.getElementById(imageID).src = imgPath+imageSrc;
 }
 
 // ------ 图片交换效果函数 - 结束 ------
@@ -2413,7 +2411,7 @@ function loadMoveController()
 {
 	document.write('<div id="moveController" style="position:absolute;top:5px;left:5px;z-index:999;background-image:url(image/controller_bg.gif);">');
 	document.write('<table width="66" border="0" cellspacing="0" cellpadding="0" style="font-size:9pt;"><tr><td height="19" width="19"></td><td width="28">');
-	document.write('<img src="'+imgPath+'image/topo/arrow_up.gif" onmouseout="javascript:swapImage(\'image_up\', \'image/topo/arrow_up.gif\');" onmouseover="javascript:swapImage(\'image_up\', \'image/topo/arrow_up_over.gif\');" alt="向上移动 | W" width="28" height="19" onclick="javascript:moveAction(\'up\');" style="cursor:hand;" name="image_up" id="image_up" />');
+	document.write('<img src="'+imgPath+'image/topo/arrow_up.gif" onmouseout="javascript:swapImage(\'image_up\', \'image/topo/arrow_up.gif\');" onmouseover="javascript:swapImage(\'image_up\', \'image/topo/arrow_up_over.gif\');" alt="向上移动 | W" width="28" height="19" onclick="javascript:moveAction(\'up\');" style="cursor:pointer;" name="image_up" id="image_up" />');
 	document.write('</td><td height="19" width="19"></td></tr><tr><td>');
 	document.write('<img src="'+imgPath+'image/topo/arrow_left.gif" onmouseout="javascript:swapImage(\'image_left\', \'image/topo/arrow_left.gif\');" onmouseover="javascript:swapImage(\'image_left\', \'image/topo/arrow_left_over.gif\');" alt="向左移动 | A" width="19" height="28" onclick="javascript:moveAction(\'left\');" style="cursor:hand;" name="image_left" id="image_left" />');
 	document.write('</td><td align="center" valign="middle" style="text-align:center;">');
