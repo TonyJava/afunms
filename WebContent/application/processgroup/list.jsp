@@ -29,16 +29,10 @@
 		<link href="<%=rootPath%>/resource/<%=com.afunms.common.util.CommonAppUtil.getSkinPath() %>css/global/global.css" rel="stylesheet" type="text/css"/>
 		<script language="JavaScript" type="text/javascript" src="<%=rootPath%>/include/navbar.js"></script>
 		<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script>
+		
+		<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 		<script type="text/javascript">
-			//遮罩的情况，关闭遮罩      弹出窗口关闭弹出窗口
-		 	var winC = window.close;
-			window.close = function(){
-				 if(parent.AlphaLayerTool){
-					parent.AlphaLayerTool.hideOverlay();
-					return;
-				}
-				winC();
-			}
+			
 			var show = true;
 			var hide = false;
 			//修改菜单的上下箭头符号
