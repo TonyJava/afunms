@@ -557,6 +557,29 @@ function moveOriginByPlat(){
  * 遮罩和弹出视窗
  */
 var AlphaLayerTool = {};
+
+//重写showModalDialog   改为遮罩方式
+window.showModalDialog = function(){
+	var al = arguments.length;
+	if(al!=3) return; //参数个数不合法
+	var url = arguments[0];
+	var fatherWinData = arguments[1];
+	var dialogFeatureStr = arguments[2];
+	//解析出  height特性和width特性
+	var featureObject = {'url':url,'id':'#popwin'};
+	var features = dialogFeatureStr.split(',');
+	for(var i = 0;i<features.length;i++){
+		var f = features[i];
+		if(f.indexOf('width')!=-1)
+		{
+			featureObject['width'] = f.split('=')[1];
+		}
+		else if(f.indexOf('height')!=-1){
+			featureObject['height'] = f.split('=')[1];	
+		}
+	}
+	AlphaLayerTool.showBy(featureObject);
+};
 AlphaLayerTool.showBy=function(o){  
  
 /* 	$("#overlay").height($(window.top).height());
