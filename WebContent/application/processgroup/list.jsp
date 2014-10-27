@@ -30,7 +30,15 @@
 		<script language="JavaScript" type="text/javascript" src="<%=rootPath%>/include/navbar.js"></script>
 		<script type="text/javascript" src="<%=rootPath%>/resource/js/page.js"></script>
 		<script type="text/javascript">
-		 	
+			//遮罩的情况，关闭遮罩      弹出窗口关闭弹出窗口
+		 	var winC = window.close;
+			window.close = function(){
+				 if(parent.AlphaLayerTool){
+					parent.AlphaLayerTool.hideOverlay();
+					return;
+				}
+				winC();
+			}
 			var show = true;
 			var hide = false;
 			//修改菜单的上下箭头符号
@@ -145,8 +153,8 @@ TEXT-ALIGN: center;
 		        											<input type="hidden" name="nodeid" id="nodeid" value="<%=nodeid%>">
        													</td>
        													<td align="center" class="body-data-title" style="text-align: right;">
-       														<a href="#" onclick="toAdd()">添加</a>
-       														<a href="#" onclick="toDelete();">删除</a>&nbsp;&nbsp;&nbsp;
+       														<a href="#" onclick="toAdd();return false;">添加</a>
+       														<a href="#" onclick="toDelete();return false;">删除</a>&nbsp;&nbsp;&nbsp;
        													</td>
        												</tr>
 		        									<tr>
