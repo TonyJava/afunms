@@ -575,6 +575,7 @@ window.showModalDialog = function(){
 		var f = features[i];
 		if(f.indexOf('width')!=-1)
 		{
+			
 			featureObject['width'] = f.indexOf('=')!=-1?f.split('=')[1]:f.split(':')[1];
 		}
 		else if(f.indexOf('height')!=-1){
