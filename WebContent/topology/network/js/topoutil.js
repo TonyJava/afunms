@@ -566,16 +566,19 @@ window.showModalDialog = function(){
 	var fatherWinData = arguments[1];
 	var dialogFeatureStr = arguments[2];
 	//解析出  height特性和width特性
-	var featureObject = {'url':url,'id':'#popwin'};
-	var features = dialogFeatureStr.split(',');
+	var featureObject = {'url':url,
+			'id':'#popwin'
+			};
+	//兼容 以,分隔属性组  =分隔键值对   和以;分隔属性组    :分隔键值对的情况
+	var features = dialogFeatureStr.indexOf(',')!=-1?dialogFeatureStr.split(','):dialogFeatureStr.split(';');
 	for(var i = 0;i<features.length;i++){
 		var f = features[i];
 		if(f.indexOf('width')!=-1)
 		{
-			featureObject['width'] = f.split('=')[1];
+			featureObject['width'] = f.indexOf('=')!=-1?f.split('=')[1]:f.split(':')[1];
 		}
 		else if(f.indexOf('height')!=-1){
-			featureObject['height'] = f.split('=')[1];	
+			featureObject['height'] = f.indexOf('=')!=-1?f.split('=')[1]:f.split(':')[1];	
 		}
 	}
 	AlphaLayerTool.showBy(featureObject);
