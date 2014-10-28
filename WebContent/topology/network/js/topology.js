@@ -988,8 +988,7 @@ function parseData()
 			var menuPanel = document.getElementById(that.id.replace("node", "menu"));
 			menuPanel.style.left = event.clientX+'px';
 			menuPanel.style.top = event.clientY+'px';
-			menuPanel.style.visibility = "visible"; 
-			
+			menuPanel.style.visibility = "visible";
 			return cancelPropagationAndDefaultOfEvent(event);
 	   });
 	
@@ -1328,6 +1327,7 @@ function parseData()
 		//document.write("<br/><br/><br/><br/><br/>");
 		//document.write("<center>您没有选择观察的拓扑图，请选择正确的拓扑图</center>");
 	}
+	
 	//zoomProcDlg("out");// 关闭闪屏
 }
 // end of ParseData();
