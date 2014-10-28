@@ -484,10 +484,9 @@ showModalDialog(url,window,'dialogwidth:510px; dialogheight:350px; status:no; he
 
 //新增示意图元
 function createDemoObj(){
-//window.parent.mainFrame.ShowHide("1",null);拖拽方式
-var url="<%=rootPath%>/submap.do?action=readyAddHintMeta&xml=<%=viewFile%>";
-var returnValue = showModalDialog(url,window,'dialogwidth:500px; dialogheight:300px; status:no; help:no;resizable:0');
-//parent.mainFrame.location.reload();
+		var url="<%=rootPath%>/submap.do?action=readyAddHintMeta&xml=<%=viewFile%>";
+		var returnValue = window.showModalDialog(url,window,'dialogwidth:500px; dialogheight:300px; status:no; help:no;resizable:0');
+		//parent.mainFrame.location.reload();
 }
 //重建拓扑图
 function rebuild(){
@@ -845,9 +844,11 @@ document.write('</body></form>');
 		</li>
 	</ul>
 </div>
+
 <!--  遮罩层和弹出视口 -->
 <div id="alphalayer"></div>
 <div id="popwin"><iframe src="" frameborder="0" width="100%" height="100%">
 </iframe>
 </div>
+
 </html>
