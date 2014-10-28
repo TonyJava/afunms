@@ -61,7 +61,7 @@ function changeDirection(temp)
 }
 function save()
 {
-    var args = window.dialogArguments;   
+    var args = window;   
     var direction1 = document.getElementById("direction1").value;
     var xml = "<%=xml%>";
     var line_name = document.getElementById("line_name").value;
@@ -72,11 +72,12 @@ function save()
 	var end_id = "<%=end_id%>";
 	var end_x_y = document.getElementById("end_x_y").value;
 	var e_alias = "<%=e_alias%>";
-    args.parent.mainFrame.addline(direction1,xml,line_name,link_width,start_id,start_x_y,s_alias,end_id,end_x_y,e_alias);
+    args.parent.addline(direction1,xml,line_name,link_width,start_id,start_x_y,s_alias,end_id,end_x_y,e_alias);
     window.close(); 
 }
 
 </script>
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 </head>
 <body id="body" class="body">
 		<form id="mainForm" method="post" name="mainForm"  >
