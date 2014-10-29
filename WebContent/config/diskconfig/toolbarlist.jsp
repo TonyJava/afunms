@@ -170,6 +170,7 @@
   			var delAction = "<%=rootPath%>/nodeGatherIndicators.do?action=delete";
   			var listAction = "<%=rootPath%>/nodeGatherIndicators.do?action=list";
 		</script>
+		<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 	</head>
 	<body id="body" class="body" onload="initmenu();">
 		<!-- 这里用来定义需要显示的右键菜单 -->
@@ -211,7 +212,7 @@
 															<table>
 																<tr>
 													    			<td  class="body-data-title" style="text-align: right;">
-							    										<a href="#" onclick="refresh()">刷新</a>&nbsp;&nbsp;&nbsp;
+							    										<a href="#" onclick="refresh();return false;">刷新</a>&nbsp;&nbsp;&nbsp;
 							    										<!--<a href="#" onclick="toDelete()">删除</a>&nbsp;&nbsp;&nbsp;
 							    										<a href="#" onclick="toChooseNode()">批量应用</a>&nbsp;&nbsp;&nbsp;-->
 							        								</td>
