@@ -100,6 +100,7 @@
 		  	}
 		  
 		</script>
+		<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 		<style>
 <!--
 body {
@@ -151,8 +152,8 @@ TEXT-ALIGN: center;
 														</td>
 														<td align="center" class="body-data-title"
 															style="text-align: right;">
-															<a href="#" onclick="toAdd()">Ìí¼Ó</a>
-															<a href="#" onclick="toDelete();">É¾³ý</a>&nbsp;&nbsp;&nbsp;
+															<a href="#" onclick="toAdd();return false;">Ìí¼Ó</a>
+															<a href="#" onclick="toDelete();return false;">É¾³ý</a>&nbsp;&nbsp;&nbsp;
 														</td>
 													</tr>
 													<tr>
