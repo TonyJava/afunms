@@ -121,6 +121,7 @@ function initmenu()
 }
 
 </script>
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 <style>
 <!--
 body{
