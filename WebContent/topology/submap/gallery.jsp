@@ -60,7 +60,7 @@ setting[3]="";
 //setting[4]=tri;
 function save()
 {
-    var args = window.dialogArguments;
+    var args = window;
 	setting[0]=document.all.equipName.value;//Éè±¸Ãû³Æ	
 	if(currentlyIconPath!=null)
 	{						
@@ -71,7 +71,7 @@ function save()
 	//window.returnValue=setting;
 	//mainForm.action = "<%=rootPath%>/submap.do?action=addHintMeta&returnValue="+setting;
     //mainForm.submit();
-    args.parent.mainFrame.addHintMeta(setting);
+    args.parent.addHintMeta(setting);
 	window.close();
 	//args.location.reload();
 }
@@ -117,6 +117,7 @@ function updateGalleryPanel()
 	//changeStyle(defaultIconPath);
 }
 </script>
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 </head>
 <body id="body" class="bg_image">
 <form name="mainForm" method="post" action="">
