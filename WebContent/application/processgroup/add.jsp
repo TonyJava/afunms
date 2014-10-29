@@ -33,7 +33,7 @@
 <script type="text/javascript" 	src="<%=rootPath%>/application/resource/js/processgroupconfiguration.js" charset="gb2312"></script>
 <!--nielin add for processgroupconfiguration at 2010-08-17 end-->
 
-
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 
 
 <script language="JavaScript" type="text/javascript">
