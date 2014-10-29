@@ -37,19 +37,23 @@
 function save(){
     if(checkinput("topo_name","string","拓扑子图名称",30,false)&&
        checkinput("topo_title","string","拓扑子图标题",50,true)){
-        var args = window.dialogArguments;
+        var args = window.parent;
         mainForm.action = "<%=rootPath%>/submap.do?action=saveSubMap";
+        mainForm.target = 'hack';
         mainForm.submit();
         alert("子图创建成功，请在选择视图中浏览!");
+        iTimerID = window.setTimeout(args.parent.topFrame.location.reload(),3000);//延时刷新父页面
         window.close(); 
-        iTimerID = window.setInterval(args.parent.topFrame.location.reload(),30000);//延时刷新父页面
+        
     }   
 }
 
 </script>
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
+		
 </head>
 <body id="body" class="body">
-		<form id="mainForm" method="post" name="mainForm"  >
+		<form id="mainForm" method="post" name="mainForm" target="hack" >
 		<input type=hidden name="objEntityStr" value="<%=objEntityStr%>">
 <input type=hidden name="linkStr" value="<%=linkStr%>">
 <input type=hidden name="asslinkStr" value="<%=asslinkStr%>">
@@ -251,6 +255,7 @@ function save(){
 				</tr>
 			</table>
 		</form>
+		<iframe name="hack" style="display:none;"></iframe>
 	</body>
 
 </html>
