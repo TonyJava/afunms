@@ -44,12 +44,14 @@
 function backup()
 {
 	mainForm.action = "<%=rootPath%>/submap.do?action=backup";
+	mainForm.target = 'hack';
     mainForm.submit();
     alert("备份成功!");
 	window.close();
 }
 
 </script>
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 </head>
 <BODY leftmargin="1" topmargin="1" bgcolor="#9FB0C4">
 <form method="post" name="mainForm">
@@ -120,6 +122,7 @@ function backup()
        </td>
    </tr>
 </table>
-</form>		
+</form>	
+<iframe name="hack" style="display:none;"></iframe>	
 </BODY>
 </HTML>
