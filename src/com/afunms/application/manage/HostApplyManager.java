@@ -6,6 +6,8 @@ import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.beanutils.BeanUtils;
 
@@ -238,7 +240,9 @@ public class HostApplyManager extends BaseManager implements ManagerInterface{
 		//得到当前的服务器
 		List<HostNode> hostNodeList = new ArrayList<HostNode>();
 		HostNode hostNode = new HostNode();
-		Host node = (Host)PollingEngine.getInstance().getNodeByID(Integer.parseInt(nodeid));
+		Matcher m = Pattern.compile("\\d+").matcher(nodeid);
+		m.find();
+		Host node = (Host)PollingEngine.getInstance().getNodeByID(Integer.parseInt(m.group()));
 		//集合copy工具  
 		try {
 			BeanUtils.copyProperties(hostNode,node);
