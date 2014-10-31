@@ -501,8 +501,8 @@ function rebuild(){
 
 //±¸·ÝÍØÆËÍ¼
 function backup(){
-var url="<%=rootPath%>/submap.do?action=readybackup&xml=<%=viewFile%>";
-showModalDialog(url,window,'dialogwidth:500px; dialogheight:300px; status:no; help:no;resizable:0');
+	var url="<%=rootPath%>/submap.do?action=readybackup&xml=<%=viewFile%>";
+	showModalDialog(url,window,'dialogwidth:500px; dialogheight:300px; status:no; help:no;resizable:0');
 }
 //»Ö¸´ÍØÆËÍ¼
 function resume(){

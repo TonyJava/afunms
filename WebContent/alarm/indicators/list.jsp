@@ -189,7 +189,7 @@
 				if(PCA.DefA==PCAAV)PCA.SelA[i-1].selected=true}
 				}
 			</script>
-
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 	</head>
 	<body id="body" class="body" onload="initmenu();">
 		<form id="mainForm" method="post" name="mainForm">
@@ -277,8 +277,8 @@
 																	</td>
 																	<td class="body-data-title" style="text-align: right;">
 																		<a href="#" onclick="viewAlarmNode()">查看告警阀值</a>&nbsp;&nbsp;&nbsp;
-																		<a href="#" onclick="add()">添加</a>&nbsp;&nbsp;&nbsp;
-																		<a href="#" onclick="toDelete()">删除</a>&nbsp;&nbsp;&nbsp;
+																		<a href="#" onclick="add();return false;">添加</a>&nbsp;&nbsp;&nbsp;
+																		<a href="#" onclick="toDelete();return false;">删除</a>&nbsp;&nbsp;&nbsp;
 																	</td>
 																</tr>
 															</table>

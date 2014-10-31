@@ -64,6 +64,7 @@
 			
 			}
 		</script>
+		<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 	</head>
 	<body id="body" class="body" onload="initmenu();">
 		<!-- 这里用来定义需要显示的右键菜单 -->

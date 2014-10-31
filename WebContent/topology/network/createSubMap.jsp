@@ -31,6 +31,8 @@ function save(){
 }
 
 </script>
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
+		
 </head>
 <BODY leftmargin="0" topmargin="0" bgcolor="#9FB0C4">
 <form name="mainForm" method="post">

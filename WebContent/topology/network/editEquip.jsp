@@ -19,7 +19,7 @@
 <base target="_self">
 <link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css" type="text/css">
 <script type="text/javascript" src="<%=rootPath%>/resource/js/wfm.js"></script>
-<script src="<%=rootPath%>/common/contextmenu/js/jquery-1.8.2.min.js"
+<script src="<%=rootPath%>/js/jquery-1.7.min.js"
 			type="text/javascript"></script>
 <style type="text/css">
 .layout_title {
@@ -73,8 +73,11 @@ function save()
 	setting[3]="<%=type%>";
 	var chk = checkinput("equipName","string","Éè±¸Ãû³Æ",30,false);
     if(chk){
-	    mainForm.action = "<%=rootPath%>/submap.do?action=replaceEquipPic&returnValue="+setting;
-        mainForm.submit();
+    	var nodeId = $('#nodeId').val();
+    	var type = $('#type').val();
+    	var equipName = $('#equipName').val();
+	     $.ajax("<%=rootPath%>/submap.do?action=replaceEquipPic&returnValue="+setting+"&nodeId="+nodeId+"&type="+type+"&equipName="+equipName,{'asyn':false});
+       
 	    window.close();
 	    args.location.reload();
 	}
@@ -121,8 +124,8 @@ function updateGalleryPanel()
 </head>
 <body id="body" class="bg_image">
 <form name="mainForm" method="post" action="">
-<input type="hidden" name='nodeId' value="<%=nodeId%>"/>
-<input type="hidden" name='type' value="<%=type%>"/>
+<input type="hidden" name='nodeId' id="nodeId" value="<%=nodeId%>"/>
+<input type="hidden" name='type' id="type" value="<%=type%>"/>
 <table border="0" id="table1" class="body-container" cellpadding="0" cellspacing="0" width=100% >
 <tr >
 <td width=5px>&nbsp;</td>

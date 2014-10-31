@@ -2,6 +2,7 @@
 <%
     String fresh = (String)request.getAttribute("fresh");  
     if("fresh".equals(fresh)){
+    	System.out.println("Ë¢ÐÂÍØÆËÍ¼");
         response.sendRedirect(request.getContextPath() + "/topology/network/showMap.jsp");    
     }
 %>

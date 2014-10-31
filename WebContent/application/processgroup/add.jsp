@@ -39,7 +39,7 @@
 <script language="JavaScript" type="text/javascript">
 
 
-  Ext.onReady(function()
+Ext.onReady(function()
 {  
 
 setTimeout(function(){

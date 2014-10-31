@@ -204,6 +204,7 @@
 		        mainForm.submit();
 		     }
 		</script>
+		<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 	</head>
 	<body id="body" class="body" onload="initmenu();">
 		<form id="mainForm" method="post" name="mainForm">
