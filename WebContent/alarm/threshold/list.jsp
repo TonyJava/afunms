@@ -134,6 +134,7 @@
      				}
   			}  
 		</script>
+		<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 	</head>
 	<body id="body" class="body" onload="initmenu();">
 		<form id="mainForm" method="post" name="mainForm">
@@ -172,9 +173,9 @@
 												<table id="content-body" class="content-body">
 													<tr>
 														<td class="body-data-title" style="text-align: right">
-															<a href="#" onclick="toAdd()">添加</a>&nbsp;&nbsp;
-															<a href="#" onclick="toDelete()">删除</a>&nbsp;&nbsp;&nbsp;
-															<a href="#" onclick="toMultiAdd()">批量应用</a>&nbsp;&nbsp;
+															<a href="#" onclick="toAdd();return false;">添加</a>&nbsp;&nbsp;
+															<a href="#" onclick="toDelete();return false;">删除</a>&nbsp;&nbsp;&nbsp;
+															<a href="#" onclick="toMultiAdd();return false;">批量应用</a>&nbsp;&nbsp;
 														</td>
 													</tr>
 												</table>
