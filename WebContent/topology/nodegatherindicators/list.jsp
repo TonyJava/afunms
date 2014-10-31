@@ -97,6 +97,7 @@
   			var delAction = "<%=rootPath%>/nodeGatherIndicators.do?action=delete";
   			var listAction = "<%=rootPath%>/nodeGatherIndicators.do?action=list";
 		</script>
+		<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 	</head>
 	<body id="body" class="body" onload="initmenu();">
 		<form id="mainForm" method="post" name="mainForm">
@@ -137,9 +138,9 @@
 															<table>
 																<tr>
 																	<td class="body-data-title" style="text-align: right;">
-																		<a href="#" onclick="add()">添加</a>&nbsp;&nbsp;&nbsp;
-																		<a href="#" onclick="toDelete()">删除</a>&nbsp;&nbsp;&nbsp;
-																		<a href="#" onclick="toChooseNode()">批量应用</a>&nbsp;&nbsp;&nbsp;
+																		<a href="#" onclick="add();return false;">添加</a>&nbsp;&nbsp;&nbsp;
+																		<a href="#" onclick="toDelete();return false;">删除</a>&nbsp;&nbsp;&nbsp;
+																		<a href="#" onclick="toChooseNode();return false;">批量应用</a>&nbsp;&nbsp;&nbsp;
 																	</td>
 																</tr>
 															</table>
