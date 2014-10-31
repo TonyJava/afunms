@@ -9,6 +9,7 @@
      String gallery = (String)request.getAttribute("gallery");
      String category = (String)request.getAttribute("category");
      
+     
  %>
 <html>
 <META http-equiv="Content-Type" content="text/html; charset=gb2312" />
