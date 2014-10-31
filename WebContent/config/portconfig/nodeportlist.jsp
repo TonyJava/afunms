@@ -279,7 +279,7 @@ function modifyalarmlevelajax(id){
 //---- nielin add for timeShareConfig 2010-01-03 end-------------------------------------------------------------------------
 </script>
 
-
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 </head>
 <body id="body" class="body" onload="initmenu();">
 
