@@ -19,6 +19,8 @@
 <base target="_self">
 <link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css" type="text/css">
 <script type="text/javascript" src="<%=rootPath%>/resource/js/wfm.js"></script>
+<script src="<%=rootPath%>/common/contextmenu/js/jquery-1.8.2.min.js"
+			type="text/javascript"></script>
 <style type="text/css">
 .layout_title {
 	font-family:宋体, Arial, Helvetica, sans-serif;
@@ -61,8 +63,8 @@ setting[2]="";
 setting[3]="";
 function save()
 {
-    var args = window.dialogArguments;
-	setting[0]=document.all.equipName.value;//设备名称	
+    var args = window.parent;
+	setting[0]=document.getElementById('equipName').value;//设备名称	
 	if(currentlyIconId!=null)
 	{						
 		setting[1]=currentlyIconId;
@@ -115,6 +117,7 @@ function updateGalleryPanel()
     
 }
 </script>
+<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 </head>
 <body id="body" class="bg_image">
 <form name="mainForm" method="post" action="">
@@ -140,7 +143,7 @@ function updateGalleryPanel()
 			<tr>						
 			<TD  nowrap align="right" height="24" width="20%">设备名称&nbsp;</TD>				
 			<TD nowrap width="80%">
-			   &nbsp; <input name="equipName" type="text" id="titleText"  value="<%=equipName%>" size="32" maxlength="50">
+			   &nbsp; <input name="equipName" id="equipName" type="text" id="titleText"  value="<%=equipName%>" size="32" maxlength="50">
 			</TD>
 			<td height="20px"></td>
 			</tr>
