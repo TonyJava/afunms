@@ -177,6 +177,7 @@
 		});
 			
 		</script>
+		<script type="text/javascript" src="<%=rootPath%>/topology/network/js/wincloseoverride.js"></script>
 	</head>
 	<body id="body" class="body" onload="initmenu();">
 		<!-- 这里用来定义需要显示的右键菜单 -->
@@ -226,7 +227,7 @@
 		        								<table id="content-body" class="content-body">
 		        									<tr>
 					        							<td class="body-data-title" style="text-align:right" >
-					        								<a href="#" onclick="toAdd()">添加</a>&nbsp;&nbsp;
+					        								<a href="#" onclick="toAdd();return false;">添加</a>&nbsp;&nbsp;
 					        							</td>
 					        						</tr>
 													<tr>
