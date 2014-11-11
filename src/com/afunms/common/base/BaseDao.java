@@ -107,6 +107,7 @@ public abstract class BaseDao {
 			for (int i = 0; i < sqllist.size(); i++) {
 				try {
 					String sql = (String) sqllist.get(i);
+					System.out.println("topo node sql="+sql);
 					rs = conn.executeQuery(sql);
 					if (rs == null) {
 						continue;

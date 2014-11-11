@@ -1,10 +1,4 @@
-/montnets
-/node-category-config.xml
-/node-category.xml
-/node-loader.xml
-/org
-/Agentconfig.properties
-/SqlserverConfigResources.properties
+/com
 /SystemConfigResources.properties
 /WebserviceConfig.properties
 /action.xml
@@ -12,8 +6,7 @@
 /application.properties
 /buffalo-service.properties
 /cfg-backup.xml
-/com
-/log4j.properties
-/manager.xml
-/menu.xml
-/monitor.xml
+/Agentconfig.properties
+/SqlserverConfigResources.properties
+/org
+/montnets

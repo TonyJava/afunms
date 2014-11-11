@@ -20,8 +20,7 @@
 <base target="_self">
 <link rel="stylesheet" href="<%=rootPath%>/resource/css/style.css" type="text/css">
 <script type="text/javascript" src="<%=rootPath%>/resource/js/wfm.js"></script>
-<script src="<%=rootPath%>/js/jquery-1.7.min.js"
-			type="text/javascript"></script>
+<script src="<%=rootPath%>/js/jquery-1.7.min.js" type="text/javascript"></script>
 <style type="text/css">
 .layout_title {
 	font-family:ËÎÌו, Arial, Helvetica, sans-serif;

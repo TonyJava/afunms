@@ -3215,6 +3215,8 @@ public class SubMapManager extends BaseManager implements ManagerInterface {
 
 	// 替换实体设备图元图片
 	private String replaceEquipPic() {
+		
+		System.out.println("=================================replaceEquipPic");
 		String fileName = "";
 		String equipName = "";
 		String imageId = "";

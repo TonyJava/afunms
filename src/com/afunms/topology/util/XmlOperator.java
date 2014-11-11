@@ -501,6 +501,7 @@ public class XmlOperator {
 			fos = new FileOutputStream(fullPath);
 			osw = new OutputStreamWriter(fos, "GB2312");
 			osw.write("<%@page contentType=\"text/html; charset=GB2312\"%>\r\n" + content);
+			System.out.println("写入xml资源文件完毕");
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

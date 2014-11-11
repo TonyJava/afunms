@@ -253,7 +253,8 @@
 	 $(document).ready(function(){
 		showAlarmTipsWindown("告警信息", 'simTestContentAlarm', 250, 55);
 		var timer1;
-		timer1=window.setInterval("getAlarmData();",200*60);	//2分钟更新一次DIV
+		//timer1=window.setInterval("getAlarmData();",200*60);	//2分钟更新一次DIV
+		AlarmSummarize
 	});
 	
 
@@ -279,7 +280,6 @@
 	                           } else if (alarmLevel == 3) {
 	                               alarm_image = "alert.gif";
 	                           } 
-	                           //alert("<%=rootPath%>/resource/image/topo/"+alarm_image);
 	                           alarmStr=alarmStr+"<li><img src='<%=rootPath%>/resource/image/topo/"+alarm_image+"'><font color=#000000>"+eventList.content+"</font></li>";
 	                           i++;
 	                       }

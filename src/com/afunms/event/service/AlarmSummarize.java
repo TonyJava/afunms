@@ -290,6 +290,25 @@ public class AlarmSummarize {
 
 	}
 
+	/*public List<EventList> SendLastestEventListByComet(String bid,String xml){
+		List nodelist = new ArrayList();
+		try {
+			//解析出xml拓扑资源文件中所有的设备节点
+			XmlOperator xmlOpr = new XmlOperator();
+			xmlOpr.setFile(xml);
+			xmlOpr.init4updateXml();
+			nodelist = xmlOpr.getAllNodes();
+		} catch (Exception e1) {
+			e1.printStackTrace();
+		}
+		
+		//取得
+		
+	}*/
+	public List<EventList> getRealTimeAlarm(String bid, String xml) {
+		return null;
+		
+	}
 	public List<EventList> getLastestEventList1(String bid, String xml) {
 		List nodelist = new ArrayList();
 		try {
